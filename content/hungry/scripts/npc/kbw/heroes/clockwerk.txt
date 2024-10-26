@@ -1,0 +1,134 @@
+
+"DOTAAbilities"{
+	"rattletrap_battery_assault"        {
+		"AbilityCooldown"   "19 18.5 18 17.5 17 16.5 16"
+		"AbilityManaCost"   "90 117 144 171 198 225 252"
+		"AbilityModifierSupportValue"   "0.2"
+		"AbilityValues"{
+			"radius"			"275"
+			"duration"					"10.5"
+			"interval"{	
+				"value"								"0.7 0.7 0.7 0.7"
+				"special_bonus_unique_clockwerk"		"-0.25"
+			}
+			"damage"	{	
+				"value"									"30 50 80 130 210 340 550"
+				"special_bonus_unique_clockwerk_3"		"+265"
+			}
+			"creep_damage_multiplier"					"4"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"rattletrap_power_cogs"     {
+		"AbilityCastPoint"  "0.0"
+		"AbilityManaCost"   "80 104 128 152 176 200 224"
+		"AbilityValues"         {
+			"duration"      "5.0 6.0 7.0 8.0 9.0 10.0 11.0"
+			"damage"        "145 215 320 460 660 930 1290"
+			"mana_burn"                 {
+				"value"             "145 215 320 460 660 930 1290"
+				"special_bonus_unique_clockwerk_8"		"+2010"
+			}
+			"attacks_to_destroy"        {
+				"value"                 "2"
+				"special_bonus_unique_clockwerk_5"		"+5"
+			}
+			"push_length"       "300"
+			"push_duration"     "1"
+			"cogs_radius"           "215"
+			"trigger_distance"          "195"
+			"extra_pull_buffer"         "-10"
+			"bonus_armor"       "0"
+			"leash"                     {
+				"value"         "0"
+				"special_bonus_unique_clockwerk_2"  "+1"
+			}
+			"AbilityCooldown"		{
+				"value"			"15"
+				"special_bonus_unique_clockwerk_9"		"-0"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"rattletrap_rocket_flare"       {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "0"
+		"AbilityCooldown"   "6"
+		"AbilityManaCost"   "35 46 56 67 77 88 98"
+		"AbilityValues"     {
+			"radius"            "600"
+			"duration"          "6.0"
+			"speed"             "2250"
+			"vision_radius"     "600"
+			"damage"{
+				"value"		"150 225 335 495 700 993 1270"
+				"special_bonus_unique_rattletrap_rocket_flare_damage"		"+930"
+			}
+			"AbilityCooldown"	{
+				"value"				"6"
+				"special_bonus_unique_clockwerk_7" "-0"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"special_bonus_unique_rattletrap_rocket_flare_damage" {
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+	"rattletrap_hookshot"       {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "3000 4000 5000 6000"
+		"AbilityCooldown"   "24 21 18 15"
+		"AbilityManaCost"   "100 175 250 325"
+		"AbilityValues"{
+			"latch_radius"  "150"
+			"stun_radius"   "175"
+			"duration"  "1.5 1.8 2.1 2.4"
+			"speed" "6000"
+			"damage"    "200 380 725 1375"
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+
+
+	"rattletrap_jetpack"        {
+		"AbilityCooldown"   "15"
+		"AbilityManaCost"   "75"
+		"AbilityValues"{
+			"bonus_speed"		"100"
+			"turn_rate" 		"275"
+			"height"    "250"
+			"duration"  "5"
+		}
+	}
+
+
+	"rattletrap_overclocking"       {	// cooldown refresh coded in special_fixes
+		"AbilityCooldown"   "40"
+		"AbilityManaCost"   "90"
+		"AbilityValues"	{
+			"buff_duration"					"13"
+			"bonus_movement_speed"			"0"
+			"bonus_attack_speed"			"1000"
+			"debuff_duration"				"3"
+			"hookshot_damage_bonus_pct"		"0"
+			"hookshot_radius_bonus_pct"		"50"
+			"hookshot_duration_bonus_pct"	"50"
+			"rocket_flare_interval"				"0.15"
+			"rocket_flare_offset_pct"			"75"
+			"rocket_flare_rockets"				"2"
+			"rocket_flare_cooldown"				"3"
+		}
+	}
+}

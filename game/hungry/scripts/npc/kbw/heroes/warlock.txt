@@ -1,0 +1,181 @@
+"DOTAAbilities"{	
+	"warlock_fatal_bonds"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"25 22 19 16 13 10 7"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"count"	{
+				"value"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_warlock_9"
+			}
+			"damage_share_percentage"	{
+				"value"	"12 16 20 24 28 32 36"
+				"LinkedSpecialBonus"	"special_bonus_unique_warlock_5"
+			}
+			"duration"	"25"
+			"search_aoe"	"700"
+		}
+	}
+	// Talent: Bounds Damage
+    "special_bonus_unique_warlock_5"		{
+        "AbilityValues"		{
+			"value"	"14"
+        }
+    }
+
+
+	"warlock_shadow_word"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"450 600 750 900 1050 1200 1350"
+		"AbilityManaCost"	"120 156 192 228 264 300 336"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"AbilityCooldown"	{
+				"value"										"14"
+				"special_bonus_unique_warlock_3"			"-9"
+			}
+			"damage"{
+				"value"	"35 53 79 118 178 267 400"
+				"special_bonus_unique_warlock_7"		"+400"
+			}
+			"duration"{
+				"value"	"10"
+				"special_bonus_unique_warlock_8"	"+2"
+			}
+			"shard_aoe"{
+				"value"	"600"
+				"RequiresShard"	"1"
+			}
+			"shard_movement_speed_pct"{
+				"value"	"0"
+				"RequiresShard"	"1"
+			}
+			"tick_interval"	"1"
+		}
+	}
+
+
+	"warlock_upheaval_kbw"{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"kbw/abilities/heroes/warlock/upheaval"
+		"AbilityTextureName"		"warlock_upheaval"
+
+        "MaxLevel"	"7"
+        "LevelsBetweenUpgrades"	"3"
+		"HasShardUpgrade"		"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"70 91 112 133 154 175 196"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"1200"
+		
+		"AbilityValues"{
+			"max_duration"			"8 9 10 11 12 13 14"
+			"aoe"					"500 550 600 650 700 750 800"
+			"slow_per_second"		"15 18 21 24 27 30 33"
+			"duration"				"3.0"
+			"max_slow"				"60 70 80 90 100 110 120"
+			"update_tick"			"0.5"
+			"damage"			"30 45 70 110 170 260 400"
+		}
+	}
+	"special_bonus_unique_warlock_upheaval_kbw_attack_speed"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_INTEGER"
+                "value"    "40"
+            }
+		}		
+	}
+
+
+	"warlock_rain_of_chaos"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"120"
+		"AbilityManaCost"	"250 438 625 813"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"aoe"					"600"
+			"stun_delay"			"0.5"
+			"stun_duration"			"1"
+
+			"golem_duration"		"60"
+			"golem_hp"				"2000 3915 7663 15000"
+			"golem_health_regen"	"50 98 192 375"
+			"golem_armor"			"12 21 35 60"
+			"golem_dmg"				"300 700 1600 3500"
+			"golem_movement_speed"	"300 450 600 750"
+			"golem_gold_bounty"		"100 150 200 250"
+
+			"bonus_armor"{
+				"value"	"0"
+				"special_bonus_unique_warlock_2"	"+180"
+			}
+			"bonus_magic_resistance"{
+				"value"	"0"
+				"special_bonus_unique_warlock_1"	"+80"
+			}
+			"golem_hp_scepter"{
+				"value"	"2000 3915 7663 15000"
+				"RequiresScepter"	"1"
+			}
+			"golem_dmg_scepter"{
+				"value"	"300 700 1600 3500"
+				"RequiresScepter"	"1"
+			}
+			"golem_gold_bounty_scepter"{
+				"value"	"100 150 200 250"
+				"RequiresScepter"	"1"
+			}
+			"number_of_golems_scepter"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+			"tooltip_golem_armor"{
+				"value"			"12 21 35 60"
+				"special_bonus_unique_warlock_2"		"+20"
+			}
+			// custom (special_fixes)
+			"model_scale"		"0.8 1.2 1.6 2.0"
+		}
+	}
+	"warlock_golem_flaming_fists"{
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"damage"	"60 102 175 300"
+			"radius"	"600"
+		}
+	}
+	"warlock_golem_permanent_immolation"{
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"aura_radius"	"750"	// not upgradable
+			"aura_damage"	"45 89 177 350"
+		}
+	}
+	// Talent: Golem Armor
+	"special_bonus_unique_warlock_2"{
+		"AbilityValues"		{
+			"value"				"180"	// TOOLTIP ONLY
+		}
+	}
+}

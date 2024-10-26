@@ -1,0 +1,191 @@
+"DOTAAbilities"{
+	
+	"treant_natures_grasp"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1500"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_per_second"	{
+				"value"	"50 73 108 158 232 341 500"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_9"
+			}
+			"movement_slow"	"25 30 35 40 45 50 55"
+			"vines_duration"	"12"
+			"creation_interval"	"0.1"
+			"initial_latch_delay"	"0.3"
+			"vine_spawn_interval"	"175"
+			"latch_range"	"135"
+			"latch_vision"	"150"
+		}
+	}
+	// Talent: Grasp Damage
+	"special_bonus_unique_treant_9"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"1000"
+				"ad_linked_abilities"	"treant_natures_grasp"
+			}
+		}
+	}
+	// Talent: Grasp CD
+	"special_bonus_unique_treant_12"	{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"8"
+				"ad_linked_abilities"			"treant_natures_grasp"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"treant_leech_seed"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"400"
+		"AbilityCooldown"	"9"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"LinkedAbility"				"treant_natures_guise"
+
+		"AbilityValues"{
+			"damage_interval"	"1"
+			"leech_damage"	{
+				"value"		"35 50 85 135 220 355 575"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_2"
+			}
+			"movement_slow"	{
+				"value"	"-30 -35 -40 -45 -50 -55 -60"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_3"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
+			"radius"	"650"
+			"duration"	"5"
+			"projectile_speed"	"1200"
+		}
+	}
+	// Talent: Semen Damage/Heal
+	"special_bonus_unique_treant_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"350"
+				"ad_linked_abilities"	"treant_leech_seed"
+			}
+		}
+	}
+	// Talent: Semen Slow
+	"special_bonus_unique_treant_3"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"30"
+				"ad_linked_abilities"			"treant_leech_seed"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"treant_living_armor"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_armor"{
+				"value"	"8 11 16 23 31 42 55"
+				"special_bonus_unique_treant_13"	"+65"
+			}
+			"duration"	"12"
+			"heal_per_second"{
+				"value"	"20 30 50 80 120 170 220"
+				"special_bonus_unique_treant_8"	"+400"
+			}
+		}
+	}
+	// Talnet: Armor AOE
+	"special_bonus_unique_treant_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"450"
+				"ad_linked_abilities"	"treant_living_armor"
+			}
+		}
+	}
+
+	"treant_natures_guise"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"LinkedAbility"			"treant_leech_seed"
+		"AbilityValues"{
+			"cooldown_time"	"3"
+			"grace_time"	"0.5"
+			"movement_bonus"{
+				"value"	"25"
+				"special_bonus_shard"	"+25"
+			}
+			"radius"	"400"
+			"regen_amp"	"40"
+			"shard_by_tree_root_time"{
+				"value"	"2"
+				"RequiresShard"	"1"
+			}
+			"shard_cooldown"{
+				"value"	"4"
+				"RequiresShard"	"1"
+			}
+			"shard_damage"{
+				"value"	"120 180 265 380 545 770 1070"
+				"RequiresShard"	"1"
+			}
+			"shard_root_time"{
+				"value"	"1"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+
+	"treant_overgrowth"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCooldown"	"45"
+		"AbilityManaCost"	"200 350 500 650"
+		"HasScepterUpgrade"	"1"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"ScepterModifiers"{
+			"radius"{
+				"1"{
+					"Operation"	"OPERATION_SET"
+					"Value"	"scepter_radius"
+				}
+			}
+		}
+		"AbilityValues"{
+			"damage"{
+				"value"	"150 250 450 800"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_11"
+			}
+			"duration"	"3.0 4.0 5.0 6.0"
+			"eyes_radius"{
+				"value"	"800"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_5"
+			}
+			"purgable"{
+				"value"	"0"
+				"special_bonus_unique_treant_11"	"+1"
+			}
+			"radius"{
+				"value"	"800"
+				"LinkedSpecialBonus"	"special_bonus_unique_treant_5"
+			}
+			// custom
+			"scepter_radius"	"1600"
+		}
+	}
+}

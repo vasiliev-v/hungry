@@ -1,0 +1,145 @@
+"DOTAAbilities"{
+
+	"gyrocopter_rocket_barrage"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"7 6.5 6.0 5.5 5.0 4.4 4.0"
+		"AbilityDuration"	"3"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_movement_speed"{
+				"value"	"0"
+				"special_bonus_unique_gyrocopter_4"	"+30"
+			}
+			"radius"	"400"
+			"rocket_damage"{
+				"value"	"8 12 20 32 48 68 92"
+				"LinkedSpecialBonus"	"special_bonus_unique_gyrocopter_3"
+			}
+			"rockets_per_second"	"10"
+		}
+	}
+	// Talent: Barrage Damage
+    "special_bonus_unique_gyrocopter_3"		{
+        "AbilityValues"		{
+			"value"	"88"
+        }
+    }
+	
+
+	"gyrocopter_homing_missile"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityDamage"		"150 250 420 660 970 1350 1800"
+		"AbilityManaCost"	"120 156 192 228 264 300 336"
+		
+		"AbilityValues"{
+			"hits_to_kill_tooltip"	"3"
+			"tower_hits_to_kill_tooltip"	"6"
+			"stun_duration"	{
+				"value"	"2.5"
+				"LinkedSpecialBonus"	"special_bonus_unique_gyrocopter_6"
+			}
+			"attack_speed_bonus_pct"	"400"
+			"min_damage"	"50"
+			"max_distance"	"1500"
+			"pre_flight_time"	"2"
+			"hero_damage"	"34"
+			"speed"	"800"
+			"acceleration"	"15"
+			"enemy_vision_time"	"4"
+			"AbilityCharges"	"0"
+			"shard_delay"	{
+				"value"	"0"
+				"RequiresShard"	"1"
+			}
+			"shard_radius"	{
+				"value"	"900"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Missile Stun
+    "special_bonus_unique_gyrocopter_6"		{
+        "AbilityValues"		{
+			"value"	"0.5"
+        }
+    }
+	
+	
+	"gyrocopter_flak_cannon"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"12"
+		"AbilityDuration"	"10"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"{
+				"value"	"0"
+				"special_bonus_unique_gyrocopter_flak_cannon_bonus_damage"	"+750"
+			}
+			"fire_rate"{
+				"value"	"0.3"
+				"RequiresScepter"	"1"
+			}
+			"max_attacks"{
+				"value"	"6 8 10 13 17 21 26"
+				"special_bonus_unique_gyrocopter_2"	"+0"
+			}
+			"projectile_speed"	"800"
+			"radius"{
+				"value"	"1000 1050 1100 1150 1200 1250 1300"
+			}
+			"scepter_radius"{
+				"value"	"1000"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	// Talent: Flak Cooldown
+	"special_bonus_unique_gyrocopter_1"{
+		"AbilityValues"{
+			"value"				"9"
+		}
+	}
+	
+
+	"gyrocopter_call_down"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"30 25 20 15"
+		"AbilityManaCost"	"125 219 313 406"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"slow_duration_first"	"2"
+			"slow_duration_second"	"4"
+			"damage_first"	{
+				"value"	"300 570 1085 2060"
+				"special_bonus_unique_gyrocopter_call_down_damage"	"+40%"
+			}
+			"damage_second"	{
+				"value"	"400 760 1445 2745"
+				"special_bonus_unique_gyrocopter_call_down_damage"	"+40%"
+			}
+			"slow_first"	"40"
+			"slow_second"	"80"
+			"radius"	"600"
+			"range_scepter"	"0"
+			"damage_second_scepter"	"350 552 871 1375"
+			"missile_delay_tooltip"	"2"
+		}
+	}
+	"special_bonus_unique_gyrocopter_call_down_damage"{
+		"BaseClass"		"special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

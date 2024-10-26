@@ -1,0 +1,251 @@
+"DOTAAbilities"{
+	"monkey_king_mischief"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"5"
+		"AbilityManaCost"	"0"
+		"AbilityValues"{
+			"invul_duration"{
+				"value"	"0.5"
+				"special_bonus_unique_monkey_king_12"	"+0"
+			}
+			"movespeed"	"200"
+			"reveal_radius"	"200"
+		}
+	}
+	"monkey_king_untransform"{
+		"AbilityCooldown"	"0"
+	}
+
+
+	"monkey_king_boundless_strike"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"1200"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"acceleration_z"	"5000"
+			"duration"	"0.2"
+			"max_horizontal_acceleration"	"30000"
+			"min_height_above_highest"	"150"
+			"min_height_above_lowest"	"100"
+			"soldier_spawn_duration"	"0"
+			"strike_cast_range"	"1200"
+			"strike_crit_mult"{
+				"value"	"150 180 210 240 270 300 330"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_PHYSICAL"
+				"special_bonus_unique_monkey_king_boundless_strike_crit"	"+300"
+			}
+			"strike_radius"	"150"
+			"stun_duration"{
+				"value"	"1.0 1.25 1.5 1.75 2.0 2.25 2.5"
+				"special_bonus_unique_monkey_king_9"	"+0"
+			}
+			"AbilityCooldown"			{
+				"value"					"15 14 13 12 11 10 9"
+			}
+		}
+	}
+	// Talent: Strike Cooldown
+	"special_bonus_unique_monkey_king_10"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"5"
+				"ad_linked_abilities"			"monkey_king_boundless_strike"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_monkey_king_boundless_strike_crit"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"monkey_king_tree_dance"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"1"
+		"AbilityManaCost"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"leap_speed"	"700"
+			"spring_leap_speed"	"1300"
+			"give_up_distance"	"99999"
+			"ground_jump_distance"	{
+				"value"	"1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king_7"
+			}
+			"perched_jump_distance"	{
+				"value"	"1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king_7"
+			}
+			"jump_damage_cooldown"	"1.6"
+			"perched_day_vision"	"99999"
+			"perched_night_vision"	"99999"
+			"perched_spot_height"	"192"
+			"unperched_stunned_duration"	"4"
+			"top_level_height"	"1500"
+			"impact_damage_tooltip"	{
+				"value"	"210 315 460 666 955 1345 1870"
+				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king_3"
+			}
+			"impact_movement_slow_tooltip"	"20 30 40 50 60 70 80"
+			"range"	"1000"
+		}
+	}
+	// Talent: Tree Dance Range
+    "special_bonus_unique_monkey_king_7"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"monkey_king_tree_dance"
+            }
+        }
+    }
+
+
+	"monkey_king_primal_spring"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1000"
+		"AbilityChannelTime"	"0.5"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"impact_damage"	{
+				"value"	"210 315 460 666 955 1345 1870"
+				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king_3"
+			}
+			"impact_movement_slow"	"20 30 40 50 60 70 80"
+			"impact_slow_duration"	"4"
+			"impact_radius"	"375"
+		}
+	}
+	"monkey_king_primal_spring_early"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+	}
+	// Talent: Primal Spring Cooldown
+	"special_bonus_unique_monkey_king_8"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"0"
+				"ad_linked_abilities"			"monkey_king_tree_dance"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Primal Spring Damage
+    "special_bonus_unique_monkey_king_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2130"
+                "ad_linked_abilities"	"monkey_king_tree_dance"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+	"monkey_king_jingu_mastery_kbw"{
+		"BaseClass"			"ability_lua"
+		"ScriptFile"		"kbw/abilities/heroes/monkey_king/jingu_mastery"
+
+	    "AbilityTextureName"    "monkey_king_jingu_mastery"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "MaxLevel"                      "7"
+        "LevelsBetweenUpgrades"         "3"
+
+		"AbilityValues"{
+			"required_charges"				"8"
+			"hero_charges"					"2"
+			"attack_count"				"4"
+			"damage"	"60 89 133 197 294 437 650"
+			"lifesteal"	"40 50 60 70 80 90 100"
+		}
+	}
+	"special_bonus_unique_monkey_king_jingu_mastery_kbw_damage"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1150"
+			}
+		}
+
+        "ModifyValues"{
+            "monkey_king_jingu_mastery_kbw"{
+                "damage"{
+                    "1"{
+                        "Operation"     "OPERATION_ADD"
+                        "Value"         "value"
+						"RefreshModifiers"{
+							"1"		"m_monkey_king_jingu_mastery_kbw_buff"
+						}
+                    }
+                }
+            }
+        }
+	}
+
+
+	"monkey_king_circle_kbw"{
+		"BaseClass"			"ability_lua"
+		"ScriptFile"		"kbw/abilities/heroes/monkey_king/circle"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+        "MaxLevel"                      "4"
+        "RequiredLevel"                 "6"
+        "LevelsBetweenUpgrades"         "6"
+		"HasScepterUpgrade"			"1"
+
+	    "AbilityTextureName"    "monkey_king_circle"
+		"AbilityCastAnimation"			"ACT_DOTA_MK_FUR_ARMY"
+
+		"AbilityCastPoint"				"1.2"
+		"AbilityCooldown"				"80 70 60 50"
+		"AbilityManaCost"				"100 175 250 325"
+
+		"AbilityValues"{
+			"radius"						{
+				"value"	"750"
+				"special_bonus_unique_monkey_king_circle_radius"	"+350"
+			}
+			"duration"						"7 9 11 13"
+			"armor"						"20 40 80 160"
+			"attributes"{
+				"value"	"0"
+				"special_bonus_unique_monkey_king_circle_attributes"	"+50"
+			}
+			"spell_immunity"{
+				"value"	"0"
+				"special_bonus_scepter"		"+1"
+			}
+		}
+	}
+	"special_bonus_unique_monkey_king_circle_radius"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_monkey_king_circle_attributes"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

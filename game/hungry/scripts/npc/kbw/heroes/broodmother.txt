@@ -1,0 +1,169 @@
+"DOTAAbilities"{
+	"broodmother_insatiable_hunger"     {
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"  "7"
+		"LevelsBetweenUpgrades" "3"
+		"AbilityCastPoint"  "0.0"
+		"AbilityCooldown"   "28"
+		"AbilityManaCost"   "60 78 103 134 175 229 300"
+		"AbilityValues"         {
+			"bonus_damage"			
+			{
+				"value"					"30 35 45 60 80 105 135"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"lifesteal_pct"     {
+				"value"             "70 75 80 85 90 95 100"
+			}
+			"duration"	{
+				"value"		"8 9 10 11 12 13 14"
+				"special_bonus_shard"	"+6"
+			}
+			"bat_bonus"	{
+				"value"				"0"
+				"special_bonus_unique_broodmother_1" "+0.4"
+			}
+			"shard_damage_per_tick" {
+				"value"						"0"
+				"special_bonus_shard"				"+5"
+			}
+			"shard_damage_tick_interval" {
+				"value"				"1"
+				"RequiresShard"		"1"
+			}
+		}
+	}
+
+
+	"broodmother_spin_web"      {
+		"MaxLevel"  "7"
+		"LevelsBetweenUpgrades" "3"
+		"AbilityCastPoint"  "0.4"
+		"AbilityCastRange"  "1000"
+		"AbilityCharges"    "3 5 7 9 11 13 15"
+		"AbilityManaCost"   "50"
+		"AbilityValues"     {
+			"radius"                "900"
+			"count"                     {
+				"value"             "3 5 7 9 11 13 15"
+				"special_bonus_unique_broodmother_6" "+15"
+			}
+			"heath_regen"           "10 20 40 70 110 160 220"
+			"bonus_movespeed"       "25 35 45 55 65 75 85"
+			"AbilityChargeRestoreTime"              {
+				"value"             "10"
+				"special_bonus_unique_broodmother_5" "-0"
+			}
+			"bonus_turn_rate"	"0.2"
+		}
+	}
+
+
+	"broodmother_silken_bola"{
+		"MaxLevel"  "7"
+		"LevelsBetweenUpgrades" "3"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastRange"              "750"
+		"AbilityCastPoint"              "0"
+		"AbilityCooldown"               "15 13.5 12 10.5 9 7.5 6"
+		"AbilityManaCost"               "90 114 145 184 233 296 375"
+		"AbilityValues"     {
+			"movement_speed"    {
+				"value"     "25 35 45 55 65 75 85"
+				"special_bonus_unique_broodmother_4"    "+0"
+			}
+			"aoe"{
+				"value"	"0"				
+				"special_bonus_unique_broodmother_2"	"+400"
+			}
+			"duration"              "6"
+			"projectile_speed"  "1200"
+			"impact_damage"         {
+				"value"	"150 198 262 346 458 605 800"
+				"special_bonus_unique_broodmother_silken_bola_impact_damage"	"+1200"
+			}
+			"attack_damage"  {
+				"value"		"30 60 100 150 210 280 360"
+				"special_bonus_unique_broodmother_silken_bola_attack_damage"	"+240"
+			}
+			"miss_chance"           "40 45 50 55 60 65 70"
+		}
+	}
+	"special_bonus_unique_broodmother_silken_bola_impact_damage"{
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_broodmother_silken_bola_attack_damage"{
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+	"broodmother_spawn_spiderlings"     {
+		"MaxLevel"  "4"
+		"LevelsBetweenUpgrades" "6"
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "900"
+		"AbilityCooldown"   "9 8 7 6"
+		"AbilityManaCost"   "150 208 288 400"
+		"AbilityValues"     {
+			"buff_duration"         "10"
+			"spiderling_duration"   "75"
+			"damage"        {
+				"value"             "600 925 1427 2200"
+				"special_bonus_unique_broodmother_3" "+900"
+			}
+			"damage_bonus"  "0"
+			"hp_bonus"      {
+				"value"             "0"
+				"special_bonus_unique_broodmother_2"    "+5000"
+			}
+			"count"                 "1"
+			"projectile_speed"  "1200"
+			// custom (special_fixes)
+			"health_pct"		"80"
+			"armor_pct"			"100"
+			"base_dmg_pct"		"75 80 85 90"
+			"speed"			"390 460 530 600"
+		}
+	}
+
+
+	"broodmother_sticky_snare"{
+		"AbilityCastRange"              "600"
+		"AbilityCastPoint"              "0.2"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCharges"                "2"
+		"AbilityChargeRestoreTime"      "5"
+		"AbilityManaCost"               "100"
+
+		"AbilityValues"     {
+			"formation_delay"		"0.5"
+			"root_duration"         "4"
+			"damage_per_second"     "400"
+			"count"         "36"
+			"width"     "900"
+		}
+	}
+        "broodmother_spawn_spiderite"
+	{
+		"AbilityValues"
+		{
+			"spiderite_duration"			"0.0"
+			"buff_duration"					"0.0"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"broodmother_poison_sting"
+	{
+		"AbilityValues"
+		{
+			"movement_speed"		"-10 -15 -20 -25"
+			"duration_hero"			"2.0"
+			"duration"				"6.0"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+}

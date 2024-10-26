@@ -1,0 +1,188 @@
+"DOTAAbilities"{
+
+	//removed (надо бы его реворк чтобы шард был кастомный но статы обычного скилла из доты)
+    // "bloodseeker_bloodrage_kbw"{
+    //     "BaseClass"                     "ability_lua"
+    //     "ScriptFile"                    "kbw/abilities/heroes/bloodseeker/bloodrage"
+    //     "AbilityTextureName"            "bloodseeker_bloodrage"
+
+    //     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	// 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+	// 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	// 	"AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	// 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	// 	"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+	// 	"AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_1"
+	// 	"AbilityCastGestureSlot"		"DEFAULT"
+
+    //     "MaxLevel"                      "7"
+    //     "LevelsBetweenUpgrades"         "3"
+
+	// 	"HasShardUpgrade"				"1"
+
+	// 	"AbilityCooldown"				"15 13 11 9 7 5 3"
+	// 	"AbilityManaCost"				"0"
+	// 	"AbilityCastPoint"				"0.2"
+	// 	"AbilityCastRange"				"500 750 1000 1250 1700 1750 2000"
+
+	// 	"AbilitySpecial"{
+	// 		"01"{
+	// 			"var_type"					"FIELD_FLOAT"
+	// 			"duration"					"8"
+	// 		}
+	// 		"02"{
+	// 			"var_type"					"FIELD_FLOAT"
+	// 			"damage_amp"				"40"
+	// 		}
+	// 		"03"{
+	// 			"var_type"                  "FIELD_FLOAT"
+	// 			"shard_damage_pct"          "1"
+	// 		}
+	// 		"04"{
+	// 			"var_type"                  "FIELD_FLOAT"
+	// 			"shard_boss_deamp"          "95"
+	// 		}
+	// 	}
+    // }
+
+	// "special_bonus_unique_bloodseeker_bloodrage_duration"{
+        // "BaseClass"		    "special_bonus_undefined"
+        // "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        // "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+        // "AbilitySpecial"{
+            // "01"{
+                // "var_type"	"FIELD_FLOAT"
+                // "value"    "4"
+            // }
+        // }
+
+        // "ModifyValues"{
+            // "bloodseeker_bloodrage_kbw"{
+                // "duration"{
+                    // "1"{
+                        // "Operation"     "OPERATION_ADD"
+                        // "Value"         "value"
+					// }
+				// }
+			// }
+		// }
+	// }
+
+	
+
+	"bloodseeker_bloodrage"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"13 12 11 10 9 8 7"
+		"AbilityManaCost"	"0"
+		
+		"AbilityValues"{
+			"duration"	"8"
+			"attack_speed"			{
+				"value"	"80 120 175 255 265 510 710"
+				"LinkedSpecialBonus"		"special_bonus_unique_bloodseeker_5"
+			}
+			"spell_amp"			{
+				"value"		"15 20 25 30 35 40 45"
+				"LinkedSpecialBonus"		"special_bonus_unique_bloodseeker_6"
+			}
+			"damage_pct"	{
+				"value"		"2.5"
+				"DamageTypeTooltip"			"DAMAGE_TYPE_PURE"
+			}
+			"shard_max_health_dmg_pct"	{
+				"value"	"0"
+				"RequiresShard"				"1"
+			}
+			"shard_override"		"1.0"
+		}
+	}
+
+	"bloodseeker_blood_bath"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1500"
+		"AbilityCooldown"	"11"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		
+		"AbilityValues"{
+			"radius" {
+				"value"	"600"
+				"special_bonus_shard"		"+300"
+			}
+			"special_bonus_shard"		"+10"
+			"silence_duration"	"3 3.5 4 4.5 5 5.5 6"
+			"damage" {
+				"value"	"165 275 440 660 935 1265 1650"
+				"special_bonus_shard"		"+250"
+				"LinkedSpecialBonus"	"special_bonus_unique_bloodseeker_4"
+			}
+			"delay"	"2"
+			"delay_plus_castpoint_tooltip"	"2.3"
+		}
+	}
+
+	"bloodseeker_thirst"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityValues"{
+			"min_bonus_pct"	"100"
+			"bonus_movement_speed" {
+				"value" "14 24 34 44 54 64 74"
+				"LinkedSpecialBonus"	"special_bonus_unique_bloodseeker_4"
+			}
+			"hero_kill_heal"	"12 18 24 30 36 42 48"
+			"creep_kill_heal"	"8 12 16 20 24 28 32"
+			"half_bonus_aoe"	"300"
+			"max_bonus_pct"	"35"
+			"visibility_threshold_pct"	"35"
+			"invis_threshold_pct"	"35"
+			"linger_duration"	"4"
+		}
+	}
+
+	"bloodseeker_rupture"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCooldown"	"70 65 60 55"
+		"AbilityManaCost"	"100 175 250 325"
+		
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		
+		"AbilityValues"{
+			"duration"					"10 11 12 13"
+			"movement_damage_pct"	{
+				"value"	"40 80 160 280"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"hp_pct"				{
+				"value"	"7"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_bloodseeker_7"		"+7"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_PURE"
+			}
+			"damage_cap_amount"		{
+				"value"	"200"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"AbilityCastRange"		{
+				"value"	"800"
+				"special_bonus_unique_bloodseeker_3"		"+425"
+			}
+			"AbilityCharges"		{
+				"value"	"0"
+				"special_bonus_unique_bloodseeker_rupture_charges"	"+2"
+			}
+		}
+	}
+}

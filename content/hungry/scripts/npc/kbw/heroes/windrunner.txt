@@ -1,0 +1,160 @@
+"DOTAAbilities"{
+	"windrunner_shackleshot"{
+		"AbilityCastPoint"	"0.15"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityDamage"	"0"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"fail_stun_duration"	"0.75"
+			"stun_duration"	{
+				"value"	"2 2.3 2.6 2.9 3.2 3.5 3.8"
+				"LinkedSpecialBonus"	"special_bonus_unique_windranger_6"
+			}
+			"shackle_distance"	"575"
+			"arrow_speed"	"1650"
+			"shackle_count"	"1"
+			"shackle_angle"	"23"
+		}
+	}
+	// Talent: Shackle Stun
+	"special_bonus_unique_windranger_6"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1.0"
+				"ad_linked_abilities"	"windrunner_shackleshot"
+			}
+		}
+	}
+
+
+	"windrunner_powershot"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"2600"
+		"AbilityChannelTime"	"1"
+		"AbilityCooldown"	"6 5.5 5 4.5 4 3.5 3"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"arrow_range"	"2600"
+			"arrow_speed"	"3000"
+			"arrow_width"	"125"
+			"damage_reduction"{
+				"value"	"20"
+				"special_bonus_unique_windranger_3"	"-20"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"powershot_damage"	"225 330 485 712 1044 1533 2250"
+			"tree_width"	"75 75 75 75"
+			"vision_duration"	"3.34 3.34 3.34 3.34"
+			"vision_radius"	"400"
+		}
+	}
+	"special_bonus_unique_windrunner_powershot_attack"{
+		"BaseClass"	"special_bonus_base"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"{
+			"damage_pct"		"500"
+		}
+		"AddModifiers"{
+			"m_kbw_ability_attack_damage"{
+				"ability"		"$windrunner_powershot"
+				"procs"			"1"
+				"nomiss"		"1"
+				"damage_pct"	"damage_pct"
+			}
+		}
+	}
+
+
+	"windrunner_windrun"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityDuration"	"3 4.5 6 7.5 9 10.5 12"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"AbilityModifierSupportValue"	"0.1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"		{
+			"movespeed_bonus_pct"	"60"		
+			"evasion_pct_tooltip"	"100"
+			"enemy_movespeed_bonus_pct"	{
+				"value"		"-15 -20 -25 -30 -35 -40 -45"
+			}
+			"radius"					{	
+				"value"			"600"
+				"special_bonus_unique_windranger"	"+0"
+			}
+			"scepter_movespeed_bonus_pct"			{
+				"value"			"-35 -40 -45 -50 -55 -60 -65"
+				"RequiresScepter" "1"
+			}
+			"physical_damage_pct"{
+				"value"				"0"
+				"special_bonus_scepter"		"-50"
+			}
+			"cannot_be_dispelled"{
+				"value"						"0"
+				"special_bonus_unique_windranger_windrun_undispellable"			"+0"
+			}
+			"duration"		"3 4 5 6 7 8 9"
+		}
+	}
+	"special_bonus_unique_windranger_windrun_tree_path"{
+		"BaseClass"	"special_bonus_base"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AddModifiers"{
+			"m_kbw_windranger_windrun_tree_path"{
+				"Path"		"kbw/abilities/heroes/windranger/m_kbw_windranger_windrun_tree_path"
+			}
+		}
+	}
+
+
+	"windrunner_focusfire"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"70 50 30 10"
+		"AbilityDuration"	"20"
+		"AbilityManaCost"	"75 131 188 244"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"bonus_attack_speed"	"600 750 900 1050"
+			"focusfire_damage_reduction"{
+				"value"	"-50 -40 -30 -20"
+				"LinkedSpecialBonus"	"special_bonus_unique_windranger_8"
+			}
+			"focusfire_fire_on_the_move"	"1"
+		}
+	}
+	// Talent: Focusfire Damage Reduction
+	"special_bonus_unique_windranger_8"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"20"
+				"ad_linked_abilities"	"windrunner_focusfire"
+			}
+		}
+	}
+
+	"windrunner_gale_force"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"18"
+		"AbilityManaCost"	"150"
+		"AbilityValues"{
+			"duration"	"5"
+			"wind_strength"	"300"
+			"radius"			"1000"
+		}
+	}
+}

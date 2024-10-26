@@ -1,0 +1,180 @@
+"DOTAAbilities"{
+
+
+	"dark_willow_bramble_maze"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"placement_range"	"500"
+			"placement_count"	"8"
+			"placement_duration"	"15"
+			"latch_duration"	"2.0 2.2 2.4 2.6 2.8 3.0 3.2"
+			"latch_range"	"90"
+			"damage_per_tick"	{
+				"value"	"100 135 175 225 285 360 440"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"latch_creation_interval"	"0.075"
+			"latch_creation_delay"	"0.1"
+			"initial_creation_delay"	"0.3"
+		}
+	}
+	// Talent: Maze CD
+	"special_bonus_unique_dark_willow_3"		{
+		"AbilityValues"		{
+			"value"	"8"
+		}
+	}
+
+
+	"dark_willow_shadow_realm_kbw"{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"kbw/abilities/heroes/dark_willow/shadow_realm"
+
+		"AbilityTextureName"	"dark_willow_shadow_realm"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"				"SPELL_DISPELLABLE_YES"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastGestureSlot"		"ABSOLUTE"
+
+		"MaxLevel"	"7"
+		"LevelsBetweenUpgrades"	"3"
+		"HasScepterUpgrade"			"1"
+
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"14"
+		"AbilityManaCost"	"150 170 190 210 230 250 270"
+
+		"AbilityValues"{
+			"duration"	{
+				"value"	"5"
+				"special_bonus_unique_dark_willow_shadow_realm_duration"	"+2"
+			}
+			"delay"		"0.3"
+			"damage"	{
+				"value"	"225 300 385 480 585 700 825"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"attack_range_bonus"	"600"
+			"max_damage_duration"	{
+				"value"	"3.5"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"pierce_bkb"	{
+				"value"		"0"
+				"special_bonus_unique_dark_willow_shadow_realm_pierce_bkb"	"+1"
+			}
+		}
+	}
+	"special_bonus_unique_dark_willow_shadow_realm_duration"{
+		"BaseClass"	"special_bonus_base"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"special_bonus_unique_dark_willow_shadow_realm_pierce_bkb"{
+		"BaseClass"	"special_bonus_base"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+	"dark_willow_cursed_crown"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"12 12 12 11 11 11 10"
+		"AbilityManaCost"	"150 180 210 210 240 270 270"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"delay"	{
+				"value"	"4 4 4 3 3 3 2"
+				"special_bonus_shard"	"-1"
+			}
+			"stun_duration"{
+				"value"	"2.0 2.4 2.8 2.8 3.2 3.6 3.6"
+				"LinkedSpecialBonus"	"special_bonus_unique_dark_willow_6"
+			}
+			"stun_radius"{
+				"value"	"360"
+				"LinkedSpecialBonus"	"special_bonus_unique_dark_willow_7"
+			}
+			"shard_delay_reduction"{
+				"value"	"0"
+				"RequiresShard"	"1"
+			}
+			"shard_bramble_amount"{
+				"value"	"6"
+				"RequiresShard"	"1"
+			}
+			"shard_spawn_radius"{
+				"value"	"150"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Crown Radius
+	"special_bonus_unique_dark_willow_7"	{
+		"AbilityValues"		{
+			"value"				"240"
+		}
+	}
+
+	"dark_willow_bedlam"{
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"attack_damage"{
+				"value"	"100 190 360 685"
+				"LinkedSpecialBonus"	"special_bonus_unique_dark_willow_4"
+			}
+			"attack_interval"	"0.25"
+			"attack_radius"	"400"
+			"attack_targets"	"1"
+			"pierces_magic_immunity"{
+				"value"	"0"
+				"special_bonus_unique_dark_willow_2"	"+1"
+			}
+                        "target_count"
+			{
+				"value"		"1"
+				"special_bonus_unique_dark_willow_bedlam_targets" "+2"	
+			}
+			"roaming_duration"	"5"
+			"roaming_radius"	"200"
+			"roaming_seconds_per_rotation"	"1.8"
+		}
+	}
+	// Talent: Badlam Damage
+	"special_bonus_unique_dark_willow_4"		{
+		"AbilityValues"		{
+			"value"	"215"
+		}
+	}
+
+
+	"dark_willow_terrorize"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1500"
+		"AbilityCooldown"	"40 35 30 25"
+		"AbilityManaCost"	"210 245 280 315"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"destination_travel_speed"	"2000"
+			"destination_radius"	"400"
+			"destination_status_duration"	"3.0 3.5 4.0 4.5"
+			"return_travel_speed"	"1200"
+			"starting_height"	"300"
+		}
+	}
+}

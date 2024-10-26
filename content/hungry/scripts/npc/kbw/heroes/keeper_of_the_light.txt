@@ -1,0 +1,257 @@
+"DOTAAbilities"{
+
+
+	"keeper_of_the_light_illuminate"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1800"
+		"AbilityChannelTime"	"2"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"channel_vision_duration"	"10.34"
+			"channel_vision_interval"	"0.5"
+			"channel_vision_radius"	"400"
+			"channel_vision_step"	"300"
+			"max_channel_time"	"2"
+			"radius"	"400"
+			"range"	"1550"
+			"speed"	"1050"
+			"total_damage"{
+				"value"	"300 450 660 955 1360 1920 2670"
+				"special_bonus_unique_keeper_of_the_light"	"+1800"
+			}
+			"vision_duration"	"3.34"
+			"vision_radius"		"800"
+			"AbilityCooldown"{
+				"value"	"13"
+				"special_bonus_unique_keeper_of_the_light_illuminate_cooldown"	"-2"
+			}
+		}
+	}
+	"keeper_of_the_light_illuminate_end"	{
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityCastPoint"				"0.0"
+ 	"AbilityCastAnimation"			"ACT_INVALID"
+	"MaxLevel"	"7"
+	}
+	"keeper_of_the_light_spirit_form_illuminate"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1800"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"channel_vision_duration"	"10.34"
+			"channel_vision_interval"	"0.5"
+			"channel_vision_radius"	"400"
+			"channel_vision_step"	"300"
+			"max_channel_time"	"2"
+			"radius"				"400"
+			"range"	"1550"
+			"speed"	"1050"
+			"total_damage"{
+				"value"	"300 450 660 955 1360 1920 2670"
+				"special_bonus_unique_keeper_of_the_light"	"+2000"
+			}
+			"vision_duration"	"3.34"
+			"vision_radius"		"800"
+			"AbilityCooldown"{
+				"value"	"13"
+				"special_bonus_unique_keeper_of_the_light_illuminate_cooldown"	"-9"
+			}
+		}
+	}
+	"keeper_of_the_light_spirit_form_illuminate_end"	{
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityCastPoint"				"0.0"
+ 	"AbilityCastAnimation"			"ACT_INVALID"
+	"MaxLevel"	"7"
+	}
+	"keeper_of_the_light_radiant_bind"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1150 1300 1450 1600"
+		"AbilityCooldown"	"8 6 4 2"
+		"AbilityManaCost"	"114 132 150 168"
+                "MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"7"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"slow"	"11 13 15 17"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"magic_resistance"	"30 40 50 60"
+			}
+		}
+	}
+	"keeper_of_the_light_chakra_magic"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"0"
+		"AbilityModifierSupportValue"	"3"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"mana_restore"	{
+				"value"	"120 207 359 620 1071 1851 3200"
+				"LinkedSpecialBonus"	"special_bonus_unique_keeper_of_the_light_2"
+			}
+			"cooldown_reduction"	"3 3.5 4 4.5 5 5.5 6"
+			"mana_leak_pct"		"4.5 5 5.5 6 6.5 7.5 8"		//Useless
+			"duration"			"5"							//Useless
+		}
+	}
+	"keeper_of_the_light_blinding_light"{
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"150"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"
+		{
+				"miss_rate"				
+				{
+					"value"				"35"
+					"LinkedSpecialBonus"		"special_bonus_unique_keeper_of_the_light_8"
+				}
+				"duration"				"1 2 3 4 5 6 7"
+				"radius"				"600"
+				"knockback_duration"	"0.6"
+				"knockback_distance"	"400"
+				"damage"				"145 215 310 440 625 885 1270"
+			
+		}
+	}
+	"keeper_of_the_light_spirit_form"{
+		"AbilityCooldown"	"80"
+		"AbilityManaCost"	"75 131 188 244"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"			"40"
+				"LinkedSpecialBonus"	"special_bonus_unique_keeper_of_the_light_11"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"movement_speed"	"20 25 35 40"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"cast_range"		"250 375 500 625"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"illuminate_heal"	"50 70 90 110"
+			}
+		}
+	}
+	"keeper_of_the_light_recall"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"150"
+		"MaxLevel"	"1"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"teleport_delay"	"2"
+			}
+		}
+	}
+	"keeper_of_the_light_will_o_wisp"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"250"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"on_count"	"6"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"725"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"hit_count"	"16"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"off_duration"	"1.85"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"on_duration"	"1.5"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"off_duration_initial"	"0.5"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"fixed_movement_speed"	"60"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"bounty"	"200"
+			}
+		}
+	}
+
+    "special_bonus_unique_keeper_of_the_light_radiant_bind_magic_resistance_kbw"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_INTEGER"
+                "value"     "30"
+            }
+        }
+
+        "ModifyValues"{
+            "keeper_of_the_light_radiant_bind"{
+                "magic_resistance"{
+                    "1"{
+                        "Operation"     "1"
+                        "Value"         "value"
+                    }
+                }
+            }
+        }
+    }
+
+    "special_bonus_unique_keeper_of_the_light_blinding_light_cooldown"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_FLOAT"
+                "value"     "-7"
+            }
+        }
+
+        "ModifyValues"{
+            "keeper_of_the_light_blinding_light"{
+                "AbilityCooldown"{
+                    "1"{
+                        "Operation"     "1"
+                        "Value"         "value"
+                    }
+                }
+            }
+        }
+    }
+}

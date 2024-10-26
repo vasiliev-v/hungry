@@ -1,0 +1,180 @@
+"DOTAAbilities"{	
+	"legion_commander_overwhelming_odds"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1000"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	"100 150 225 325 460 660 925"
+			"damage_per_hero"{
+				"value"	"75 120 175 210 275 300 345"
+			"special_bonus_unique_legion_commander_4"	"+500"
+			}
+			"damage_per_unit"	"25 40 55 70 85 100 115"
+			"duration"	"7"
+			"illusion_dmg_pct"		
+			{
+				"value"				"25"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"bonus_attack_speed_creeps"		"0"
+			"bonus_attack_speed"		"98 135 188 261 363 504 700"
+			"radius"				
+			{
+				"value"		"750"
+				"special_bonus_unique_legion_commander_2" "+450"
+			}
+			"armor_per_creep"	{
+				"value" 				"5"
+				"RequiresShard"				"1"
+			}
+			"armor_per_hero"	{
+				"value" 				"15"
+				"RequiresShard"  		"1"
+			}
+			"shard_duration"	{	
+				"value" 				"15"
+				"RequiresShard"		"1"
+			}
+			"AbilityCooldown"
+			{
+				"value"						"13"
+				"special_bonus_unique_legion_commander_9"		"-2"
+			}
+		}
+	}
+	"legion_commander_press_the_attack"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"16"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"5.0 6.0 7.0 8.0 9.0 10.0 11.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_speed"			"25 35 45 55 65 75 85"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"hp_regen"				"45 62 85 116 159 219 300"
+				"LinkedSpecialBonus"	"special_bonus_unique_legion_commander_6"
+			}
+		}
+	}
+	// Talent: Press AOE
+    "special_bonus_unique_legion_commander_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"legion_commander_press_the_attack"
+            }
+        }
+    }
+	// Talent: Press Regen
+    "special_bonus_unique_legion_commander_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"450"
+				"ad_linked_abilities"			"legion_commander_press_the_attack"
+            }
+        }
+    }
+	// Talent: Press Spell Immunte
+	"special_bonus_unique_legion_commander_8"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"2"
+			}
+		}
+	}
+
+
+	"legion_commander_moment_of_courage"{
+		"AbilityCooldown"	"2.4 2.0 1.6 1.2 0.8 0.4 0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage_heroes"	"75"
+			"buff_duration"	"1"
+			"hp_leech_percent"{
+				"value"		"55 65 75 85 95 105 115"
+				"special_bonus_unique_legion_commander_7" "+50"
+			}
+			"trigger_chance"{
+				"value"	"25"
+				"LinkedSpecialBonus"	"special_bonus_unique_legion_commander_3"
+			}
+		}
+	}
+	// Talent: Moment Chance
+    "special_bonus_unique_legion_commander_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"20"
+                "ad_linked_abilities"	"legion_commander_moment_of_courage"
+            }
+        }
+    }
+
+	
+	"legion_commander_duel"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityManaCost"	"75 131 188 244"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"	"4.0 4.75 5.5 6.25"
+			"duration_scepter"{
+				"value"	"6 7 8 9"
+				"RequiresScepter"	"1"
+			}
+			"reward_damage"{
+				"value"	"40 70 110 160"
+				"LinkedSpecialBonus"	"special_bonus_unique_legion_commander"
+			}
+			"scepter_cooldown_reduction"{
+				"value"	"20"
+				"RequiresScepter"	"1"
+			}
+			"scepter_damage_reduction_pct"{
+				"value"	"100"
+				"RequiresScepter"	"1"
+			}
+			"victory_range"	"600"
+			"AbilityCooldown"	"50"
+			"AbilityCastRange"	{
+				"value"	"150"
+				"special_bonus_unique_legion_commander_duel_cast_range"	"+600"
+			}
+		}
+	}
+	// Talent: Duel Damage
+    "special_bonus_unique_legion_commander"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"60"
+                "ad_linked_abilities"	"legion_commander_duel"
+            }
+        }
+    }
+    "special_bonus_unique_legion_commander_duel_cast_range"		{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+}

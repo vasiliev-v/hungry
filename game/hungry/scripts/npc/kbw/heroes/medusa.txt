@@ -1,0 +1,108 @@
+"DOTAAbilities"{
+
+	"medusa_split_shot"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"arrow_count"	"4 5 6 7 8 9 10"
+			"damage_modifier"{
+				"value"	"-40 -30 -20 -10 0 10 20"
+				"special_bonus_unique_medusa_2"	"+12"
+			}
+			"damage_modifier_tooltip"{
+				"value"	"60 70 80 90 100 110 120"
+				"special_bonus_unique_medusa_2"	"+10"
+			}
+			"split_shot_bonus_range"	"150"
+		}
+	}
+	"medusa_mystic_snake"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"AbilityCastRange"					"750"
+			"AbilityCastPoint"					"0.2"
+			"AbilityCooldown"					{
+				"value"				"7"
+				"special_bonus_unique_medusa_5"		"-4"
+			}
+			"AbilityManaCost"					"140 182 224 266 308 350 392"
+			"radius"							"550"
+			"snake_jumps"						{
+				"value"							"4 5 6 7 8 9 10"
+				"special_bonus_unique_medusa_3"	"+2"
+			}
+			"jump_delay"						"0.25 0.25 0.25 0.25"
+			"snake_damage"						{
+				"value"			"120 180 265 380 545 770 1070"
+				"CalculateSpellDamageTooltip" "1"
+			}
+			"snake_damage_pct"					"0"
+			"snake_mana_steal"					"11 14 17 20 23 26 29"
+			"snake_scale"						"35"
+			"snake_speed_scale"					"15"
+			"initial_speed"						"800"
+			"return_speed"						"800"
+			"stone_form_scepter_base"			{
+				"value"							"1.7"
+				"RequiresScepter"				"1"
+			}
+			"stone_form_scepter_increment"		{
+				"value"							"0.2"
+				"RequiresScepter"				"1"
+			}
+			"movement_slow"						{
+				"value"			"50"
+				"special_bonus_unique_medusa_7"		"+15"
+			}
+			"turn_slow"							{
+				"value"			"50"
+				"special_bonus_unique_medusa_7"		"+15"
+			}
+			"slow_duration"						"3"
+		}
+	}
+	"medusa_mana_shield"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"8"
+		"AbilityValues"{
+			"absorption_pct"	"98"
+			"bonus_mana"	"150 215 305 435 615 880 1250 1500"
+			"damage_per_mana"{
+				"value"	"1.6 1.9 2.3 2.8 3.4 4.1 4.9 5.8"
+				"special_bonus_unique_medusa_6"	"+4.2"
+			}
+		}
+	}
+	"medusa_cold_blooded"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityCooldown"	"6"
+		"AbilityValues"{
+			"damage"	"0"
+		}
+	}
+	"medusa_stone_gaze"{
+		"AbilityCastPoint"	"0.4"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"bonus_physical_damage"{
+				"value"	"40 45 50 55"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_PHYSICAL"
+			}
+			"duration"{
+				"value"	"5 5.5 6 6.5"
+				"special_bonus_unique_medusa"	"+2"
+			}
+			"face_duration"	"2"
+			"radius"	"1200"
+			"slow"	"35"
+			"speed_boost"	"50"
+			"stone_duration"	"3"
+			"vision_cone"	"0.087"
+			"AbilityCastRange"	"1200"
+			"AbilityCooldown"	"60"
+			"AbilityManaCost"	"150 263 375 488"
+		}
+	}
+}

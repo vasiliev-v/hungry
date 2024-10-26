@@ -1,0 +1,122 @@
+"DOTAAbilities"{
+	
+	"queenofpain_shadow_strike"{
+		"AbilityCastPoint"	"0.4 0.35 0.3 0.25 0.2 0.15 0.1"
+		"AbilityCastRange"	"750"
+		"AbilityCooldown"	"0"
+		"AbilityCharges"			"2"
+		"AbilityChargeRestoreTime"	"10 9 8 7 6 5 4"
+		"AbilityManaCost"	"125 163 200 238 275 313 350"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"			"7.5"
+			"duration_damage"	"45 70 110 170 260 390 575"
+			"duration_heal"		"30 50 75 115 175 260 385"
+			"movement_slow"		"-20 -35 -50 -65 -80 -95 -110"
+			"projectile_speed"	"900"
+			"strike_damage"{
+				"value"	"105 155 230 333 477 670 935"
+				"special_bonus_scepter"	"+820"
+			}
+			"damage_interval"{
+				"value"	"1.5"
+				"special_bonus_unique_queen_of_pain_4"	"-0.5"
+			}
+			"generate_scream"{
+				"value"	"0"
+				"special_bonus_scepter"	"+1"
+			}
+			"aoe_radius"{
+				"value"	"0"
+				"special_bonus_scepter"	"+600"
+			}
+		}
+	}
+
+	
+	"queenofpain_blink"{
+		"AbilityCastPoint"	"0.33"
+		"AbilityCastRange"	"1075 1150 1225 1300 1375 1450 1525"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"min_blink_range"	"200"
+			"shard_aoe"{
+				"value"	"550"
+				"RequiresShard"	"1"
+			}
+			"shard_damage"{
+				"value"	"300"
+				"RequiresShard"	"1"
+			}
+			"shard_duration"{
+				"value"	"2.5"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Blink Cooldown
+	"special_bonus_unique_queen_of_pain_6"  {
+		"AbilitySpecial"    {
+			"01"    {
+				"var_type"                  "FIELD_FLOAT"
+				"value"             "2.7"
+				"ad_linked_abilities"           "queenofpain_blink"             // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"queenofpain_scream_of_pain"{
+		"AbilityCooldown"	"6"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"area_of_effect"	"550"
+			"damage"{
+				"value"	"130 195 285 415 590 835 1160"
+				"special_bonus_unique_queen_of_pain_2"	"+890"
+			}
+			"projectile_speed"	"900"
+		}
+	}
+
+
+	"queenofpain_sonic_wave"{
+		"AbilityCastPoint"	"0.45"
+		"AbilityCastRange"	"700"
+		"AbilityManaCost"	"250 438 625 813"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"damage"	{
+				"value"	"500 900 1700 2900"
+				"special_bonus_unique_queen_of_pain_7"		"800"
+			}
+			"distance"	"900"
+			"final_aoe"	"450"
+			"knockback_distance"	"350"
+			"knockback_duration"	"1.4"
+			"speed"	"900"
+			"starting_aoe"	"100"
+			"AbilityCooldown"	{
+				"value"		"40"
+				"special_bonus_unique_queen_of_pain_3"	"-15"
+			}
+		}
+	}
+	// Talent: Sonic Fear
+	"special_bonus_unique_queen_of_pain_5"  {
+		"AbilitySpecial"    {
+			"01"    {
+				"var_type"                  "FIELD_FLOAT"
+				"value"             "1.8"
+				"ad_linked_abilities"           "queenofpain_sonic_wave"                // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

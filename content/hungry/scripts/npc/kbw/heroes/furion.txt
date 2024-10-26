@@ -1,0 +1,199 @@
+"DOTAAbilities"{
+	"furion_sprout"{
+		"AbilityCastPoint"	"0.35"
+		"AbilityCastRange"	"625 700 775 850 925 1000 1075"
+		"AbilityCooldown"	"11 10 9 8 7 6 5"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues" {
+			"vision_range"	"500"
+			"duration"	"3 4 5 6 7 8 9"
+		}
+	}
+	"special_bonus_unique_furion_sprout_range"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"value"     "1925"
+			}
+		}
+
+		"ModifyValues"{
+			"furion_sprout"{
+				"AbilityCastRange"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+	// Talent: Sprout Miss
+	"special_bonus_unique_furion_4"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"100"
+				"ad_linked_abilities"			"furion_sprout"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"furion_teleportation"{
+		"AbilityCastPoint"	"3.0 2.65 2.3 1.95 1.6 1.25 0.9"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"32 30 28 26 24 22 20"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"
+		{
+			"max_stacks"				
+			{
+				"value"				"20"
+				"special_bonus_unique_furion_teleportation_max_stacks"		"+4"
+
+			}
+			
+			"buff_duration"				"25"
+			"damage_per_stack"		"5 10 16 23 31 40 50"
+			"armor_per_stack"		"1 2 3 4 5 6 7"	
+		}
+	}
+
+
+	"furion_force_of_nature"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"750"
+		"AbilityCooldown"	"30 27 24 21 18 15 12"
+		"AbilityManaCost"	"150 195 240 285 330 375 420"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues" {
+			"area_of_effect"	"300"
+			"max_treants"	"5"
+			"duration"	"60"
+			"treant_health_tooltip"	"100 185 340 625 1120 2000 3510"
+			"treant_dmg_tooltip"	"10 25 55 130 295 670 1520"
+			// custom
+			"hero_health_pct"	"36 40 44 48 52 56 60"
+			"hero_damage_pct"	"36 40 44 48 52 56 60"
+			"armor"	"0 5 13 24 38 55 75"
+			// "large_hero_health_pct"	"100"
+			// "large_hero_damage_pct"	"100"
+			// "large_health"	"5000"
+			// "large_damage"	"500"
+		}
+	}
+	"special_bonus_unique_furion_treant_damage"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"value"     "60"
+			}
+		}
+
+		"ModifyValues"{
+			"furion_force_of_nature"{
+				"treant_dmg_tooltip"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+				"hero_damage_pct"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+				"large_hero_damage_pct"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+				"large_damage"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+
+
+	"furion_wrath_of_nature"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"85"
+		"AbilityManaCost"	"130 228 325 423"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"max_targets"	"20"
+			"damage"	{
+				"value"	"200 365 660 1200"
+				"LinkedSpecialBonus"	"special_bonus_unique_furion_5"
+			}
+			"damage_percent_add"	"10"
+			"jump_delay"	"0.25"
+			"kill_damage"	{
+				"value"	"25 60 135 300"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"kill_damage_duration"	{
+				"value"	"50"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"scepter_cooldown"		{
+				"value"		"50"
+				"RequiresScepter"		"1"
+			}
+			"scepter_min_entangle_duration"		{
+				"value"		"2"
+				"RequiresScepter"		"1"
+			}
+			"scepter_max_entangle_duration"		{
+				"value"		"3.8"
+				"RequiresScepter"		"1"
+			}
+		}
+	}
+	// Talent: Wrath Damage
+	"special_bonus_unique_furion_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"1000"
+				"ad_linked_abilities"	"furion_wrath_of_nature"
+			}
+		}
+	}
+
+
+	"furion_curse_of_the_forest"	{
+		"AbilityCastPoint"				"0.2"
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"80"
+		"AbilityValues"		{
+			"duration"		"8"
+			"damage_per_tree"		"50"
+			"slow_per_tree"			"10"
+			"radius"				"300"
+			"range"					"2000"
+		}
+	}
+}

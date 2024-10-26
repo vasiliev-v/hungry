@@ -1,0 +1,222 @@
+"DOTAAbilities"{
+	"techies_sticky_bomb"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"9 8 7 6 5 4 3"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"				"1.2"
+			"countdown"				"2"
+			"radius"				
+			{
+				"value"				"250"
+				"special_bonus_unique_techies_2"	"+550"
+			}
+			"damage"			{
+				"value"				"135 200 295 430 615 865 1200"
+			}
+			"slow"					"25 35 45 55 65 75 85"
+			"secondary_slow"		"15 25 35 45 55 65 75"
+			"secondary_slow_duration"		"3"
+			"explosion_radius"		
+			{
+				"value"				"300"
+				"special_bonus_unique_techies_2"	"+550"
+			}
+			"speed"					"500.0"
+			"acceleration"			"2000"
+			"pre_chase_time"		"0.1"
+		}
+	}
+
+	"techies_reactive_tazer"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_ms"			"20 24 28 32 36 40 44"
+			"disarm_duration"	"3 3.5 4 4.5 5 5.5 6"
+			"duration"			"6"
+			"stun_radius"		"400"
+			"shard_damage"	{
+				"value"					"150 250 400 600 850 1150 1500"
+				"RequiresShard"			"1"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_MAGICAL"
+			}	
+		}
+	}
+	
+	
+	"techies_suicide"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"30 27 24 21 18 15 12"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"					"400"
+			"damage"		{
+				"value"			"300 450 660 950 1360 1920 2670"
+				"LinkedSpecialBonus"	"special_bonus_unique_techies"
+			}
+			"stun_duration"				"2.0"
+			"hp_cost"					"50"
+			"duration"					"0.75"
+		}
+	}
+
+	"special_bonus_unique_techies"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"2000"
+				"ad_linked_abilities"	"techies_suicide"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_techies_5"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"6"
+				"ad_linked_abilities"	"techies_suicide"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+	"special_bonus_unique_techies_suicide_aoe"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"150"
+			}
+		}
+
+		"ModifyValues"{
+			"techies_suicide"{
+				"radius"{
+					"1"{
+						"Operation"	"OPERATION_ADD"
+						"Value"		"150"
+					}
+				}
+			}
+		}
+	}
+
+
+	"techies_land_mines"{
+		"LinkedAbility"		"techies_minefield_sign"
+		"MaxLevel"	"4"
+		"LevelsBetweenUpgrades"	"6"
+		
+		"AbilityCastPoint"	"0.0 0.0 0.0 0.0"
+		"AbilityCastRange"	"400"
+		"AbilityCharges"	"3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"110 193 275 358"
+		
+		"AbilityValues"{
+			"radius"					"500"
+			"proximity_threshold"		"1.0"
+			"building_damage_pct"		"30"
+			"outer_damage"				"50"
+			"min_distance"				"150"
+			"placement_radius"			"350"
+			"mres_reduction"			"15 21 27 33"
+			"burn_duration"				"5"
+			"damage"{
+				"value"					"500 950 1805 3430"
+				"LinkedSpecialBonus"		"special_bonus_unique_techies_2"
+			}
+			"activation_delay"{
+				"value"					"1"
+				"special_bonus_unique_techies_4"	"-0.8"
+			}
+			"cast_range_scepter_bonus"{
+				"value"					"300"
+				"RequiresScepter"	"1"
+			}
+			"AbilityChargeRestoreTime"{
+				"value"					"19 17 15 13"
+				"special_bonus_unique_techies_3"	"-6"
+			}
+		}
+	}
+
+	"techies_minefield_sign"	{
+		"MaxLevel"						"4"
+		"RequiredLevel"		"6"
+		"LevelsBetweenUpgrades"	"6"
+		"LinkedAbility"		"techies_land_mines"
+		"FixAutoLearn"	"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+
+		"AbilityCastRange"	"400"
+		"AbilityCastPoint"				"1.0 0.75 0.5 0.25"
+		"AbilityManaCost"				"0"
+		
+		"AbilityValues"{
+			"aura_radius"{
+				"value"					"750"
+				"special_bonus_scepter"	"+750"
+			}
+			"AbilityCooldown"{
+				"value"					"30"
+			}
+			"lifetime"{
+				"value"					"120"
+				"special_bonus_scepter" "+180"
+			}
+			"minefield_duration"		"10"
+			"trigger_radius"			"200"
+			"scepter_move_damage"{
+				"value"					"300 600 1000 1500"
+				"RequiresScepter"		"1"
+			}
+			"scepter_move_amt"{
+				"value"					"200"
+				"RequiresScepter"		"1"
+			}
+		}
+	}
+	
+	"special_bonus_unique_techies_minefield_sign_aoe"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1500"
+			}
+		}
+
+		"ModifyValues"{
+			"techies_minefield_sign"{
+				"aura_radius"{
+					"1"{
+						"Operation"	"OPERATION_ADD"
+						"Value"		"1500"
+					}
+				}
+			}
+		}
+	}
+}

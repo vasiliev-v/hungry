@@ -1,0 +1,130 @@
+"DOTAAbilities"{
+
+	"void_spirit_aether_remnant"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1000"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"activation_delay"	"0.4"
+			"impact_damage"{
+				"value"	"120 175 255 371 541 789 1150"
+				"special_bonus_unique_void_spirit_2"	"+1050"
+			}
+
+			"projectile_speed"	"900"
+			"radius"	"300"
+			"remnant_watch_distance"{
+				"value"	"450"
+				"special_bonus_shard"	"+300"
+			}
+			"remnant_watch_radius"	"130"
+			"start_radius"	"90"
+			"end_radius"	"90"
+			"watch_path_vision_radius"	"200"
+			"pull_duration"	"1.2 1.4 1.6 1.8 2 2.2 2.4"
+			"pull_destination"	"66 85 111 143 185 240 310"
+			"duration"	"20"
+			"think_interval"	"0.1"
+			"pierces_creeps"{
+				"value"	"0"
+				"special_bonus_shard"	"+1"
+			}
+			"AbilityCooldown"{
+				"value"	"16 15 14 13 12 11 10"
+				"special_bonus_shard"	"-3"
+			}
+		}
+	}
+	"void_spirit_dissimilate"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"20 18 16 14 12 10 8"
+		"AbilityDamage"		"150 225 337 505 757 1134 1700"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"angle_per_ring_portal"			"60"
+			"damage_radius"					"275"
+			"destination_fx_radius"			"183"
+			"first_ring_distance_offset"	"520"
+			"has_outer_ring"{
+				"value"				"0"
+				"special_bonus_unique_void_spirit_dissimilate_outerring"	"+1"
+			}
+			"phase_duration"		"1.3"
+			"portals_per_ring"		"6"
+		}
+	}
+
+
+	"void_spirit_resonant_pulse"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"115 150 184 219 253 288 322"
+		"FightRecapLevel"	"1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"500"
+			"speed"	"1200"
+			"damage"{
+				"value"		"105 155 230 340 503 744 1100"
+				"LinkedSpecialBonus"	"special_bonus_unique_void_spirit_4"
+			}
+			"buff_duration"	"10"
+			"base_absorb_amount"	"60 92 142 219 337 520 800"
+			"absorb_per_hero_hit"	"45 64 91 130 185 263 375"
+			"return_projectile_speed"	"900"
+			"max_charges"	{
+				"value"	"3"
+				"RequiresScepter"	"1"
+			}
+			"charge_restore_time"{
+				"value"		"8"
+				"RequiresScepter"	"1"
+			}
+			"silence_duration_scepter"	{
+				"value"	"3"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	// Talent: Pulse Damage
+	"special_bonus_unique_void_spirit_4"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"800"
+				"ad_linked_abilities"	"void_spirit_resonant_pulse"
+			}
+		}
+	}
+
+
+	"void_spirit_astral_step"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCharges"	"2 3 4 5"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"max_travel_distance"	"700 900 1100 1300"
+			"min_travel_distance"	"200"
+			"movement_slow_pct"	"20 40 60 80"
+			"pop_damage"	"300 483 777 1250"
+			"pop_damage_delay"{
+				"value"	"1.25"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"radius"	"170"
+			"AbilityChargeRestoreTime"{
+				"value"	"13"
+				"special_bonus_unique_void_spirit_1"	"-5"
+			}
+		}
+	}
+}

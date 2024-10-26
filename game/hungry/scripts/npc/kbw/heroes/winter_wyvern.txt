@@ -1,0 +1,178 @@
+"DOTAAbilities"{
+	"winter_wyvern_arctic_burn"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"	"8"
+			"attack_range_bonus"	"350 425 500 575 650 725 800"
+			"percent_damage"	{
+				"value"		"8"
+				"special_bonus_unique_winter_wyvern_arctic_burn_damage"	"+4"
+			}
+			"tick_rate"	"1"
+			"damage_duration"	{
+				"value"		"8"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"move_slow"	{
+				"value" 	"22 26 30 34 38 42 46"
+				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_1"
+			}
+			"night_vision_bonus"	"400 500 600 700 800 900 1000"
+			"projectile_speed_bonus"	"500"
+			"tree_destruction_radius"	"250"
+			"attack_point"	"0.1"
+			"max_attacks"	"5"
+			"mana_cost_scepter"	{
+				"value"	"60"
+				"RequiresScepter"	"1"
+			}
+			"movement_scepter"	{
+				"value"	"30"
+				"RequiresScepter"	"1"
+			}
+			// custom
+			"flying_vision"		{
+				"value"	"0"
+				"special_bonus_scepter"	"+1"
+			}
+		}
+	}
+	// Talent: Arctic Slow
+	"special_bonus_unique_winter_wyvern_1"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"14"
+				"ad_linked_abilities"	"winter_wyvern_arctic_burn"
+			}
+		}
+	}
+	"special_bonus_unique_winter_wyvern_arctic_burn_damage"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"winter_wyvern_splinter_blast"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"7"
+		"AbilityManaCost"	"105 137 168 200 231 263 294"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"projectile_speed"	"1800"
+			"projectile_max_time"	"1"
+			"split_radius"	{
+				"value"	"500"
+				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_2"
+			}
+			"bonus_movespeed"	"-30 -40 -50 -60 -70 -80 -90"
+			"movespeed_slow_tooltip"	"30 40 50 60 70 80 90"
+			"duration"	"4"
+			"secondary_projectile_speed"	"1800"
+			"damage"	{
+				"value"			"180 270 395 570 820 1155 1600"
+				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_7"
+			}
+		}
+	}
+	// Talent: Blast Radius
+	"special_bonus_unique_winter_wyvern_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"400"
+				"ad_linked_abilities"	"winter_wyvern_splinter_blast"
+			}
+		}
+	}
+	// Talent: Blast Stun
+	"special_bonus_unique_winter_wyvern_4"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1.75"
+				"ad_linked_abilities"	"winter_wyvern_splinter_blast"
+			}
+		}
+	}
+	// Talent: Blast Damage (NO TOOLTIP CHANGE)
+	"special_bonus_unique_winter_wyvern_7"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"1700"
+				"ad_linked_abilities"			"winter_wyvern_splinter_blast"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}	
+
+
+	"winter_wyvern_cold_embrace"{
+		"AbilityCastPoint"	"0.3 0.25 0.2 0.15 0.1 0.05 0"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"	"4"
+			"heal_additive"	{
+				"value"	"30 46 70 107 163 249 380"
+				"LinkedSpecialBonus"	"special_bonus_unique_winter_wyvern_5"
+			}
+			"heal_percentage"	"6"
+			"shard_cooldown_reduction"		{
+				"value"		"6"
+				"RequiresShard"				"1"
+			}
+			"shard_splinter_range"			{
+				"value"	"1200"	
+				"RequiresShard"				"1"
+			}
+		}
+	}
+	// Talent: Heal Base Heal
+	"special_bonus_unique_winter_wyvern_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1000"
+				"ad_linked_abilities"	"winter_wyvern_cold_embrace"
+			}
+		}
+	}
+
+
+	"winter_wyvern_winters_curse"{
+		"AbilityCastPoint"		"0.3"
+		"AbilityCastRange"		"800"
+		"AbilityManaCost"		"250 438 625 813"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"radius"				"525"
+			"damage_reduction"		"100"
+			"damage_amplification"	"0"
+			"bonus_attack_speed"	"100 200 300 400"
+			"duration"				"4 4.75 5.5 6.25"
+			"early_out_timer"		"2.5"
+			"AbilityCooldown"	{
+				"value"				"65 60 55 50"
+				"special_bonus_unique_winter_wyvern_winters_curse_cooldown"	"-15"
+			}
+		}
+	}
+	"special_bonus_unique_winter_wyvern_winters_curse_cooldown"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

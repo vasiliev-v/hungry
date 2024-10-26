@@ -1,0 +1,125 @@
+"DOTAAbilities"{
+	"luna_lucent_beam"{
+		"AbilityCastPoint"	"0.4 0.4 0.3 0.3 0.2 0.2 0.1"
+		"AbilityCastRange"	"800"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"beam_damage"{
+				"value"	"160 240 350 510 727 1025 1425"
+				"special_bonus_unique_luna_1"	"+1375"
+			}
+			"glaives_fired"	{
+				"value"			"0"
+				"special_bonus_unique_luna_8"	"+0"
+			}
+			"attack_radius"	{
+				"value"					"0"
+				"special_bonus_unique_luna_8"	"+500"
+			}
+			"stun_duration"{
+				"value"	"0.8"
+				"special_bonus_unique_luna_4"	"+0.8"
+			}
+			"damage_buff_duration"			{
+				"value"						"0"
+				"special_bonus_shard"		"+25"
+			}
+			"damage_buff_per_beam"			{
+				"value"						"0"
+				"special_bonus_shard"		"+50"
+			}
+			"AbilityCooldown"{
+				"value"	"6"
+				"special_bonus_unique_luna_2"	"-3.5"
+			}
+			"AbilityManaCost"{
+				"value"	"90 117 144 171 198 225 252"
+			}
+		}
+	}
+	"special_bonus_unique_luna_lucent_beam_attacks"{	// coded in special_fixes
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"{
+			"count"				"7"
+			"eclipse_count"		"2"
+			"interval"	"0.1"
+		}
+	}
+
+
+	"luna_moon_glaive"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bounces"	"3 4 5 6 7 8 9"
+			"damage_reduction_percent"{
+				"value"	"14.8 14 13.2 12.4 11.6 10.8 10"
+				"special_bonus_unique_luna_7"	"-10"
+			}
+			"range"	"500"
+		}
+	}
+
+
+	"luna_lunar_blessing"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"{
+				"value"	"20 32 52 84 135 217 350"
+				"special_bonus_unique_luna_3"	"+450"
+			}
+			"bonus_night_vision"{
+				"value"	"200 400 600 800 1000 1200 1400"
+				"special_bonus_unique_luna_8"	"+200"
+			}
+			"radius"	"1200"
+		}
+	}
+
+
+	"luna_eclipse"{
+		"AbilityCastPoint"	"0.6"
+		"AbilityCastRange"	"0"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"beams"{
+				"value"	"9 12 15 18"
+				"special_bonus_scepter"	"+3 4 5 6"
+			}
+			"beam_interval"{
+				"value"	"0.3"
+				"special_bonus_scepter"	"-0"
+			}
+			"beam_interval_scepter"	"0.3"
+			"hit_count"{
+				"value"	"99"
+				"special_bonus_scepter"	"+0"
+			}
+			"night_duration"	"10"
+			"radius"	"675"
+			"stun_duration"{
+				"value"	"0"
+				"special_bonus_unique_luna_5"	"+0.2"
+			}
+			"AbilityCastRange"{
+				"value"	"0"
+				"special_bonus_scepter"	"+99999"
+			}
+			"AbilityCooldown"{
+				"value"	"80"
+				"special_bonus_unique_luna_6"	"-40"
+			}
+			"AbilityDuration"{
+				"value"	"2.7 3.6 4.5 5.4"
+				"special_bonus_scepter"	"+0.9 1.2 1.5 1.8"
+			}
+		}
+	}
+}

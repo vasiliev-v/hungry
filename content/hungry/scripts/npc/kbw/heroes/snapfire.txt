@@ -1,0 +1,193 @@
+"DOTAAbilities"{
+		"snapfire_scatterblast"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"13 12 11 10 9 8 7"
+		"AbilityManaCost"	"85 111 136 162 187 213 238"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"160 240 350 510 730 1025 1425"
+				"LinkedSpecialBonus"	"special_bonus_unique_snapfire_7"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"blast_speed"	"3000"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"blast_width_initial"	"225"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"blast_width_end"	"400"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"debuff_duration"	"1"
+				"LinkedSpecialBonus"	"special_bonus_unique_snapfire_2"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"movement_slow_pct"	"100"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"attack_slow_pct"	"2000"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"point_blank_range"	"450"
+			}
+			"09"{
+				"var_type"	"FIELD_FLOAT"
+				"point_blank_dmg_bonus_pct"	"50"
+			}
+		}
+	}
+	"snapfire_firesnap_cookie"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"700"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"impact_damage"	"140 210 310 445 635 900 1245"
+			"impact_radius"	"450"
+			"impact_stun_duration"{
+				"value"	"1.6 1.75 1.9 2.05 2.2 2.35 2.5"
+			}       "AbilityCooldown"
+                                {
+					"value"		"18 16 14 12 10 8 6"
+					"special_bonus_unique_snapfire_3"	"-3"
+				}
+				"jump_duration"
+				{
+					"value"	"0.484" //"0.431 0.484 0.538 0.592" // proportional to horizontal distance
+					"special_bonus_shard"	"+0.2"
+				}
+			        "jump_height"
+				{
+					"value"						"257" //"228 257 285 314" // proportional to horizontal distance
+					"special_bonus_shard"		"+105"
+				}
+				"jump_horizontal_distance"
+				{
+					"value"						"425" //"400 450 500 550"
+					"special_bonus_shard"		"+175"
+				}
+			"landing_gesture_duration"	"0.6"
+			"pre_hop_duration"	"0"
+			"pre_land_anim_time"	"0.14"
+			"projectile_speed"	"1500"
+			"self_cast_delay"	"0.3"
+			"target_heal"{
+				"value"	"0"
+				"special_bonus_unique_snapfire_5"	"+2750"
+			}
+		}
+	}
+	"snapfire_lil_shredder"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"18 16 14 12 10 8 6"
+		"AbilityDuration"	"8"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"armor_duration"	"4"
+			"armor_reduction_per_attack"	"0.5"
+			"attack_range_bonus"	"75 150 225 300 375 450 525"
+			"attack_speed_bonus"	"300"
+			"base_attack_time"	"1"
+			"buff_duration_tooltip"	"8"
+			"buffed_attacks"{
+				"value"	"6 8 10 12 14 16 18"
+				"special_bonus_unique_snapfire_2"	"+6"
+			}
+			"damage"	"30 46 71 110 169 260 400"
+		}
+	}
+	"snapfire_spit_creep"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"3000"
+		"AbilityCooldown"	"0"
+		"AbilityValues"{
+			"burn_damage"	"500"
+			"burn_ground_duration"	"3"
+			"burn_interval"	"0.5"
+			"burn_linger_duration"	"1"
+			"impact_radius"	"400"
+			"max_acceleration"	"2000"
+			"max_lob_travel_time"	"1.2"
+			"min_acceleration"	"400"
+			"min_height_above_highest"	"100"
+			"min_height_above_lowest"	"150"
+			"min_lob_travel_time"	"0.1"
+			"move_slow_pct"{
+				"value"	"25"
+				"special_bonus_unique_snapfire_4"	"+20"
+			}
+			"projectile_speed"	"1400"
+			"projectile_vision"	"500"
+			"projectile_width"	"130"
+			"stun_duration"	"1.5"
+		}
+	}
+	"snapfire_gobble_up"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"150"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"120"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"max_time_in_belly"	"3"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"snapfire_mortimer_kisses"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"3000"
+		"AbilityCooldown"	"62.5 55 47.5 40"
+		"AbilityDuration"	"6"
+		"AbilityManaCost"	"125 219 313 406"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"burn_damage"	"100 171 292 500"
+			"burn_ground_duration"	"3"
+			"burn_interval"	"0.5"
+			"burn_linger_duration"	"1"
+			"damage_per_impact"{
+				"value"	"320 547 936 1600"
+				"special_bonus_unique_snapfire_mortimer_kisses_impact_damage"	"+60"
+			}
+			"delay_after_last_projectile"	"0.5"
+			"dist_change_speed"	"75"
+			"duration_tooltip"	"6"
+			"impact_radius"	"275"
+			"max_lob_travel_time"	"1.2"
+			"min_lob_travel_time"	"0.4"
+			"min_range"	"400"
+			"move_slow_pct"{
+				"value"	"15 20 25 30"
+				"special_bonus_unique_snapfire_4"	"+20"
+			}
+			"projectile_count"{
+				"value"	"8 10 12 14"
+				"special_bonus_unique_snapfire_1"	"+6"
+			}
+			"projectile_speed"	"1400"
+			"projectile_vision"	"500"
+			"projectile_width"	"130"
+			"turn_rate"	"75"
+		}
+	}
+}

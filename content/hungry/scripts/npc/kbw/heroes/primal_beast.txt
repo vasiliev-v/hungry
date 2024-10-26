@@ -1,0 +1,172 @@
+"DOTAAbilities"{
+	"primal_beast_onslaught"{
+		"AbilityCastPoint"	"0.0"
+		"AbilityCooldown"	"19 17 15 13 11 9 7 5"
+		"AbilityManaCost"	"120 156 192 228 264 300 336"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"base_power"	"0.15"
+			"charge_speed"	"1100 1250 1400 1550 1700 1850 2000"
+			"chargeup_time"	"2"
+			"knockback_damage"{
+				"value"	"200 340 577 980 1664 2826 4800"
+				"special_bonus_unique_primal_beast_onslaught_damage"	"+5200"
+			}
+			"knockback_distance"	"200"
+			"knockback_duration"	"0.2"
+			"knockback_radius"	"190"
+			"max_charge_time"	"2"
+			"max_distance"	"2200 2500 2800 3100 3400 3700 4000"
+			"movement_turn_rate"	"50 55 60 65 70 75 80"
+			"slow_duration"	"2.0 2.5 3.0 3.5 4.0 4.5 5.0"
+			"slow_pct"	"35 45 55 65 75 85 95"
+			"stun_duration"	"1 1.2 1.4 1.6 1.8 2.0 2.2"
+			"turn_rate"	"90"
+		}
+	}
+	"primal_beast_onslaught_release"{
+		"AbilityCooldown"	"0.2"
+		"MaxLevel"	"7"
+	}
+
+
+	"primal_beast_trample"{
+		"AbilityCooldown"	"22 20 18 16 14 12 10"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"attack_damage"{
+				"value"	"40"
+				"special_bonus_unique_primal_beast_trample_attack_damage"	"+20"
+			}
+			"base_damage"	"25 37 55 80 115 160 225"
+			"duration"	"5.5"
+			"effect_radius"	"230"
+			"step_distance"	"140"
+			"bonus_magic_resistance"{
+				"value"					"0"
+				"special_bonus_unique_primal_beast_trample_magic_resist"		"+75"
+			}			
+			"AbilityCooldown"	{
+				"value"				"21 20 19 18 17 16 15"
+				"special_bonus_unique_primal_beast_trample_cooldown"	"-5"
+			}
+		}
+	}
+
+	
+	"primal_beast_uproar"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"	"20 35 62 110 193 340 600"
+			"bonus_damage_per_stack"	"14 20 29 41 56 74 95"
+			"damage_limit"	"35"
+			"damage_max"	"10000"
+			"damage_min"	"20"
+			"move_slow_per_stack"	"10"
+			"radius"	"900"
+			"roar_duration"	"7"
+			"roared_bonus_armor"{
+				"value"	"2 3 4 5 6 7 8"
+				"special_bonus_unique_primal_beast_uproar_armor"	"+12"
+			}
+			"roared_bonus_attack_speed"	"0"
+			"should_dispell"{
+				"value"	"0"
+				"special_bonus_unique_primal_beast_roar_dispells"	"+1"
+			}
+			"slow_duration"	"3"
+			"stack_duration"	"15"
+			"stack_limit"	"5 6 7 8 9 10 11"
+
+			"projectiles_per_stack"	{
+				"value"		"1"
+				"RequiresScepter"		"1"
+			}
+            "projectile_distance" {
+				"value"		"2000"
+				"RequiresScepter"		"1"
+			}
+            "projectile_width"  {
+				"value"		"75"
+				"RequiresScepter"		"1"
+			}
+            "projectile_damage" {
+				"value"		"1200"
+				"RequiresScepter"		"1"
+			}
+            "projectile_speed"  {
+				"value"		"900"
+				"RequiresScepter"		"1"
+			}
+            "splinter_angle"  {
+				"value"		"30"
+				"RequiresScepter"		"1"
+			}
+            "split_delay"   {
+				"value"		"0.8"
+				"RequiresScepter"		"1"
+			}
+            "projectile_break_duration"	{
+				"value"		"2.5"
+				"RequiresScepter"		"1"
+			}
+			"projectile_waves"{
+				"value"		"7"
+				"RequiresScepter"		"1"
+			}
+		}
+	}
+
+
+	"primal_beast_pulverize"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"200"
+		"AbilityCooldown"	"32 28 24 20"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"animation_rate"	"1.5"
+			"cast_range"	"200"
+			"channel_time"{
+				"value"	"2.3"
+				"special_bonus_unique_primal_beast_pulverize_duration"	"+100%"
+			}
+			"interval"	"0.75"
+			"ministun"	"0.25 0.35 0.45 0.55"
+			"splash_radius"	"600"
+			"damage"			{
+				"value"			"200 380 722 1375"
+			}
+			"pierce_immunity"{
+				"value"						"0"
+				"special_bonus_unique_primal_beast_pulverize_pierces_magic_immunity"		"+1"
+			}
+		}
+	}
+
+	
+	"primal_beast_rock_throw"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1800"
+		"AbilityChargeRestoreTime"	"5"
+		"AbilityCharges"	"2"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"85"
+		"AbilityValues"{
+			"base_damage"	"400"
+			"bounce_travel_time"	"0.6"
+			"fragment_impact_distance"	"600"
+			"fragment_impact_radius"	"150"
+			"impact_radius"	"225"
+			"max_travel_time"	"0.9"
+			"min_range"	"150"
+			"min_travel_time"	"0.25"
+			"stun_duration"	"1.8"
+		}
+	}
+}

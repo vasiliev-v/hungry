@@ -1,0 +1,201 @@
+"DOTAAbilities"{
+	"disruptor_thunder_strike"{
+		"AbilityCastPoint"	"0.05"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"125 163 200 238 275 313 350"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"240"
+			"strikes"{
+				"value"	"4 5 6 7 8 9 10"
+				"LinkedSpecialBonus"	"special_bonus_unique_disruptor"
+			}	
+			"strike_interval"	"1"
+			"strike_damage"	{
+				"value"	"68 97 140 201 290 417 600"
+				"LinkedSpecialBonus"	"special_bonus_unique_disruptor_3"
+			}
+			"slow_duration"	"0.3"
+			"slow_amount"	"200"
+			"shard_buff_duration"	{
+				"value"	"1.5"
+				"RequiresShard"	"1"
+			}
+			"shard_movement_speed_bonus"	{
+				"value"	"40"
+				"RequiresShard"	"1"
+			}
+			"shard_attack_speed_bonus"	{
+				"value"		"400"
+				"RequiresShard"	"1"
+			}
+			"shard_radius"	{
+				"value"	"750"
+				"RequiresShard"	"1"
+			}
+		}
+		"AbilityValues"
+		{
+			"AbilityCastRange"
+			{
+				"value"						"800"
+				"special_bonus_shard"		"+800"
+			}
+
+			"radius"						
+			{
+				"value" 					"320"
+				"special_bonus_unique_disruptor_3" "+1000"
+			}
+
+			"strikes"
+			{
+				"value"						"4 5 6 7 8 9 10"
+				"special_bonus_shard"		"+4"
+			}
+
+			"strike_interval"				"1.0"
+			"strike_damage"					"68 97 140 201 290 417 600"
+
+			"slow_duration"
+			{
+				"value"						"0.1 0.2 0.3 0.4 0.5 0.6 0.7"
+				"special_bonus_unique_disruptor" "0.6"
+			}
+
+			"slow_amount"					"100"
+			"shard_ground_delay"			"10"
+		}
+	}
+	// Talent: Strike Damage
+    "special_bonus_unique_disruptor_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"800"
+                "ad_linked_abilities"	"disruptor_thunder_strike"
+            }
+        }
+    }
+	// Talent: Strike Count
+    "special_bonus_unique_disruptor"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"4"
+                "ad_linked_abilities"	"disruptor_thunder_strike"
+            }
+        }
+    }
+
+	
+	"disruptor_glimpse"{
+		"AbilityCastPoint"	"0.05"
+		"AbilityCastRange"	"600 1100 1600 2100 2600 3100 3600"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"backtrack_time"	"4"
+			"cast_range"	"600 1000 1400 1800 2200 2600 3000"
+			"max_damage"{
+				"value"	"250 378 572 866 1310 1983 3000"
+				"special_bonus_unique_disruptor_9"	"+1500"
+			}
+			"max_distance"	"1400"
+			"min_damage"	"50"
+			"silence_duration"	"0"
+			"AbilityCooldown"{
+				"value"	"20 19 16 14 12 10 8"
+				"special_bonus_unique_disruptor_4"	"-6"
+			}
+		}
+	}
+
+
+	"disruptor_kinetic_field"{
+		"AbilityCastPoint"	"0.05"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"350"
+			"formation_time"	"1.2 1.1 1.0 0.9 0.8 0.7 0.6"
+			"duration"	{
+				"value"	"2.6 3.2 3.8 4.4 5 5.6 6.2"
+				"LinkedSpecialBonus"	"special_bonus_unique_disruptor_5"
+			}
+		}
+	}
+	// Talent: Field Duration
+	"special_bonus_unique_disruptor_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"4"
+				"ad_linked_abilities"	"disruptor_kinetic_field"
+			}
+		}
+	}
+	// Talent: Field Cooldown
+    "special_bonus_unique_disruptor_2"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2"
+                "ad_linked_abilities"	"disruptor_kinetic_field"
+            }
+        }
+    }
+
+
+	"disruptor_static_storm"{
+		"AbilityCastPoint"	"0.05"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"50"
+		"AbilityManaCost"	"125 219 313 406"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"radius"	"500"
+			"pulses"	{
+				"value"	"20"
+				"LinkedSpecialBonus"	"special_bonus_unique_disruptor_7"
+				"LinkedSpecialBonusField"	"value2"
+			}
+			"damage_max"	"400 880 1935 4260"
+			"duration"	{
+				"value"	"5"
+				"LinkedSpecialBonus"	"special_bonus_unique_disruptor_7"
+			}
+		}
+	}
+	// Talent: Storm Duration
+	"special_bonus_unique_disruptor_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"3"
+				"ad_linked_abilities"	"disruptor_static_storm"
+			}
+			"02"		{
+				"var_type"	"FIELD_INTEGER"
+				"value2"	"15"
+				"ad_linked_abilities"	"disruptor_static_storm"
+			}
+		}
+	}
+	// Talent: Storm Radius	
+	"special_bonus_unique_disruptor_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"400"
+				"ad_linked_abilities"			"disruptor_static_storm"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

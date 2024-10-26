@@ -1,0 +1,107 @@
+"DOTAAbilities"{
+	"batrider_sticky_napalm"        {
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "700"
+		"AbilityCooldown"   "3"
+		"AbilityManaCost"   "20 26 32 38 44 50 56"
+		"AbilityValues"     {
+			"damage"        {
+				"value" "12 18 26 38 55 98 110"
+				"special_bonus_unique_batrider_4"   "+80"
+				"CalculateSpellDamageTooltip"       "1"
+			}
+			"radius"        {
+				"value"                             "375"
+				"special_bonus_unique_batrider_7"   "+225"
+			}
+			"duration" "8"
+			"movement_speed_pct" "-2 -4 -6 -8 -10 -12 -14"
+			"max_stacks"            "10"
+			"creep_damage_pct"          "50"
+			"shard_napalm_on_attack_chance_pct"   { // HARDCODED 
+				"value"         "50"
+				"RequiresShard"         "1"
+			}
+			"application_damage"	"12 18 26 38 55 98 110"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"batrider_flamebreak"       {
+		"AbilityCastPoint"  "0.2"
+		"AbilityCastRange"  "1500"
+		"AbilityCooldown"   "18 16 14 12 10 8 6"
+		"AbilityManaCost"   "110 143 176 209 242 275 308"
+		"AbilityValues"     {
+			"damage_impact"         "60 90 131 191 272 383 535"
+			"damage_per_second"     "20 30 40 50 60 70 80"
+			"damage_duration"       "2 3 4 5 6 7 8"
+			"explosion_radius"      "500"
+			"collision_radius"      "100"
+			"stun_duration"         "0.5"
+			"speed"                 "1800"
+			"knockback_distance"    {
+				"value"             "300"
+				"special_bonus_unique_batrider_3"   "+500"
+			}
+			"knockback_height"      "100"
+			"knockback_duration"    "0.35"
+			"napalm_stacks"         {
+				"value"             "0"
+				"special_bonus_unique_batrider_2"   "+2"
+			}            
+			"AbilityCharges" {
+				"value"	"0"
+				"special_bonus_unique_batrider_5"	"+3"
+			}
+                        "slow"	"30 35 40 45 50 60 75"           
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"batrider_firefly"      {
+		"AbilityCastPoint"  "0"
+		"AbilityCooldown"   "30"
+		"AbilityManaCost"   "125 163 200 238 275 313 350"
+		"AbilityValues" {
+			"damage_per_second"		"40 70 110 175 250 350 475"
+			"movement_speed"		"4 6 8 10 12 14 16"
+			"radius"				"200"
+			"duration"				{
+				"value"					"10 11 12 13 14 15 16"
+				"special_bonus_unique_batrider_1"	"+7"
+			}
+			"tick_interval"			"0.5"
+			"tree_radius"			"100"
+			"bonus_vision"			"25 50 75 100 125 150 175"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"batrider_flaming_lasso"        {
+		"AbilityCastPoint"  "0.2"
+		"AbilityCastRange"  "100"
+		"AbilityManaCost"   "150 263 375 488"
+		"AbilityValues" {
+			"duration"				"3 3.5 4 4.5"
+			"drag_distance"			"300 "
+			"break_distance"		"425"
+			"damage"
+			{
+				"value"			"300 650 1100 1600"
+				"CalculateSpellDamageTooltip" "1"
+			}
+                        "tick_rate"			"0.5"
+			"grab_radius_scepter"	{
+				"value"		"600"
+				"RequiresScepter"		"1"
+			}
+			"AbilityCooldown"	{
+				"value"				"60"
+				"special_bonus_unique_batrider_6"			"-10"
+			}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+}

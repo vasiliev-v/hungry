@@ -1,0 +1,183 @@
+"DOTAAbilities"{
+	"riki_smoke_screen"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"550 580 610 640 670 700 730"
+		"AbilityCooldown"	"17 16 15 14 13 12 11"
+		"AbilityDuration"	"6"
+		"AbilityManaCost"	"125"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"	"6"
+			"miss_rate"	"25 35 45 55 65 75 85"
+			"radius"{
+				"value"	"300 325 350 375 400 425 450"
+				"LinkedSpecialBonus"	"special_bonus_unique_riki_7"
+			"armor_reduction"
+			{
+				"value"					"0"
+				"special_bonus_shard"	"7 11 15 19 23 27 31"
+			}
+			}
+		}
+	}
+	// Talent: Smoke Radius
+    "special_bonus_unique_riki_7"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"200"
+                "ad_linked_abilities"	"riki_smoke_screen"
+            }
+        }
+    }
+	// Talent: Smoke CD	
+    "special_bonus_unique_riki_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"5"
+                "ad_linked_abilities"	"riki_blink_strike"
+            }
+        }
+    }
+
+
+	"riki_blink_strike"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"600 700 800 900 1000 1100 1200"
+		"AbilityCharges"	"2"
+		"AbilityCooldown"	"0.1"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"	"80 120 175 255 363 510 710"
+			"slow"{
+				"value"	"1.5"
+				"special_bonus_unique_riki_2"	"+1"
+			}
+			"AbilityChargeRestoreTime"{
+				"value"	"10 9.5 9 8.5 8 7.5 7"
+				"special_bonus_unique_riki_9"	"-4"
+			}
+		}
+	}
+
+	
+	"riki_tricks_of_the_trade"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"400"
+		"AbilityChannelTime"	"2"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityManaCost"	"55 72 88 105 121 138 154"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"agility_pct"
+			{
+				"value" 		"40 55 70 85 95 120 135"
+				"special_bonus_unique_riki_2" "+25"
+			}
+			"attack_count"	"4 5 6 7 8 9 10"
+			"damage_pct"	"75"
+			"dispel"{
+				"value"	"0"
+				"special_bonus_unique_riki_5"	"+1"
+			}
+			"radius"{
+				"value"	"450"
+				"LinkedSpecialBonus"	"special_bonus_unique_riki_4"
+			}
+			"scepter_attacks"{
+				"value"	"8 9 10 11 12 13 14"
+				"RequiresScepter"	"1"
+			}
+			"scepter_cast_range"{
+				"value"	"700"
+				"RequiresScepter"	"1"
+			}
+			"scepter_duration"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	// Talent: Tricks CD
+    "special_bonus_unique_riki_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"riki_tricks_of_the_trade"
+            }
+        }
+    }
+	
+
+	// R: Cloak and Dagger
+	"riki_backstab"{
+		"LinkedAbility"		"riki_poison_dart"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+
+		"AbilityValues"{
+			"backstab_angle"	"105"
+			"damage_multiplier"{
+				"value"	"1.6 1.9 2.2 2.5"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+				"LinkedSpecialBonus"	"special_bonus_unique_riki_1"
+			}
+			"fade_delay"	"4 3 2 1"
+			"bonus_xp_kill"					"400 800 1200 1600"
+			"bonus_xp_assist"				"300"
+		}
+	}
+	// Talent: Backstab Movespeed
+	"special_bonus_unique_riki_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"80"
+				"ad_linked_abilities"			"riki_backstab"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Backstab Damage
+    "special_bonus_unique_riki_1"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"0.5"
+                "ad_linked_abilities"	"riki_backstab"
+            }
+        }
+    }
+
+
+	// D: Poison Dart (Shard)
+	"riki_poison_dart"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+
+		"LinkedAbility"		"riki_backstab"
+		"MaxLevel"	"4"
+		"LevelsBetweenUpgrades"	"6"
+		"RequiredLevel"		"6"
+
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"12 11 10 9"
+		"AbilityManaCost"	"125 175 235 305"
+
+		"AbilityValues"{
+			"damage"	"300 500 900 1500"
+			"debuff_duration"	"4"
+			"duration"	"4"
+			"movement_slow"	"50"
+			"projectile_speed"	"1600"
+			"wake_damage_limit"	"500 1000 2000 4000"
+		}
+	}
+}

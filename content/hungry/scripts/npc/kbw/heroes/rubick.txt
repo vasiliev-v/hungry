@@ -1,0 +1,171 @@
+"DOTAAbilities"{
+	"rubick_telekinesis"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"550 575 600 625 650 675 700"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"lift_duration"	{
+				"value"	"1.2 1.5 1.8 2.1 2.4 2.7 3.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_rubick_7"
+			}
+			"stun_duration"	"1.2 1.5 1.8 2.1 2.4 2.7 3.0"
+			"radius"	"450"
+			"max_land_distance"	{
+				"value"	"500"
+				"LinkedSpecialBonus"	"special_bonus_unique_rubick"
+			}
+			"fall_duration"	"0.3"
+			"shard_max_land_distance_bonus_pct"		{
+				"value"	"100"
+				"RequiresShard"				"1"
+			}
+			"shard_cooldown_reduction_pct"{
+				"value"	"0"
+				"RequiresShard"				"1"
+			}
+			"shard_teammate_throw_delay"{
+				"value"	"0.5"
+				"RequiresShard"				"1"
+			}
+			"AbilityCooldown"	{
+				"value"	"15 14 13 12 11 10 9"
+				"special_bonus_unique_rubick_telekinesis_cooldown"	"-4.5"
+			}
+		}
+	}
+	// Talent: Telekines Distance
+    "special_bonus_unique_rubick"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"rubick_telekinesis"
+            }
+        }
+    }
+	// Talent: Telekines Damage
+    "special_bonus_unique_rubick_8"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"		"2000"
+                "ad_linked_abilities"	"rubick_telekinesis"
+            }
+        }
+    }
+	"special_bonus_unique_rubick_telekinesis_cooldown"{
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+	"rubick_fade_bolt"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"120 156 192 228 264 300 336"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	"150 223 332 494 734 1092 1625"
+			"jump_damage_reduction_pct"	{
+				"value"	"0"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"attack_damage_reduction"	{
+				"value"	"20 30 40 50 60 70 80"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+				"LinkedSpecialBonus"	"special_bonus_unique_rubick_2"
+			}
+			"duration"	"10"
+			"radius"	"440"
+			"jump_delay"	"0.25"
+		}
+	}
+	// Talent: Bolt Base Damage Reudction
+	"special_bonus_unique_rubick_2"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"120"
+				"ad_linked_abilities"			"rubick_fade_bolt"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Bolt Cooldown
+    "special_bonus_unique_rubick_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"rubick_fade_bolt"
+            }
+        }
+    }
+
+
+	"rubick_arcane_supremacy"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"cast_range"	"150 200 250 300 350 400 450"
+			"spell_amp"	"15 20 25 30 35 40 45"
+		}
+	}
+
+
+	"rubick_spell_steal"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1000"
+		"AbilityManaCost"	"25 44 63 81"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"	"99999"
+			"projectile_speed"	"2500"
+			"stolen_debuff_amp"	"0 12 24 36"
+			"cast_range_scepter"	{
+				"value"	"99999"
+				"RequiresScepter"	"1"
+			}
+			"AbilityCooldown"	{
+				"value"	"15 12 9 6"
+				"special_bonus_unique_rubick_spell_steal_cooldown"	"-5.5"
+			}
+		}
+	}
+	// Talent: Stolen Cooldowns
+    "special_bonus_unique_rubick_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"40"
+                "ad_linked_abilities"	"rubick_spell_steal"
+            }
+        }
+    }
+	// Talent: Stolen Damage
+    "special_bonus_unique_rubick_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"70"
+                "ad_linked_abilities"	"rubick_spell_steal"
+            }
+        }
+    }
+	"special_bonus_unique_rubick_spell_steal_cooldown"{
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+}

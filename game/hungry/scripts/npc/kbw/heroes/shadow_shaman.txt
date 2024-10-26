@@ -1,0 +1,123 @@
+"DOTAAbilities"{
+	
+	"shadow_shaman_ether_shock"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"10 9 8 7 6 5 4"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"start_radius"	"200"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"end_radius"	"300"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"end_distance"	"500"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"targets"	"2 3 4 5 6 7 8"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_7"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"210 295 413 580 813 1141 1600"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_3"
+			}
+		}
+	}
+	"shadow_shaman_voodoo"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"13"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed"	"100"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2.2 2.6 3.0 3.4 3.8 4.2 4.6"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_7"
+			}
+		}
+	}
+	"shadow_shaman_shackles"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"400"
+		"AbilityChannelTime"	"2.5 3.0 3.5 4.0 4.5 5.0 5.5"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"140 182 224 266 308 350 392"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"tick_interval"	"0.1"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"total_damage"	"90 150 245 400 666 1095 1800"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_6"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"channel_time"	"2.5 3.0 3.5 4.0 4.5 5.0 5.5"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_2"
+			}
+		}
+	}
+	"shadow_shaman_mass_serpent_ward"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"550"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"200 350 500"
+		"LevelsBetweenUpgrades"	"9"
+		"MaxLevel"	"3"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"ward_count"	"10"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_tooltip"	"150 600 2400"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_4"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"45"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_range"	"500"
+				"RequiresScepter"	"1"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"spawn_radius"	"150"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"hits_to_destroy_tooltip"	"2 4 6"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_1"
+				"LinkedSpecialBonusField"	"value2"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"hits_to_destroy_tooltip_creeps"	"4 8 12"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_1"
+			}
+		}
+	}
+}

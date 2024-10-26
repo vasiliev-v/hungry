@@ -1,0 +1,138 @@
+"DOTAAbilities"{
+	"razor_plasma_field"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"12 10.8 9.6 8.4 7.2 6 4.8"
+		"AbilityManaCost"	"125 163 200 238 275 313 350"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_max"{
+				"value"	"120 180 265 380 545 770 1070"
+				"special_bonus_unique_razor_4"	"+730"
+			}
+			"damage_min"{
+				"value"	"45 70 100 145 205 288 400"
+				"special_bonus_unique_razor_4"	"+730"
+			}
+			"radius"	"700"
+			"second_ring_delay"{
+				"value"	"0"
+				"special_bonus_unique_razor_plasmafield_second_ring"	"+0.8"
+			}
+			"slow_duration"	"1.5"
+			"slow_max"	"25 30 35 40 45 50 55"
+			"slow_min"	"5"
+			"speed"	"636"
+		}
+	}
+
+
+	"razor_static_link"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"550"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"65 85 104 124 143 163 182"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"attack_speed_factor"{
+				"value"	"0"
+				"special_bonus_unique_razor_static_link_aspd"	"+1"
+			}
+			"drain_duration"	"18"
+			"drain_length"{
+				"value"	"5 6 7 8 9 10 11"
+				"special_bonus_unique_razor_3"	"+6"
+			}
+			"drain_range_buffer"	"250"
+			"drain_rate"{
+				"value"	"15 23 36 55 84 130 200"
+				"special_bonus_unique_razor"	"+175"
+			}
+			"radius"	"200"
+			"speed"	"900"
+			"vision_duration"	"3.34"
+			"vision_radius"	"800"
+		}
+	}
+	// Talent: Static Link Charges
+	"special_bonus_unique_razor_6"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"2"
+				"ad_linked_abilities"	"razor_eye_of_the_storm"
+			}
+		}
+	}
+
+
+	"razor_unstable_current"{
+		"HasShardUpgrade"	"1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"self_movement_speed_pct"	{
+				"value"	"15 20 25 30 35 40 45"
+				"LinkedSpecialBonus"	"special_bonus_unique_razor_5"
+			}
+			"shard_pct_chance"{
+				"value"	"25"
+				"RequiresShard"	"1"
+			}
+			"shard_target_count"{
+				"value"	"3"
+				"RequiresShard"	"1"
+			}
+			"shard_damage"	{
+				"value"	"80 145 230 335 460 605 770"
+				"RequiresShard"	"1"
+			}
+			"shard_move_slow_pct"{
+				"value"	"50"
+				"RequiresShard"	"1"
+			}
+			"shard_slow_duration"{
+				"value"	"1.5"
+				"RequiresShard"	"1"
+			}
+			"shard_search_radius"{
+				"value"	"900"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+
+
+	"razor_eye_of_the_storm"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"strike_interval"	{
+				"value" "0.75 0.6 0.45 0.3"
+				"LinkedSpecialBonus"	"special_bonus_unique_razor_2"
+			}
+			"radius"	"500"
+			"duration"	"30"
+			"armor_reduction"	"1"
+			"damage"	"150 300 550 900"
+			// custom
+			"armor_cap"		"20 40 60 80"
+		}
+	}
+	// Talent: Eye Strike Interval
+	"special_bonus_unique_razor_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"-0.1"
+				"ad_linked_abilities"	"razor_eye_of_the_storm"
+			}
+		}
+	}
+}

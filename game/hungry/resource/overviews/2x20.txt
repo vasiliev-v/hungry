@@ -1,0 +1,8 @@
+2x20
+{
+	material materials/overviews/2x20.vmat
+	pos_x -18732
+	pos_y 18984
+	scale 36.445
+}
+

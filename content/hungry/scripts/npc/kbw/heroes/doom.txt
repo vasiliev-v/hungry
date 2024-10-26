@@ -1,0 +1,139 @@
+"DOTAAbilities"{
+	"doom_bringer_devour"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"300"
+		"AbilityCooldown"	"25"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"armor"	"6 8 10 12 15 18 21"
+			"bonus_gold"	"100 150 225 350 475 666 950"
+			"creep_level"	"30"
+			"hero_ability_steal_time"	"99999"
+			"magic_resist"{
+				"value"	"0"
+				"special_bonus_unique_doom_3"	"+25"
+			}
+			// custom (implemented in special_fixes)
+			"duration"		"60"
+		}
+	}
+
+
+	"doom_bringer_scorched_earth"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"24"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"600"
+			"duration"	"12.0 12.5 13.0 13.5 14.0 14.5 15.0"
+			"bonus_movement_speed_pct"	{
+				"value"	"10 11 13 16 20 25 31"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_6"
+			}
+			"damage_per_second"	{
+				"value"	"40 65 100 155 230 350 510"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_4"
+			}
+		}
+	}
+	// Talent: Earth Movespeed
+    "special_bonus_unique_doom_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"29"
+                "ad_linked_abilities"	"doom_bringer_scorched_earth"
+            }
+        }
+    }
+	// Talent: Earth Damage
+    "special_bonus_unique_doom_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"510"
+                "ad_linked_abilities"	"doom_bringer_scorched_earth"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+	"doom_bringer_infernal_blade"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"200"
+		"AbilityCooldown"	"4"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"burn_damage"	"15 25 40 60 90 130 190"
+			"burn_damage_pct"	{
+				"value"	"1.0 1.25 1.5 1.75 2 2.25 2.5"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_1"
+			}
+			"burn_duration"	"6"
+			"ministun_duration"	"0.6"
+			"shard_ministun_duration"		{
+				"value"	"1.2"
+				"RequiresShard"					"1"
+			}
+			"shard_bonus_stun_duration"		{
+				"value"	"1.8"
+				"RequiresShard"					"1"
+			}
+			"shard_bonus_damage"			{
+				"value"	"333"
+				"RequiresShard"					"1"
+			}
+		}
+	}
+	// Talent: Blade Damage
+    "special_bonus_unique_doom_1"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2"
+                "ad_linked_abilities"	"doom_bringer_infernal_blade"
+            }
+        }
+    }
+
+	
+	"doom_bringer_doom"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"550"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"damage"{
+				"value"	"120 220 360 540"
+				"special_bonus_unique_doom_5"	"+237"
+			}
+			"deniable_pct"	"25"
+			"does_break"{
+				"value"	"0"
+				"special_bonus_unique_doom_11"	"+1"
+			}
+			"duration"{
+				"value"	"7"
+				"special_bonus_unique_doom_7"	"+0"
+			}
+			"scepter_aura_radius"{
+				"value"	"0"
+				"special_bonus_scepter"			"+400"
+			}
+			"AbilityCooldown"{
+				"value"	"60"
+				"special_bonus_unique_doom_10"	"-18"
+			}
+		}
+	}
+}

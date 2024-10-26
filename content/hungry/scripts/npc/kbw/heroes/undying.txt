@@ -1,0 +1,157 @@
+"DOTAAbilities"{
+	"undying_decay"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"650"
+		"AbilityCooldown"	"9 8 7 6 5 4 3"
+		"AbilityDuration"	"45"
+		"AbilityManaCost"	"85 128 172 215 258 302 345"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"decay_damage"	{
+				"value"	"30 49 79 128 209 339 550"
+				"LinkedSpecialBonus"	"special_bonus_unique_undying_8"
+			}
+			"str_steal"	"4 6 8 10 12 14 16"
+			"decay_duration"	{
+				"value" 	"45"
+				"LinkedSpecialBonus"	"special_bonus_unique_undying_4"
+			}
+			"radius"	"325"
+			"str_scale_up"	"2"
+			"str_steal_scepter"	{
+				"value"	"10 15 20 25 30 35 40"
+				"RequiresScepter"	"1"
+			}
+			"creep_damage_multiplier"	"2"
+		}
+	}
+	// Talent: Decay Cooldown
+	"special_bonus_unique_undying_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"2"
+				"ad_linked_abilities"	"undying_decay"
+			}
+		}
+	}
+	// Talent: Decay Duration
+    "special_bonus_unique_undying_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"25"
+                "ad_linked_abilities"	"undying_decay"
+            }
+        }
+    }
+
+
+	"undying_soul_rip"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"750"
+		"AbilityCooldown"	"7.5 7 6.5 6 5.5 5 4.5"
+		"AbilityManaCost"	"100 148 197 245 293 342 390"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_per_unit"	{
+				"value"		"33 51 78 119 183 280 430"
+				"LinkedSpecialBonus"	"special_bonus_unique_undying_6"
+			}
+			"max_units"	"12 15 20 26 33 43 55"
+			"radius"	"1300"
+			"tombstone_heal"	"6 9 14 22 34 52 80"
+		}
+	}
+
+
+	"undying_tombstone"{
+		"AbilityCastPoint"	"0.45"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"40 37 34 31 28 25 22"
+		"AbilityManaCost"	"120 175 230 285 340 395 450"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"tombstone_health"	"12 16 22 29 39 52 70"
+			"hits_to_destroy_tooltip"	{
+				"value"	"6 8 11 15 20 26 33"
+				"LinkedSpecialBonus"	"special_bonus_unique_undying_5"
+			}
+			"duration"	"30"
+			"radius"	"1200"
+			"health_threshold_pct_tooltip"	"40"
+			"zombie_interval"	"2.5"
+			// custom
+			"zombie_damage"		"35 58 95 157 258 425 700"
+		}
+	}	
+	"undying_tombstone_zombie_deathstrike"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"slow"	"-7"
+			"health_threshold_pct"	"40"
+			"duration"	"2.5"
+			"bonus_move_speed"	"100"
+			"bonus_attack_speed"	"75 99 131 173 229 303 400"
+			"radius"	"1200"
+		}
+	}
+	// Talent: Tombstone Health
+    "special_bonus_unique_undying_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"24"
+                "ad_linked_abilities"	"undying_tombstone"
+            }
+        }
+    }
+	// Talent: Zombie Damage
+    "special_bonus_unique_undying"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"800"
+                "ad_linked_abilities"	"undying_tombstone"
+            }
+        }
+    }
+	"special_bonus_unique_undying_tombstone_on_death"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"	{
+			"count"		"3"
+		}
+		"AddModifiers"{
+			"m_special_bonus_unique_undying_tombstone_on_death"{
+				"Path"		"kbw/abilities/heroes/undying/m_special_bonus_unique_undying_tombstone_on_death"
+			}
+		}
+	}
+
+
+	"undying_flesh_golem"{
+		"AbilityCooldown"	"85"
+		"AbilityManaCost"	"100 217 333 450"
+		"FightRecapLevel"	"2"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"slow"	"40 45 50 55"
+			"damage_amp"	{
+				"value"	"25 30 35 40"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"slow_duration"	"6"
+			"str_percentage"	"40 50 60 70"
+			"duration"	"40"
+			"movement_bonus"	"40 80 120 160"
+			"shard_cooldown_reduction"		"20"
+		}
+	}
+}

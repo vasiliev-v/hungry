@@ -1,0 +1,186 @@
+"DOTAAbilities"{
+	// Dispose
+	"marci_grapple"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"175"
+		"AbilityCooldown"	"10 9 8 7 6 5 4"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"air_duration"	"0.5"
+			"air_height"	"150"
+			"debuff_duration"	"3"
+			"impact_damage"{
+				"value"	"100 155 240 375 580 900 1400"
+				"special_bonus_unique_marci_grapple_damage"	"+1500"
+			}
+			"landing_radius"	"275"
+			"movement_slow_pct"	"20 30 40 50 60 70 80"
+			"pull_angle"	"230"
+			"pull_offset"	"75"
+			"throw_distance_behind"	
+			{
+				"value"		"350"
+				"special_bonus_unique_marci_dispose_range"	"+350"
+			}
+		}
+	}
+
+	// Rebound
+	"marci_companion_run"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"800 850 900 950 1000 1050 1100"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"AbilityCooldown"{
+				"value"		"15 14 13 12 11 10 9"
+				"special_bonus_unique_marci_lunge_cooldown"	"-3"
+			}
+			"debuff_duration"{
+				"value"			"1.0 1.2 1.4 1.6 1.8 2.0 2.2"
+				"special_bonus_unique_marci_grapple_stun_duration"	"+0.8"
+			}
+			"ally_buff_duration"	"5"
+			"ally_movespeed_pct"	"50"
+			"impact_damage"{
+				"value"	"180 255 365 520 740 1050 1500"
+				"LinkedSpecialBonus"	"special_bonus_unique_marci_lunge_damage"
+			}
+			"impact_position_offset"	"64"
+			"landing_radius"	"325"
+			"max_acceleration"	"6000"
+			"max_jump_distance"{
+				"value"	"800 850 900 950 1000 1050 1100"
+				"LinkedSpecialBonus"	"special_bonus_unique_marci_lunge_range"
+			}
+			"max_lob_travel_time"	"0.2"
+			"min_acceleration"	"6000"
+			"min_height_above_highest"	"200"
+			"min_height_above_lowest"	"250"
+			"min_jump_distance"	"0"
+			"min_lob_travel_time"	"0.1"
+			"move_speed"	"2000"
+			"movement_slow_pct"	"30 40 50 60 70 80 90"
+			"target_abort_distance"	"99999"
+			"vector_preview_radius"	"100"
+		}
+	}
+	// Talent: Rebound Range
+	"special_bonus_unique_marci_lunge_range"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"750"
+				"ad_linked_abilities"			"marci_companion_run"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+	// Sidekick
+	"marci_guardian"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"30 39 48 57 66 75 84"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"buff_duration"	"6"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"lifesteal_pct"	"35 40 45 50 55 60 65"
+				"LinkedSpecialBonus"	"special_bonus_unique_marci_guardian_lifesteal"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"30 50 85 145 245 415 700"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attack_range"	"0"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"nearest_ally_search_range"	"700"
+			}
+		}
+	}
+	// Talent: Sidekick Lifesteal
+	"special_bonus_unique_marci_guardian_lifesteal"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"55"
+				"ad_linked_abilities"			"marci_guardian"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Sidekick Spell Immunity
+	"special_bonus_unique_marci_guardian_magic_immune"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_FLOAT"
+				"value"				"2"
+				"ad_linked_abilities"			"marci_guardian"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"marci_unleash"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCooldown"	"64 56 48 40"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"charges_per_flurry"	"4 6 8 10"
+			"duration"	"18"
+			"flurry_bonus_attack_speed"	"700 1100 1500 1900"
+			"max_time_window_per_hit"	"1"
+			"pulse_attack_slow_pct"	"120 240 480 960"
+			"pulse_damage"	"200 430 930 2000"
+			"pulse_debuff_duration"	"2"
+			"pulse_move_slow_pct"	"50"
+			"pulse_radius"	"800"
+			"recovery_fixed_attack_rate"	"2"
+			"shard_push_length"	"300"
+			"time_between_flurries"	"1.2 1.0 0.8 0.6"
+			"bonus_movespeed"	{
+				"value"		"25"
+				"special_bonus_unique_marci_unleash_speed"	"+40"
+			}
+			"scepter_cooldown_reduction"{
+				"value"					"20"
+				"RequiresScepter"		"1"
+			}
+			"dispel"	{
+				"value"			"0"
+				"special_bonus_scepter"	"+1"
+			}
+			"pulse_silence_duration"
+			{
+				"value"			"0"
+				"special_bonus_scepter"	"+1.5"
+			}
+		}
+	}
+	// Talent: Unleash Silence
+	"special_bonus_unique_marci_unleash_silence"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_FLOAT"
+				"value"				"1.5" // duration
+				"ad_linked_abilities"			"marci_unleash"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

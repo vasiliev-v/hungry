@@ -1,0 +1,140 @@
+"DOTAAbilities"{
+	"chen_penitence"        {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "800"
+		"AbilityCooldown"   "14 13 12 11 10 9 8"
+		"AbilityManaCost"   "70 91 112 133 154 175 196"
+		"AbilitySpecial"        {
+			"01"        {
+				"var_type"  "FIELD_FLOAT"
+				"duration"  "6"
+			}
+			"02"        {
+				"var_type"  "FIELD_INTEGER"
+				"speed" "1400"
+			}
+			"03"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_movement_speed"  "-18 -24 -30 -46 -52 -58 -64"
+				"LinkedSpecialBonus"    "special_bonus_unique_chen_8"
+				"LinkedSpecialBonusOperation"   "SPECIAL_BONUS_SUBTRACT"
+			}
+			"04"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_attack_speed"    "45 69 107 164 253 390 600"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Penitence Slow
+	"special_bonus_unique_chen_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"56"
+				"ad_linked_abilities"			"chen_penitence"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"chen_holy_persuasion"      {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "600"
+		"AbilityCooldown"   "5"
+		"AbilityManaCost"   "90 117 144 171 198 225 252"
+		"AbilityValues"		{
+			"max_units"				"4"
+			"level_req"				"30"
+			"health_min"	{
+				"value"						"1050 1529 2226 3240 4718 6869 10000"
+				"special_bonus_unique_chen_4"	"+10000"
+			}
+			"movement_speed_bonus"	"15 21 30 43 62 88 125"
+			"damage_bonus"	{
+				"value"					"30 53 93 164 290 511 900"
+				"special_bonus_unique_chen_5"		"+1337"
+			}
+			"teleport_delay"	{
+				"value"		"0.01"
+				"special_bonus_unique_chen_3" "0"
+			}
+			"is_martyr"{
+				"value"			"0"
+				"special_bonus_scepter"			"+1"
+			}
+		}
+		"MaxLevel"  "7"
+		"LevelsBetweenUpgrades" "4"
+	}
+
+	"chen_divine_favor"     {
+		"AbilitySpecial"        {
+			"01"            {
+				"var_type"              "FIELD_INTEGER"
+				"armor"                 "3 5 8 12 17 23 30"
+			}
+			"02"        {
+				"var_type"  "FIELD_FLOAT"
+				"heal_rate" "2 4 8 16 32 64 128"
+			}
+			"03"        {
+				"var_type"  "FIELD_INTEGER"
+				"aura_radius"   "1200"
+			}
+			"04"        {
+				"var_type"  "FIELD_FLOAT"
+				"teleport_delay"    "0"
+			}
+		}
+		"MaxLevel"  "7"
+		"LevelsBetweenUpgrades" "3"
+	}
+
+
+	"chen_hand_of_god"      {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCooldown"   "40"
+		"AbilityManaCost"   "200 350 500 650"
+		"AbilityValues"     {
+			"heal_amount" {
+				"value"                         "500 909 1651 3000"
+				"special_bonus_unique_chen_2"   "+3000"
+			}
+			"hot_duration"  "10"
+			"heal_per_second" {
+				"value"                         "40 100 190 310"
+				"special_bonus_unique_chen_2"   "+300"
+			}
+			"ancient_creeps_scepter"            {
+				"value" "1 2 3 4"
+				"RequiresShard"         "1"
+			}
+			"does_purge"		{
+				"value"				"0"
+				"special_bonus_unique_chen_12"		"+1"
+			}
+		}
+		"MaxLevel"  "4"
+		"LevelsBetweenUpgrades" "6"
+	}
+	// Talent: Hand of God Cooldown
+	"special_bonus_unique_chen_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"20"
+				"ad_linked_abilities"	"chen_hand_of_god"
+			}
+		}
+	}
+
+	
+	"chen_martyrdom"{	// hardfixed in special_fixes
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityCastRange"				"99999"
+		"AbilityManaCost"				"0"
+	}
+}

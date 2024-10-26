@@ -1,0 +1,2305 @@
+
+
+"DOTAAbilities" {
+	"special_bonus_corruption_25"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"25"
+			}
+		}
+	}
+
+
+    "special_bonus_unique_alchemist"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"6"
+                "ad_linked_abilities"	"alchemist_unstable_concoction"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_alchemist_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"300"
+                "ad_linked_abilities"	"alchemist_chemical_rage"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_alchemist_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"50"
+                "ad_linked_abilities"	"alchemist_chemical_rage"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+	"special_bonus_unique_ancient_apparition_1"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"485"
+				"ad_linked_abilities"			"ancient_apparition_cold_feet"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+    "special_bonus_unique_ancient_apparition_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"350"
+                "ad_linked_abilities"	"ancient_apparition_chilling_touch"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ancient_apparition_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"ancient_apparition_ice_vortex"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ancient_apparition_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-20"
+                "ad_linked_abilities"	"ancient_apparition_ice_vortex"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ancient_apparition_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"5"
+                "ad_linked_abilities"	"ancient_apparition_ice_blast"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ancient_apparition_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"650"
+                "ad_linked_abilities"	"ancient_apparition_cold_feet"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ancient_apparition_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"380"
+                "ad_linked_abilities"	"ancient_apparition_chilling_touch"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_antimage"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.5"
+                "ad_linked_abilities"	"antimage_blink"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_antimage_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"30"
+                "ad_linked_abilities"	"antimage_mana_void"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_antimage_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"325"
+                "ad_linked_abilities"	"antimage_blink"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_antimage_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"20"
+                "ad_linked_abilities"	"antimage_counterspell"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_antimage_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "outgoing_damage"	"-480"
+                "ad_linked_abilities"	"antimage_blink"
+            }
+            "02"		{
+                "var_type"	"FIELD_INTEGER"
+                "incoming_damage"	"1500"
+                "ad_linked_abilities"	"antimage_blink"
+            }
+            "03"		{
+                "var_type"	"FIELD_INTEGER"
+                "illusion_duration"	"60"
+                "ad_linked_abilities"	"antimage_blink"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_antimage_6"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"0.25"
+				"ad_linked_abilities"			"antimage_mana_void"
+			}
+		}
+	}
+	"special_bonus_unique_antimage_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"1.6"
+				"ad_linked_abilities"			"antimage_mana_break"
+			}
+		}
+	}
+	"special_bonus_unique_antimage_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"1.2"
+				"ad_linked_abilities"			"antimage_mana_void"
+			}
+		}
+	}
+
+
+    "special_bonus_unique_bloodseeker_rupture_charges"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"                    "905"                                                       // unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "BaseClass"                     "special_bonus_base"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "value"
+            {
+                "value"     "2"
+                "ad_linked_abilities"           "bloodseeker_rupture"               // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_bloodseeker"      {
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityValues"         {
+            "value"         {
+                "value" "6"
+                "ad_linked_abilities"           "bloodseeker_blood_bath"                // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_bloodseeker_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"300"
+                "ad_linked_abilities"	"bloodseeker_blood_bath"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_bloodseeker_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1200"
+                "ad_linked_abilities"	"bloodseeker_rupture"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_bloodseeker_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"16"
+				"ad_linked_abilities"	"bloodseeker_thirst"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_bloodseeker_5"	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"					"90"
+				"ad_linked_abilities"			"bloodseeker_bloodrage"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_bloodseeker_6"	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"					"15"
+				"ad_linked_abilities"			"bloodseeker_bloodrage"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_brewmaster"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"8400"
+                "ad_linked_abilities"	"brewmaster_primal_split"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_brewmaster_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"50"
+                "ad_linked_abilities"	"brewmaster_primal_split"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_brewmaster_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"brewmaster_thunder_clap"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_brewmaster_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"140"
+                "ad_linked_abilities"	"brewmaster_drunken_brawler"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_centaur_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"0.6"
+                "ad_linked_abilities"	"centaur_hoof_stomp"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_centaur_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"100"
+                "ad_linked_abilities"	"centaur_double_edge"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_centaur_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"12"
+                "ad_linked_abilities"	"centaur_stampede"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+
+    "special_bonus_unique_dragon_knight"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"		"60"
+                "ad_linked_abilities"	"dragon_knight_dragon_blood"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_dragon_knight_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.0"
+                "ad_linked_abilities"	"dragon_knight_dragon_tail"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_dragon_knight_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-30"
+                "ad_linked_abilities"	"dragon_knight_breathe_fire"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_dragon_knight_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"400"
+				"ad_linked_abilities"		"dragon_knight_elder_dragon_form"
+			}
+		}
+	}
+	"special_bonus_unique_dragon_knight_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"450"
+				"ad_linked_abilities"			"dragon_knight_dragon_tail"
+			}
+		}
+	}
+
+    "special_bonus_unique_drow_ranger_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"190"
+                "ad_linked_abilities"	"drow_ranger_multishot"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_drow_ranger_2"	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"215"
+				"ad_linked_abilities"			"drow_ranger_frost_arrows"
+			}
+		}
+	}
+    "special_bonus_unique_drow_ranger_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"10"
+                "ad_linked_abilities"	"drow_ranger_marksmanship"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_drow_ranger_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"450"
+                "ad_linked_abilities"	"drow_ranger_wave_of_silence"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_drow_ranger_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"100"
+                "ad_linked_abilities"	"drow_ranger_wave_of_silence"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_drow_ranger_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"4"
+                "ad_linked_abilities"	"drow_ranger_multishot"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_drow_ranger_7"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"3"
+				"ad_linked_abilities"			"drow_ranger_wave_of_silence"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+"special_bonus_unique_drow_ranger_8"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"739"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"2"
+				"ad_linked_abilities"			"drow_ranger_multishot"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_earthshaker"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.5"
+                "ad_linked_abilities"	"earthshaker_enchant_totem"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_earthshaker_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"250"
+                "ad_linked_abilities"	"earthshaker_echo_slam"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_earthshaker_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"700"
+                "ad_linked_abilities"	"earthshaker_fissure"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_earthshaker_4"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"900"
+				"ad_linked_abilities"			"earthshaker_fissure"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_earthshaker_5"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"200"
+				"ad_linked_abilities"			"earthshaker_aftershock"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_earthshaker_6"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"800"
+				"ad_linked_abilities"			"earthshaker_aftershock"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_ember_spirit_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3600"
+                "ad_linked_abilities"	"ember_spirit_flame_guard"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ember_spirit_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.2"
+                "ad_linked_abilities"	"ember_spirit_searing_chains"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ember_spirit_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"475"
+                "ad_linked_abilities"	"ember_spirit_flame_guard"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ember_spirit_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"ember_spirit_sleight_of_fist"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ember_spirit_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"8"
+                "ad_linked_abilities"	"ember_spirit_fire_remnant"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_ember_spirit_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3000"
+                "ad_linked_abilities"	"ember_spirit_sleight_of_fist"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_ember_spirit_7"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"4"
+				"ad_linked_abilities"			"ember_spirit_searing_chains"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_enchantress_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"6"
+                "ad_linked_abilities"	"enchantress_enchant"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_enchantress_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"6"
+                "ad_linked_abilities"	"enchantress_natures_attendants"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_enchantress_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-390"
+                "ad_linked_abilities"	"enchantress_untouchable"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_enchantress_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"70"
+                "ad_linked_abilities"	"enchantress_natures_attendants"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+
+    "special_bonus_unique_grimstroke_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"250"
+                "ad_linked_abilities"	"grimstroke_spirit_walk"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_grimstroke_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"80"
+                "ad_linked_abilities"	"grimstroke_dark_artistry"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_grimstroke_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1600"
+                "ad_linked_abilities"	"grimstroke_dark_artistry"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_grimstroke_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"6"
+                "ad_linked_abilities"	"grimstroke_ink_creature"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_grimstroke_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"240"
+                "ad_linked_abilities"	"grimstroke_spirit_walk"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_grimstroke_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"36"
+                "ad_linked_abilities"	"grimstroke_spirit_walk"
+            }
+        }
+    }
+	"special_bonus_unique_grimstroke_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"5"
+				"ad_linked_abilities"			"grimstroke_spirit_walk"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_grimstroke_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"300"
+				"ad_linked_abilities"			"grimstroke_ink_creature"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_huskar_2"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "60"
+                "ad_linked_abilities"           "huskar_burning_spear"              // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_huskar_3"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "1"
+                "ad_linked_abilities"           "huskar_inner_fire"             // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_huskar_4"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "3"
+                "ad_linked_abilities"           "huskar_life_break"             // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_huskar_5"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "0"
+                "ad_linked_abilities"           "huskar_burning_spear"              // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_huskar_6"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "40"
+                "ad_linked_abilities"           "huskar_berserkers_blood"               // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+    "special_bonus_unique_huskar_7"     {
+        "AbilitySpecial"    {
+            "01"    {
+                "var_type"                  "FIELD_FLOAT"
+                "value"             "8"
+                "ad_linked_abilities"           "huskar_life_break"             // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+
+
+    "special_bonus_unique_keeper_of_the_light_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"7"
+                "ad_linked_abilities"	"keeper_of_the_light_blinding_light"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_keeper_of_the_light_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"4"
+                "ad_linked_abilities"	"keeper_of_the_light_chakra_magic"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_keeper_of_the_light_8"{
+		"AbilitySpecial"{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"50"
+				"ad_linked_abilities"			"keeper_of_the_light_blinding_light"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_keeper_of_the_light_10"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"1.4"
+				"ad_linked_abilities"			"keeper_of_the_light_blinding_light"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_lich_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"450"
+                "ad_linked_abilities"	"lich_frost_shield"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lich_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"lich_frost_nova"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lich_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"800"
+                "ad_linked_abilities"	"lich_frost_nova"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lich_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1750"
+                "ad_linked_abilities"	"lich_chain_frost"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_lifestealer_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.2000000476837"
+                "ad_linked_abilities"	"life_stealer_feast"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lifestealer_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"life_stealer_open_wounds"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_lone_druid_10"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"-0.89999997615814"
+                "ad_linked_abilities"	"lone_druid_spirit_bear"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_11"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"75"
+                "ad_linked_abilities"	"lone_druid_spirit_bear"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"32"
+                "ad_linked_abilities"	"lone_druid_spirit_bear"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"40"
+                "ad_linked_abilities"	"lone_druid_savage_roar"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9000"
+                "ad_linked_abilities"	"lone_druid_true_form"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_8"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"192"
+                "ad_linked_abilities"	"lone_druid_true_form"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_lone_druid_9"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"0"
+                "linked_ad_abilities"	"lone_druid_spirit_bear lone_druid_true_form"
+                "ad_linked_abilities"	"multi_linked_or_ability"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_magnus_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"25"
+                "ad_linked_abilities"	"magnataur_empower"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_magnus_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"magnataur_skewer"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_magnus_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.25"
+                "ad_linked_abilities"	"magnataur_reverse_polarity"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_magnus_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.1"
+                "ad_linked_abilities"	"magnataur_shockwave"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_magnus_7"
+	{
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"5"
+				"ad_linked_abilities"			"magnataur_skewer"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_medusa"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2"
+                "ad_linked_abilities"	"medusa_stone_gaze"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_medusa_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"32"
+                "ad_linked_abilities"	"medusa_mystic_snake"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_medusa_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9"
+                "ad_linked_abilities"	"medusa_split_shot"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_medusa_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"medusa_mystic_snake"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_meepo"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"36"
+                "ad_linked_abilities"	"meepo_poof"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_meepo_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"120"
+                "ad_linked_abilities"	"meepo_poof"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_meepo_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"18"
+                "ad_linked_abilities"	"meepo_earthbind"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_mirana_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2"
+                "ad_linked_abilities"	"mirana_arrow"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_mirana_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3.5"
+                "ad_linked_abilities"	"mirana_arrow"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_mirana_5"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"100"
+				"ad_linked_abilities"			"mirana_invis"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_mirana_7"	{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"1000"
+				"ad_linked_abilities"			"mirana_starfall"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+
+
+    "special_bonus_unique_necrophos"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2.0"
+                "ad_linked_abilities"	"necrolyte_death_pulse"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_necrophos_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1"
+                "ad_linked_abilities"	"necrolyte_heartstopper_aura"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_necrophos_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"20"
+                "ad_linked_abilities"	"necrolyte_sadist"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_necrophos_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1200"
+                "ad_linked_abilities"	"necrolyte_death_pulse"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_necrophos_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"40"
+                "ad_linked_abilities"	"necrolyte_heartstopper_aura"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_necrophos_6"      {
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"         {
+            "01"        {
+                "var_type"                  "FIELD_INTEGER"
+                "value"             "300"
+                "ad_linked_abilities"           "necrolyte_reapers_scythe"              // this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+            }
+        }
+    }
+
+
+
+    "special_bonus_unique_nyx"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"60"
+                "ad_linked_abilities"	"nyx_assassin_spiked_carapace"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_nyx_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1500"
+                "ad_linked_abilities"	"nyx_assassin_impale"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_nyx_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9"
+                "ad_linked_abilities"	"nyx_assassin_vendetta"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_nyx_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"0.3"
+                "ad_linked_abilities"	"nyx_assassin_impale"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_nyx_6"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"0.7"
+				"ad_linked_abilities"			"nyx_assassin_spiked_carapace"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	
+
+    "special_bonus_unique_outworld_devourer_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"0.3"
+                "ad_linked_abilities"	"obsidian_destroyer_sanity_eclipse"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+
+
+	"special_bonus_unique_phantom_lancer_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"6850"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"2"
+				"ad_linked_abilities"			"phantom_lancer_doppelwalk"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_phoenix_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"12"
+                "ad_linked_abilities"	"phoenix_supernova"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_phoenix_2"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"1.5"
+				"ad_linked_abilities"			"phoenix_supernova"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+    "special_bonus_unique_phoenix_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"phoenix_fire_spirits"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_phoenix_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1300"
+                "ad_linked_abilities"	"phoenix_icarus_dive"
+            }
+            "02"		{
+                "var_type"	"FIELD_FLOAT"
+                "value2"	"1"
+                "ad_linked_abilities"	"phoenix_icarus_dive"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_phoenix_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"phoenix_sun_ray"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_phoenix_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"36"
+                "ad_linked_abilities"	"phoenix_icarus_dive"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_phoenix_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"0"
+                "linked_ad_abilities"	"phoenix_sun_ray phoenix_supernova"
+                "ad_linked_abilities"	"multi_linked_ability"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_pudge_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2.5"
+                "ad_linked_abilities"	"pudge_flesh_heap"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pudge_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"90"
+                "ad_linked_abilities"	"pudge_rot"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pudge_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.8"
+                "ad_linked_abilities"	"pudge_dismember"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pudge_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-20"
+                "ad_linked_abilities"	"pudge_rot"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pudge_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"4"
+                "ad_linked_abilities"	"pudge_meat_hook"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pudge_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1"
+                "ad_linked_abilities"	"pudge_dismember"
+            }
+            "02"		{
+                "var_type"	"FIELD_INTEGER"
+                "value2"	"2"
+                "ad_linked_abilities"	"pudge_dismember"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pugna_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"925"
+                "ad_linked_abilities"	"pugna_nether_blast"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pugna_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1"
+                "ad_linked_abilities"	"pugna_nether_ward"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pugna_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"pugna_nether_blast"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pugna_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.5"
+                "ad_linked_abilities"	"pugna_decrepify"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_pugna_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"12"
+                "ad_linked_abilities"	"pugna_nether_ward"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_shadow_shaman_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"12"
+                "ad_linked_abilities"	"shadow_shaman_mass_serpent_ward"
+            }
+			"02"{
+				"var_type"					"FIELD_INTEGER"
+				"value2"				"6"
+				"ad_linked_abilities"			"shadow_shaman_mass_serpent_ward"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_shadow_shaman_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2"
+                "ad_linked_abilities"	"shadow_shaman_shackles"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_shadow_shaman_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1530"
+                "ad_linked_abilities"	"shadow_shaman_ether_shock"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_shadow_shaman_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2100"
+                "ad_linked_abilities"	"shadow_shaman_mass_serpent_ward"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_shadow_shaman_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"shadow_shaman_voodoo"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_shadow_shaman_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1000"
+                "ad_linked_abilities"	"shadow_shaman_shackles"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_shadow_shaman_8"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"250"
+				"ad_linked_abilities"			"shadow_shaman_mass_serpent_ward"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_skywrath"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"7"
+                "ad_linked_abilities"	"skywrath_mage_ancient_seal"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_skywrath_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1"
+                "ad_linked_abilities"	"skywrath_mage_arcane_bolt"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_skywrath_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-30"
+                "ad_linked_abilities"	"skywrath_mage_ancient_seal"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_skywrath_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"4000"
+                "ad_linked_abilities"	"skywrath_mage_mystic_flare"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_skywrath_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9"
+                "ad_linked_abilities"	"skywrath_mage_arcane_bolt"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+
+    "special_bonus_unique_slark"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1"
+                "ad_linked_abilities"	"slark_pounce"
+            }
+        }
+    }
+    "special_bonus_unique_slark_2"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1500"
+                "ad_linked_abilities"	"slark_dark_pact"
+            }
+        }
+    }
+    "special_bonus_unique_slark_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1"
+                "ad_linked_abilities"	"slark_shadow_dance"
+            }
+        }
+    }
+    "special_bonus_unique_slark_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"65"
+                "ad_linked_abilities"	"slark_essence_shift"
+            }
+        }
+    }
+	"special_bonus_unique_slark_6"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"2"
+				"ad_linked_abilities"			"slark_dark_pact"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_slark_7"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"500"
+				"ad_linked_abilities"			"slark_shadow_dance"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+    "special_bonus_unique_snapfire_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"8"
+                "ad_linked_abilities"	"snapfire_mortimer_kisses"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_snapfire_2"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"			"FIELD_FLOAT"
+				"value"				"1.5"
+				"ad_linked_abilities"			"snapfire_scatterblast"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+    "special_bonus_unique_snapfire_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"70"
+                "ad_linked_abilities"	"snapfire_mortimer_kisses"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_snapfire_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1"
+                "ad_linked_abilities"	"snapfire_lil_shredder"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_snapfire_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1550"
+                "ad_linked_abilities"	"snapfire_scatterblast"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_snapfire_8"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"3"
+                "ad_linked_abilities"	"snapfire_lil_shredder"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_sniper_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"200"
+                "ad_linked_abilities"	"sniper_shrapnel"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_sniper_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"5"
+                "ad_linked_abilities"	"sniper_shrapnel"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_sniper_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"-20"
+                "ad_linked_abilities"	"sniper_shrapnel"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+    "special_bonus_unique_sven"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"4"
+                "ad_linked_abilities"	"sven_storm_bolt"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_sven_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"160"
+                "ad_linked_abilities"	"sven_gods_strength"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_sven_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"0"
+                "ad_linked_abilities"	"sven_storm_bolt"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_sven_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"0.75"
+                "ad_linked_abilities"	"sven_storm_bolt"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_sven_5"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"6"
+				"ad_linked_abilities"			"sven_warcry"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_sven_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"50"
+				"ad_linked_abilities"			"sven_warcry"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_sven_8"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"20"
+				"ad_linked_abilities"			"sven_great_cleave"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+
+    "special_bonus_unique_tiny"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"320"
+                "ad_linked_abilities"	"tiny_avalanche"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_tiny_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"7"
+                "ad_linked_abilities"	"tiny_avalanche"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_tiny_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"0"
+                "ad_linked_abilities"	"tiny_toss"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_tiny_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"12"
+                "ad_linked_abilities"	"tiny_tree_grab"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+	"special_bonus_unique_vengeful_spirit_2"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"50"
+				"ad_linked_abilities"			"vengefulspirit_command_aura"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+    "special_bonus_unique_vengeful_spirit_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"0"
+                "ad_linked_abilities"	"vengefulspirit_magic_missile"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+    "special_bonus_unique_vengeful_spirit_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"	"vengefulspirit_magic_missile"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_vengeful_spirit_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9"
+                "ad_linked_abilities"	"vengefulspirit_command_aura"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_vengeful_spirit_8"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"40"
+                "ad_linked_abilities"	"vengefulspirit_command_aura"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_vengeful_spirit_9"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"8"
+				"ad_linked_abilities"			"vengefulspirit_nether_swap"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+    "special_bonus_unique_visage_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"220"
+                "ad_linked_abilities"	"visage_summon_familiars"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_visage_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2"
+                "ad_linked_abilities"	"visage_soul_assumption"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_visage_4"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"50"
+                "ad_linked_abilities"	"visage_soul_assumption"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_visage_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"150"
+                "ad_linked_abilities"	"visage_gravekeepers_cloak"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_visage_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2"
+                "ad_linked_abilities"	"visage_summon_familiars"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_void_spirit_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2.5"
+                "ad_linked_abilities"	"void_spirit_dissimilate"
+            }
+        }
+    }
+    "special_bonus_unique_void_spirit_7"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"900"
+                "ad_linked_abilities"	"void_spirit_aether_remnant"
+            }
+        }
+    }
+    "special_bonus_unique_void_spirit_8"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"330"
+                "ad_linked_abilities"	"void_spirit_astral_step"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+
+
+
+    "special_bonus_unique_witch_doctor_1"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"600"
+                "ad_linked_abilities"	"witch_doctor_death_ward"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_witch_doctor_2"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"2.4000000953674"
+                "ad_linked_abilities"	"witch_doctor_voodoo_restoration"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_witch_doctor_3"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"8"
+                "ad_linked_abilities"	"witch_doctor_paralyzing_cask"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_witch_doctor_5"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1500"
+                "ad_linked_abilities"	"witch_doctor_death_ward"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_witch_doctor_6"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"320"
+                "ad_linked_abilities"	"witch_doctor_maledict"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+    "special_bonus_unique_witch_doctor_7"		{
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"30"
+                "ad_linked_abilities"	"witch_doctor_maledict"
+            }
+        }
+        "AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+
+
+    "special_bonus_unique_lifestealer_6"{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"35"
+				"ad_linked_abilities"			"life_stealer_ghoul_frenzy"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+	"special_bonus_unique_dawnbreaker_solar_guardian_cooldown"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"30"
+				"ad_linked_abilities"				"dawnbreaker_solar_guardian"
+			}
+		}
+	}
+	"special_bonus_unique_dawnbreaker_luminosity_crit"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"140"
+				"ad_linked_abilities"				"dawnbreaker_luminosity"
+			}
+		}
+	}
+	"special_bonus_unique_dawnbreaker_fire_wreath_charges"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"2"
+				"ad_linked_abilities"				"dawnbreaker_fire_wreath"
+			}
+		}
+	}
+	"special_bonus_unique_dawnbreaker_solar_guardian_radius"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"350"
+				"ad_linked_abilities"				"dawnbreaker_solar_guardian"
+			}
+		}
+	}
+	"special_bonus_unique_dawnbreaker_celestial_hammer_cast_range"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"2400"
+				"ad_linked_abilities"				"dawnbreaker_celestial_hammer"
+			}
+		}
+	}
+}

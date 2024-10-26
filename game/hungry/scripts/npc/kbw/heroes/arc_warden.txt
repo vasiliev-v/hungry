@@ -1,0 +1,156 @@
+"DOTAAbilities" {
+	"arc_warden_flux"	{
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+		"AbilityCastPoint"		"0.3"
+		"AbilityCooldown"		"9"
+		"AbilityManaCost"		"75 98 120 143 165 188 210"
+		"AbilityValues"		{
+			"duration"	{
+				"value"				"6.0"
+				"special_bonus_unique_arc_warden_4" "+2"
+			}
+			"damage_per_second"		{
+				"value"				"35 55 85 135 200 300 450"
+				"special_bonus_unique_arc_warden_2"		"+350"
+			}
+                        "tempest_damage_per_second"				
+			{
+				"value"		"50 80 120 200 280 400 550"
+				"special_bonus_unique_arc_warden_2"		"+350"
+			}
+			"search_radius"			"225"
+			"think_interval"		"0.5"
+			"move_speed_slow_pct"	"20 30 40 50 60 70 80"
+			"tempest_move_speed_slow_pct"		"10 15 20 25 30 35 40"
+			"AbilityCastRange"		{
+				"value"				"625 700 775 850 925 1000 1075"
+				"special_bonus_unique_arc_warden_5" "+0"
+			}
+		}
+	}
+	"arc_warden_magnetic_field"	{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"900"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"AbilityValues"		{
+			"radius"					"350"
+			"duration"					"3.5 4 4.5 5 5.5 6 6.5"
+			"tempest_duration"			"4 4.5 5 5.5 6 6.5 7"
+			"attack_speed_bonus"	{
+				"value"					"75 99 131 173 229 303 400"
+				"special_bonus_unique_arc_warden_3"	"+350"
+			}
+			"evasion_chance"			"100"
+			"shard_magic_resist"	{
+
+				"value"					"40"
+				"RequiresShard"		"1"
+			}
+			"shard_slow_pct"	{
+				"value"					"30"
+				"RequiresShard"		"1"
+			}
+			"attack_range_bonus"				"150"
+			"attack_magic_damage"		{
+				"value"		"75 99 131 173 229 303 400"
+				"special_bonus_unique_arc_warden_3" 		"+350"
+			}
+			"AbilityCooldown"{
+				"value"						"15"
+				"special_bonus_unique_arc_warden_9"		"-8"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"arc_warden_spark_wraith"	{
+		"AbilityCastPoint"	"0.05"
+		"AbilityCastRange"	"2000"
+		"AbilityCooldown"	"4"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"AbilityValues"         {
+			"radius"                                    "375"
+			"base_activation_delay"                          "1.7 1.5 1.3 1.1 0.9 0.7 0.5"
+			"duration"                                  "30"
+			"wraith_speed_base"                              "800"
+			"spark_damage_base"      {            
+				"value"                                 "150 225 330 480 680 960 1300"
+				"special_bonus_unique_arc_warden"		"+50%"
+			}
+                        "spark_damage_tempest"
+			{
+			
+				"value"					"80 150 220 330 540 720 1000"
+				"special_bonus_unique_arc_warden"		"+50%"
+			}			
+                        "tempest_activation_delay"							"0.01"
+                        "wraith_speed_tempest"						"1500"
+			"think_interval"                            "0.2"
+			"wraith_vision_radius"                      "375"
+			"wraith_vision_duration"                    "3.34"
+			"ministun_duration"                         "0.6 0.7 0.8 0.9 1 1.1 1.2"
+                        "ministun_duration_tempest"		    "0.8 0.9 1 1.1 1.2 1.3 1.4"
+			"move_speed_slow_pct"                       "100"
+			"scepter_activation_delay"      {
+				"value"                                 "0.3"
+				"RequiresScepter"                       "1"
+			}   
+                        "scepter_duration"
+			{
+				"value"									"12"
+				"RequiresScepter"						"1"
+			}				
+			"scepter_radius"
+			{
+				"value"									"250"
+				"RequiresScepter"						"1"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"arc_warden_tempest_double"     {
+		"AbilityCastPoint"  "0.15"
+		"AbilityCooldown"   "50 44 38 32"
+		"AbilityValues"         {
+			"duration"      {
+				"value"             "18 22 26 30"
+				"special_bonus_unique_arc_warden_6"     "+12"
+			}
+			"bounty"                "360 579 932 1500"
+			"penalty_distance"              "2000"
+			"attack_damage_penalty"             "50"
+			"tempest_double_cooldown_reduction"         {
+				"value"                         "0"
+				"special_bonus_unique_arc_warden_7"     "+50"
+			}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+
+	"special_bonus_unique_arc_warden_flux_cd"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"5"
+			}
+		}
+
+		"ModifyValues"{
+			"arc_warden_flux"{
+				"AbilityCooldown"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "-5"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,191 @@
+"DOTAAbilities"{
+	
+	"tiny_avalanche"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"75 95 125 170 230 320 465"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"avalanche_damage"{
+				"value"	"160 240 350 510 730 1025 1425"
+				"LinkedSpecialBonus"	"special_bonus_unique_tiny"
+			}
+			"projectile_speed"	"1200"
+			"radius"	"325 350 375 400 425 450 475"
+			"stun_duration"	"0.3"
+			"tick_count"	"5"
+			"tick_interval"	"0.3"
+			"toss_multiplier"	"2"
+			"total_duration"	"1.4"
+		}
+	}
+
+
+	"tiny_toss"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"850 1142 1433 1725 2017 2308 2600"
+		"AbilityCooldown"	"13 12 11 10 9 8 7"
+		"AbilityManaCost"	"90 115 150 200 275 385 555"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage_pct"	"0"
+			"duration"	"1.4"
+			"grab_radius"	"300"
+			"radius"	"275"
+			"toss_damage"	"160 240 350 510 730 1025 1425"
+			"AbilityCharges"{
+				"value"	""
+				"LinkedSpecialBonus"	"special_bonus_unique_tiny_2"
+			}
+		}
+	}
+	// Talent: Toss Charges
+	"special_bonus_unique_tiny_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"3"
+				"ad_linked_abilities"	"tiny_toss"
+			}
+		}
+	}
+
+
+	"tiny_tree_grab"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"165"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"attack_count"	"10 11 12 13 14 15 16"
+				"LinkedSpecialBonus"	"special_bonus_unique_tiny_6"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"25 37 55 80 115 160 225"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_buildings"	"90 120 150 180 210 240 270"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"attack_range"	"350"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"splash_width"	"200"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"splash_range"	"400"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"splash_pct"	"60 70 80 90 100 110 120"
+			}
+			"08"{
+				"var_type"	"FIELD_FLOAT"
+				"bat_increase"	"0"
+			}
+			"09"{
+				"var_type"	"FIELD_INTEGER"
+				"speed_reduction"	"0"
+			}
+		}
+	}
+	"tiny_toss_tree"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"2600"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"{
+				"value"	"25"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_tiny_7"
+			}
+			"range"	"2600"
+			"speed"	"1800"
+			"splash_radius"	"275"
+		}
+	}
+	"tiny_tree_channel"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"2600"
+		"AbilityChannelTime"	"2.4"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"400"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"2600"
+				"RequiresScepter"	"1"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"range"	"2600"
+				"RequiresScepter"	"1"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"splash_radius"	"400"
+				"RequiresScepter"	"1"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"tree_grab_radius"	"1000"
+				"RequiresScepter"	"1"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"interval"	"0.2"
+				"RequiresScepter"	"1"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"0"
+				"CalculateSpellDamageTooltip"	"0"
+				"RequiresScepter"	"1"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"abilitychanneltime"	"2.4"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	
+	
+	"tiny_grow"{
+		"LevelsBetweenUpgrades"	"9"
+		"MaxLevel"	"3"
+		"AbilityValues"{
+			"bonus_armor"				"18 46 120"
+			"bonus_damage"	{
+				"value"	"45 157 550"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"tree_bonus_damage_pct"			{
+				"value"				"0"
+				"special_bonus_unique_tiny_7"	"+75"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_NONE"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"attack_speed_reduction"	"0"
+			"toss_bonus_damage"{
+				"value"					"200 500 1250"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_MAGICAL"
+			}
+		}
+	}
+}

@@ -1,0 +1,176 @@
+"DOTAAbilities"{
+
+	"tinker_laser_kbw"{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "kbw/abilities/heroes/tinker/laser"
+        "AbilityTextureName"            "tinker_laser"
+
+        "MaxLevel"                      "7"
+        "RequiredLevel"                 "1"
+        "LevelsBetweenUpgrades"         "3"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"95 125 150 180 210 240 265"
+		"AbilityCastPoint"				"0.4"
+
+		"AbilityValues"{
+			"miss_rate"				"100"
+			"damage"				"180 275 420 615 860 1155 1500"
+			"duration"				"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
+			"scepter_cast_range"		"0"
+			"scepter_damage_pct"		"12"
+			"scepter_boss_deamp"		"90"
+			"castrange"				"650 750 850 950 1050 1150 1250"
+			"scepter_bounce"		"900"
+			"bkb_damage_pct"		"50"
+		}
+
+		"ScepterModifiers"{
+			"castrange"{
+                "1"{
+                    "Operation"     "OPERATION_ADD"
+                    "Value"         "scepter_cast_range"
+                }
+            }
+		}
+	}
+	"special_bonus_unique_tinker_laser_aoe"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"radius"					"250"
+			}
+			"02"{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"100"
+			}
+		}
+	}
+
+	
+	"tinker_heat_seeking_missile"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"95 125 150 180 210 240 265"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	"205 325 500 730 1015 1355 1750"
+			"radius"	"2500"
+			"targets"	{
+				"value"	"2"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_6"
+			}
+			"speed"	"1200"
+		}
+	}
+	// Talent: Missile Targets
+	"special_bonus_unique_tinker_6"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_INTEGER"
+				"value"				"2"
+				"ad_linked_abilities"			"tinker_heat_seeking_missile"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Missile Stun
+    "special_bonus_unique_tinker_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"1.0"
+                "ad_linked_abilities"	"tinker_heat_seeking_missile"
+            }
+        }
+    }
+
+
+	"tinker_defense_matrix"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"LinkedAbility"		"tinker_warp_grenade"
+		"MaxLevel"	"7"
+		"LevelsBetweenUpgrades"	"3"
+
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+
+		"AbilityValues"{
+			"barrier_duration"	"15"
+			"cooldown_reduction"{
+				"value"	"0"
+				"special_bonus_unique_tinker_defense_matrix_cdr"	"+25"
+			}
+			"damage_absorb"{
+				"value"	"200 345 580 965 1595 2595 4180"
+				"special_bonus_unique_tinker_7"	"+0"
+			}
+			"status_resistance"	"30 33 36 40 43 46 50"
+		}
+	}
+
+
+    "tinker_rearm_kbw"{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "kbw/abilities/heroes/tinker/rearm"
+        "AbilityTextureName"            "tinker_rearm"
+
+        "MaxLevel"                      "4"
+        "RequiredLevel"                 "6"
+        "LevelsBetweenUpgrades"         "6"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		
+		"AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityCharges"				"7"
+		"AbilityChargeRestoreTime"		"12"
+		"AbilityChannelTime"			"2.25 1.7 1.25 0.9"
+        
+		"AbilityValues"{
+			"manacost"					"15"
+		}
+	}
+
+
+	"tinker_warp_grenade"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+
+		"LinkedAbility"		"tinker_defense_matrix"
+		"MaxLevel"	"7"
+		"LevelsBetweenUpgrades"		"3"
+
+		"AbilityCharges"	"2"
+		"AbilityChargeRestoreTime"	"7"
+		"AbilityCooldown"	"0"
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1200"
+		"AbilityManaCost"	"95 125 150 180 210 240 265"
+
+		"AbilityValues"{
+			"damage"	"120 200 340 540 800 1120 1500"
+			"debuff_duration"	"3"
+			"knockback_distance"	"600"
+			"range_reduction"	"50"
+		}
+	}
+}

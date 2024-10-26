@@ -1,0 +1,173 @@
+"DOTAAbilities"{
+	"storm_spirit_static_remnant"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"3.2 2.8 2.4 2.0 1.6 1.2 0.8"
+		"AbilityDuration"	"12"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"static_remnant_radius"	"235"
+			"static_remnant_damage_radius"	{
+				"value"	"260"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"static_remnant_delay"	"1"
+			"static_remnant_damage"	{
+				"value"	"100 157 247 387 608 955 1500"
+				"LinkedSpecialBonus"	"special_bonus_unique_storm_spirit_5"
+			}
+		}
+	}
+	// Talent: Remnant Damage
+    "special_bonus_unique_storm_spirit_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1000"
+                "ad_linked_abilities"	"storm_spirit_static_remnant"
+            }
+        }
+    }
+
+
+	"storm_spirit_vortex_kbw"{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"kbw/abilities/heroes/storm_spirit/vortex"
+
+		"AbilityTextureName"	"storm_spirit_electric_vortex"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+		"MaxLevel"	"7"
+		"LevelsBetweenUpgrades"	"3"
+		"HasScepterUpgrade"		"1"
+
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"300"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+
+		"AbilityValues"{			
+			"duration"{
+				"value"	"1.8 2.0 2.2 2.4 2.6 2.8 3.0"
+				"special_bonus_unique_storm_spirit"	"+0.5"
+			}
+			"pull_speed"	"100"
+			"scepter_consume_distance"		"1000"
+			"scepter_consume_duration"		"0.6"
+			"scepter_min_lesh_range"	"100"
+		}
+	}
+
+
+	"storm_spirit_overload"{
+		"AbilityDuration"	"1"
+		"AbilityModifierSupportBonus"	"40"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"overload_aoe"	"0"
+			"overload_move_slow"	"-80"
+			"overload_attack_slow"	"-80 -120 -170 -230 -300 -380 -470"
+			"overload_damage"	{
+				"value"	"60 85 125 175 250 355 500"
+				"special_bonus_unique_storm_spirit_overload_damage"	"+60%"
+			}
+			"shard_activation_radius"	{
+				"value"	"0"
+				"RequiresShard"	"1"
+			}
+			"shard_activation_charges"	{
+				"value"	"5"
+				"RequiresShard"	"1"
+			}
+			"shard_activation_duration"	{
+				"value"		"12"
+				"RequiresShard"	"1"
+			}
+			"shard_manacost"	{
+				"value"	"150"
+				"RequiresShard"	"1"
+			}
+			"shard_cooldown"	{
+				"value"	"12"
+				"RequiresShard"	"1"
+			}
+			"shard_attack_speed_bonus"	{
+				"value"	"300"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Overload Bounce
+	"special_bonus_unique_storm_spirit_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"2"			// HARDCODED SHIT !!!
+				"ad_linked_abilities"			"storm_spirit_overload"
+			}
+		}
+	}
+    "special_bonus_unique_storm_spirit_overload_damage"		{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	"special_bonus_unique_storm_spirit_overload_cast_attacks"{	// coded in special_fixes
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"{
+			"bonus_range"	"150"
+			"attacks"		"1"
+		}
+		"AddModifiers"{
+			"m_storm_spirit_overload_cast_attacks"{
+				"Path"		"kbw/abilities/heroes/storm_spirit/m_storm_spirit_overload_cast_attacks"
+			}
+		}
+	}
+
+
+	"storm_spirit_ball_lightning"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityDamage"	"18 29 45 72"
+		"AbilityManaCost"	"30"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"ball_lightning_initial_mana_percentage"	"10"
+			"ball_lightning_initial_mana_base"	"100"
+			"ball_lightning_move_speed"	"2600"
+			"ball_lightning_aoe"	"200"
+			"ball_lightning_travel_cost_base"	"20"
+			"ball_lightning_travel_cost_percent"	"0.6"
+			"ball_lightning_vision_radius"	"400"
+			"blocker_duration"	"5"
+		}
+		// custom
+		"AbilityCooldown"	"0.7"
+	}
+	// Talent: Auto Remnant
+    "special_bonus_unique_storm_spirit_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"500"
+                "linked_ad_abilities"	"storm_spirit_ball_lightning storm_spirit_static_remnant"
+                "ad_linked_abilities"	"multi_linked_ability"
+            }
+        }
+    }
+	"special_bonus_unique_storm_spirit_ball_lightning_range"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

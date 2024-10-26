@@ -1,0 +1,183 @@
+"DOTAAbilities"{
+	"juggernaut_blade_fury"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"22 21 20 19 18 17 16"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"blade_fury_damage"{
+				"value"	"90 140 222 340 520 780 1155"
+				"LinkedSpecialBonus"	"special_bonus_unique_juggernaut_3"
+			}
+			"blade_fury_damage_tick"{
+				"value"	"0.2"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"blade_fury_radius"{
+				"value"	"260"
+				"LinkedSpecialBonus"	"special_bonus_unique_juggernaut"
+			}
+			"duration"{
+				"value"	"5"
+				"special_bonus_unique_juggernaut_4"	"+1"
+			}
+			"shard_attack_rate"{
+				"value"	"0.9 0.8 0.7 0.6 0.5 0.4 0.3"
+				"RequiresShard"	"1"
+			}
+			"shard_bonus_move_speed"{
+				"value"	"75 85 95 105 115 125 135"
+				"RequiresShard"	"1"
+			}
+			"shard_damage_pct"{
+				"value"	"100"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Blade Fury Radius
+	"special_bonus_unique_juggernaut"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"125"
+				"ad_linked_abilities"			"juggernaut_blade_fury"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Blade Fury Damage
+	"special_bonus_unique_juggernaut_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"868"
+				"ad_linked_abilities"	"juggernaut_blade_fury"
+			}
+		}
+	}
+
+
+	"juggernaut_healing_ward"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"350"
+		"AbilityDuration"	"25"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"AbilityCooldown"	"43 40 37 34 31 28 25"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"healing_ward_aura_radius"	"500"
+			"healing_ward_heal_amount"	"2 3 4 5 6 7 8"
+			"healing_ward_movespeed_tooltip"{
+				"value"	"450"
+			}
+			"healing_ward_bonus_health"	{
+				"value"	"0"
+				"special_bonus_unique_juggernaut_2"	"+5"
+			}
+			"healing_ward_hits_to_kill_tooltip"{
+				"value" "1"
+				"special_bonus_unique_juggernaut_2" "+5"
+			}
+		}
+	}
+	// Talent: Ward Cooldown
+	"special_bonus_unique_juggernaut_5"	{
+		"AbilitySpecial" {
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"15"
+				"ad_linked_abilities"			"juggernaut_healing_ward"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"juggernaut_blade_dance"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"blade_dance_crit_chance"	"20 25 30 35 40 45 50"
+			"blade_dance_crit_mult"	"180"
+			"blade_dance_lifesteal"{
+				"value"	"0"
+				"special_bonus_unique_juggernaut_blade_dance_lifesteal"	"+40"
+			}
+		}
+	}
+
+	
+	"special_bonus_unique_juggernaut_crit_chance"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"50"
+			}
+		}
+
+		"ModifyValues"{
+			"juggernaut_blade_dance"{
+				"blade_dance_crit_chance"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+						"RefreshModifiers"{
+							"1"		"modifier_juggernaut_blade_dance"
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	"juggernaut_omni_slash"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"95 85 75 65"
+		"AbilityManaCost"	"200 350 500 650"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"attack_rate_multiplier"	"1.2"
+			"bonus_attack_speed"{
+				"value"	"40"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"bonus_damage"{
+				"value"	"40 68 117 200"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"dispel"{
+				"value"	"0"
+			}
+			"duration"{
+				"value"	"3 3.25 3.5 3.75"
+				"special_bonus_unique_juggernaut_omnislash_duration"	"+1"
+			}
+			"omni_slash_radius"	"425"
+			"AbilityCastRange"{
+				"value"	"350"
+				"special_bonus_unique_juggernaut_omnislash_cast_range"	"+75"
+			}
+		}
+	}
+	"juggernaut_swift_slash"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"650"
+		"AbilityCooldown"	"7"
+		"AbilityManaCost"	"125"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"1.0"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+}

@@ -1,0 +1,124 @@
+"DOTAAbilities"{
+
+	"sven_storm_bolt"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityDamage"	"165 241 352 514 750 1096 1600"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"bolt_speed"	"1000"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"bolt_stun_duration"	"1.25 1.5 1.75 2.0 2.25 2.50 2.75"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_4"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"bolt_aoe"	"255"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"vision_radius"	"225"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"cast_range_bonus_scepter"	"500"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"sven_great_cleave"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"cleave_starting_width"	"150"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"cleave_ending_width"	"360"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"cleave_distance"	"700"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"great_cleave_damage"	"40 50 60 70 80 90 100"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_8"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"strength_bonus"		"10 15 25 40 60 90 130"
+			}
+		}
+	}
+	"sven_warcry"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastAnimation"	"ACT_DOTA_OVERRIDE_ABILITY_3"
+		"AbilityCastGestureSlot"	"DEFAULT"
+		"AbilityCastPoint"	"0.0 0.0 0.0 0.0"
+		"AbilityCooldown"	"14"
+		"AbilityManaCost"	"30 39 48 57 66 75 84"
+		"AbilitySound"	"Hero_Sven.WarCry"
+		"HasShardUpgrade"	"1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed"	"10 15 20 25 30 35 40"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_6"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"9 12 16 21 28 38 50"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_7"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"700"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"8"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_5"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"shard_passive_armor"	"15"
+				"RequiresShard"	"1"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"shard_radius"	"1200"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	"sven_gods_strength"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"85 80 75 70"
+		"AbilityDuration"	"40"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"gods_strength_damage"	"150 200 250 300"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_2"
+			}
+		}
+	}
+}

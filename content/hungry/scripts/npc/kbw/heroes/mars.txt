@@ -1,0 +1,185 @@
+"DOTAAbilities"{
+	"mars_spear"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	{
+				"value"	"170 300 500 770 1110 1520 2000"
+				"LinkedSpecialBonus"	"special_bonus_unique_mars_spear_bonus_damage"
+			}
+			"spear_speed"	"1400"
+			"spear_width"	"125"
+			"spear_vision"	"300"
+			"spear_range"	"900 1000 1100 1200 1300 1400 1500"
+			"activity_duration"	"1.7"
+			"stun_duration"	{
+				"value"	"2.1 2.2 2.3 2.4 2.5 2.6 2.7"
+				"LinkedSpecialBonus"	"special_bonus_unique_mars_spear_stun_duration"
+			}
+			"knockback_duration"	"0.25"
+			"knockback_distance"	"75"
+			"shard_trail_duration"	{
+				"value"	"10"
+				"RequiresShard"	"1"
+			}
+			"shard_trail_radius"	{
+				"value"	"300"
+				"RequiresShard"	"1"
+			}
+			"shard_dps"	{
+				"value"	"75 113 165 238 340 480 668"
+				"RequiresShard"	"1"
+				"special_bonus_unique_mars_spear_bonus_damage"	"+500"
+			}
+			"shard_move_slow_pct"	{
+				"value"	"40"
+				"RequiresShard"	"1"
+			}
+			"shard_debuff_linger_duration"	{
+				"value"	"2"
+				"RequiresShard"	"1"
+			}
+			"shard_interval"	{
+				"value"	"0.5"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	// Talent: Spear Damage
+	"special_bonus_unique_mars_spear_bonus_damage"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1000"
+				"ad_linked_abilities"	"mars_spear"
+			}
+		}
+	}
+	// Talent: Spear Stun
+	"special_bonus_unique_mars_spear_stun_duration"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"0.8"
+				"ad_linked_abilities"	"mars_spear"
+			}
+		}
+	}
+
+
+	"mars_gods_rebuke"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"500"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"activity_duration"	"2"
+			"angle"	"140"
+			"bonus_damage_vs_heroes"	"30 45 60 85 115 155 200"
+			"crit_mult"{
+				"value"	"210 250 290 330 370 410 450"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_PHYSICAL"
+				"special_bonus_unique_mars_gods_rebuke_extra_crit"	"+250"
+			}
+			"knockback_distance"	"150"
+			"knockback_duration"	"0.3"
+			"knockback_slow"	"40"
+			"knockback_slow_duration"{
+				"value"	"2"
+				"special_bonus_unique_mars_rebuke_slow"	"+0"
+			}
+			"radius"{
+				"value"	"500"
+				"special_bonus_unique_mars_rebuke_radius"	"+400"
+			}
+			"AbilityCooldown"{
+				"value"	"12 11 10 9 8 7 6"
+				"special_bonus_unique_mars_rebuke_cooldown"	"-4"
+			}
+		}
+	}
+
+
+	"mars_bulwark"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"forward_angle"	"140"
+			"physical_damage_reduction"{
+				"value"	"40 45 50 55 60 65 70"
+				"special_bonus_unique_mars_bulwark_damage_reduction"	"+10"
+			}
+			"physical_damage_reduction_side"{
+				"value"	"20 25 30 35 40 45 50"
+				"special_bonus_unique_mars_bulwark_damage_reduction"	"+10"
+			}
+			"redirect_chance"{
+				"value"	"70"
+				"special_bonus_unique_mars_bulwark_redirect_chance"	"+30"
+			}
+			"redirect_close_range"	"100"
+			"redirect_range"	"800"
+			"redirect_speed_penatly"{
+				"value"	"5"
+				"special_bonus_unique_mars_bulwark_speed"	"-10"
+			}
+			"scepter_bonus_damage"{
+				"value"	"200 384 737 1414 2714 5210 10000"
+				"RequiresScepter"	"1"
+			}
+			"scepter_movement_slow_duration"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+			"scepter_movement_slow_pct"{
+				"value"	"80"
+				"RequiresScepter"	"1"
+			}
+			"side_angle"	"240"
+			"soldier_count"{
+				"value"	"5"
+				"RequiresScepter"	"1"
+			}
+			"soldier_offset"{
+				"value"	"200"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+
+
+	"mars_arena_of_blood"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"400"
+		"AbilityCooldown"	"45"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"	"5 6 7 8"
+			"radius"	"550"
+			"width"	"100"
+			"spear_damage"	"250 475 900 1715"
+			"formation_time"	"0.3"
+			"spear_distance_from_wall"	"160"
+			"spear_attack_interval"	"1"
+			"warrior_count"	"14"
+			"first_warrior_angle"	"0"
+			"warrior_fade_min_dist"	"350"
+			"warrior_fade_max_dist"	"450"
+		}
+	}
+	"special_bonus_unique_mars_arena_of_blood_hp_regen"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"720"
+				"ad_linked_abilities"	"mars_arena_of_blood"
+			}
+		}
+	}
+}

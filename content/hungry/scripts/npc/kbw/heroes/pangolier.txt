@@ -1,0 +1,217 @@
+"DOTAAbilities"{
+	"pangolier_swashbuckle"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"13 11.5 10 8.5 7 5.5 4"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"dash_range"	"1000"
+			"range"	{
+				"value"	"1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_pangolier"
+			}
+			"dash_speed"	"2000"
+			"attack_interval"	"0.1 0.08 0.06 0.05 0.04 0.03 0.02"
+			"damage"	{
+				"value"	"40 65 99 150 230 345 510"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_3"
+			}
+			"start_radius"	"125"
+			"end_radius"	"125"
+			"strikes"	{
+				"value"	"4 4 5 5 6 6 7"
+				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_7"
+			}
+		}
+	}
+	// Talent: Swashbuckle Range
+	"special_bonus_unique_pangolier"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"			"FIELD_FLOAT"
+				"value"				"500"
+				"ad_linked_abilities"			"pangolier_swashbuckle"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Swashbuckle Damage
+    "special_bonus_unique_pangolier_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"490"
+                "ad_linked_abilities"	"pangolier_swashbuckle"
+            }
+        }
+    }
+	// Talent: Swashbuckle Cooldown
+    "special_bonus_unique_pangolier_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"-1.5"
+                "ad_linked_abilities"	"pangolier_swashbuckle"
+            }
+        }
+    }
+
+
+	"pangolier_shield_crash"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"14 13 12 11 10 9 8"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"{
+				"value"	"135 205 300 430 615 865 1200"
+				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_2"
+			}
+			"duration"	"5"
+			"hero_stacks"{
+				"value"	"25"
+				"special_bonus_unique_pangolier_shield_crash_herostacks"	"+5"
+			}
+			"jump_duration"	"0.2"
+			"jump_duration_gyroshell"	"0.5"
+			"jump_height"	"250"
+			"jump_height_gyroshell"	"350"
+			"jump_horizontal_distance"	"225"
+			"radius"	"500"
+			"rolling_thunder_cooldown"{
+				"value"	"0"
+				"special_bonus_unique_pangolier_2"	"+1.5"
+			}
+			"slow"	"20 25 30 35 40 45 50"
+			"slow_duration"	"3"
+		}
+	}
+
+	
+	"pangolier_lucky_shot"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"chance_pct"	"14"
+			"duration"	"2 2.4 2.8 3.2 3.6 4 4.4"
+			"slow"	"0"
+			"armor"	{
+				"value"	"5 6 8 11 15 20 26"
+				"special_bonus_unique_pangolier_luckyshot_armor"			"+14"
+			}
+		}
+	}
+
+	
+	"pangolier_gyroshell"{
+		"AbilityCastPoint"	"1.2"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"70"
+		"AbilityDamage"	"300 570 1085 2060"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"cast_time_tooltip"	"1.2"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"tick_interval"	"0.05"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"forward_move_speed"	"600"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"turn_rate_boosted"	"165"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"turn_rate"	"120"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"hit_radius"	"150"
+			}
+			"08"{
+				"var_type"	"FIELD_FLOAT"
+				"bounce_duration"	"0.4"
+			}
+			"09"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.0 1.25 1.5 1.75"
+			}
+			"10"{
+				"var_type"	"FIELD_INTEGER"
+				"knockback_radius"	"150"
+			}
+			"11"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"10"
+				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_6"
+			}
+			"12"{
+				"var_type"	"FIELD_FLOAT"
+				"jump_recover_time"	"0"
+			}
+		}
+	}
+	"pangolier_gyroshell_stop"{
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+	}
+	// Talent: Gyroshell Cooldown
+    "special_bonus_unique_pangolier_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"35"
+                "ad_linked_abilities"	"pangolier_gyroshell"
+            }
+        }
+    }
+	// Talent: Gyroshell Duration
+    "special_bonus_unique_pangolier_6"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"6"
+                "ad_linked_abilities"	"pangolier_gyroshell"
+            }
+        }
+    }
+
+
+	"pangolier_rollup"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"8"
+		"AbilityDamage"	"200"
+		"AbilityManaCost"	"50"
+		"AbilityValues"{
+			"cast_time_tooltip"	"0.1"
+			"tick_interval"	"0.05"
+			"forward_move_speed"	"600"
+			"turn_rate_boosted"	"275"
+			"turn_rate"	"275"
+			"radius"	"400"
+			"hit_radius"	"150"
+			"bounce_duration"	"0.4"
+			"stun_duration"	"2.2"
+			"knockback_radius"	"150"
+			"duration"	"4"
+			"jump_recover_time"	"0"
+		}
+	}
+}

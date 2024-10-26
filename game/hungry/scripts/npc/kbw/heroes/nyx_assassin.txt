@@ -1,0 +1,161 @@
+"DOTAAbilities"{
+
+
+	"nyx_assassin_burrow"{
+		"AutoLearn"	"1"
+		"AbilityCastPoint"	"1.5"
+		"AbilityCooldown"	"0"
+		
+		"AbilityValues"{
+			"health_regen_rate"		"1.5"
+			"mana_regen_rate"		"1.5"
+			"damage_reduction"			"50"
+			"impale_bonus_cast_range"			"1250"
+			"jolt_bonus_cast_range"			"1250"
+			"impale_cooldown_reduction"			"4"
+			"carapace_radius"			"300"
+		}
+	}
+	"nyx_assassin_unburrow"{
+		"AutoLearn"	"1"
+	}
+
+
+	"nyx_assassin_impale"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"11"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"width"	"140"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"1.4 1.6 1.8 2 2.2 2.4 2.6"
+				"LinkedSpecialBonus"	"special_bonus_unique_nyx_4"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"length"	"700"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"1600"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"impale_damage"	"150 218 316 458 665 965 1400"
+				"LinkedSpecialBonus"	"special_bonus_unique_nyx_2"
+			}
+		}
+	}
+	
+	
+	"nyx_assassin_mana_burn"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"15 13 11 9 7 5 3"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"aoe"{
+				"value"	"0"
+				"special_bonus_unique_nyx"	"+500"
+			}
+			"float_multiplier"{
+				"value"	"3.5 4.0 4.5 5.0 5.5 6.0 6.5"
+				"special_bonus_unique_nyx_5"	"+0.5"
+			}
+		}
+	}
+	
+	
+	"nyx_assassin_jolt"{
+		"MaxLevel"		"7"
+		"LevelsBetweenUpgrades"	"3"
+	
+		"AbilityCastRange"				"800"
+		"AbilityCooldown"				"15 13 11 9 7 5 3"
+		"AbilityManaCost"				"70 91 112 133 154 175 196"
+		
+		"AbilityValues"{
+			"float_multiplier"		{
+				"value"		"3.5 4.0 4.5 5.0 5.5 6.0 6.5"
+				"special_bonus_unique_nyx_5"			"+0.75"
+			}
+			"aoe"{
+				"value"		"0"
+				"special_bonus_unique_nyx"		"+500"
+			}
+			"damage_echo_duration"		"15"
+			"damage_echo_pct"			"20 25 30 35 40 45 50"
+		}
+	}
+	
+	
+	"nyx_assassin_spiked_carapace"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"25 22.5 20 17.5 15 12.5 10"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_reflect_pct"{
+				"value"	"100"
+				"LinkedSpecialBonus"	"special_bonus_unique_nyx"
+			}
+			"reflect_duration"{
+				"value"	"2"
+				"special_bonus_unique_nyx_carapace_reflect_duration"	"+1"
+			}
+			"stun_duration"{
+				"value"	"0.6 1 1.4 1.8 2.2 2.6 3"
+				"special_bonus_unique_nyx_6"	"+0.6"
+			}
+		}
+	}
+	
+	
+	"nyx_assassin_vendetta"{
+		"AbilityCooldown"	"65 50 35 20"
+		"AbilityManaCost"	"180 315 450 585"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"							"40 50 60 70"
+			"fade_time"							"0.0"
+			"movement_speed"					"16 19 22 25"
+			"bonus_damage"			{
+				"value"							"450 750 1350 2250"
+				"special_bonus_unique_nyx_vendetta_damage"		"+1000"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"health_regen_rate_scepter"			"3"
+			"mana_regen_rate_scepter"			"3"
+			"break_duration"					"4.0"
+			"shard_debuff_duration"	{
+				"value" 			"10.0"
+				"RequiresShard"		"1"
+			}
+			"shard_magic_resist_reduction"	{
+				"value" 			"30"
+				"RequiresShard"		"1"
+			}
+			"shard_movement_speed_bonus"	{
+				"value" 			"25"
+				"RequiresShard"		"1"
+			}
+		}
+	}
+	// Talent: Vendetta Damage
+	"special_bonus_unique_nyx_vendetta_damage"{
+		"BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

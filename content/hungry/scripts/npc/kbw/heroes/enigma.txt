@@ -1,0 +1,192 @@
+"DOTAAbilities"{
+	"enigma_malefice"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"HasShardUpgrade"	"1"
+		"AbilityValues"{
+			"damage"{
+				"value"	"70 111 175 265 404 606 900"
+				"special_bonus_unique_enigma_5"	"+675"
+			}
+			"eidolon_spawns_per_tick"{
+				"value"	"0"
+				"special_bonus_shard"	"+0"
+			}
+			"stun_duration"{
+				"value"	"0.4 0.5 0.6 0.7 0.8 0.9 1.0"
+				"special_bonus_shard"	"+0.55"
+			}
+			"stun_instances"{
+				"value"	"3"
+				"special_bonus_unique_enigma_2"	"+3"
+			}
+			"tick_rate"	"2"
+			// custom
+			"cooldown_reductions"	{
+				"value"	"0"
+				"special_bonus_shard"	"+1"
+			}
+		}
+	}
+
+	
+	"enigma_demonic_conversion"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"35"
+		"AbilityDuration"	"35"
+		"AbilityManaCost"	"140 245 350 455"
+		"LevelsBetweenUpgrades"	"8"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"spawn_count"	{
+				"value"	"1"
+				"LinkedSpecialBonus"	"special_bonus_unique_enigma"
+			}
+			"split_attack_count"	"6"
+			"life_extension"	"2"
+			"eidolon_hp_tooltip"	{
+				"value"		"1000 2200 4750 10000"
+				"LinkedSpecialBonus"	"special_bonus_unique_enigma_7"
+			}
+			"eidolon_dmg_tooltip"	{
+				"value"	"100 300 900 2700"
+				"LinkedSpecialBonus"	"special_bonus_unique_enigma_3"
+			}
+			"creep_max_level"	"99"
+			// custom
+			"model_scale"	"1.3 1.5 1.7 1.9"
+			"armor"			"2 12 36 85"
+		}
+	}
+	// Talent: Creeps Attack Speed
+	"special_bonus_unique_enigma_4"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"170"
+				"ad_linked_abilities"			"enigma_demonic_conversion"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Creeps Count
+	"special_bonus_unique_enigma"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"1"
+				"ad_linked_abilities"	"enigma_demonic_conversion"
+			}
+		}
+	}
+	// Talent: Creeps Damage
+	"special_bonus_unique_enigma_3"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"2700"
+				"ad_linked_abilities"	"enigma_demonic_conversion"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Creeps Health
+	"special_bonus_unique_enigma_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"7000"
+				"ad_linked_abilities"	"enigma_demonic_conversion"
+			}
+		}
+	}
+
+
+	"enigma_midnight_pulse"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"550"
+				"LinkedSpecialBonus"	"special_bonus_unique_enigma_9"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"damage_percent"	"6 7 8 9 10 11 12"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"			"10 11 12 13 14 15 16"
+				"LinkedSpecialBonus"	"special_bonus_unique_enigma_8"
+			}
+		}
+	}
+	// Talent: Pulse Radius
+	"special_bonus_unique_enigma_9"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"450"
+				"ad_linked_abilities"			"enigma_midnight_pulse"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+	
+	"enigma_black_hole"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"275"
+		"AbilityChannelTime"	"4"
+		"AbilityManaCost"	"300 525 750 975"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"AbilityCooldown"	{
+				"value"			"130 120 110 100"
+				"special_bonus_unique_enigma_blackhole_cd"	"-40"
+			}
+			"animation_rate"	"0.2"
+			"damage"			{
+				"value"		"150 255 434 737"
+				"special_bonus_unique_enigma_6"	"+50"
+			}
+			"duration"			"4.0"
+			"pull_rotate_speed"	"0.25"
+			"pull_speed"		"30"
+			"radius"			"420"
+			"scepter_pct_damage"{
+				"value"					"4"
+				"RequiresScepter"	"1"
+			}
+			"scepter_radius"	{
+				"value"					"1200"
+				"RequiresScepter"	"1"
+			}
+			"scepter_drag_speed"	{
+				"value"					"250"
+				"RequiresScepter"	"1"
+			}
+			"scepter_pull_rotate_speed"	{
+				"value"					"0.1"
+				"RequiresScepter"	"1"
+			}
+			"tick_rate"			"0.1 0.1 0.1"
+			"vision_radius"		"800 800 800"
+		}
+	}
+	"special_bonus_unique_enigma_blackhole_cd"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

@@ -1,0 +1,153 @@
+"DOTAAbilities"{
+	"elder_titan_echo_stomp"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"500"
+		"AbilityChannelTime"	"1.3"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"			{
+			"cast_time"	"1.7"
+			"radius"	"500"
+			"sleep_duration"	"2.0 2.5 3.0 3.5 4.0 4.5 5.0"
+			"stomp_damage"		{
+				"value"	"120 171 243 346 493 702 1000"
+				"special_bonus_unique_elder_titan_2"	"+900"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_NONE"
+			}
+			"initial_stun_duration"	"0.2"
+			"animation_rate"	"0"
+			"wake_damage_limit"	{
+				"value"	"120 205 350 580 955 1555 2500"
+				"LinkedSpecialBonus"	"special_bonus_unique_elder_titan_4"
+			}
+			"AbilityCooldown"		{
+				"value"			"19 18 17 16 15 14 13"
+				"special_bonus_shard"			"-2"
+			}
+		}
+	}
+	"elder_titan_echo_stomp_spirit"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"500"
+		"AbilityChannelTime"	"1.3"
+		"AbilityCooldown"	"19 18 17 16 15 14 13"
+		"AbilityManaCost"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"cast_time"	"1.7"
+			"radius"	"500"
+			"sleep_duration"	"2.0 2.5 3.0 3.5 4.0 4.5 5.0"
+			"stomp_damage"	"120 171 243 346 493 702 1000"
+			"animation_rate"	"0"
+		}
+	}
+	// Talent: Echo Wake Damage
+    "special_bonus_unique_elder_titan_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2000"
+                "ad_linked_abilities"	"elder_titan_echo_stomp"
+            }
+        }
+    }
+
+
+	"elder_titan_ancestral_spirit"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"23 21 19 17 15 13 11"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"armor_creeps"	"0.5"
+			"armor_heroes"	"2.25 3.5 5.3 8.2 12.7 19.5 30"
+			"buff_duration"	"10"
+			"damage_creeps"{
+				"value"	"5 7 11 18 29 47 75"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"damage_heroes"{
+				"value"	"30 46 71 110 169 260 400"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_elder_titan"	"+500"
+			}
+			"move_pct_cap"	"40"
+			"move_pct_creeps"	"1"
+			"move_pct_heroes"{
+				"value"	"5 6 7 8 9 10 11"
+				"special_bonus_unique_elder_titan_bonus_spirit_speed"	"+14"
+			}
+			"pass_damage"	"50 75 125 200 300 425 575"
+			"radius"	"275"
+			"scepter_magic_immune_per_hero"{
+				"value"	"4"
+				"RequiresScepter"	"1"
+			}
+			"speed"	"900"
+			"spirit_duration"	"8 10 12 14 16 18 20"
+		}
+	}
+
+
+	"elder_titan_natural_order"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"armor_reduction_pct"	"40 50 60 70 80 90 100"
+			"magic_resistance_pct"	"40 50 60 70 80 90 100"
+			"radius"{
+				"value"	"350 400 450 500 550 600 650"
+				"special_bonus_unique_elder_titan_5"	"+100"
+			}
+		}
+	}
+	"elder_titan_natural_order_spirit"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"500"
+			"armor_reduction_pct"	"40 50 60 70 80 90 100"
+			"magic_resistance_pct"	"40 50 60 70 80 90 100"
+		}
+	}
+
+
+	"elder_titan_earth_splitter"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"2400"
+		"AbilityCooldown"	"45 35 25 15"
+		"AbilityManaCost"	"125 219 313 406"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"crack_time"	"2.7182"
+			"crack_width"	"315"
+			"crack_distance"	"2400"
+			"slow_pct"	"30 40 50 60"
+			"slow_duration"	"3.0 4.0 5.0 6.0"
+			"speed"	"1100"
+			"damage_pct"	{
+				"value"	"30 40 50 60"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"vision_width"	"500"
+			"vision_interval"	"0.22"
+			"vision_duration"	"4"
+			"vision_step"	"200"
+			"total_steps"	"12"
+		}
+	}
+    "special_bonus_unique_elder_titan_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"9"
+                "ad_linked_abilities"	"elder_titan_earth_splitter"
+            }
+        }
+    }
+}

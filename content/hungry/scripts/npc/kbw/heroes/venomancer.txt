@@ -1,0 +1,193 @@
+"DOTAAbilities"{
+	"venomancer_venomous_gale"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"800"
+		"AbilityManaCost"	"95 124 152 181 209 238 266"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"create_wards"{
+				"value"	"0"
+				"special_bonus_unique_venomancer_gale_plagueward"	"+2"
+			}
+			"duration"	"15"
+			"movement_slow"	"-50 -60 -70 -80 -90 -100 -110"
+			"radius"	"125"
+			"speed"	"1200"
+			"strike_damage"	"50 85 144 245 416 707 1200"
+			"tick_damage"	"50 85 144 245 416 707 1200"
+			"tick_interval"	"3"
+			"AbilityCooldown"{
+				"value"	"20 18.5 17 15.5 14 12.5 11"
+				"special_bonus_unique_venomancer_3"	"-6"
+			}
+		}
+	}
+
+	
+	"venomancer_poison_sting"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	"16 27 47 80 137 234 400"
+			"duration"	"15"
+			"hp_regen_reduction"{
+				"value"	"0"
+				"special_bonus_unique_venomancer_poisonsting_regen_reduction"	"+20"
+			}
+			"movement_speed"{
+				"value"	"-8 -11 -14 -17 -20 -23 -26"
+				"special_bonus_unique_venomancer_2"	"-8"
+			}
+		}
+	}
+
+	"venomancer_plague_ward"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"850"
+		"AbilityCooldown"	"5"
+		"AbilityManaCost"	"21 27 34 40 46 53 59"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"{
+				"value"	"40"
+				"LinkedSpecialBonus"	"special_bonus_unique_venomancer_7"
+			}	
+			"ward_hp_tooltip" {
+				"value" 	"200 400 800 1600 3200 6400 12800"
+				"LinkedSpecialBonus"	"special_bonus_unique_venomancer"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+			"ward_damage_tooltip"	{
+				"value" 	"35 67 130 251 484 933 1800"
+				"LinkedSpecialBonus"	"special_bonus_unique_venomancer"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+			"ward_hp"	"1"
+			"ward_damage"	"1"
+		}
+	}
+	"special_bonus_unique_venomancer_ward_stats"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"value"     "150"
+			}
+		}
+
+		"ModifyValues"{
+			"venomancer_plague_ward"{
+				"ward_hp_tooltip"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+				"ward_damage_tooltip"{
+					"1"{
+						"Operation"     "OPERATION_PCT"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+	// Talent: Ward Duration
+	"special_bonus_unique_venomancer_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"20"
+				"ad_linked_abilities"	"venomancer_plague_ward"
+			}
+		}
+	}
+	// Talent: Ward Cooldown
+	"special_bonus_unique_venomancer_8"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"2"
+				"ad_linked_abilities"			"venomancer_plague_ward"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	
+	
+	"venomancer_noxious_plague"	{
+		"MaxLevel"	"4"
+		"RequiredLevel"	"6"
+		"LevelsBetweenUpgrades"	"6"
+		"LinkedAbility"		"venomancer_latent_poison"
+	
+		"AbilityCooldown"				"41 34 27 20"
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.15"
+		"AbilityManaCost"				"200 300 400 500"
+
+		"AbilityValues"
+		{
+			"debuff_duration"			{
+				"value"	"5"
+				"LinkedSpecialBonus"	"special_bonus_unique_venomancer_4"
+			}
+			"impact_damage"				"200 500 1100 2000"
+			"health_damage"			{
+				"value"							"5 6 7 8"
+				"special_bonus_unique_venomancer_4" "0"
+			}
+			"debuff_radius"				"800"
+			"movement_slow_max"			"50"
+			"attack_slow"
+			{
+				"value"					"0"
+				"special_bonus_unique_venomancer_5"	"+900"
+			}
+			"projectile_speed"			"1200"		
+		}
+	}
+
+
+	"venomancer_poison_nova"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		
+		"AbilityValues"		{
+			"radius"					"900"
+			"speed"						"900"
+			"start_radius"				"255"
+			"duration"	"10"
+			"damage"					"4"
+			"magic_resist"				"-30"
+			"trigger_cd"				"0"
+		}
+	}
+
+
+	"venomancer_latent_poison"{
+		"MaxLevel"	"4"
+		"RequiredLevel"	"6"
+		"LevelsBetweenUpgrades"	"6"
+		"LinkedAbility"		"venomancer_noxious_plague"
+		
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"275"
+		
+		"AbilityValues"		{
+			"duration_damage"		"100 200 400 700"
+			"movement_slow"			"-30 -40 -50 -60"
+			"projectile_speed"		"1200"
+			"damage_interval"		"1.0"
+			"duration"				"7"
+			"explosion_damage"		"800 1400 2500 4600"
+			"explosion_stun_duration"	"3"
+		}
+	}
+}

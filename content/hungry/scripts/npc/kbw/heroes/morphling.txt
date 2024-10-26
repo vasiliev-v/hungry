@@ -1,0 +1,180 @@
+"DOTAAbilities"{
+	"morphling_waveform"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"700 800 900 1000 1100 1200 1300"
+		"AbilityDamage"	"180 270 395 570 820 1155 1600"
+		"AbilityManaCost"	"130 169 208 247 286 325 364"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"speed"	"1600"
+			"width"	"200"
+			"AbilityCooldown"{
+				"value"			"9 8.5 8 7.5 7 6.5 6"
+				"special_bonus_unique_morphling_waveform_cooldown"			"-40%"
+			}
+			"AbilityCastRange"{
+				"value"	"700 800 900 1000 1100 1200 1300"
+				"special_bonus_unique_morphling_1"	"+350"
+			}
+			"AbilityCharges"{
+				"value"	"0"
+				"special_bonus_unique_morphling_6"	"+3"
+			}
+		}
+	}
+
+
+	"morphling_adaptive_strike_agi"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"600 800 1000 1200 1400 1600 1800"
+		"AbilityCooldown"	"8"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"AbilityModifierSupportValue"	"0.3"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_base"	"105 135 175 230 300 385 500"
+			"damage_max"{
+				"value"	"1.0 1.2 1.4 1.6 1.8 2.0 2.2"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_morphling_adaptive_strike_damage_stun"	"+1"
+			}
+			"damage_min"{
+				"value"	"1.0 1.2 1.4 1.6 1.8 2.0 2.2"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_morphling_adaptive_strike_damage_stun"	"+1"
+			}
+			"projectile_speed"	"1150"
+			"shared_cooldown"	"1"
+			"bonus_attributes"{
+				"value"	"10 15 25 40 60 90 130"
+				"special_bonus_shard"	"+40"
+			}
+		}
+	}
+	"morphling_adaptive_strike_str"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"600 800 1000 1200 1400 1600 1800"
+		"AbilityCooldown"	"8"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"AbilityModifierSupportValue"	"0.3"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"knockback_max"	"500"
+			"knockback_min"	"100"
+			"projectile_speed"	"1150"
+			"shared_cooldown"	"1"
+			"stun_max"{
+				"value"	"1.8 2.0 2.2 2.4 2.6 2.8 3.0"
+				"special_bonus_unique_morphling_adaptive_strike_damage_stun"	"+1"
+			}
+			"stun_min"{
+				"value"	"0.5"
+				"special_bonus_unique_morphling_adaptive_strike_damage_stun"	"+1"
+			}
+			"bonus_attributes"{
+				"value"	"10 15 25 40 60 90 130"
+				"special_bonus_shard"	"+40"
+			}
+		}
+	}
+	"special_bonus_unique_morphling_adaptive_strike_damage_stun"{		
+		"BaseClass"	"special_bonus_base"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	// Talent: Strike Multishot
+    "special_bonus_unique_morphling_3"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"2"
+                "ad_linked_abilities"	"morphling_adaptive_strike"
+            }
+        }
+    }
+
+
+	"morphling_morph"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_attributes"{
+				"value"	"10 15 25 40 60 85 105"
+				"special_bonus_shard"	"+40"
+			}
+		}
+	}
+	"morphling_morph_agi"{
+		"AbilityCooldown"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"castable_while_stunned"{
+				"value"	"0"
+				"special_bonus_shard"	"+1"
+			}
+			"mana_cost"	"10"
+			"morph_rate_tooltip"	"25 50 100 175 275 400 550"
+			"morph_cooldown"	"0.1 0.05"
+			"points_per_tick"	"1 1 2 3 5 8 11"
+		}
+	}
+	"morphling_morph_str"{
+		"AbilityCooldown"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"castable_while_stunned"{
+				"value"	"0"
+				"special_bonus_shard"	"+1"
+			}
+			"mana_cost"	"10"
+			"morph_rate_tooltip"	"25 50 100 175 275 400 550"
+			"morph_cooldown"	"0.1 0.05"
+			"points_per_tick"	"1 1 2 3 5 8 11"
+		}
+	}
+
+
+	"morphling_replicate"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"700 1133 1567 2000"
+		"AbilityCooldown"	"71 64 57 50"
+		"AbilityManaCost"	"50 88 125 163"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"{
+				"value"	"30"
+				"LinkedSpecialBonus"	"special_bonus_unique_morphling_8"
+			}
+			"scepter_cooldown_reduction"{
+				"value"	"0"
+				"RequiresScepter"	"1"
+			}
+			"scepter_stat_steal"{
+				"value"	"30"
+				"RequiresScepter"	"1"
+			}
+			"scepter_spell_amplify"{
+				"value"	"45"
+				"RequiresScepter"	"1"
+			}
+			"scepter_attack_speed"{
+				"value"	"400"
+				"RequiresScepter"	"1"
+			}
+			"scepter_status_resist"{
+				"value"	"35"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"morphling_morph_replicate"{
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+	}
+}

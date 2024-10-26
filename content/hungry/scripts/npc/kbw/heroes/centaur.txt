@@ -1,0 +1,103 @@
+"DOTAAbilities"{
+
+	"centaur_hoof_stomp"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCooldown"	"9"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"425"
+			"stomp_damage"	"180 262 380 553 804 1169 1700"
+			"stun_duration"{
+				"value"	"1.6 1.8 2 2.2 2.4 2.6 2.8"
+				"special_bonus_unique_centaur_2"	"+0.6"
+			}
+		}
+	}
+	"centaur_double_edge"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"150"
+		"AbilityCooldown"	"4.2 3.6 3.0 2.4 1.8 1.2 0.6"
+		"AbilityManaCost"	"0 0 0 0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"edge_damage"	"180 249 343 474 655 905 1250"
+			"radius"	"190"
+			"shard_max_stacks"{
+				"special_bonus_shard"	"+5"
+			}
+			"shard_movement_slow"{
+				"special_bonus_shard"	"+25"
+			}
+			"shard_movement_slow_duration"{
+				"special_bonus_shard"	"+2"
+			}
+			"shard_str_duration"{
+				"special_bonus_shard"	"+12"
+			}
+			"shard_str_pct"{
+				"special_bonus_shard"	"+15"
+			}
+			"strength_damage"{
+				"value"	"100"
+				"special_bonus_unique_centaur_4"	"+100"
+			}
+		}
+	}
+	"centaur_return"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"aura_radius"	"1200"
+			"return_damage"{
+				"value"	"0 30 78 144 228 330 450"
+				"special_bonus_unique_centaur_3"	"+750"
+			}
+			"return_damage_str"	"60"
+		}
+	}
+	"centaur_mount"{
+		// "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET |  DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		// "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"	// DURA
+		// "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityCastRange"	"300"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"75"
+		"AbilityValues"{
+			"air_duration"	"0.5"
+			"air_height"	"450"
+			"break_distance"	"600"
+			"duration"	"8"
+			"melee_attack_range"	"200"
+		}
+	}
+	"centaur_stampede"{
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"base_damage"	"0"
+			"duration"{
+				"value"	"4 5 6 7"
+				"special_bonus_unique_centaur_7"	"+1"
+			}
+			"radius"	"105"
+			"scepter_bonus_duration"{
+				"special_bonus_scepter"	"+0"
+			}
+			"slow_duration"	"2.5 2.6 2.7 2.8"
+			"slow_movement_speed"	"200"
+			"speed_pct"	"75"
+			"strength_damage"{
+				"value"	"2.5 3 3.5 4"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"AbilityCooldown"{
+				"value"	"65 55 45 35"
+				"special_bonus_unique_centaur_5"	"-12"
+			}
+		}
+	}
+}

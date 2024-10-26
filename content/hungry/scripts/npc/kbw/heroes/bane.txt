@@ -1,0 +1,103 @@
+"DOTAAbilities"{
+	"bane_enfeeble"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1100"
+		"AbilityCooldown"	"10 9.5 9 8.5 8 7.5 7"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_reduction"	"45 50 55 60 65 70 75"
+			"duration"			"10"
+			"heal_reduction"{
+				"value"			"45 50 55 60 65 70 75"
+				"special_bonus_unique_bane_6" 	"+50"		//Useless
+			}
+			"cast_reduction"{
+				"value"			"30 35 40 45 50 55 60"
+				"special_bonus_unique_bane_11"	"+0"
+			}
+			"enfeeble_tick_damage"
+			{
+				"value"			"20 40 80 120 220 330 480"
+				"special_bonus_unique_bane_10"				"+120"
+				"CalculateSpellDamageTooltip" "1"
+			}
+		}
+	}
+	
+	
+	"bane_brain_sap"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"600"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"brain_sap_damage"{
+				"value"			"140 250 400 590 820 1090 1400"
+				"special_bonus_unique_bane_2"	"+800"
+			}
+			"AbilityCooldown"{
+				"value"			"13 12 11 10 9 8 7"
+				"special_bonus_unique_bane_8"	"-3"
+			}
+			"shard_radius"{
+				"special_bonus_shard"			"+550"
+			}
+			"shard_secondary_target_heal_pct"{
+				"special_bonus_shard"			"+25"
+			}
+		}
+	}
+	
+	
+	"bane_nightmare"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"425 500 575 650 725 800 875"
+		"AbilityManaCost"	"140 182 224 266 308 350 392"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"animation_rate"			"0.1"
+			"duration"					"5 5.5 6 6.5 7 7.5 8"
+			"nightmare_invuln_time"		"1"
+			"AbilityCooldown"{
+				"value"			"15"
+				"special_bonus_unique_bane_5"	"-5"
+			}
+		}
+	}
+	
+	
+	"bane_fiends_grip"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"625"
+		"AbilityManaCost"	"200 350 500 650"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"fiend_grip_tick_interval"	"0.5"
+			"fiend_grip_damage"			"120 228 410 666"
+			"fiend_grip_mana_drain"{
+				"value"							"5"
+				"special_bonus_unique_bane_9"	"+0"
+			}
+			"AbilityChannelTime"{
+				"value"							"6"
+				"special_bonus_unique_bane_3"	"+5"
+			}
+			"AbilityCooldown"{
+				"value"							"60"
+				"special_bonus_scepter"			"-20"
+			}
+			"illusion_count"{
+				"special_bonus_scepter"			"+2"
+			}
+			"scepter_incoming_illusion_damage"{
+				"special_bonus_scepter"			"+200"
+			}
+		}
+	}
+}

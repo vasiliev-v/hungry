@@ -1,0 +1,177 @@
+"DOTAAbilities"{
+
+	
+	"slark_dark_pact"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"325"
+		"AbilityCooldown"	"9 8.25 7.5 6.75 6 5.25 4.5"
+		"AbilityManaCost"	"80 100 130 165 215 285 390"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"delay"	"1.5"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"pulse_duration"	"1"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"325"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"total_damage"	"120 180 265 380 545 770 1070"
+				"LinkedSpecialBonus"	"special_bonus_unique_slark_2"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"total_pulses"	"10"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"pulse_interval"	"0.1"
+			}
+		}
+	}
+
+	"slark_pounce"{
+		"AbilityCooldown"	"18 16 14 12 10 8 6"
+		"AbilityManaCost"	"125 155 200 255 333 444 605"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"charge_restore_time"{
+				"value"	"6"
+				"RequiresScepter"	"1"
+			}
+			"leash_duration"{
+				"value"	"2.5 2.75 3 3.25 3.5 3.75 4"
+				"LinkedSpecialBonus"	"special_bonus_unique_slark"
+			}
+			"leash_radius"	"400"
+			"max_charges"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+			"pounce_acceleration"	"7000"
+			"pounce_damage"	"40"
+			"pounce_distance"	"700"
+			"pounce_distance_scepter"{
+				"value"	"1200"
+				"RequiresScepter"	"1"
+			}
+			"pounce_radius"	"120"
+			"pounce_speed"	"1000"
+		}
+	}
+	
+	"slark_nimble_blade"{
+		"BaseClass"                     "ability_lua"
+		"ScriptFile"                    "kbw/abilities/heroes/slark/nimble_blade"
+		"AbilityTextureName"            "slark_essence_shift"
+
+		"MaxLevel"                      "7"
+		"LevelsBetweenUpgrades"         "3"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"creep_agi"				"3 4 5 6 7 8 9 10"
+			}
+			"02"{
+				"var_type"				"FIELD_INTEGER"
+				"attack_chance"			"20"
+			}
+			"03"{
+				"var_type"				"FIELD_INTEGER"
+				"boss_attack_chance"	"3"
+			}
+			"04"{
+				"var_type"				"FIELD_INTEGER"
+				"attack_agi"			"10 12 14 16 18 20 22"
+			}
+			"05"{
+				"var_type"				"FIELD_INTEGER"
+				"attack_stats_reduce"	"4 5 6 7 8 9 10"
+			}
+			"06"{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"18 25 32 39 46 53 60"
+			}
+			"07"{
+				"var_type"				"FIELD_INTEGER"
+				"hero_kill_agi"			"1 2 3 4 6 9 12"
+			}
+			"08"{
+				"var_type"				"FIELD_INTEGER"
+				"kill_radius"			"300"
+			}
+		}
+	}
+
+	"special_bonus_unique_slark_nimble_blade_duration"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"60"
+			}
+		}
+
+		"ModifyValues"{
+			"slark_nimble_blade"{
+				"duration"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+						"RefreshModifiers"{
+							"1"		"m_slark_nimble_blade"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	"slark_depth_shroud"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"75"
+		"AbilityManaCost"	"250"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2.5"
+			}
+		}
+	}
+
+	"slark_shadow_dance"{
+		"AbilityCooldown"	"80 70 60 50"
+		"AbilityManaCost"	"240 370 577 895"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"activation_delay"	"0.5"
+			"bonus_movement_speed"	"25 35 45 55"
+			"bonus_regen"{
+				"value"	"60 120 240 540"
+				"special_bonus_unique_slark_8"	"+40"
+			}
+			"duration"{
+				"value"	"4 4.25 4.5 4.75"
+				"LinkedSpecialBonus"	"special_bonus_unique_slark_3"
+			}
+			"fade_time"	"0.0"
+			"neutral_disable"	"2"
+		}
+	}
+}

@@ -1,0 +1,189 @@
+"DOTAAbilities"{
+
+
+	"skywrath_mage_arcane_bolt"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"875"
+		"AbilityCooldown"	"5 4.4 3.8 3.2 2.6 2.0 1.4"
+		"AbilityManaCost"	"95 124 152 181 209 238 266"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"bolt_speed"	"900"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bolt_vision"	"325"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"bolt_damage"	"90 125 170 235 320 440 600"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"int_multiplier"	"1.6"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"vision_duration"	"3.34"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_radius"	"700"
+				"RequiresScepter"	"1"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"lifesteal_duration"	"5"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"lifesteal_amt"			"10 15 20 25 30 35 40"
+			}
+		}
+	}
+	"skywrath_mage_concussive_shot"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1600"
+		"AbilityCooldown"	"9 8 7 6 5 4 3"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"launch_radius"	"1600"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"slow_radius"	"250"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"900"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"150 218 316 458 665 965 1400"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"4"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"movement_speed_pct"	"30 35 40 45 50 55 60"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"shot_vision"	"300"
+			}
+			"08"{
+				"var_type"	"FIELD_FLOAT"
+				"vision_duration"	"3.34"
+			}
+			"09"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_radius"	"700"
+				"RequiresScepter"	"1"
+			}
+			"10"{
+				"var_type"	"FIELD_INTEGER"
+				"creep_damage_pct"	"75"
+			}
+		}
+	}
+	"skywrath_mage_ancient_seal"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"700 750 800 850 900 950 1000"
+		"AbilityCooldown"	"14"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"resist_debuff"	"-30 -35 -40 -45 -50 -55 -60"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_MAGICAL"
+				"LinkedSpecialBonus"	"special_bonus_unique_skywrath_3"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"seal_duration"	"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_radius"	"700"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"skywrath_mage_shield_of_the_scion"{
+		"IsGrantedByShard"	"1"
+		"MaxLevel"	"1"
+		"AbilityValues"{
+			"bonus_armor"	"2"
+			"bonus_intelligence"	"7"
+			"stack_duration"	"35"
+		}
+	}
+	"skywrath_mage_mystic_flare"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"27 23 19 15"
+		"AbilityManaCost"	"300 525 750 975"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"170"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2.4"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"900 1700 3200 6000"
+				"LinkedSpecialBonus"	"special_bonus_unique_skywrath_5"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"damage_interval"	"0.1"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_radius"	"700"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+
+
+	"special_bonus_unique_skywrath_mage_arcane_bolt_multicast"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_FLOAT"
+                "value"     "3"
+            }
+        }
+
+		"Multicast"{
+			"skywrath_mage_arcane_bolt"{
+				"Count"		"value"
+				"Buffer"	"200"
+				"Order"		"MULTICAST_ORDER_TARGET_CLOSEST"
+			}
+		}
+	}
+}

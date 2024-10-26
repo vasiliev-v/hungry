@@ -1,0 +1,158 @@
+"DOTAAbilities"{
+	"phantom_assassin_stifling_dagger"{
+		"AbilityCastPoint"	"0.3 0.27 0.24 0.21 0.18 0.15 0.12"
+		"AbilityCastRange"	"550 750 950 1150 1350 1550 1750"
+		"AbilityCooldown"	"4.5 4.0 3.5 3.0 2.5 2.0 1.5"
+		"AbilityManaCost"	"30 39 48 57 66 75 84"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"attack_factor"{
+				"value"	"0"
+				"special_bonus_unique_phantom_assassin_5"	"+40"
+			}
+			"attack_factor_tooltip"{
+				"value"	"100"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_PHYSICAL"
+				"special_bonus_unique_phantom_assassin_5"	"+40"
+			}
+			"base_damage"	"100 160 257 412 661 1060 1700"
+			"dagger_speed"	"1200"
+			"duration"	"2.2 2.6 3 3.4 3.8 4.2 4.6"
+			"move_slow"	"-50 -57 -64 -71 -78 -85 -92"
+		}
+	}
+	// Talent: Dagger CD
+	"special_bonus_unique_phantom_assassin_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1"
+				"ad_linked_abilities"	"phantom_assassin_stifling_dagger"
+			}
+		}
+	}
+	// Talent: Dagger Multishot
+	"special_bonus_unique_phantom_assassin"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"3"
+				"ad_linked_abilities"	"phantom_assassin_stifling_dagger"
+			}
+		}
+	}
+
+	
+	"phantom_assassin_phantom_strike"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCooldown"	"9 8 7 6 5 4 3"
+		"AbilityManaCost"	"35 46 56 67 77 88 98"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_attack_speed"{
+				"value"	"113 154 212 290 398 547 750"
+				"special_bonus_unique_phantom_assassin_strike_aspd"	"+0"
+			}
+			"duration"{
+				"value"	"2"
+				"special_bonus_unique_phantom_assassin_4"	"+1"
+			}
+			"lifesteal_pct"	"50"
+			"AbilityCastRange"{
+				"value"	"1000"
+				"special_bonus_unique_phantom_assassin_6"	"+750"
+			}
+		}
+	}
+
+
+	"phantom_assassin_blur"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"20 19 18 17 16 15 14"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_evasion"	{
+				"value"	"20 25 30 35 40 45 50"
+				"LinkedSpecialBonus"	"special_bonus_unique_phantom_assassin_3"
+			}
+			"duration"	"1.75"
+			"radius"	"600"
+			"fade_duration"	"1"
+			"scepter_fade_duration"	{
+				"value"	"1.5"
+				"RequiresScepter"	"1"
+			}
+			"scepter_cooldown"{
+				"value"		"9"
+				"RequiresScepter"		"1"
+			}
+		}
+	}
+	// Talent: Blur Evasion
+	"special_bonus_unique_phantom_assassin_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"40"
+				"ad_linked_abilities"	"phantom_assassin_blur"
+			}
+		}
+	}
+	"special_bonus_unique_phantom_assassin_blur_spell_immunity"{
+		"BaseClass"			"special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"{
+			"duration"		"3.5"
+		}
+		"AddModifiers"{
+			"m_special_bonus_unique_phantom_assassin_blur_spell_immunity" {
+				"Path"		"kbw/abilities/heroes/phantom_assassin/m_special_bonus_unique_phantom_assassin_blur_spell_immunity"
+			}
+		}
+	}
+
+
+	"phantom_assassin_coup_de_grace"{
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"crit_chance"	{
+				"value"	"15"
+				"LinkedSpecialBonus"	"special_bonus_unique_phantom_assassin_2"
+			}
+			"crit_bonus"				"300 400 500 600"
+		}
+	}
+	// Talent: Crit Chance
+	"special_bonus_unique_phantom_assassin_2"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"7"
+				"ad_linked_abilities"			"phantom_assassin_coup_de_grace"
+			}
+		}
+	}
+
+
+	"phantom_assassin_fan_of_knives"{
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityCastPoint"	"0.15"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"125"
+		"AbilityValues"{
+			"pct_health_damage_initial"	"10"
+			"pct_health_damage"	"2"
+			"degen"	"-50"
+			"duration"	"3"
+			"radius"	"550"
+			"projectile_speed"	"650"
+		}
+	}
+}

@@ -1,0 +1,669 @@
+#base "special_bonus_override.txt"
+
+"DOTAAbilities" {
+
+
+
+	"chaos_knight_chaos_bolt"{
+		"AbilityCastPoint"	"0.4 0.4 0.4 0.4"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"13 12 11 10 9 8 7"
+		"AbilityManaCost"	"110 120 130 140"
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"chaos_bolt_speed"	"700"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_min"	"1.25 1.5 1.75 2 2.25 2.5 2.75"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_3"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_max"	"2.2 2.8 3.4 4 4.6 5.2 5.8"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_3"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_min"	"0"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_max"	"300 462 711 1095 1687 2598 4000"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"fake_bolt_distance"	"675"
+			}
+		}
+	}
+	"chaos_knight_chaos_strike"{
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"chance"{
+				"value"	"33.33"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_5"
+			}
+			"creep_multiplier"	"1.5"
+			"crit_max"	"140 175 210 245 280 315 350"
+			"crit_min"	"120"
+			"lifesteal"{
+				"value"	"24 36 48 60 72 84 96"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_6"
+			}
+		}
+	}
+	"chaos_knight_phantasm"{
+		"AbilityCastPoint"	"0.4 0.4 0.4"
+		"AbilityCooldown"	"75 65 55 45"
+		"AbilityManaCost"	"75 125 175 275"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"images_count"	"1 2 3 4"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"illusion_duration"	"30"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_4"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"outgoing_damage"	"0"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"outgoing_damage_tooltip"	"100"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"incoming_damage"	"200"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_7"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"incoming_damage_tooltip"	"300"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_7"
+			}
+			"07"{
+				"var_type"	"FIELD_FLOAT"
+				"invuln_duration"	"0.5"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"vision_radius"	"400"
+			}
+			"09"{
+				"var_type"	"FIELD_INTEGER"
+				"magic_resistance"	"0"
+			}
+		}
+	}
+	"chaos_knight_reality_rift"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"550 600 650 700 750 800 850"
+		"AbilityCooldown"	"18 15.5 13 10.5 8 5.5 3"
+		"AbilityManaCost"	"50"
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"cast_range"	"550 600 650 700 750 800 850"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"pull_distance"	"250 300 350 400 450 500 550"
+				"LinkedSpecialBonus"	"special_bonus_unique_chaos_knight_2"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"armor_reduction"	"4 6 10 16 24 34 46"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"6"
+			}
+		}
+	}
+
+
+
+	"meepo_divided_we_stand"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
+		"DisplayAdditionalHeroes"	"1"
+		"ID"	"5433"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"RequiredLevel"	"4"
+		"AbilityValues"{
+			"magic_resist"	"10 15 20"
+			"movement_slow"	"-50"
+			"rat_pack"{
+				"value"	"0"
+				"special_bonus_unique_meepo_7"	"+1"
+			}
+			"respawn"	"0"
+			"tooltip_clones"{
+				"value"	"2 4 8 15"
+				"LinkedSpecialBonus"	"special_bonus_unique_meepo_5"
+			}
+			"tooltip_respawn"	"20"
+			"tooltip_share_percentage"	"20"
+			"tooltip_share_percentage_scepter"	"100"
+		}
+	}
+	"meepo_earthbind"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"500 833 1167 1500 1833 2167 2500"
+		"AbilityCooldown"	"20 17.67 15.33 13 10.67 8.33 6"
+		"AbilityManaCost"	"100"
+		"AbilitySound"	"Hero_Meepo.Earthbind.Cast"
+		"FightRecapLevel"	"1"
+		"ID"	"5430"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"220"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"900"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"abilitycastrange"	""
+				"LinkedSpecialBonus"	"special_bonus_unique_meepo_4"
+			}
+		}
+	}
+	"meepo_geostrike"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityModifierSupportBonus"	"5"
+		"AbilitySound"	"Hero_Meepo.Geostrike"
+		"ID"	"5432"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"gold_steal"	"2 3 4 7 12 21 35"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"hp_steal"	"9 14 21 33 51 78 120"
+			}
+		}
+	}
+	"meepo_petrify"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCastPoint"	"0"
+		"AbilityChannelTime"	"0.75"
+		"AbilityCooldown"	"40"
+		"AbilityManaCost"	"150"
+		"FightRecapLevel"	"1"
+		"HasScepterUpgrade"	"1"
+		"ID"	"547"
+		"IsGrantedByScepter"	"1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"1"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3.5"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"hp_restore"	"25"
+			}
+		}
+	}
+	"meepo_poof"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityChannelTime"	"0"
+		"AbilityCooldown"	"12 10.75 9.5 8.25 7 5.75 4.5"
+		"AbilityManaCost"	"80"
+		"AbilitySound"	"Hero_Meepo.Poof"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"FightRecapLevel"	"1"
+		"ID"	"5431"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityValues"{
+			"poof_damage"{
+				"value"	"105 142 193 261 354 480 650"
+				"special_bonus_unique_meepo_2"	"+30"
+			}
+			"radius"	"375"
+			"AbilityCastPoint"	"1.5"
+		}
+	}
+	"meepo_ransack"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilitySound"	"Hero_Meepo.Geostrike"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"HasShardUpgrade"	"1"
+		"ID"	"7318"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityValues"{
+			"health_steal_creeps"{
+				"value"	"6 9 12 17 25 35 50"
+				"LinkedSpecialBonus"	"special_bonus_unique_meepo_6"
+			}
+			"health_steal_heroes"{
+				"value"	"9 13 19 28 42 61 90"
+				"LinkedSpecialBonus"	"special_bonus_unique_meepo_6"
+			}
+		}
+	}
+
+
+
+	"roshan_bash"{
+		"MaxLevel"	"3"
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"bash_chance"	"15"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"1000 2000 4000"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.65"
+			}
+		}
+	}
+
+
+	"shoot_firework"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ITEM"
+		"AbilityCastAnimation"	"ACT_INVALID"
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"1800"
+		"ID"	"5650"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+	}
+
+
+
+	"spectre_desolate"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"30 50 80 120 170 230 300"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_2"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+		}
+	}
+	"spectre_dispersion"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_reflection_pct"	"8 12 16 20 24 28 32"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_5"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"min_radius"	"300"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"max_radius"	"700"
+			}
+		}
+	}
+	"spectre_haunt"{
+		"AbilityCastPoint"	"0.3 0.3 0.3"
+		"AbilityCooldown"	"70 60 50 40"
+		"AbilityManaCost"	"150 175 200 228"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"5.0 6.0 7.0 8"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_damage_outgoing"	"-60 -40 -20 0"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_outgoing"	"40 60 80 100"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_4"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_damage_incoming"	"100"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_illusion_total_damage_incoming"	"200"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"attack_delay"	"0"
+			}
+		}
+	}
+	"spectre_haunt_single"{
+		"AbilityCastPoint"	"0.3 0.3 0.3"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"180"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"5.0 6.0 7.0 8"
+				"RequiresScepter"	"1"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_damage_outgoing"	"-60 -40 -20 0"
+				"RequiresScepter"	"1"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_outgoing"	"40 60 80 100"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_4"
+				"RequiresScepter"	"1"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_damage_incoming"	"100"
+				"RequiresScepter"	"1"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_illusion_total_damage_incoming"	"200"
+				"RequiresScepter"	"1"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"attack_delay"	"0"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"spectre_spectral_dagger"{
+		"AbilityCastPoint"	"0.3 0.3 0.3 0.3"
+		"AbilityCastRange"	"1800"
+		"AbilityCooldown"	"22 20 18 16 14 12 10"
+		"AbilityManaCost"	"130 140 150 160 200 240 300"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"120 176 259 379 557 818 1200"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_6"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movespeed"	"10 14 18 22 26 30 34"
+				"LinkedSpecialBonus"	"special_bonus_unique_spectre_3"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"dagger_path_duration"	"12"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"hero_path_duration"	"7"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"buff_persistence"	"4"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"dagger_radius"	"125"
+			}
+			"09"{
+				"var_type"	"FIELD_INTEGER"
+				"path_radius"	"175"
+			}
+			"10"{
+				"var_type"	"FIELD_INTEGER"
+				"vision_radius"	"200"
+			}
+			"11"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"800"
+			}
+			"12"{
+				"var_type"	"FIELD_FLOAT"
+				"dagger_grace_period"	"1"
+			}
+		}
+	}
+
+
+
+
+
+
+	"terrorblade_conjure_image"{
+		"AbilityCastPoint"	"0.15"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"55 65 75 85 95 105 115"
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"illusion_duration"{
+				"value"	"34"
+				"special_bonus_unique_terrorblade_5"	"+10"
+			}
+			"illusion_incoming_damage"	"220"
+			"illusion_incoming_damage_total_tooltip"	"320"
+			"illusion_outgoing_damage"{
+				"value"	"-70 -60 -50 -40 -30 -20 -10"
+				"special_bonus_unique_terrorblade_4"	"+10"
+			}
+			"illusion_outgoing_tooltip"{
+				"value"	"30 40 50 60 70 80 90"
+				"special_bonus_unique_terrorblade_4"	"+10"
+			}
+		}
+	}
+	"terrorblade_demon_zeal"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCooldown"	"14"
+		"AbilityManaCost"	"0"
+		"AbilityValues"{
+			"berserk_bonus_attack_speed"	"500"
+			"berserk_bonus_movement_speed"	"200"
+			"duration"	"7"
+			"health_cost_pct"	"20"
+			"melee_bonus"	"100"
+		}
+	}
+	"terrorblade_metamorphosis"{
+		"AbilityCooldown"	"80"
+		"AbilityManaCost"	"100"
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"36 40 44 48 52 56 60"
+				"LinkedSpecialBonus"	"special_bonus_unique_terrorblade_3"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"transformation_time"	"0.35"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"base_attack_time"	"1.5"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_range"	"340 360 380 400 420 440 460"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_attack_range"	"490 510 530 550 570 590 610"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"30 54 97 173 311 557 1000"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"speed_loss"	"0"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"metamorph_aura_tooltip"	"1200"
+			}
+		}
+	}
+	"terrorblade_reflection"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"28 24 20 16 12 8 4"
+		"AbilityManaCost"	"35 40 45 50 100 150 200"
+		"LevelsBetweenUpgrades"	"4"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"illusion_duration"{
+				"value"	"5"
+				"special_bonus_unique_terrorblade_2"	"+2"
+			}
+			"illusion_outgoing_damage"	"-45 -30 -15 0 15 30 45"
+			"illusion_outgoing_tooltip"	"55 70 85 100 115 130 145"
+			"move_slow"{
+				"value"	"15 20 25 30 35 40 45"
+				"special_bonus_unique_terrorblade_6"	"+15"
+			}
+			"range"	"475"
+		}
+	}
+	"terrorblade_sunder"{
+		"AbilityCastPoint"	"0.35"
+		"AbilityCastRange"	"475 675 875 1075"
+		"AbilityCooldown"	"50 40 30 20"
+		"AbilityManaCost"	"150 100 50 0"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"hit_point_minimum_pct"	"30 20 10 0"
+		}
+	}
+	"terrorblade_terror_wave"{
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"75"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"fear_duration"	"2.5"
+				"RequiresScepter"	"1"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_radius"	"1600"
+				"RequiresScepter"	"1"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_speed"	"1000"
+				"RequiresScepter"	"1"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"scepter_spawn_delay"	"0.6"
+				"RequiresScepter"	"1"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"scepter_meta_duration"	"10"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+
+
+	"tornado_tempest"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"ID"	"5310"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"far_radius"	"600"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed_slow"	"-15"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"attackspeed_slow"	"-15"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"near_radius"	"150"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"near_damage"	"45"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"far_damage"	"15"
+			}
+			"07"{
+				"var_type"	"FIELD_FLOAT"
+				"tick_rate"	"0.25"
+			}
+		}
+	}
+
+}

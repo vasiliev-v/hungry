@@ -1,0 +1,158 @@
+
+"DOTAAbilities"{
+	"tidehunter_gush"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"9 8.5 8 7.5 7 6.5 6"
+		"AbilityDuration"	"5"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"gush_damage"	{
+				"value"	"165 233 328 463 653 922 1300"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+			}
+			"projectile_speed"	"2500"
+			"movement_speed"	{
+				"value"	"-30 -35 -40 -45 -50 -55 -60"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_5"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
+			"negative_armor"	{
+				"value"	"6 8 11 15 20 26 34"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
+			}
+			"speed_scepter"	{
+				"value"	"1500"
+				"RequiresScepter"	"1"
+			}
+			"aoe_scepter"	{
+				"value"	"260"
+				"RequiresScepter"	"1"
+			}
+			"cooldown_scepter"	{
+				"value"	"8 7 6 5 4 3 2"
+				"RequiresScepter"	"1"
+			}
+			"cast_range_scepter"	{
+				"value"	"2200"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	// Talent: Gush Armor
+    "special_bonus_unique_tidehunter"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"22"
+                "ad_linked_abilities"	"tidehunter_gush"
+            }
+        }
+    }
+	// Talent: Gush Damage
+    "special_bonus_unique_tidehunter_2"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1700"
+                "ad_linked_abilities"	"tidehunter_gush"
+            }
+        }
+    }
+
+
+	"tidehunter_kraken_shell"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_reduction"	"20 35 60 95 140 195 260"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_4"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_cleanse"	"600"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_tidehunter_6"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"damage_reset_interval"	"7"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+		}
+	}
+	// Talent: Shell Block
+    "special_bonus_unique_tidehunter_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"240"
+                "ad_linked_abilities"	"tidehunter_kraken_shell"
+            }
+        }
+    }
+
+	"tidehunter_anchor_smash"{
+		"AbilityCastRange"	"375"
+		"AbilityCooldown"	"7 6.33 5.67 5 4.33 3.67 3"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"attack_damage"{
+				"value"	"110 160 225 310 425 570 760"
+				"special_bonus_unique_tidehunter_9"	"+1240"
+			}
+			"damage_reduction"{
+				"value"	"-35 -40 -45 -50 -55 -60 -65"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_tidehunter_3"	"-30"
+			}
+			"radius"	"375"
+			"reduction_duration"	"6"
+			"targets_buildings"{
+				"value"	"0"
+				"special_bonus_unique_tidehunter_10"	"+1"
+			}
+		}
+	}
+
+
+	"tidehunter_ravage"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"90 85 80 75"
+		"AbilityDamage"	"350 665 1265 2400"
+		"AbilityManaCost"	"150 255 435 737"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"duration"{
+				"value"	"2.4 2.6 2.8 3.0"
+				"special_bonus_unique_tidehunter_7"	"+0.7"
+			}
+			"radius"	"1250"
+			"speed"	"725"
+		}
+	}
+
+
+	"tidehunter_arm_of_the_deep"	{
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"200"
+		"AbilityValues"{
+			"projectile_width"				"150"
+			"damage_pct"					"70"
+			"duration_pct"					"70"
+			"range_pct"						"180"
+		}
+	}
+}

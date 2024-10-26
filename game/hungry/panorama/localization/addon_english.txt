@@ -1,0 +1,218 @@
+"addon"
+{
+
+	"LiaRoundNumber"								"Round #{d:round_number}"
+	"LiaRoundName"									"{s:round_name}"
+
+	"LiaRound"										"Round"
+	
+	"addon_game_name"								"Hungry Dota"
+
+	"round_name_1"									"Kobolds"
+	"round_name_2"									"Centaurs"
+	"round_name_3"									"Giant Wolves"
+	"round_name_4"									"Dark Trolls"
+	"round_name_5"									"Megaboss"
+	"round_name_6"									"Bandits"
+	"round_name_7"									"Plague Treants"
+	"round_name_8"									"Overseers"
+	"round_name_9"									"Water Spirits"
+	"round_name_10"									"Megaboss"
+	"round_name_11"									"Ravagers"
+	"round_name_12"									"Furbolgs"
+	"round_name_13"									"Stone Golems"
+	"round_name_14"									"Thunder Lizards"
+	"round_name_15"									"Megaboss"
+	"round_name_16"									"Ghosts"
+	"round_name_17"									"Snatchers"
+	"round_name_18"									"Void Keepers"
+	"round_name_19"									"Satyrs Hellcallers"
+	"round_name_20"									"Final Boss"
+
+	"LiaDuelNumber"									"{s:duel_num}"
+	"LiaDuelText"									"vs"
+
+	"Duel1"											"First duel"
+	"Duel2"											"Second duel"
+	"Duel3"											"Third duel"
+	"Duel4"											"Fourth duel"
+	
+	"ScoreCol_TeamScore"							"Kills:"
+	"ScoreCol_KillsBosses"							"Bosses"
+	"ScoreCol_KillsCreeps"							"Creeps"
+	"ScoreCol_Level"								"Level"
+	"ScoreCol_Upd"								"Upgrades %"
+	"ScoreCol_Deaths"								"Deaths"
+	"ScoreCol_Rating"								"Easy"
+	"ScoreCol_Rating2"								"Normal"
+	"ScoreCol_Rating3"								"Hard"
+	"ScoreCol_RatingEnd"							"Change"
+	"end_screen_victory"		"YOU WIN !"
+	"end_screen_lose"		"YOU LOSE !"
+
+	"end_screen_extreme_difficulty"	"Difficulty: Extreme"
+	"end_screen_light_difficulty"	"Difficulty: Light"
+	"end_screen_normal_difficulty"	"Difficulty: Normal"
+	
+	"end_screen_legend_items"	"Items"
+	
+	"welcome"		"Welcome to Life in Arena 2!"
+	"target"		"Objective:"
+	"targetInfo"	"Kill 20 waves of creeps, bosses and megabosses to stay alive."
+	"targetInfo1"	" * If all heroes die, you will lose."
+	"Sovets"		"Advice:"
+	"SovInfo1"		" * Destroy explosive barrels in critical situations to kill nearby enemies;"
+	"SovInfo2" 		"   * Type \"+\" in chat if you want a wave to start earlier;"
+	"SovInfo3" 		"   * Use decorations as a cover (e.g, destroy barrel to make an aisle and hide in it);"
+	"SovInfo4" 		"   * Try to help each other to survive."
+	"SovInfo5"		"   * Use runes properly to stay alive as long as possible."
+	
+	"DueInfo" 		"Duels:"
+	"DueInfo1"		"   * Don't take them seriously. Life in Arena 2 is a team game and duels are just a small bonus in it;"
+	"DueInfo2"		"   * You are free to use potions during duels, but don't spend more than you can earn."
+	
+	"ReInfo"		"Scoreboard:"
+	"ReInfo1"		"Use buttons"
+	"ReInfo2"		"	to minimize/expand the scoreboard."
+	
+	"RunInfo"		"Runes (not implemented yet):"
+	"RunInfo1"		"   * Coming soon."
+	
+	"UluInfo"		"Upgrades (not implemented yet):" 
+	"UluInfo1"		"   * Coming soon."
+	
+	"LiaUluNoName"									"Need more lumber, "
+	"LiaUluUpd"									"Upgrade completed!"
+	"LiaUluPrice"									"Cost of upgrade "
+	"LiaUluPrice2"					" lumber"
+	"LiaUluInLum"					"Amount of lumber "
+	"LiaUluInProc"					"Percentage of upgrades "
+	"LiaUluFinish"			"Fully completed"
+	
+	"LiaAllScore"			"Team rating: "
+	
+	"LiaScoreBoardHint"			"Do not forget about the ability to view game stats"
+	
+	"LiaTime"			"Game time: "
+	
+	"LiaKillBoss"			" gets <font color=\"#228B22\">3 lumber</font> for killing a boss!"
+	
+	"error_no_usable_corpses" "No corpses"
+	"lia_hud_error_butcher_zombie" "No zombies to be spawned"
+	"lia_cant_pick_this_rune_preduel" "You can't pick this rune during preduel time"
+	"cant_target_allied_creeps" "Can't target allied creeps"
+	"lia_hud_error_keeper_of_the_grove_natures_curse_no_targets" "No enemies in the target area"
+
+	"DOTA_Item_Build_Late_Game"	"Late game"
+
+	"upgrade"	"Upgrades"
+	"accept"	"Accept"
+	"decline"	"Cancel"
+	"trade"		"Trade"
+
+	"Glyph_Tooltip_Title"	"Start the round"
+	"Glyph_tooltip_description"	"You can vote for the round starting without waiting. If all players vote, the new round will start immediatelt. <br>Each vote reduces the waiting time by {d:seconds} seconds.<br><br>{d:readyPlayers} out of {d:numPlayers} players voted."
+	"Glyph_tooltip_description_1_player"	"You can start the next round without waiting."
+
+	"lia_tip1"	"The death zone deals damage to the hero from 30 minutes. After 45 minutes, the zone instantly kills the hero."
+	"lia_tip2"	"Neutral item appear in the center of the map every minute. Divine Rapier will spawn at 2 minutes."
+	"lia_tip3"	"There are 4 danger zones in the game. You need to kill the boss to enter this area. Each zone has its own boss."
+	"lia_tip4"	"By killing the boss, you can get a neutral item or a unique item, as well as improve the characteristics of the hero."
+	"lia_tip5"	"When you kill an enemy, you get additional stats that increase every minute."
+	"lia_tip6"	"Your hero has 4 Aegis. You lose one Aegis if you die to a Hero, Boss, or Danger Zone."
+	"lia_tip7"	"There are 5 stores on the map. 4 shops at the edges of the map and one in the center."
+	"lia_tip8"	"You can capture the Fortpost, which brings gold and experience."
+	"lia_tip9"	"You can make a free teleport to an ally or to a Fortpost."
+	"lia_tip10"	"You can sell extra items and buy a book of Strength, Agility or Intelligence."
+
+
+	"TradeHeader"	"Resource transfer"
+
+	"TradeLegeng_PlayerName"	"Player"
+	"TradeLegeng_SharedHero"	"Hero"
+	"TradeLegeng_SharedUnits"	"Units"
+	"TradeLegeng_DisableHelp"	"Disable Help"
+	"TradeLegeng_Gold"			"Gold"
+	"TradeLegeng_Lumber"		"Lumber"
+
+	"TradeTooltip"	"To transfer resoutces to an ally set the necessary amount of gold or lumber by clicking at a chosen value. <br>Right click will reduce the amount of transfered resources.<br>Holding Shift will increase this number by a 10 times bigger value."
+
+	"Upgrade_attack_damage"	"Combat Expertise"
+	"Upgrade_armor"  "Defense Mastery"
+	"Upgrade_attack_speed"  "Combat Potency"
+	"Upgrade_mana_regen"  "Arcane Arts"
+	"Upgrade_health_regen"  "Wound Mending"
+	"Upgrade_mana"  "Meditation"
+	"Upgrade_health"  "Toughness"
+	
+	"Upgrade_level0"	"Level: 0"
+	"Upgrade_level1"	"Level: 1"
+	"Upgrade_level2"	"Level: 2"
+	"Upgrade_level3"	"Level: 3"
+	"Upgrade_level4"	"Level: 4"
+	"Upgrade_level5"	"Level: 5"
+	"Upgrade_level6"	"Level: 6"
+	"Upgrade_level7"	"Level: 7"
+	"Upgrade_level8"	"Level: 8"
+	"Upgrade_level9"	"Level: 9"
+	"Upgrade_level10"	"Level: 10"
+	"Upgrade_level11"	"Level: 11"
+	"Upgrade_level12"	"Level: 12"
+
+	"Upgrade_attack_damage_description"	"Increases attack damage of the hero by {s:perLevelBonus} per level."
+	"Upgrade_attack_speed_description"	"Increases attack speed of the hero by {s:perLevelBonus} per level."
+	"Upgrade_armor_description"			"Increases armor of the hero by {s:perLevelBonus} per level."
+	"Upgrade_health_description"		"Increases hit points of the hero by {s:perLevelBonus} per level."
+	"Upgrade_health_regen_description"	"Increases health regeneration of the hero by {s:perLevelBonus} per level."
+	"Upgrade_mana_description"			"Increases mana of the hero by {s:perLevelBonus} per level."
+	"Upgrade_mana_regen_description"	"Increases mana regeneration of the hero by {s:perLevelBonus} per level."
+
+	"Upgrade_attack_damage_bonus" "<b>DAMAGE</b>: {s:Bonus}"
+	"Upgrade_attack_speed_bonus" "<b>ATTACK SPEED</b>: {s:Bonus}"
+	"Upgrade_armor_bonus" "<b>ARMOR</b>: {s:Bonus}"
+	"Upgrade_health_bonus" "<b>HEALTH</b>: {s:Bonus}"
+	"Upgrade_health_regen_bonus" "<b>HEALTH REGENERATION</b>: {s:Bonus}"
+	"Upgrade_mana_bonus" "<b>MANA</b>: {s:Bonus}"
+	"Upgrade_mana_regen_bonus" "<b>MANA REGENERATION</b>: {s:Bonus} "
+
+	"DOTA_Hud_AttributeTooltip_Damage"		"- Each point increases damage by 1.5"
+	"DOTA_Hud_StrTooltip_HP"				"- Each point increases hit points by 8"
+	"DOTA_Hud_StrTooltip_HPRegen"			"- Each point increases hit point regen by 0.05"
+	"DOTA_Hud_AgiTooltip_Armor"				"- Every 7 points increase armor by 1"
+	"DOTA_Hud_AgiTooltip_AttackSpeed"		"- Each point increases attack speed by 1"
+	"DOTA_Hud_IntTooltip_Mana"				"- Each point increases mana by 12"
+	"DOTA_Hud_IntTooltip_ManaRegen"			"- Each point increases mana regen by 0.05"
+	"DOTA_Hud_IntTooltip_SpellDamage"		"- Every 16 points increases spell damage by 1%"
+
+	"timer_wave"	"TIME LEFT TILL THE NEXT WAVE"
+	"timer_preduel"	"TIME LEFT TILL DUELS"
+	"timer_duel"	"TIME LEFT TILL THE DUEL ENDS"
+	"timer_vote"	"VOTE"
+	"timer_vote2"	"TO FORCE ROUND"
+	
+	"dota_hud_error_tutorial_shop_not_in_range" "You cannot buy anything during the duel"
+	"lia_hud_error_cant_have_two_items_retdmg"  "You cannot carry more than one item with Damage Return"
+	"lia_hud_error_cant_force_round"	"You cannot start a new round right now"		
+	"lia_hud_error_item_lia_staff_of_illusions_megaboss"	"You cannot use this ability on megabosses"
+	"error_cant_target_allied_creeps" "Can't target non-hero allies"
+	"lia_hud_error_heal_potion_full_hp"	"The hero has full health"
+	"lia_hud_error_mana_potion_full_mana"	"Already at full mana"
+	"lia_hud_error_cant_have_two_divine_armor" "You cannot carry more than one Divine Armor"
+	"error_must_target_mana_unit" "Must target units with mana"
+	"lia_hud_error_target_at_full_health"	"The target has full health"
+	
+	"DOTA_HeroRole_Carry"		""
+	"DOTA_HeroRole_Support"		""
+	"DOTA_HeroRole_Nuker"		"Nuker"
+	"DOTA_HeroRole_Disabler"	"Disabler"
+	"DOTA_HeroRole_Durable"		"Durable"
+	"DOTA_HeroRole_Jungler"		"Summoner"
+	"DOTA_HeroRole_Escape"		"Support"
+	"DOTA_HeroRole_Pusher"		"Damage Dealer"
+	"DOTA_HeroRole_Initiator"	""	
+
+	
+
+
+}
+

@@ -1,0 +1,289 @@
+"DOTAAbilities"{	
+	"brewmaster_thunder_clap"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityCooldown"				"12 11 10 9 8 7 6"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"90 120 150 180 210 240 270"		
+		"AbilityValues"{
+			"radius"				{
+				"value"	"450"
+				"LinkedSpecialBonus"		"special_bonus_unique_brewmaster_7"
+			}
+			"damage"					"210 325 480 675 910 1185 1500"
+			"movement_slow"				"25 35 45 55 65 75 90 100"
+			"attack_speed_slow"			"50 100 150 200 250 300 350"
+			"duration"				"6"
+		}
+	}
+	// Talent: Clap Radius
+	"special_bonus_unique_brewmaster_7"{
+		"AbilityValues"{
+			"value"				"450"
+		}
+	}
+	
+	
+	"brewmaster_cinder_brew"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"1000"
+		"AbilityCooldown"				"16 15 14 13 11 9 7"
+		"AbilityManaCost"				"50"	
+			
+		"AbilityValues"{
+			"duration"		"5"
+			"total_damage"	{
+				"value"			"240 375 600 915 1320 1815 2400"
+				"special_bonus_unique_brewmaster_cinder_brew_damage"		"+2600"
+			}
+			"movement_slow"				"24 28 32 36 40 44 48"
+			"radius"					"600"
+			"extra_duration"					"6"
+		}
+	}
+	// Talent: Cinder Brew Fear
+	"special_bonus_unique_brewmaster_4"{
+		"AbilityValues"{
+			"value"				"1.5"
+		}
+	}
+	"special_bonus_unique_brewmaster_cinder_brew_damage"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	
+	
+	"brewmaster_drunken_brawler"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityCooldown"				"0"
+		"AbilityManaCost"				"0"		
+		"AbilityValues"{
+			"dodge_chance"		"15 20 25 30 35 40 45"
+			"crit_chance"				"20"
+			"active_multiplier"	{
+				"value"						"2"
+				"special_bonus_unique_brewmaster_8"		"+1"
+			}
+			"crit_multiplier"			"170 200 230 260 290 320 350"
+			"magic_resist"	"5 10 15 20 25 30 35"
+			"armor"		"6 10 16 24 34 46 60"
+			"movespeed"				"15 25 35 45 55 65 75"
+			"slow_duration"				"2 2 3 3 4 4 5"
+			"bonus_move_speed"		"15 25 35 45 55 65 75"
+			"bonus_status_resist"	"5 10 15 20 25 30 35"
+		}
+	}
+	
+	
+	"brewmaster_primal_split"
+	{
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"HasShardUpgrade"			"1"
+		"AbilityCooldown"				"60"
+		"AbilityCastPoint"				"0.55"
+		"AbilityManaCost"				"125 150 175 200"
+		"AbilityValues"{
+			"duration"	{
+				"value"			"16 20 25 31"
+				"special_bonus_shard"		"+14"
+			}
+			"split_duration"			"0.6"
+			"bonus_brewling_hp"{
+				"value"									"0"
+				"special_bonus_unique_brewmaster"		"+0"
+			}
+			"bonus_damage"{
+				"value"									"0"
+				"special_bonus_unique_brewmaster_2"		"+0"
+			}
+			
+			// EARTH
+			"tooltip_earth_brewling_hp"{
+				"value"										"2500 5000 10000 17500"
+				"special_bonus_unique_brewmaster"			"+100%"
+			}
+			"earth_armor"		"12 26 55 100"
+			"earth_damage"		{
+				"value"		"200 500 1200 2700"
+				"special_bonus_unique_brewmaster_damage"		"+100%"
+			}
+			"earth_attack"		"1.3"
+			"earth_speed"		"330 420 510 600"
+			
+			// STORM
+			"tooltip_storm_brewling_hp"		{
+				"value"							"1500 3000 6000 10500"
+				"special_bonus_unique_brewmaster"			"+100%"
+			}
+			"storm_armor"		"5 15 30 50"
+			"storm_damage" {
+				"value"		"150 375 900 2025"
+				"special_bonus_unique_brewmaster_damage"		"+100%"
+			}
+			"storm_attack"		"1.15"
+			"storm_speed"		"350 450 550 650"
+			
+			// FIRE
+			"tooltip_fire_brewling_hp"{
+				"value"							"2000 4000 8000 14000"
+				"special_bonus_unique_brewmaster"			"+100%"
+			}
+			"fire_armor"		"5 15 30 50"
+			"fire_damage" {
+				"value"		"300 750 1800 4050"
+				"special_bonus_unique_brewmaster_damage"		"+100%"
+			}
+			"fire_attack"		"0.85"
+			"fire_speed"		"550 700 850 1000"
+			
+			// VOID
+			"tooltip_void_brewling_hp"{
+				"value"		"2000 4000 8000 14000"
+				"special_bonus_unique_brewmaster"			"+100%"
+			}
+			"void_armor"		"8 23 45 75"
+			"void_damage" {
+				"value"		"150 375 900 2025"
+				"special_bonus_unique_brewmaster_damage"		"+100%"
+			}
+			"void_attack"		"1.0"
+			"void_speed"		"450 550 650 750"
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+	"special_bonus_unique_brewmaster_damage"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	
+	"brewmaster_primal_companion"{
+		"MaxLevel"						"1"
+		"IsGrantedByScepter"			"1"
+		"AbilityCooldown"				"20"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"50"		
+		
+		"AbilityValues"{
+			"cooldown_on_death"				"20"
+			"cooldown_on_take_damage"		"3"
+			"disable_distance"				"99999"
+			"cooldown_penalty_pct"			"0"
+			"movement_slow_when_out_of_range"		"50"
+		}
+	}
+	
+	
+	"brewmaster_earth_hurl_boulder"
+	{
+		"MaxLevel"		"4"
+		"AbilityCastRange"				"1200"
+		"AbilityCooldown"				"7"
+		"AbilityCastPoint"				"0.25"
+		"AbilityManaCost"				"0"		
+		"AbilityValues"{
+			"damage"					"250 750 1500 3500"
+			"duration"					"1.6 1.6 1.6 1.6"
+			"speed"						"1200"
+		}
+	}	
+	"brewmaster_earth_spell_immunity"{
+		"MaxLevel"		"4"
+		"AbilityValues"{
+			"magic_resist"			"50" //NOTE: IS HARDCODED, PLUMB THROUGH TO CODE IF CHANGE IS NEEDED!!!!
+		}
+	}
+	"brewmaster_earth_pulverize"
+	{
+		"MaxLevel"		"4"
+		"AbilityValues"		{
+			"bonus_building_damage"		"1000 5000 13000 25000"
+		}
+	}
+	
+	
+	"brewmaster_storm_dispel_magic"{
+		"MaxLevel"		"4"
+		"AbilityCastRange"				"500 750 1000 1500"
+		"AbilityCooldown"				"4"
+		"AbilityCastPoint"				"0.2"
+		"AbilityManaCost"				"75 75 75 75"		
+		"AbilityValues"		{
+			"damage"					"1000 5000 10000 25000"
+			"radius"					"1200"
+		}
+	}
+	"brewmaster_storm_cyclone"	{
+		"MaxLevel"		"4"
+		"AbilityCastRange"				"1200"
+		"AbilityCooldown"				"12 10 8 6"
+		"AbilityCastPoint"				"0.4"
+		"AbilityManaCost"				"150"
+		"AbilityValues"{
+			"duration_hero"				"5"
+			"duration_unit"				"15"
+		}
+	}
+	"brewmaster_storm_wind_walk"
+	{
+		"MaxLevel"		"4"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"75"		
+		"AbilityValues"{
+			"bonus_damage"				"400 1000 2400 5400"
+			"bonus_movement_speeed"		"75"
+			"duration"					"20.0"
+			"fade_time"					"0.6"
+		}
+	}
+	
+	
+	"brewmaster_fire_permanent_immolation"
+	{
+		"MaxLevel"		"4"
+		"AbilityValues"{
+			"damage"					"125 250 500 1000"
+			"radius"					"400 500 600 700"
+		}
+	}
+	"brewmaster_fire_phase"
+	{
+		"MaxLevel"		"4"
+		"AbilityValues"{
+			"status_resistance"				"30 50 70 90"
+		}
+	}
+	
+	
+	"brewmaster_void_astral_pull"
+	{
+		"MaxLevel"		"4"
+		"AbilityCastPoint"				"0.10"
+		"AbilityCooldown"				"4"
+		"AbilityManaCost"				"50"
+		"AbilityValues"{
+			"AbilityCastRange"			"300 500 700 1000"
+			"damage"					"250 750 1500 2500"
+			"pull_distance"				"550 700 850 1000"
+			"pull_duration"				"0.5"
+		}
+	}
+	"brewmaster_void_astral_pulse"{
+		"MaxLevel"		"4"
+		"AbilityCastRange"				"500"
+		"AbilityCooldown"				"12 10 8 6"
+		"AbilityCastPoint"				"0.15"
+		"AbilityValues"		{
+			"radius"					"500"
+			"duration"					"2.5 3.0 3.5 4.0"
+			"slow"						"20 30 40 50"
+		}
+	}
+}

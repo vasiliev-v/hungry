@@ -1,0 +1,164 @@
+"DOTAAbilities"{
+	"death_prophet_carrion_swarm"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"8.0 7.1 6.2 5.3 4.4 3.5 2.6"
+		"AbilityDamage"	"113 173 267 411 633 974 1500"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"start_radius"	"110"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"end_radius"	"300"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"range"	"810"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"1100"
+			}
+		}
+	}
+	// Talent: Swarm Cooldown
+	"special_bonus_unique_death_prophet_2"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1"
+				"ad_linked_abilities"	"death_prophet_carrion_swarm"
+			}
+		}
+	}
+
+
+	"death_prophet_silence"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityDuration"	"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300 350 400 450 500 550 600"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3.0 3.5 4.0 4.5 5.0 5.5 6.0"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"projectile_speed"	"2500"
+			}
+		}
+	}
+
+
+	"death_prophet_spirit_siphon"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"500"
+		"AbilityCharges"	"2 3 4 5 6 7 8"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	{
+				"value"	"30 50 80 130 200 300 440"
+				"special_bonus_unique_death_prophet_3"	"+400"
+			}
+			"damage_pct"		"0"
+			"haunt_duration"	"6"
+			"shard_bonus_charges"{
+				"value"	"2"
+				"RequiresShard"	"1"
+			}
+			"shard_consecutive_siphon_duration"{
+				"value"	"1.0"
+				"RequiresShard"	"1"
+			}
+			"shard_fear_duration"{
+				"value"	"2.3"
+				"RequiresShard"	"1"
+			}
+			"siphon_buffer"	"250"
+			"AbilityChargeRestoreTime"{
+				"value"	"20"
+				"special_bonus_unique_death_prophet_5"	"-8"
+			}
+		}
+	}
+	"special_bonus_unique_death_prophet_5"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"8"	// tooltip only
+				"ad_linked_abilities"			"death_prophet_spirit_siphon"	
+			}
+		}
+	}
+
+
+	"death_prophet_exorcism"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCooldown"	"100"
+		"AbilityDuration"	"35"
+		"AbilityManaCost"	"200 350 500 650"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"ghost_spawn_rate"	"0.05"
+			"heal_percent"	"25"
+			"give_up_distance"	"1200"
+			"max_distance"	"2000"
+			"min_damage"	"130 280 600 1300"
+			"max_damage"	"130 280 600 1300"
+			"average_damage"	"130 280 600 1300"
+			"movement_base"		"12 16 20 24"
+			"movement_bonus"	"22 28 34 40"
+			"radius"	"700"
+			"scepter_movespeed_debuff_duration"{
+				"value"	"1.0"
+				"RequiresScepter"	"1"
+			}
+			"scepter_movespeed_slow"{
+				"value"	"100"
+				"RequiresScepter"	"1"
+			}
+			"scepter_spirit_bonus_damage"{
+				"value"	"200"
+				"CalculateSpellDamageTooltip"	"0"
+				"RequiresScepter"	"1"
+			}
+			"scepter_spirit_life_duration"{
+				"value"	"20"
+				"RequiresScepter"	"1"
+			}
+			"spirit_speed"	"700"
+			"spirits"{
+				"value"	"16 20 24 28"
+				"LinkedSpecialBonus"	"special_bonus_unique_death_prophet"
+			}
+		}
+	}
+	// Talent: Exorcism Spirits
+	"special_bonus_unique_death_prophet"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"16"
+				"ad_linked_abilities"	"death_prophet_exorcism"
+			}
+		}
+	}
+}

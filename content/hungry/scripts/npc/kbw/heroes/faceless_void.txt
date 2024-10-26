@@ -1,0 +1,207 @@
+"DOTAAbilities"{
+	// Talent: Backtrack
+	"special_bonus_unique_faceless_void_4"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"dodge_chance_pct"	"30"
+				"ad_linked_abilities"	"special_bonus_inherent"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+	
+	"faceless_void_time_walk"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"12 11 10 9 8 7 6"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"HasScepterUpgrade"	"1"
+		"HasShardUpgrade"	"1"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"speed"	"3000"
+			"range"	"700"
+			"backtrack_duration"	{
+				"value"	"2"
+				"LinkedSpecialBonus"	"special_bonus_unique_faceless_void_7"
+			}
+			"radius_scepter"	{
+				"value"	"400"
+				"RequiresScepter"	"1"
+			}
+			"scepter_procs"	{
+				"value"	"4"
+				"RequiresScepter"	"1"
+			}
+			"shard_bonus_range"	{
+				"value"	"300"
+				"RequiresShard"		"1"
+			}
+		}
+	}
+	// Talent: Time Walk Cooldown
+	"special_bonus_unique_faceless_void_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"			"1.25"
+				"ad_linked_abilities"	"faceless_void_time_walk"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Time Walk Backtrack Time
+	"special_bonus_unique_faceless_void_7"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"					"0.75"
+				"ad_linked_abilities"			"faceless_void_time_walk"
+			}
+		}
+	}
+
+	"faceless_void_time_dilation"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"base_damage"	"40 60 90 130 180 240 310"
+			"cooldown_percentage"	"60"
+			"damage_per_stack"{
+				"value"	"12 20 32 48 68 92 120"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_MAGICAL"
+				"special_bonus_unique_faceless_void_6"	"+30"
+			}
+			"duration"	"8.5 9.25 10 10.75 11.5 12.25 13"
+			"radius"	"775"
+			"slow"{
+				"value"	"20"
+				"special_bonus_unique_faceless_void_8"	"+10"
+			}
+		}
+	}
+	"special_bonus_unique_faceless_void_time_dilation_chronosphere"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"		{
+			"duration"		"1.5"
+			"radius"		"300"
+		}
+
+		"AddModifiers"{
+			"m_faceless_void_time_dilation_chronosphere"{
+				"Path"		"kbw/abilities/heroes/faceless_void/m_faceless_void_time_dilation_chronosphere"
+				"stun"			"duration"
+				"radius"		"radius"
+			}
+		}
+	}
+
+
+	"faceless_void_time_lock_kbw"		{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"kbw/abilities/heroes/faceless_void/faceless_void_time_lock"
+		"AbilityTextureName"			"faceless_void_time_lock"	
+		
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCooldown"				"14 13 12 11 10 9 8"
+		"AbilityManaCost"				"80 104 128 152 176 200 224"
+	
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"	"SPELL_DISPELLABLE_NO"
+		
+		"AbilityValues"		{
+			"duration"	"4"
+			"chance_pct"	"24"
+			"proc_damage"	{
+				"value"	"25 40 65 110 195 320 495"
+				"special_bonus_unique_faceless_void_time_lock_damage"	"+255"
+			}
+			"duration_stun"	"0.4"
+			"bonus_attack_speed"	"60 100 140 180 220 260 300"
+			"delay"		"0.25"
+		}
+	}
+	"special_bonus_unique_faceless_void_time_lock_damage"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}	
+	// "special_bonus_unique_faceless_void_time_walk_time_lock"{
+	// 	"BaseClass"			"special_bonus_undefined"
+	//     "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	//     "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	//     "AbilitySpecial"		{
+	//         "01"		{
+	//             "var_type"	"FIELD_FLOAT"
+	//             "duration"		"1.2"
+	//         }
+	//         "02"		{
+	//             "var_type"	"FIELD_INTEGER"
+	//             "radius"		"350"
+	//         }
+	// 	}
+
+	// 	"AddModifiers"{
+	// 		"m_faceless_void_time_walk_time_lock"{
+	// 			"Path"         "kbw/abilities/heroes/faceless_void/m_faceless_void_time_walk_time_lock"
+	// 			"stun"			"duration"
+	// 			"radius"		"radius"
+	// 		}
+	// 	}
+	// }
+
+
+	"faceless_void_chronosphere"{
+		"AbilityCastPoint"	"0.35"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"70 60 50 40"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"radius"	{
+				"value"	"400"
+				"LinkedSpecialBonus"	"special_bonus_unique_faceless_void_2"
+			}
+			"duration"	"3"
+			"vision_radius"	"500"
+			"bonus_attack_speed"	{
+				"value"		"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_faceless_void"
+			}
+		}
+	}
+	// Talent: Chrono Radius
+	"special_bonus_unique_faceless_void_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"100"
+				"ad_linked_abilities"	"faceless_void_chronosphere"
+			}
+		}
+	}
+	// Talent: Chrono Attack Speed
+	"special_bonus_unique_faceless_void"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"175"
+				"ad_linked_abilities"			"faceless_void_chronosphere"
+			}
+		}
+	}
+}

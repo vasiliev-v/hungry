@@ -1,0 +1,8 @@
+1x10
+{
+	material materials/overviews/1x10.vmat
+	pos_x -16384
+	pos_y 17152
+	scale 32.750
+}
+

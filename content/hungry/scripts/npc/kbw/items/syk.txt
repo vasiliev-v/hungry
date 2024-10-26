@@ -1,0 +1,579 @@
+"DOTAAbilities"{
+	"item_sange"     {
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_sange"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_yasha"     {
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_yasha"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_kaya"     {
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_kaya"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_sange_and_yasha"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_sange_and_yasha"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_yasha_and_kaya"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_yasha_and_kaya"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_kaya_and_sange"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_kaya_and_sange"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_trident"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_trident"{
+		"IsObsolete"					"1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_kbw_sange"{
+		"BaseClass"             "item_recipe_sange"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"650"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_sange"
+		"ItemRequirements"{
+			"01"						"item_ogre_axe;item_belt_of_strength"
+		}
+	}
+
+	"item_recipe_kbw_yasha"{
+		"BaseClass"             "item_recipe_yasha"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"650"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_yasha"
+		"ItemRequirements"{
+			"01"						"item_blade_of_alacrity;item_boots_of_elves"
+		}
+	}
+
+	"item_recipe_kbw_kaya"{
+		"BaseClass"             "item_recipe_kaya"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"650"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_kaya"
+		"ItemRequirements"{
+			"01"						"item_staff_of_wizardry;item_robe"
+		}
+	}
+
+	"item_recipe_kbw_sange_yasha"{
+		"BaseClass"             "item_recipe_sange_and_yasha"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_sange_yasha"
+		"ItemRequirements"{
+			"01"						"item_kbw_bracer;item_kbw_sange;item_kbw_yasha;item_kbw_wraith_band"
+		}
+	}
+
+	"item_recipe_kbw_sange_yasha_2"{
+		"BaseClass"             "item_recipe_sange_and_yasha"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_sange_yasha_2"
+		"ItemRequirements"{
+			"01"						"item_kbw_sange_yasha;item_upgrade_core;item_kbw_sange_yasha"
+		}
+	}
+
+	"item_recipe_kbw_sange_yasha_3"{
+		"BaseClass"             "item_recipe_sange_and_yasha"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_sange_yasha_3"
+		"ItemRequirements"{
+			"01"						"item_kbw_sange_yasha_2;item_upgrade_core;item_kbw_sange_yasha_2"
+		}
+	}
+
+	"item_recipe_kbw_yasha_kaya"{
+		"BaseClass"             "item_recipe_yasha_and_kaya"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_yasha_kaya"
+		"ItemRequirements"{
+			"01"						"item_kbw_wraith_band;item_kbw_yasha;item_kbw_kaya;item_kbw_null_talisman"
+		}
+	}
+
+	"item_recipe_kbw_yasha_kaya_2"{
+		"BaseClass"             "item_recipe_yasha_and_kaya"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_yasha_kaya_2"
+		"ItemRequirements"{
+			"01"						"item_kbw_yasha_kaya;item_upgrade_core;item_kbw_yasha_kaya"
+		}
+	}
+
+	"item_recipe_kbw_yasha_kaya_3"{
+		"BaseClass"             "item_recipe_yasha_and_kaya"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_yasha_kaya_3"
+		"ItemRequirements"{
+			"01"						"item_kbw_yasha_kaya_2;item_upgrade_core;item_kbw_yasha_kaya_2"
+		}
+	}
+
+	"item_recipe_kbw_kaya_sange"{
+		"BaseClass"             "item_recipe_kaya_and_sange"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_kaya_sange"
+		"ItemRequirements"{
+			"01"						"item_kbw_null_talisman;item_kbw_kaya;item_kbw_sange;item_kbw_bracer"
+		}
+	}
+
+	"item_recipe_kbw_kaya_sange_2"{
+		"BaseClass"             "item_recipe_kaya_and_sange"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_kaya_sange_2"
+		"ItemRequirements"{
+			"01"						"item_kbw_kaya_sange;item_upgrade_core;item_kbw_kaya_sange"
+		}
+	}
+
+	"item_recipe_kbw_kaya_sange_3"{
+		"BaseClass"             "item_recipe_kaya_and_sange"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_kaya_sange_3"
+		"ItemRequirements"{
+			"01"						"item_kbw_kaya_sange_2;item_upgrade_core;item_kbw_kaya_sange_2"
+		}
+	}
+
+	"item_recipe_kbw_trident"{
+		"BaseClass"             "item_recipe_trident"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_trident"
+		"ItemRequirements"{
+			"01"						"item_kbw_sange;item_kbw_yasha;item_kbw_kaya"
+		}
+	}
+
+	"item_recipe_kbw_trident_2"{
+		"BaseClass"             "item_recipe_trident"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_trident_2"
+		"ItemRequirements"{
+			"01"						"item_kbw_trident;item_upgrade_core;item_kbw_trident"
+		}
+	}
+
+	"item_recipe_kbw_trident_3"{
+		"BaseClass"             "item_recipe_trident"
+		"Model"					"models/props_gameplay/recipe.vmdl"
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_kbw_trident_3"
+		"ItemRequirements"{
+			"01"						"item_kbw_trident_2;item_upgrade_core;item_kbw_trident_2"
+		}
+	}
+	
+
+	"item_kbw_sange"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_sange"
+		"ItemAliases"					"sange"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"30"
+			"status_absorb"		"12"
+		}
+	}
+
+	"item_kbw_yasha"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_yasha"
+		"ItemAliases"					"yasha"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"agi"				"30"
+			"base_damage_amp"		"12"
+		}
+	}
+
+	"item_kbw_kaya"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_kaya"
+		"ItemAliases"					"kaya"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"int"			"30"
+			"spell_damage"		"12"
+		}
+	}
+
+
+	"item_kbw_sange_yasha"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+		"AbilityTextureName"        "item_sange_and_yasha"
+		"ItemInitialCharges"			"1"
+		"ItemAliases"					"sy;ys"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"45"
+			"agi"			"45"
+			"hp_regen"			"15"
+			"armor"				"10"
+			"status_absorb"		"15"
+			"damage"				"30"
+			"attack"				"30"
+			"base_damage_amp"		"15"
+		}
+	}
+
+	"item_kbw_sange_yasha_2"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_sange_and_yasha"
+		"ItemInitialCharges"			"2"
+		"ItemAliases"					"sy;ys"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"90"
+			"agi"			"90"
+			"hp_regen"			"30"
+			"armor"				"20"
+			"status_absorb"		"25"
+			"damage"				"60"
+			"attack"				"60"
+			"base_damage_amp"		"25"
+		}
+	}
+
+	"item_kbw_sange_yasha_3"{
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_sange_and_yasha"
+		"ItemInitialCharges"			"3"
+		"ItemAliases"					"sy;ys"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"180"
+			"agi"			"180"
+			"hp_regen"			"60"
+			"armor"				"40"
+			"status_absorb"		"35"
+			"damage"				"120"
+			"attack"				"120"
+			"base_damage_amp"		"35"
+		}
+	}
+
+
+	"item_kbw_yasha_kaya" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+		"AbilityTextureName"        "item_yasha_and_kaya"
+		"ItemInitialCharges"			"1"
+		"ItemAliases"					"yk;ky"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"agi"	"45"
+			"int"	"45"
+			"damage"				"30"
+			"attack"				"30"
+			"base_damage_amp"		"15"
+			"mp_regen"		"10"
+			"spell_cleave"	"15"
+			"spell_damage"	"15"
+		}
+	}
+
+	"item_kbw_yasha_kaya_2" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_yasha_and_kaya"
+		"ItemInitialCharges"			"2"
+		"ItemAliases"					"yk;ky"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"agi"	"90"
+			"int"	"90"
+			"damage"				"60"
+			"attack"				"60"
+			"base_damage_amp"		"25"
+			"mp_regen"		"20"
+			"spell_cleave"	"25"
+			"spell_damage"	"25"
+		}
+	}
+
+	"item_kbw_yasha_kaya_3" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_yasha_and_kaya"
+		"ItemInitialCharges"			"3"
+		"ItemAliases"					"yk;ky"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"agi"	"180"
+			"int"	"180"
+			"damage"				"120"
+			"attack"				"120"
+			"base_damage_amp"		"35"
+			"mp_regen"		"40"
+			"spell_cleave"	"35"
+			"spell_damage"	"35"
+		}
+	}
+
+
+	"item_kbw_kaya_sange" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+		"AbilityTextureName"        "item_kaya_and_sange"
+		"ItemInitialCharges"			"1"
+		"ItemAliases"					"sk;ks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"45"
+			"int"			"45"
+			"hp_regen"			"15"
+			"armor"				"10"
+			"status_absorb"		"15"
+			"mp_regen"		"10"
+			"spell_cleave"	"15"
+			"spell_damage"	"15"
+		}
+	}
+
+	"item_kbw_kaya_sange_2" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_kaya_and_sange"
+		"ItemInitialCharges"			"2"
+		"ItemAliases"					"sk;ks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"90"
+			"int"			"90"
+			"hp_regen"			"30"
+			"armor"				"20"
+			"status_absorb"		"25"
+			"mp_regen"		"20"
+			"spell_cleave"	"25"
+			"spell_damage"	"25"
+		}
+	}
+
+	"item_kbw_kaya_sange_3" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_kaya_and_sange"
+		"ItemInitialCharges"			"3"
+		"ItemAliases"					"sk;ks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"{
+			"str"			"180"
+			"int"			"180"
+			"hp_regen"			"60"
+			"armor"				"40"
+			"status_absorb"		"35"
+			"mp_regen"		"40"
+			"spell_cleave"	"35"
+			"spell_damage"	"35"
+		}
+	}
+
+
+	"item_kbw_trident" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+		"AbilityTextureName"        "item_trident1"
+		"ItemAliases"				"sky;syk;ksy;kys;ysk;yks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE| DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+		"AbilitySharedCooldown"	"trident"
+		"AbilityManaCost"		"250"
+		"AbilityCooldown"		"33"
+
+		"AbilityValues"{
+			"prime"		"60"
+			"other"		"30"
+			"status_absorb"		"12"
+			"base_damage_amp"	"12"
+			"spell_damage"		"12"
+			"active_multiplier"		"3"
+			"active_duration"		"6"
+		}
+	}
+
+	"item_kbw_trident_2" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_trident2"
+		"ItemAliases"				"sky;syk;ksy;kys;ysk;yks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE| DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+		"AbilitySharedCooldown"	"trident"
+		"AbilityManaCost"		"325"
+		"AbilityCooldown"		"33"
+
+		"AbilityValues"{
+			"prime"		"120"
+			"other"		"60"
+			"status_absorb"		"21"
+			"base_damage_amp"	"21"
+			"spell_damage"		"21"
+			"active_multiplier"		"3"
+			"active_duration"		"6"
+		}
+	}
+
+	"item_kbw_trident_3" {
+		"BaseClass"     "item_lua"
+		"ScriptFile"    "kbw/items/syk/items"
+
+		"AbilityTextureName"        "item_trident3"
+		"ItemAliases"				"sky;syk;ksy;kys;ysk;yks"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE| DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+		"AbilitySharedCooldown"	"trident"
+		"AbilityManaCost"		"400"
+		"AbilityCooldown"		"33"
+
+		"AbilityValues"{
+			"prime"		"240"
+			"other"		"120"
+			"status_absorb"		"30"
+			"base_damage_amp"	"30"
+			"spell_damage"		"30"
+			"active_multiplier"		"3"
+			"active_duration"		"6"
+		}
+	}
+}

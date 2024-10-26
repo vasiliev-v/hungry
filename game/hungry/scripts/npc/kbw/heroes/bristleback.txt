@@ -1,0 +1,151 @@
+"DOTAAbilities" {
+
+	"bristleback_viscous_nasal_goo"     {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCooldown"   "1.5"
+		"AbilityManaCost"   "12 16 19 23 26 30 34"
+		"AbilityValues"	{
+			"goo_speed"				"1000"
+			"goo_duration"			"5.0"
+			"base_armor"			"2"
+			"armor_per_stack" {
+				"value"		"2.2 3.0 4.0 5.2 6.8 8.2 10.0"
+				"special_bonus_unique_bristleback_4"	"+0.75"
+			}
+			"base_move_slow"		"20"
+			"move_slow_per_stack"	"3 5 7 9 11 13 15"
+			"stack_limit"	{
+				"value"			"4"
+				"special_bonus_scepter"	"+224"
+			}
+			"goo_duration_creep"			"10.0"
+			"AbilityCastRange"	{
+				"value"				"600 700 800 900 1000 1100 1200"
+				"special_bonus_unique_bristleback_5"				"+150"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"bristleback_quill_spray"       {
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "650"
+		"AbilityCooldown"   "3"
+		"AbilityManaCost"   "35 46 56 67 77 88 98"
+		"AbilitySpecial"        {
+			"01"        {
+				"var_type"  "FIELD_INTEGER"
+				"radius"    "700"
+			}
+			"02"        {
+				"var_type"  "FIELD_FLOAT"
+				"quill_base_damage" "25 40 60 85 115 150 160"
+			}
+			"03"        {
+				"var_type"  "FIELD_FLOAT"
+				"quill_stack_damage"    "25 40 60 85 115 150 160"
+				"LinkedSpecialBonus"    "special_bonus_unique_bristleback_2"
+			}
+			"04"        {
+				"var_type"  "FIELD_FLOAT"
+				"quill_stack_duration"  "14"
+			}
+			"05"        {
+				"var_type"  "FIELD_FLOAT"
+				"max_damage"    "3000"
+			}
+			"06"        {
+				"var_type"  "FIELD_INTEGER"
+				"projectile_speed"  "2400"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Quill Spray Damage
+	"special_bonus_unique_bristleback_2"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"90"
+				"ad_linked_abilities"	"bristleback_quill_spray"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"bristleback_bristleback"       {
+		"AbilityValues"	{ 
+			"side_damage_reduction"	{
+				"value"													"8 12 16 20 24 28 32"
+				"special_bonus_unique_bristleback_6"					"+4"
+			}
+			"back_damage_reduction"			{
+				"value"			"16 24 32 40 48 56 64"
+				"special_bonus_unique_bristleback_6"						"+8"
+			}
+			"side_angle"							"110"
+			"back_angle"							"70"
+			"quill_release_threshold"				"600"
+			"quill_release_interval"				"1"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"bristleback_warpath"       {
+		"AbilityDuration"   "14"
+		"AbilitySpecial"        {
+			"01"        {
+				"var_type"  "FIELD_INTEGER"
+				"damage_per_stack"  "30 54 97 175"
+				"LinkedSpecialBonus"    "special_bonus_unique_bristleback_3"
+			}
+			"02"        {
+				"var_type"  "FIELD_INTEGER"
+				"move_speed_per_stack"  "5"
+			}
+			"03"        {
+				"var_type"  "FIELD_FLOAT"
+				"stack_duration"    "14"
+			}
+			"04"        {
+				"var_type"  "FIELD_INTEGER"
+				"max_stacks"    "6 8 10 12"
+			}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+	// Talent: Warpath Damage
+	"special_bonus_unique_bristleback_3"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"192"
+				"ad_linked_abilities"	"bristleback_warpath"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"bristleback_hairball"      {
+		"AbilityCastPoint"  "0.1"
+		"AbilityCastRange"  "1500"
+		"AbilityCooldown"   "6"
+		"AbilityManaCost"   "100"
+		"AbilitySpecial"        {
+			"01"        {
+				"var_type"  "FIELD_INTEGER"
+				"projectile_speed"  "1200"
+			}
+		}
+	}
+}

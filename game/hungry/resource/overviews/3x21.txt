@@ -1,0 +1,8 @@
+3x21
+{
+	material materials/overviews/3x21.vmat
+	pos_x -18732
+	pos_y 18984
+	scale 36.445
+}
+

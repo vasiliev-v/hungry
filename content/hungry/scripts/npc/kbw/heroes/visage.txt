@@ -1,0 +1,225 @@
+"DOTAAbilities"{
+	
+	"visage_grave_chill"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"625"
+		"AbilityCooldown"	"16 14.5 13 11.5 10 8.5 7"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"chill_duration"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_7"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed_bonus"	"17 23 29 35 41 47 53"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"attackspeed_bonus"	"51 70 97 134 184 254 350"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"900"
+			}
+		}
+	}
+	"visage_soul_assumption"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1000"
+		"AbilityCooldown"	"4"
+		"AbilityManaCost"	"135 176 216 257 297 338 378"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"bolt_speed"	"1000"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"soul_base_damage"	"60"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"soul_charge_damage"	"75"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_4"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"stack_limit"	"4 5 7 10 14 19 25"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"stack_duration"	"30"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"damage_limit"	"100"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"1500"
+			}
+			"08"{
+				"var_type"	"FIELD_FLOAT"
+				"damage_min"	"2"
+			}
+			"09"{
+				"var_type"	"FIELD_FLOAT"
+				"damage_max"	"3000"
+			}
+		}
+	}
+	"visage_gravekeepers_cloak"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_reduction"	"8 12 16 20 24 28 32"
+			"max_damage_reduction"	"80"
+			"max_layers"{
+				"value"	"4 5 6 7 8 9 10"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_5"
+			}
+			"minimum_damage"	"40"
+			"radius"	"1200"
+			"recovery_time"	"6 6 5 5 4 4 3"
+			"shard_cooldown"{
+				"value"	"12"
+				"RequiresShard"	"1"
+			}
+			"shard_hp_restoration_pct"{
+				"value"	"50"
+				"RequiresShard"	"1"
+			}
+			"shard_manacost"{
+				"value"	"125"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+	"visage_silent_as_the_grave"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"100"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"bonus_duration"	"4"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"40"
+			}
+			"03"{
+				"var_type"	"FIELD_FLOAT"
+				"invis_duration"	"35"
+			}
+			"04"			{
+				"var_type"							"FIELD_INTEGER"
+				"movespeed_bonus"					"50"
+			}
+		}
+	}
+	"visage_stone_form_self_cast"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"MaxLevel"	"3"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"stun_radius"	"350"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_delay"	"0.55"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"stun_damage"	"150 600 2400"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.00 1.75 2.50"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"stone_duration"	"6"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"hp_regen"	"250 500 1000"
+			}
+		}
+	}
+	"visage_summon_familiars"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"130"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"9"
+		"MaxLevel"	"3"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"familiar_hp"	"1000 3000 9000"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"familiar_armor"	"10 30 90"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"familiar_speed"	"430"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_2"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"familiar_attack_damage"	"100 350 1225"
+				"LinkedSpecialBonus"		"special_bonus_unique_visage_7"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"tooltip_familiar_count"	"2"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_6"
+			}
+		}
+	}
+	"visage_summon_familiars_stone_form"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"160"
+		"AbilityCooldown"	"14"
+		"MaxLevel"	"3"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"stun_radius"	"350"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_delay"	"0.55"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"stun_damage"	"150 600 2400"
+			}
+			"04"{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.00 1.75 2.50"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"stone_duration"	"6"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"hp_regen"	"250 500 1000"
+			}
+		}
+	}
+}

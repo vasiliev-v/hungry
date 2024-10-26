@@ -1,0 +1,160 @@
+"DOTAAbilities"{
+	"leshrac_split_earth"{
+		"AbilityCastPoint"	"0.7"
+		"AbilityCastRange"	"650"
+		"AbilityCooldown"	"9"
+		"AbilityDamage"		"180 256 365 520 740 1053 1500"
+		"AbilityDuration"	"2"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"delay"	"0.35"
+			"radius"	{
+				"value"	"225"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_5"
+			}
+			"duration"	"2"
+			"shard_radius_increase"			{
+				"value"	"75"
+				"RequiresShard"					"1"
+			}
+			"shard_max_count"			{
+				"value"	"4"
+				"RequiresShard"					"1"
+			}
+			"shard_secondary_delay"			{
+				"value"	"4"
+				"RequiresShard"					"1"
+			}
+		}
+	}
+	// Talent: Split Radius
+	"special_bonus_unique_leshrac_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"75"
+				"ad_linked_abilities"	"leshrac_split_earth"
+			}
+		}
+	}
+
+
+	"leshrac_diabolic_edict"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCooldown"	"22"
+		"AbilityDamage"	"10 18 31 48 71 98 130"
+		"AbilityDuration"	"10"
+		"AbilityManaCost"	"95 124 152 181 209 238 266"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"num_explosions"	{
+				"value"	"40"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_1"
+			}
+			"radius"	"600"
+			"tower_bonus"	"0"
+		}
+	}
+	// Talent: Diabolic Count
+	"special_bonus_unique_leshrac_1"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"30"
+				"ad_linked_abilities"	"leshrac_diabolic_edict"
+			}
+		}
+	}
+
+
+	"leshrac_lightning_storm"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"650"
+		"AbilityCooldown"	"4"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	{
+				"value"	"135 190 267 376 530 746 1050"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_6"
+			}
+			"jump_count"	"6 9 12 15 18 21 24"
+			"radius"	"475"
+			"jump_delay"	"0.25"
+			"slow_movement_speed"	"-75"
+			"slow_duration"	{
+				"value"	"0.4 0.5 0.6 0.7 0.8 0.9 1"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_2"
+			}
+			"interval_scepter"	{
+				"value"	"1.5"
+				"RequiresScepter"	"1"
+			}
+			"radius_scepter"	{
+				"value"	"750"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	// Talent: Storm Damage
+	"special_bonus_unique_leshrac_6"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"250"
+				"ad_linked_abilities"	"leshrac_lightning_storm"
+			}
+		}
+	}
+
+	"leshrac_greater_lightning_storm"{
+		"AbilityCooldown"	"25 22 19 16"
+		"AbilityManaCost"	"75 131 188 244"
+		"IsGrantedByScepter"	"1"
+		"RequiredLevel"			"6"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"LinkedAbility"					"leshrac_pulse_nova"
+		"AbilityValues"{
+			"duration"	"4"
+			"magic_amp"	"30 35 40 45"
+			"slow"		"30 35 40 45"
+			"radius"	"450 500 550 600"
+		}
+	}
+
+
+	"leshrac_pulse_nova"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"1"
+		"AbilityManaCost"	"70 123 175 228"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"LinkedAbility"					"leshrac_greater_lightning_storm"
+		"AbilityValues"{
+			"mana_cost_per_second"	"25 44 63 81"
+			"radius"	{
+				"value"	"600"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_4"
+			}
+			"damage"	{
+				"value"	"200 342 585 1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_3"
+			}
+		}
+	}
+	// Talent: Nova Damage
+	"special_bonus_unique_leshrac_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"400"
+				"ad_linked_abilities"	"leshrac_pulse_nova"
+			}
+		}
+	}
+}

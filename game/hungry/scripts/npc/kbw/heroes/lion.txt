@@ -1,0 +1,150 @@
+"DOTAAbilities"{
+	"lion_impale"       {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "800"
+		"AbilityCooldown"   "12"
+		"AbilityManaCost"   "85 111 136 162 187 213 238"
+		"AbilityValues"{
+			"AbilityCooldown"	"12"
+			"damage" {
+				"value"			"160 240 350 510 730 1025 1425"
+				"special_bonus_unique_lion_3"	"+1375"
+			}
+			"width"				"125"
+			"duration"			"1.4 1.65 1.9 2.15 2.4 2.65 2.9"
+			"length_buffer"		"275"
+			"speed"				"1800"
+			"pierces_immunity"	{
+				"value"			"0"
+				"special_bonus_unique_lion_2"	"+1"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Impale Cooldown
+	"special_bonus_unique_lion_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"4"
+				"ad_linked_abilities"	"lion_impale"
+			}
+		}
+	}
+
+
+	"lion_voodoo"       {
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "500"
+		"AbilityCooldown"   "12"
+		"AbilityManaCost"   "125 163 200 238 275 313 350"
+		"AbilityValues"		{
+			"AbilityCooldown"				
+			{
+				"value"				"12"
+				"special_bonus_unique_lion_5"	"-0"
+			}
+			"duration"					"2.5 2.85 3.2 3.55 3.9 4.25 4.6"
+			"movespeed"					"120"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Hex AOE
+	"special_bonus_unique_lion_4"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"325"
+				"ad_linked_abilities"	"lion_voodoo"
+			}
+		}
+	}
+
+
+	"lion_mana_drain"		{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"850"
+		"AbilityChannelTime"	"5.1"
+		"AbilityCooldown"	"8 7 6 5 4 3 2"
+		"AbilityManaCost"	"0"
+		"AbilityModifierSupportValue"	"5"
+		"AbilityValues"		{
+			"duration"			"5.0"
+			"mana_per_second"	{
+				"value"			"50 80 135 215 335 525 810"
+				"special_bonus_unique_lion_5"	"+50"
+			}
+			"break_distance"	{
+				"value" 		"1200"
+				"special_bonus_shard"			"+400"
+			}
+			"tick_interval"		"0.1"
+			"movespeed"			{
+				"value"			"20 30 40 50 60 70 80"
+				"special_bonus_unique_lion_6"	"+20"
+			}
+			"shard_bonus_break_distance"		//OBSOLETE
+			{
+				"value" "400"
+				"RequiresShard"	"1"
+			}   
+			"shard_bonus_targets"	{
+				"value"			"5"
+				"RequiresShard"	"1"
+			}
+			"damage_pct"	{
+				"value"			"0"
+				"special_bonus_unique_lion_manadrain_damage"			"+150"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"lion_finger_of_death"      {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "900"
+		"AbilityCooldown"   "60 50 40 30"
+		"AbilityManaCost"   "200 350 500 650"
+		"AbilityModifierSupportValue"   "0"
+		"AbilityValues"         {
+				"damage"                    {
+					"value"             "600 1140 2165 4115"
+					"special_bonus_scepter"     "+800"
+				}
+				"damage_per_kill"           {
+					"value"             "70"
+					"special_bonus_unique_lion_8"   "+50"
+					"CalculateSpellDamageTooltip"   "0"
+				}
+				"grace_period"              "3"
+				"damage_delay"              {
+					"value"             "0.25"
+					"CalculateSpellDamageTooltip"   "0"
+				}
+				"cooldown_scepter"          {
+					"value" "35 30 25 20"
+					"RequiresScepter"           "1"
+				}
+				"splash_radius_scepter"     {
+					"value"     "325"
+					"RequiresScepter"           "1"
+				}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+	// Talent: Finger Stack Health
+	"special_bonus_unique_lion_11"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"300"
+				"ad_linked_abilities"			"lion_finger_of_death"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

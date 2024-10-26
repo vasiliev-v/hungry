@@ -1,0 +1,500 @@
+"DOTAAbilities"{
+	"item_custom_rune_bounty"{
+		"ID"			"831001"
+		"BaseClass"		"item_datadriven"
+
+		"RuneName"				"bounty"
+		"CustomRuneSound"		"Rune.Bounty"
+		"CustomRuneMsg"			"#custom_rune_pickup_bounty"
+		
+		"AbilityTextureName"	"kbw/runes/bounty"
+		"Model"					"models/props_gameplay/rune_goldxp.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_bounty_first.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilityValues"{
+			"base_gold"			"160"
+			"gold_per_minute"	"40"
+			"base_xp"				"100"
+			"xp_per_minute"			"30"
+			"pct_closest"		"75"
+			"pct_others"		"25"
+		}
+	}
+	
+	"item_custom_rune_doubledamage"{
+		"ID"			"831002"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"doubledamage"
+		"CustomRuneSound"		"Rune.DD"
+		"CustomRuneMsg"			"#custom_rune_pickup_doubledamage"
+
+		"AbilityTextureName"	"kbw/runes/doubledamage"
+		"Model"					"models/props_gameplay/rune_doubledamage01.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_doubledamage.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"45"
+			}
+			"02"{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage_pct"	"100"
+			}
+		}
+	}
+	
+	"item_custom_rune_haste"{
+		"ID"			"831003"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"haste"
+		"CustomRuneSound"		"Rune.Haste"
+		"CustomRuneMsg"			"#custom_rune_pickup_haste"
+		
+		"AbilityTextureName"	"kbw/runes/haste"
+		"Model"					"models/props_gameplay/rune_haste01.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_haste.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"22"
+			}
+			"02"{
+				"var_type"		"FIELD_INTEGER"
+				"speed"			"300"
+			}
+		}
+	}
+	
+	"item_custom_rune_illusion"{
+		"ID"			"831004"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"illusion"
+		"CustomRuneSound"		"Rune.Illusion"
+		"CustomRuneMsg"			"#custom_rune_pickup_illusion"
+		
+		"AbilityTextureName"	"kbw/runes/illusion"
+		"Model"					"models/props_gameplay/rune_illusion01.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_illusion.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"75"
+			}
+			"02"{
+				"var_type"		"FIELD_INTEGER"
+				"count"			"2"
+			}
+			"03"{
+				"var_type"			"FIELD_INTEGER"
+				"damage_out"		"50"
+			}
+			"04"{
+				"var_type"			"FIELD_INTEGER"
+				"damage_in"			"200"
+			}
+			"05"{
+				"var_type"				"FIELD_FLOAT"
+				"split_time"			"0.1"
+			}
+		}
+	}
+	
+	"item_custom_rune_invis"{
+		"ID"			"831005"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"invis"
+		"CustomRuneSound"		"Rune.Invis"
+		"CustomRuneMsg"			"#custom_rune_pickup_invis"
+		
+		"AbilityTextureName"	"kbw/runes/invis"
+		"Model"					"models/props_gameplay/rune_invisibility01.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_invisibility.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"45"
+			}
+			"02"{
+				"var_type"		"FIELD_FLOAT"
+				"fade_time"		"2"
+			}
+		}
+	}
+	
+	"item_custom_rune_regen"{
+		"ID"			"831006"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"regen"
+		"CustomRuneSound"		"Rune.Regen"
+		"CustomRuneMsg"			"#custom_rune_pickup_regen"
+		
+		"AbilityTextureName"	"kbw/runes/regen"
+		"Model"					"models/props_gameplay/rune_regeneration01.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_regeneration.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"30"
+			}
+			"02"{
+				"var_type"			"FIELD_FLOAT"
+				"hp_regen_pct"		"6"
+			}
+			"03"{
+				"var_type"			"FIELD_FLOAT"
+				"mp_regen_pct"		"6"
+			}
+		}
+	}
+	
+	"item_custom_rune_arcane"{
+		"ID"			"831007"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"arcane"
+		"CustomRuneSound"		"Rune.Arcane"
+		"CustomRuneMsg"			"#custom_rune_pickup_arcane"
+
+		"AbilityTextureName"	"kbw/runes/arcane"
+		"Model"					"models/props_gameplay/rune_arcane.vmdl"
+		"SpawnerParticle"		"particles/generic_gameplay/rune_arcane.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"50"
+			}
+			"02"{
+				"var_type"			"FIELD_FLOAT"
+				"cd_reduction"		"40"
+			}
+			"03"{
+				"var_type"				"FIELD_FLOAT"
+				"manaloss_reduction"	"70"
+			}
+		}
+	}
+	
+	"item_custom_rune_mystic"{
+		"ID"			"831008"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"mystic"
+		"CustomRuneSound"		"Rune.Arcane"
+		"CustomRuneMsg"			"#custom_rune_pickup_mystic"
+		
+		"AbilityTextureName"	"kbw/runes/mystic"
+		"Model"					"models/props_gameplay/rune_arcane.vmdl"
+		"SpawnerParticle"		"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf" // custom
+		"SpawnerScale"			"1.2" // custom
+		"SpawnerColor"			"77 246 255" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"50"
+			}
+			"02"{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_bonus"		"500"
+			}
+			"03"{
+				"var_type"			"FIELD_INTEGER"
+				"spell_amp"			"50"
+			}
+		}
+	}
+	
+	"item_custom_rune_rage"{
+		"ID"			"831009"
+		"BaseClass"		"item_datadriven"
+		
+		"RuneName"				"rage"
+		"CustomRuneSound"		"powerup_05"
+		"CustomRuneMsg"			"#custom_rune_pickup_rage"
+		
+		"AbilityTextureName"	"kbw/runes/rage"
+		"Model"					"models/props_gameplay/rune_doubledamage01.vmdl"
+		"SpawnerParticle"		"particles/econ/items/phoenix/phoenix_ti10_immortal/phoenix_ti10_fire_spirit_burn.vpcf" // custom
+		"SpawnerColor"			"254 81 18" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"45"
+			}
+			"02"{
+				"var_type"			"FIELD_INTEGER"
+				"attack_speed"		"130"
+			}
+			"03"{
+				"var_type"			"FIELD_INTEGER"
+				"splash_radius"		"250"
+			}
+			"04"{
+				"var_type"			"FIELD_INTEGER"
+				"splash_targets"	"3"
+			}
+			"05"{
+				"var_type"				"FIELD_INTEGER"
+				"splash_damage_pct"		"100"
+			}
+		}
+	}
+	
+	"item_custom_rune_reflect"{
+		"ID"			"831010"
+		"BaseClass"		"item_datadriven"
+
+		"RuneName"				"reflect"
+		"CustomRuneSound"		"Rune.Regen"
+		"CustomRuneMsg"			"#custom_rune_pickup_reflect"
+		
+		"AbilityTextureName"	"kbw/runes/reflect"
+		"Model"					"models/items/juggernaut/ward/ti8_jugg_obsidian_avenger_ward/ti8_jugg_obsidian_avenger_ward.vmdl"
+		"SpawnerParticle"		"particles/units/heroes/hero_oracle/oracle_purifyingflames_heal.vpcf" // custom
+		"Effect"				""
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"		
+		
+		"UIPickupSound"					""
+		"UIDropSound"					""
+		"WorldDropSound"				""
+		"DisplayOverheadAlertOnReceived"	"0"
+		"ItemPurchasable"		"0"
+		
+		"AbilitySpecial"{
+			"01"{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"45"
+			}
+			"02"{
+				"var_type"				"FIELD_INTEGER"
+				"damage_block_pct"		"30"
+			}
+			"03"{
+				"var_type"				"FIELD_INTEGER"
+				"damage_return_pct"		"30"
+			}
+		}
+	}
+	
+    "item_custom_rune_toxic"{
+        "ID"            "831011"
+        "BaseClass"        "item_datadriven"
+        
+        "RuneName"                "toxic"
+        "CustomRuneSound"        "powerup_05"
+        "CustomRuneMsg"            "#custom_rune_pickup_toxic"
+
+        "AbilityTextureName"    "kbw/runes/toxic"
+        "Model"                    "models/items/pugna/ward/draining_wight/draining_wight.vmdl"
+        "SpawnerParticle"        "particles/econ/items/viper/viper_ti7_immortal/viper_poison_crimson_debuff_ti7.vpcf" // custom
+        "Effect"                ""        
+        
+        "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        
+        "UIPickupSound"                    ""
+        "UIDropSound"                    ""
+        "WorldDropSound"                ""
+        "DisplayOverheadAlertOnReceived"    "0"
+		"ItemPurchasable"		"0"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"        "FIELD_FLOAT"
+                "duration"        "45"
+            }
+            "02"{
+                "var_type"                "FIELD_INTEGER"
+                "damagePct"        "2"
+            }
+            "03"{
+                "var_type"                "FIELD_FLOAT"
+                "interval"        "1"
+            }
+            "04"{
+                "var_type"                "FIELD_INTEGER"
+                "move_speed"    "-5"
+            }
+            "05"{
+                "var_type"                "FIELD_INTEGER"
+                "MaxStacks"        "6"
+            }
+            "06"{
+                "var_type"                "FIELD_FLOAT"
+                "duration_debuff"    "7"
+            }
+        }        
+    }
+	
+	"item_custom_rune_vampiric"{
+        "ID"            "831012"
+        "BaseClass"        "item_datadriven"    
+        
+        "RuneName"                "vampiric"
+        "CustomRuneSound"        "powerup_05"
+        "CustomRuneMsg"            "#custom_rune_pickup_vampiric"
+
+        "AbilityTextureName"    "kbw/runes/vampiric"
+        "Model"                    "models/items/juggernaut/ward/fall20_juggernaut_katz_ward/fall20_juggernaut_katz_ward.vmdl"
+        "SpawnerParticle"        "particles/econ/items/juggernaut/jugg_fortunes_tout/jugg_healling_ward_fortunes_tout_ward.vpcf" // custom
+        "Effect"                ""            
+
+        "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        
+        "UIPickupSound"                    ""
+        "UIDropSound"                    ""
+        "WorldDropSound"                ""
+        "DisplayOverheadAlertOnReceived"    "0"
+		"ItemPurchasable"		"0"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"        "FIELD_FLOAT"
+                "duration"        "45"
+            }
+            "02"{
+                "var_type"                "FIELD_INTEGER"
+                "vampiric"        "30"
+            }
+        }        
+    }
+
+    "item_custom_rune_ice"{
+        "ID"            "831013"
+        "BaseClass"        "item_datadriven"
+        
+        "RuneName"                "ice"
+        "CustomRuneSound"        "powerup_05"
+        "CustomRuneMsg"            "#custom_rune_pickup_ice"
+
+        "AbilityTextureName"    "kbw/runes/ice"
+        "Model"                    "models/items/wards/frozen_formation/frozen_formation.vmdl"
+        "SpawnerParticle"        "particles/units/heroes/hero_tusk/tusk_ice_shards_projectile.vpcf" // custom
+        "Effect"                ""        
+        
+        "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "SpawnerScale"            "1.7" // custom
+        
+        "UIPickupSound"                    ""
+        "UIDropSound"                    ""
+        "WorldDropSound"                ""
+        "DisplayOverheadAlertOnReceived"    "0"
+		"ItemPurchasable"		"0"
+
+        "AbilitySpecial"{
+            "01"{
+                "var_type"        "FIELD_FLOAT"
+                "duration"        "45"
+            }
+            "02"{
+                "var_type"                "FIELD_INTEGER"
+                "moveSpeed"        "-7"
+            }
+            "03"{
+                "var_type"                "FIELD_INTEGER"
+                "AttackSpeed"        "-20"
+            }
+            "04"{
+                "var_type"                "FIELD_INTEGER"
+                "MaxStacks"        "6"
+            }
+            "05"{
+                "var_type"                "FIELD_FLOAT"
+                "duration_debuff"    "5"
+            }
+        }        
+    }
+}

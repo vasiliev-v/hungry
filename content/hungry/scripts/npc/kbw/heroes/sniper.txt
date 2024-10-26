@@ -1,0 +1,168 @@
+"DOTAAbilities"{
+	
+	"sniper_shrapnel_kbw"{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"kbw/abilities/heroes/sniper/shrapnel"
+
+		"AbilityTextureName"	"sniper_shrapnel"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCharges"	"3 4 5 6 7 8 9"
+		"AbilityChargeRestoreTime"	"12"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1800"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+
+		"AbilityValues"{
+			"radius"	"450"
+			"duration"	"10"
+			"delay"		"0.5"
+			"tick"		"0.2"
+			"visual_height"	"1800"
+			"damage" {
+				"value"	"42 68 114 180 267 373 500"
+				"special_bonus_unique_sniper_shrapnel_kbw_damage"	"+200"
+			}
+			"slow" {
+				"value"	"16 20 24 28 32 36 40"
+				"special_bonus_unique_sniper_shrapnel_kbw_slow"	"+20"
+			}
+			"armor_reduction"{
+				"value"		"0"
+				"special_bonus_unique_sniper_shrapnel_kbw_armor"	"+33"
+			}
+		}
+	}
+	"special_bonus_unique_sniper_shrapnel_kbw_damage"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_sniper_shrapnel_kbw_slow"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_sniper_shrapnel_kbw_armor"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"sniper_headshot"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"{
+				"value"	"90 135 200 285 410 575 800"
+				"special_bonus_unique_sniper_headshot_damage"	"+40%"
+			}
+			"knockback_distance"{
+				"value"	"20"
+				"special_bonus_unique_sniper_3"	"+0"
+			}
+			"proc_chance"	"30"
+			"slow"	"-100"
+			"slow_duration"	"0.5"
+		}
+	}
+
+
+	"sniper_take_aim"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"9 8.25 7.5 6.75 6 5.25 4.5"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_attack_range"	{
+				"value"	"100 200 300 400 500 600 700"
+				"LinkedSpecialBonus"	"special_bonus_unique_sniper_6"
+			}
+			"duration"	{
+				"value"	"4"
+				"LinkedSpecialBonus"	"special_bonus_unique_sniper_4"
+			}
+			"slow"	"30"
+			"headshot_chance"	"70"
+		}
+	}
+
+
+	"sniper_assassinate"{
+		"AbilityCastPoint"	"2"
+		"AbilityCastRange"	"3000"
+		"AbilityCastRangeBuffer"	"600"
+		"AbilityCooldown"	"15 12 9 6"
+		"AbilityDamage"	"550 1045 1985 3770"
+		"AbilityManaCost"	"175 306 438 569"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"projectile_speed"	"2500"
+			"scepter_cast_point"{
+				"value"	"0.5"
+				"RequiresScepter"	"1"
+			}
+			"scepter_stun_duration"{
+				"value"	"1.3 1.6 1.9 2.2"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"special_bonus_unique_sniper_assassinate_damage"{
+        "BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"80"
+			}
+		}
+
+        "AddModifiers"{
+            "m_damage_boost"{
+				"Path"			"kbw/modifiers/m_damage_boost"
+				"inflictor"		"$sniper_assassinate"
+				"damage"		"value"
+            }
+        }
+	}
+
+
+	"sniper_concussive_grenade"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"8"
+		"AbilityManaCost"	"200"
+		"FightRecapLevel"	"1"
+		"IsGrantedByShard"	"1"
+		"MaxLevel"	"1"
+		"AbilityValues"{
+			"damage"	"450"
+			"debuff_duration"	"4"
+			"knockback_distance"	"475"
+			"knockback_duration"	"0.3"
+			"knockback_height"	"100"
+			"radius"	"375"
+			"self_push"{
+				"value"	"1"
+				"special_bonus_unique_sniper_grenade_self_push"	"+1"
+			}
+			"slow"	"50"
+			"AbilityCastRange"{
+				"value"	"600"
+				"special_bonus_unique_sniper_grenade_range"	"+250"
+			}
+		}
+	}
+}

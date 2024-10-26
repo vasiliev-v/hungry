@@ -1,0 +1,1811 @@
+"DOTAHeroes"{
+	"npc_dota_hero_base"{
+		"Ability25"		""
+	}
+
+    "npc_dota_hero_abaddon"		{
+        "Ability6"	"abaddon_borrowed_time_2"
+
+        "Ability11"	"special_bonus_unique_abaddon_3"	// Curse Attacks
+        "Ability10"	"special_bonus_unique_abaddon_5"	// Ult Cooldown
+
+        "Ability13"	"special_bonus_strength_60"
+        "Ability12"	"special_bonus_unique_abaddon_4"	// Coil AOE
+
+        "Ability15"	"special_bonus_unique_abaddon_immolation"
+        "Ability14"	"special_bonus_unique_abaddon_2"	// Coil Damage
+
+        "Ability17"	"special_bonus_attack_damage_1337"
+        "Ability16"	"special_bonus_unique_abaddon"		// Shield Health
+    }
+
+    "npc_dota_hero_abyssal_underlord"		{
+        "Ability11"	"special_bonus_unique_underlord_9"      // Aura Shared Damage
+        "Ability10"	"special_bonus_unique_underlord_5"      // Storm CD
+
+        "Ability13"	"special_bonus_unique_underlord_3"      // Aura Damage Reduction
+		"Ability12"	"special_bonus_unique_underlord_8"      // Storm Radius
+
+        "Ability15"	"special_bonus_attack_speed_300"
+		"Ability14"	"special_bonus_unique_underlord_6"      // Pit Radius
+
+        "Ability17"	"special_bonus_unique_underlord_4"      // Storm Damage
+		"Ability16"	"special_bonus_unique_underlord"        // Pit Root
+    }
+    "npc_dota_hero_alchemist"		{
+	//	"Ability8"	"alchemist_melting"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_alchemist_6"	// Ult Movespeed
+        "Ability10"	"special_bonus_unique_alchemist_5"	// Spray Armor Reduction
+		// Talents 15
+        "Ability13"	"special_bonus_unique_alchemist_3"	// Spray Allies Armor
+        "Ability12"	"special_bonus_cleave_50"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_alchemist_2" 	// Concoction Damage
+        "Ability14"	"special_bonus_unique_alchemist_7"	// Greed Damage
+		// Talents 25
+        "Ability17"	"special_bonus_unique_alchemist_4" // Ult Heal
+        "Ability16"	"special_bonus_unique_alchemist_8" // Ult Attack Time
+    }
+    "npc_dota_hero_ancient_apparition"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_ancient_apparition_7" // Touch Range
+        "Ability10"	"special_bonus_unique_ancient_apparition_4" // Vortex Speed/Resist
+		// Talents 15
+        "Ability13"	"special_bonus_unique_ancient_apparition_5" // Blast Threshold
+        "Ability12"	"special_bonus_unique_ancient_apparition_1" // Feet Break Distance
+		// Talents 20
+        "Ability15"	"special_bonus_unique_ancient_apparition_3" // Vortex Cooldown
+        "Ability14"	"special_bonus_spell_amplify_33"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_ancient_apparition_2" // Touch Damage
+        "Ability16"	"special_bonus_unique_ancient_apparition_6" // Feet AOE
+    }
+    "npc_dota_hero_antimage"		{
+		"Ability1"		"antimage_mana_break"
+		"Ability2"		"antimage_blink"
+		"Ability3"		"antimage_counterspell"
+		"Ability4"		"antimage_fragment_kbw"
+		"Ability6"		"antimage_mana_void"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_antimage_manavoid_aoe"
+        "Ability10"	"special_bonus_unique_antimage_7"	// Max Mana Break
+		// Talents 15
+		"Ability12"	"special_bonus_attack_speed_120"
+        "Ability13"	"special_bonus_unique_antimage_8" // Mana Void Stun
+		// Talents 20
+		"Ability15"	"special_bonus_unique_antimage_6" // Mana Void Damage
+		"Ability14"	"special_bonus_unique_antimage" // Blick Cooldown
+		// Talents 25
+        "Ability16"	"special_bonus_unique_antimage_4" // Mana Void Cooldown
+        "Ability17"	"special_bonus_unique_antimage_2" // Counterspell Resist
+    }
+    "npc_dota_hero_arc_warden"		{
+        // Talents 10
+        "Ability11"	"special_bonus_cast_range_250"
+        "Ability10"	"special_bonus_lifesteal_25"
+        // Talents 15
+        "Ability13"	"special_bonus_unique_arc_warden_flux_cd"
+        "Ability12"	"special_bonus_attack_range_250"
+        // Talents 20
+        "Ability15"	"special_bonus_unique_arc_warden_2" //Flux Damage
+        "Ability14"	"special_bonus_unique_arc_warden_3" //Magnetic Attack Speed
+        // Talents 25
+        "Ability17"	"special_bonus_unique_arc_warden"   //Spark Damage
+        "Ability16"	"special_bonus_unique_arc_warden_9"
+    }
+    "npc_dota_hero_axe"		{
+        "Ability11"	"special_bonus_unique_axe_3" // Armor Bonus per Kill
+        "Ability10"	"special_bonus_unique_axe_8" // Helix Speed
+
+        "Ability13"	"special_bonus_unique_axe_2" // Call Radius
+        "Ability12"	"special_bonus_magic_resistance_28"
+
+        "Ability15"	"special_bonus_unique_axe" // Hunger DPS
+		"Ability14"	"special_bonus_unique_axe_4" // Helix Damage
+
+        "Ability17"	"special_bonus_unique_axe_5" // Kill Threshold
+		"Ability16"	"special_bonus_unique_axe_7" // Call Armor
+    }
+    "npc_dota_hero_bane"		{
+		//Talents 10
+		"Ability11"	"special_bonus_unique_bane_10"	// Nightmare Heal
+		"Ability10"	"special_bonus_no_castpoint"
+		//Talents 15
+		"Ability13"	"special_bonus_base_attack_damage_pct_150"
+		"Ability12"	"special_bonus_night_vision_600"
+		//Talents 20
+		"Ability15"	"special_bonus_base_attack_rate_0_5"
+		"Ability14"	"special_bonus_unique_bane_8"	//Sap Cooldown
+		//Talents 25
+		"Ability17"	"special_bonus_unique_bane_3"	//Fiends Duration
+		"Ability16"	"special_bonus_unique_bane_2"	//Sap Damage
+    }
+    "npc_dota_hero_batrider"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_batrider_7"	// Napalm Radius
+        "Ability10"	"special_bonus_cdr_stackable_20"
+        //Talents 15
+        "Ability13"	"special_bonus_movement_speed_50"
+        "Ability12"	"special_bonus_unique_batrider_2"	// Flamebreak Napalm Stack
+        //Talents 20
+        "Ability15"	"special_bonus_attack_speed_300"
+        "Ability14"	"special_bonus_unique_batrider_5"	// Flamebreak Charges
+        //Talents 25
+        "Ability17"	"special_bonus_unique_batrider_4"	// Napalm Damage
+        "Ability16"	"special_bonus_unique_batrider_3"	// Flamebreak Knockback
+    }
+    "npc_dota_hero_beastmaster"		{
+		// Talents 10
+		"Ability11"	"special_bonus_unique_beastmaster_9"	// Axes Damage Amp
+		"Ability10"	"special_bonus_aura_movespeed_pct_25"
+		// Talents 15
+		"Ability13"	"special_bonus_unique_beastmaster_7"	// Roar Cooldown
+		"Ability12"	"special_bonus_aura_regen_pct_1"
+		// Talents 20
+		"Ability15"	"special_bonus_unique_beastmaster_wild_axe_cooldown"
+		"Ability14"	"special_bonus_unique_beastmaster_2"
+		// Talents 25
+		"Ability17"	"special_bonus_unique_beastmaster_4"	// Aura Attack Speed
+		"Ability16"	"special_bonus_unique_beastmaster_6"	// Units Health
+    }
+    "npc_dota_hero_bloodseeker"		{
+		// "Ability1"  "bloodseeker_bloodrage_kbw"
+
+        // Talents 10
+        "Ability10"	"special_bonus_unique_bloodseeker_rupture_charges" // 2 Rupture charges
+		"Ability11"	"special_bonus_unique_bloodseeker_4"	//Thirst MS
+        // Talents 15
+		"Ability12"	"special_bonus_unique_bloodseeker_5"	//BloodRage Attack Speed
+		"Ability13"	"special_bonus_unique_bloodseeker_6"	//BloodRage spell AMP
+        // Talents 20
+        "Ability14"	"special_bonus_cast_range_700"
+		"Ability15"	"special_bonus_spell_lifesteal_20"
+        // Talents 25
+		"Ability16"	"special_bonus_unique_bloodseeker"		//Blood right cooldown
+		"Ability17"	"special_bonus_unique_bloodseeker_7"
+    }
+    "npc_dota_hero_bounty_hunter"		{
+        "Ability11"	"special_bonus_unique_bounty_hunter" // W Gold
+        "Ability10"	"special_bonus_unique_bounty_hunter_8" // R Vision
+
+        "Ability13"	"special_bonus_unique_bounty_hunter_3" // R Gold
+        "Ability12"	"special_bonus_unique_bounty_hunter_9" // Invis Silence
+
+        "Ability15"	"special_bonus_unique_bounty_hunter_4" // W Damage
+        "Ability14"	"special_bonus_unique_bounty_hunter_7" // Toss Charges
+
+        "Ability17"	"special_bonus_unique_bounty_hunter_jinada_cooldown"
+        "Ability16"	"special_bonus_unique_bounty_hunter_2" // Q Damage
+    }
+    "npc_dota_hero_bristleback"		{
+        "Ability10"	"special_bonus_movement_speed_30"
+        "Ability11"	"special_bonus_mp_regen_750"
+        "Ability12"	"special_bonus_hp_800"
+        "Ability13"	"special_bonus_attack_speed_75"
+        "Ability14"	"special_bonus_hp_regen_120"
+        "Ability15"	"special_bonus_unique_bristleback_2"
+        "Ability16"	"special_bonus_spell_lifesteal_39"
+        "Ability17"	"special_bonus_unique_bristleback_3"
+    }
+    "npc_dota_hero_broodmother"		{
+		// Talents 10
+		"Ability11"	"special_bonus_unique_broodmother_6"	// Max Webs
+		"Ability10"	"special_bonus_unique_broodmother_2"	// Bola AOE
+		// Talents 15
+		"Ability13"	"special_bonus_unique_broodmother_1"	// Hunder BAT
+		"Ability12"	"special_bonus_cdr_stackable_25"
+		// Talents 20
+		"Ability15"	"special_bonus_unique_broodmother_silken_bola_attack_damage"
+		"Ability14"	"special_bonus_unique_broodmother_3" // R Damage
+		// Talents 25
+		"Ability17"	"special_bonus_agility_322"
+		"Ability16"	"special_bonus_unique_broodmother_silken_bola_impact_damage"
+    }
+    "npc_dota_hero_centaur"		{
+        "Ability11"	"special_bonus_unique_centaur_2" // Stomp Stun
+		"Ability10"	"special_bonus_unique_centaur_5" // Stampede Cooldown
+
+        "Ability13"	"special_bonus_unique_centaur_1" // Retaliate Aura
+		"Ability12"	"special_bonus_armor_20"
+
+        "Ability15"	"special_bonus_movement_speed_120"
+		"Ability14"	"special_bonus_max_hp_regen_1"
+
+        "Ability17"	"special_bonus_unique_centaur_4" // Edge Damage
+		"Ability16"	"special_bonus_unique_centaur_3" // Retaliate Damage
+    }
+    "npc_dota_hero_chaos_knight"		{
+		"Ability10"		"special_bonus_unique_chaos_knight_6"
+		"Ability11"		"special_bonus_unique_chaos_knight_2"
+		"Ability12"		"special_bonus_unique_chaos_knight_8"
+		"Ability13"		"special_bonus_strength_52"
+		"Ability14"		"special_bonus_unique_chaos_knight_3"
+		"Ability15"		"special_bonus_unique_chaos_knight"
+		"Ability16"		"special_bonus_unique_chaos_knight_5"
+		"Ability17"		"special_bonus_unique_chaos_knight_4"
+    }
+	"npc_dota_hero_chen"		{
+		// Talents 10
+		"Ability11"	"special_bonus_cast_range_300"
+		"Ability10"	"special_bonus_hp_450"
+		// Talents 15
+		"Ability13"	"special_bonus_unique_chen_8"	// Penitence SLow
+		"Ability12"	"special_bonus_unique_chen_12"	// Ult Dispel
+		// Talents 20
+		"Ability15"	"special_bonus_unique_chen_4"	// Creeps Health
+		"Ability14"	"special_bonus_unique_chen_7"	// Ult Cooldown
+		// Talents 25
+		"Ability17"	"special_bonus_unique_chen_2"	// Ult Heal
+		"Ability16"	"special_bonus_unique_chen_5"	// Creep Damage
+	}
+    "npc_dota_hero_clinkz"		{
+        // Talents 10
+        "Ability11"	"special_bonus_unique_clinkz_burning_army_attack_rate"
+        "Ability10"	"special_bonus_base_attack_rate_0_25"
+        // Talents 15
+        "Ability13"	"special_bonus_unique_clinkz_3"		// Multishot
+        "Ability12"	"special_bonus_unique_clinkz_cd"	// Strafe/Barrage CD
+        // Talents 20
+        "Ability15"	"special_bonus_corruption_20"
+        "Ability14"	"special_bonus_unique_clinkz_strafe_attack_range"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_clinkz_1"		// Tar Damage
+        "Ability16"	"special_bonus_unique_clinkz_8"	// Death Pact Health
+    }
+    "npc_dota_hero_crystal_maiden"		{
+		"MovementSpeed"		"278"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_crystal_maiden_6"	// Nova Radius
+        "Ability10"	"special_bonus_unique_crystal_maiden_1"	// Frostbite Duraton
+		// Talents 15
+        "Ability13"	"special_bonus_unique_crystal_maiden_5"	// Nova Cooldown
+        "Ability12"	"special_bonus_attack_speed_500"
+        // Talents 20
+        "Ability15"	"special_bonus_unique_crystal_maiden_3"	// Ult Damage
+		"Ability14"	"special_bonus_cast_range_400"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_crystal_maiden_2"	// Nova Damage
+		"Ability16"	"special_bonus_magic_damage_stun_1_2"
+    }
+
+	"npc_dota_hero_dark_seer"		{
+		"Ability3"		"dark_seer_surge_kbw"
+
+		// Talents 10
+		"Ability11"	"special_bonus_unique_dark_seer_2"	// Vacuum Radius
+		"Ability10"	"special_bonus_unique_dark_seer_5"	// Shell Radius
+		// Talents 15
+		"Ability13"	"special_bonus_unique_dark_seer_7"	// Wall Damage
+		"Ability12"	"special_bonus_unique_dark_seer_6"	// Shell Health
+		// Talents 20
+		"Ability15"	"special_bonus_unique_dark_seer_14"	// Shell Charges
+		"Ability14"	"special_bonus_unique_dark_seer_13"	// Wall Cooldown
+		// Talents 25
+		"Ability17"	"special_bonus_unique_dark_seer_surge_aoe"
+ 		"Ability16"	"special_bonus_unique_dark_seer"	// Shell Damage
+		// "Ability16"	"special_bonus_unique_dark_seer_4"	// Double Wall
+	}
+
+    "npc_dota_hero_dark_willow"		{
+		"Ability2"	"dark_willow_shadow_realm_kbw"
+
+        "Ability11"	"special_bonus_unique_dark_willow_2"	// Badlam Pierce BKB
+        "Ability10"	"special_bonus_attack_mag_weakness_25"
+
+        "Ability13"	"special_bonus_unique_dark_willow_7"	// Crown Radius
+        "Ability12"	"special_bonus_attack_speed_300"
+
+        "Ability15"	"special_bonus_unique_dark_willow_4"	// Badlam Damage
+        "Ability14"	"special_bonus_unique_dark_willow_shadow_realm_duration"
+
+        "Ability17"	"special_bonus_unique_dark_willow_3"	// Maze CD
+        "Ability16"	"special_bonus_unique_dark_willow_shadow_realm_pierce_bkb"
+    }
+    "npc_dota_hero_dazzle"		{
+		"Ability3"	"dazzle_shadow_wave_kbw"
+		"Ability4"	"dazzle_invalid_grave"
+
+        //Talents 10
+        "Ability11"	"special_bonus_unique_dazzle_grave_heal"//
+        "Ability10"	"special_bonus_unique_dazzle_shadow_wave_kbw_on_attack" 
+        //Talents 15
+        "Ability13"	"special_bonus_unique_dazzle_3" //Poison touch Damage
+        "Ability12"	"special_bonus_attack_speed_200"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_dazzle_poison_touch_vision"
+        "Ability14"	"special_bonus_unique_dazzle_shadow_wave_kbw_damage_heal"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_dazzle_4"     //Bad Juju armor reduction
+        "Ability16"	"special_bonus_unique_dazzle_poison_touch_attack_range_bonus"
+    }
+    "npc_dota_hero_death_prophet"		{
+        //Talents 10
+        "Ability11"	"special_bonus_magic_resistance_20"
+        "Ability10"	"special_bonus_unique_death_prophet_5"	// Siphon Cooldown
+        //Talents 15
+        "Ability13"	"special_bonus_corruption_15"
+        "Ability12"	"special_bonus_cast_range_300"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_death_prophet_2"
+        "Ability14"	"special_bonus_hp_2400"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_death_prophet"
+        "Ability16"	"special_bonus_unique_death_prophet_3"	// Siphon Damage
+    }
+    "npc_dota_hero_disruptor"		{
+		//Talents 10
+        "Ability11"	"special_bonus_unique_disruptor"	// Strike Count
+        "Ability10"	"special_bonus_unique_disruptor_2"	// Field Cooldown
+		//Talents 15
+        "Ability13"	"special_bonus_unique_disruptor_4"	// Glimpse Cooldown
+        "Ability12"	"special_bonus_unique_disruptor_5"	// Field Duration
+		//Talents 20
+        "Ability15"	"special_bonus_unique_disruptor_7"	// Storm Duration
+        "Ability14"	"special_bonus_unique_disruptor_6"	// Field True Sight
+		//Talents 25
+        "Ability17"	"special_bonus_unique_disruptor_3"	// Strike Damage
+        "Ability16"	"special_bonus_unique_disruptor_8"	// Storm Radius
+    }
+    "npc_dota_hero_doom_bringer"		{
+		//Talents 10
+        "Ability11"	"special_bonus_unique_doom_6"	// Earth Speed
+        "Ability10"	"special_bonus_unique_doom_11"	// Doom Break
+		//Talents 15
+        "Ability13"	"special_bonus_unique_doom_1"	// Blade Damage
+        "Ability12"	"special_bonus_unique_doom_10"	// Doom Cooldown
+		//Talents 20
+        "Ability15"	"special_bonus_unique_doom_3"	// Devour Resist
+        "Ability14"	"special_bonus_unique_doom_5"	// Doom Damage
+		//Talents 25
+        "Ability17"	"special_bonus_max_hp_regen_1_5"
+        "Ability16"	"special_bonus_unique_doom_4"	// Earth Damage
+    }
+    "npc_dota_hero_dragon_knight"		{
+        "Ability10"	"special_bonus_attack_speed_50"
+        "Ability11"	"special_bonus_unique_dragon_knight_3"
+        "Ability12"	"special_bonus_unique_dragon_knight_9"
+        "Ability13"	"special_bonus_hp_1400"
+		"Ability14"	"special_bonus_unique_dragon_knight_7"
+        "Ability15"	"special_bonus_strength_120"
+        "Ability16"	"special_bonus_unique_dragon_knight"
+		"Ability17"	"special_bonus_unique_dragon_knight_8"
+    }
+    "npc_dota_hero_drow_ranger"		{
+        "Ability6"	"drow_ranger_marksmanship"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_drow_ranger_8"	// Multishot Waves
+        "Ability10"	"special_bonus_unique_drow_ranger_gust_selfmovespeed"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_drow_ranger_1"	// Multishot Damage
+        "Ability12"	"special_bonus_unique_drow_ranger_7"	// Gust CD
+		// Talents 20
+        "Ability15"	"special_bonus_unique_drow_ranger_6"	// Multishot CD
+        "Ability14"	"special_bonus_unique_drow_ranger_4"	// Gust Radius
+		// Talents 25
+        "Ability17"	"special_bonus_unique_drow_ranger_2"	// Arrow Damage
+        "Ability16"	"special_bonus_unique_drow_ranger_3"	// Marksmansip Chance
+    }
+    "npc_dota_hero_earth_spirit"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_earth_spirit_4"	// Roll Range
+        "Ability10"	"special_bonus_unique_earth_spirit_2"	// Grip Allies
+		// Talents 15
+        "Ability13"	"special_bonus_unique_earth_spirit_6"	// Magnetize Duration
+        "Ability12"	"special_bonus_unique_earth_spirit_5"	// Grip Silence
+		// Talents 20
+        "Ability15"	"special_bonus_unique_earth_spirit_8"	// Magnetize Damage
+        "Ability14"	"special_bonus_unique_earth_spirit_boulder_smash_cooldown"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_earth_spirit"		// Roll Damage
+        "Ability16"	"special_bonus_status_resistance_35"
+    }
+    "npc_dota_hero_earthshaker"		{
+        "Ability11"	"special_bonus_unique_earthshaker_3" // Fissure Range
+        "Ability10"	"special_bonus_aftershock_attack_damage"
+
+        "Ability13"	"special_bonus_unique_earthshaker_5" // Shock Radius
+        "Ability12"	"special_bonus_crit_250_cd_3"
+
+        "Ability15"	"special_bonus_unique_earthshaker_4" // Fissure Damage
+		"Ability14"	"special_bonus_unique_earthshaker" // Totem Cooldown
+
+        "Ability17"	"special_bonus_unique_earthshaker_6" // Shock Damage
+		"Ability16"	"special_bonus_attack_base_damage_800"
+    }
+    "npc_dota_hero_elder_titan"		{
+		// Talents 10
+        "Ability11"	"special_bonus_base_attack_rate_0_35"
+        "Ability10"	"special_bonus_spell_lifesteal_30"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_elder_titan_bonus_spirit_speed"
+        "Ability12"	"special_bonus_unique_elder_titan_4"	// Echo Wake Damage
+		// Talents 20
+        "Ability15"	"special_bonus_cleave_100"
+        "Ability14"	"special_bonus_unique_elder_titan_2"	// Echo Damage
+		// Talents 25
+        "Ability17"	"special_bonus_unique_elder_titan"		// Spirit Damage per Hero
+        "Ability16"	"special_bonus_unique_elder_titan_3"	// Splitter Cooldown
+    }
+    "npc_dota_hero_ember_spirit"		{
+        "Ability11"	"special_bonus_unique_ember_spirit_7" // Chain Targets
+        "Ability10"	"special_bonus_mag_attack_10"
+
+        "Ability13"	"special_bonus_unique_ember_spirit_2" // Chain Duration
+        "Ability12"	"special_bonus_unique_ember_spirit_4" // Fist Charges
+
+        "Ability15"	"special_bonus_unique_ember_spirit_5" // Remnant Cooldown
+		"Ability14"	"special_bonus_unique_ember_spirit_1" // Guard Absorb
+
+        "Ability17"	"special_bonus_unique_ember_spirit_3" // Guard Damage
+		"Ability16"	"special_bonus_unique_ember_spirit_6" // Fist Damage
+    }
+	"npc_dota_hero_enchantress"		{
+		// Talents 10
+		"Ability10"	"special_bonus_magic_resistance_20"
+		"Ability11"	"special_bonus_unique_enchantress_6"	// Wisps Speed
+		// Talents 15
+		"Ability12"	"special_bonus_mana_reduction_60"
+		"Ability13"	"special_bonus_unique_enchantress_2"	// Wisps Count
+		// Talents 20
+		"Ability14"	"special_bonus_unique_enchantress_3"	//untouchable slow
+		"Ability15"	"special_bonus_night_vision_1000"
+		// Talents 25
+		"Ability16"	"special_bonus_unique_enchantress_4"	//Impetus DMG
+		"Ability17"	"special_bonus_unique_enchantress_5"	//nature attendants heal
+	}
+	"npc_dota_hero_enigma"		{
+		"Ability11"	"special_bonus_unique_enigma" // Eidolon Count
+		"Ability10"	"special_bonus_unique_enigma_2" // Malefice Count
+
+		"Ability13"	"special_bonus_unique_enigma_4" // Eidolon Attack Speed
+		"Ability12"	"special_bonus_unique_enigma_9" // Pulse Radius
+
+        "Ability15"	"special_bonus_unique_enigma_7" // Eidolon HP
+		"Ability14"	"special_bonus_unique_enigma_blackhole_cd"
+
+        "Ability17"	"special_bonus_unique_enigma_3" // Eidolon Damage
+		"Ability16"	"special_bonus_unique_enigma_5" // Malefice Damage
+    }
+
+    "npc_dota_hero_faceless_void"		{
+		"Ability3"	"faceless_void_time_lock_kbw"
+
+        // Talents 10
+        "Ability11"	"special_bonus_unique_faceless_void"    //Chronosphere Attack speed
+        "Ability10"	"special_bonus_unique_faceless_void_6"  //Time dilation damage
+        // Talents 15
+        "Ability13"	"special_bonus_unique_faceless_void_time_lock_damage"
+        "Ability12"	"special_bonus_unique_faceless_void_7"  //Time walk backtrack time
+        // Talents 20
+        "Ability15"	"special_bonus_unique_faceless_void_5"  //Time walk cooldown
+        "Ability14"	"special_bonus_unique_faceless_void_2"  //Chronosphere Radius
+        // Talents 25
+        "Ability17"	"special_bonus_unique_faceless_void_time_dilation_chronosphere"
+        "Ability16"	"special_bonus_unique_faceless_void_4"  //Universal evasion
+    }
+    "npc_dota_hero_furion"		{
+        "Ability11"	"special_bonus_aura_movespeed_pct_25"
+        "Ability10"	"special_bonus_unique_furion_sprout_range"
+
+        "Ability13"	"special_bonus_unique_furion_7"	// Sprout Leash
+	    "Ability12"	"special_bonus_unique_furion_4" // Sprout Miss
+
+        "Ability15"	"special_bonus_corruption_25"
+	    "Ability14"	"special_bonus_unique_furion_3" // TP Cooldown
+
+        "Ability17"	"special_bonus_unique_furion_treant_damage"
+	    "Ability16"	"special_bonus_unique_furion_5" // Wrath Damage
+    }
+    "npc_dota_hero_grimstroke"		{
+        "Ability10"	"special_bonus_cast_range_200"
+        "Ability11"	"special_bonus_unique_grimstroke_7"
+        "Ability12"	"special_bonus_spell_amplify_30"
+        "Ability13"	"special_bonus_unique_grimstroke_6"
+        "Ability14"	"special_bonus_unique_grimstroke_3"
+        "Ability15"	"special_bonus_unique_grimstroke_8"
+        "Ability16"	"special_bonus_unique_grimstroke_1"
+        "Ability17"	"special_bonus_unique_grimstroke_2"
+    }
+    "npc_dota_hero_gyrocopter"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_gyrocopter_call_down_damage"
+        "Ability10"	"special_bonus_agility_pct_20"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_gyrocopter_6" //Homing Missile Stun Duration
+        "Ability12"	"special_bonus_lifesteal_25"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_gyrocopter_5" //Triple Down
+        "Ability14"	"special_bonus_unique_gyrocopter_flak_cannon_bonus_damage"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_gyrocopter_3" //Rocked Barrage Damage
+        "Ability16"	"special_bonus_unique_gyrocopter_1" //Flack Cannon Cooldown
+    }
+    "npc_dota_hero_huskar"		{
+		"AttackRange"		"400"
+        //Talents 10
+        "Ability10"	"special_bonus_lifesteal_20"
+        "Ability11" "special_bonus_unique_huskar_4"     // LifeBreak Slow
+        //Talents 15
+        "Ability12"	"special_bonus_attack_base_damage_200"
+        "Ability13" "special_bonus_unique_huskar_3"     // Inner Fire Duration
+        //Talents 20
+        "Ability14"	"special_bonus_unique_huskar_5"     // Spear Pure Damage
+        "Ability15" "special_bonus_unique_huskar_6"     // Blood Regen
+        //Talents 25
+        "Ability16"	"special_bonus_unique_huskar_2"     // Spear Damage
+        "Ability17" "special_bonus_unique_huskar_7"     // LifeBreak Cooldown
+    }
+
+    "npc_dota_hero_invoker"		{
+		//Talents 10
+        "Ability18"	"special_bonus_unique_invoker_9"	// Cold Snap Cooldown
+        "Ability17"	"special_bonus_unique_invoker_10"	// Emp Multiplier
+		//Talents 15
+		"Ability20"	"special_bonus_unique_invoker_11"	// Forge Attack Speed
+        "Ability19" "special_bonus_unique_invoker_2"	// Blast AOE
+		//Talents 20
+		"Ability22"	"special_bonus_unique_invoker_alacrity_aoe"
+        "Ability21"	"special_bonus_unique_invoker_6"	// Meteor Damage
+		//Talents 25
+        "Ability24"	"special_bonus_unique_invoker_13"	// Sphere Multiplier
+        "Ability23"	"special_bonus_unique_invoker_3"	// Tornado Cooldown
+    }
+    "npc_dota_hero_jakiro"		{
+		"Ability6"	"jakiro_macropyre_kbw"
+	
+		// Talents 10
+        "Ability11"	"special_bonus_spell_amplify_15"
+        "Ability10"	"special_bonus_attack_range_650"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_jakiro_liquid_fire_damage"
+        "Ability12"	"special_bonus_unique_jakiro" // Path Stun
+		// Talents 20
+        "Ability15"	"special_bonus_unique_jakiro_macropyre_duration"
+        "Ability14"	"special_bonus_unique_jakiro_4" // Fire Attack Speed
+		// Talents 25
+        "Ability17"	"special_bonus_unique_jakiro_2"
+        "Ability16"	"special_bonus_mag_attack_raw_800"
+    }
+    "npc_dota_hero_juggernaut"		{
+
+        "AttackDamageMin"		"24"
+		"AttackDamageMax"		"28"
+
+		"StatusManaRegen"	"1.0"
+
+        "Ability11"	"special_bonus_unique_juggernaut_5"	// Ward Cooldown
+        "Ability10"	"special_bonus_unique_juggernaut"	// Fury Radius
+
+        "Ability13"	"special_bonus_lifesteal_20"
+        "Ability12"	"special_bonus_unique_juggernaut_4"	// Fury Duration
+
+        "Ability15"	"special_bonus_status_resistance_25"
+        "Ability14"	"special_bonus_unique_juggernaut_2"	// Ward Health
+
+        "Ability17"	"special_bonus_unique_juggernaut_omnislash_duration"
+        "Ability16"	"special_bonus_unique_juggernaut_3" // Fury DPS
+    }
+    "npc_dota_hero_keeper_of_the_light"		{
+                "Ability2" "keeper_of_the_light_blinding_light"
+		//Talent 10
+		"Ability11"	"special_bonus_unique_keeper_of_the_light_12"	//Blight Light Charges
+		"Ability12" "special_bonus_unique_keeper_of_the_light_14"	//Chakra Dispel
+		//Talent 15
+		"Ability13"	"special_bonus_unique_keeper_of_the_light_8"	//Blight Light Miss Chance
+		"Ability14"	"special_bonus_unique_keeper_of_the_light_7"	//Chakra Cooldown
+		//Talent 20
+		"Ability15"	"special_bonus_unique_keeper_of_the_light_illuminate_cooldown"	//Solar Bind CD
+		"Ability16"	"special_bonus_unique_keeper_of_the_light_11"	//Spirit Form Duration7"
+		//Talent 25
+		"Ability17"	"special_bonus_unique_keeper_of_the_light_10"	//Blight Light Stun
+		"Ability18"	"special_bonus_unique_keeper_of_the_light"		//Illuminate Damage
+    }
+    "npc_dota_hero_kunkka"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_kunkka"	// Torrent Radius
+        "Ability10"	"special_bonus_crit_250_cd_3"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_kunkka_7"	// Torrent Duration & Damage
+        "Ability12"	"special_bonus_unique_kunkka_4" //Tidebringer Cleave
+        //Talents 20
+        "Ability15"	"special_bonus_unique_kunkka_ghostship_cooldown"
+        "Ability14"	"special_bonus_unique_kunkka_5" // Tidebringer Cooldown
+        //Talents 25
+        "Ability17"	"special_bonus_unique_kunkka_3" // Ghostship Fleet
+        "Ability16"	"special_bonus_strength_275"
+    }
+    "npc_dota_hero_legion_commander"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_legion_commander_2"	// Odds Radius
+        "Ability10"	"special_bonus_unique_legion_commander"		// Duel Damage
+		// Talents 15
+        "Ability13"	"special_bonus_unique_legion_commander_8"	// Press BKB
+        "Ability12"	"special_bonus_unique_legion_commander_duel_cast_range"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_legion_commander_5"	// Press AOE
+        "Ability14"	"special_bonus_unique_legion_commander_4"	// Odds Hero Damage
+		// Talents 25
+        "Ability17"	"special_bonus_unique_legion_commander_6"	// Press Regen
+        "Ability16"	"special_bonus_unique_legion_commander_3"	// Moment Chance
+    }
+    "npc_dota_hero_leshrac"		{
+        "Ability10"	"special_bonus_armor_12"
+        "Ability11"	"special_bonus_unique_leshrac_5"
+        "Ability12"	"special_bonus_strength_48"
+        "Ability13"	"special_bonus_unique_leshrac_6"
+        "Ability14"	"special_bonus_spell_lifesteal_36"
+        "Ability15"	"special_bonus_unique_leshrac_3"
+        "Ability16"	"special_bonus_unique_leshrac_1"
+        "Ability17"	"special_bonus_unique_leshrac_2"
+    }
+    "npc_dota_hero_lich"		{
+        "Ability11"	"special_bonus_unique_lich_3" // Blast Cooldown
+        "Ability10"	"special_bonus_unique_lich_8" // Shield Resist
+
+        "Ability13"	"special_bonus_cast_range_300"
+	    "Ability12"	"special_bonus_unique_lich_4" // Shield Duration
+
+        "Ability15"	"special_bonus_unique_lich_6"  // Blast Radius/Damage
+        "Ability14"	"special_bonus_unique_lich_2" // Gaze Duration
+
+        "Ability17"	"special_bonus_unique_lich_7" // Chain Damage
+	    "Ability16"	"special_bonus_unique_lich_1" // Shield Heal
+    }
+    "npc_dota_hero_life_stealer"		{
+		"Ability1"		"life_stealer_rage"
+		"Ability2"		"lifestealer_feast_kbw"
+		"Ability3"		"life_stealer_ghoul_frenzy"
+		"Ability4"		"life_stealer_open_wounds"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"life_stealer_infest"
+		"Ability7"		"life_stealer_consume"
+
+        //Talents 10
+        "Ability11"	"special_bonus_unique_lifestealer_2"	// Rage Speed
+        "Ability10"	"special_bonus_hp_600"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_lifestealer_rage_armor"
+        "Ability12"	"special_bonus_attack_damage_115"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_lifestealer_infest_damage"
+        "Ability14"	"special_bonus_corruption_25"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_lifestealer" // Rage Duration
+        "Ability16"	"special_bonus_unique_lifestealer_feast_damage"
+    }
+    "npc_dota_hero_lina"		{
+
+		"StatusManaRegen"	"1.0"
+		"Ability6"	"lina_laguna_blade_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_lina_light_strike_array_radius"
+        "Ability10"	"special_bonus_attack_range_250"
+		// Talents 15
+        "Ability13"	"special_bonus_cast_range_250"
+        "Ability12"	"special_bonus_unique_lina_2"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_lina_laguna_blade_kbw_cooldown"
+        "Ability14"	"special_bonus_mag_attack_raw_300"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_lina_3"	// Strike Damage
+        "Ability16"	"special_bonus_base_attack_rate_0_45"
+    }
+    "npc_dota_hero_lion"		{
+		"MovementSpeed"		"322"
+	
+        "Ability11"	"special_bonus_unique_lion_manadrain_damage"
+        "Ability10"	"special_bonus_unique_lion_2" // Spike Pierce
+
+        "Ability13"	"special_bonus_unique_lion_7" // Spike Cooldown
+		"Ability12"	"special_bonus_cast_range_300"
+
+        "Ability15"	"special_bonus_unique_lion_8" // Finger Kill Damage
+		"Ability14"	"special_bonus_unique_lion_4" // Hex AOE
+
+        "Ability17"	"special_bonus_unique_lion_3"	// Impale Damage
+		"Ability16"	"special_bonus_unique_lion_11"	// Finger Kill Health
+    }
+    "npc_dota_hero_luna"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_luna_4"	// Beam Stun
+        "Ability10"	"special_bonus_unique_luna_7"	// Glaives Damage Reduction
+        //Talents 15
+        "Ability13"	"special_bonus_unique_luna_2"	// Beam Cooldown
+        "Ability12"	"special_bonus_attack_range_300"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_luna_6"	// Eclipse Cooldown
+        "Ability14"	"special_bonus_unique_luna_3"	// Blessing Damage
+        //Talents 25
+        "Ability17"	"special_bonus_unique_luna_1"	// Beam Damage
+        "Ability16" "special_bonus_unique_luna_lucent_beam_attacks"
+    }
+    "npc_dota_hero_lycan"		{
+        "Ability11"	"special_bonus_unique_lycan_2" // Wolf Count
+        "Ability10"	"special_bonus_unique_lycan_8" // Shift Cooldown
+
+        "Ability13"	"special_bonus_unique_lycan_4" // Aura Damage
+		"Ability12"	"special_bonus_unique_lycan_6" // Howl Damage Reduction
+
+        "Ability15"	"special_bonus_unique_lycan_howl_armor"
+		"Ability14"	"special_bonus_unique_lycan_7" // Wolf Health
+
+        "Ability17"	"special_bonus_unique_lycan_wolves_damage"
+		"Ability16"	"sepcial_bonus_unique_lycan_pizda"	// Shapeshift Resist
+    }
+    "npc_dota_hero_magnataur"		{
+        //Talents 10
+        "Ability10"	"special_bonus_strength_25"
+        "Ability11"	"special_bonus_unique_magnus_6" // Shockwave Slow Duration
+        //Talents 10
+        "Ability12"	"special_bonus_unique_magnus_2" // Cleave/Damage Empower
+        "Ability13"	"special_bonus_unique_magnus_3" // Skewer Range
+        //Talents 10
+        "Ability14"	"special_bonus_attack_base_damage_350"
+        "Ability15"	"special_bonus_unique_magnus_7" // Skewer Cooldown
+        //Talents 10
+        "Ability16"	"special_bonus_30_crit_250"
+        "Ability17"	"special_bonus_unique_magnataur_shockwave_damage"
+    }
+    "npc_dota_hero_mars"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_mars_bulwark_damage_reduction"
+        "Ability10"	"special_bonus_unique_mars_rebuke_cooldown"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_mars_spear_stun_duration"
+        "Ability12"	"special_bonus_unique_mars_gods_rebuke_extra_crit"
+        //Talents 20
+        "Ability15"	"special_bonus_unique_mars_arena_of_blood_hp_regen"
+        "Ability14"	"special_bonus_unique_mars_rebuke_radius"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_mars_spear_bonus_damage"
+        "Ability16"	"special_bonus_attack_base_damage_750"
+    }
+    "npc_dota_hero_medusa"		{
+        "Ability10"	"special_bonus_hp_800"
+        "Ability11"	"special_bonus_evasion_22"
+        "Ability12"	"special_bonus_attack_speed_120"
+        "Ability13"	"special_bonus_unique_medusa"
+        "Ability14"	"special_bonus_unique_medusa_5"
+        "Ability15"	"special_bonus_unique_medusa_4"
+        "Ability16"	"special_bonus_mp_7200"
+        "Ability17"	"special_bonus_unique_medusa_6"
+    }
+    "npc_dota_hero_mirana"		{
+        "Ability11"	"special_bonus_unique_mirana_6"
+        "Ability10"	"special_bonus_unique_mirana_4"
+
+        "Ability13"	"special_bonus_unique_mirana_1"
+		"Ability12"	"special_bonus_unique_mirana_2"
+
+        "Ability15"	"special_bonus_unique_mirana_5"
+		"Ability14"	"special_bonus_spell_amplify_30"
+
+        "Ability17"	"special_bonus_mana_break_400"
+		"Ability16"	"special_bonus_unique_mirana_7"
+    }
+    "npc_dota_hero_monkey_king"		{
+		"Ability4"		"monkey_king_jingu_mastery_kbw"
+		"Ability6"		"monkey_king_circle_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_monkey_king_circle_attributes"
+        "Ability10"	"special_bonus_unique_monkey_king_7"	// Dance Range
+		// Talents 15
+        "Ability13"	"special_bonus_unique_monkey_king_10"	// Strike Cooldown
+        "Ability12"	"special_bonus_unique_monkey_king_circle_radius"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_monkey_king_boundless_strike_crit"
+        "Ability14"	"special_bonus_unique_monkey_king_8"	// Spring Cooldown
+		// Talents 25
+        "Ability17"	"special_bonus_unique_monkey_king_jingu_mastery_kbw_damage"
+        "Ability16"	"special_bonus_unique_monkey_king_3"	// Spring Damage
+    }
+    "npc_dota_hero_morphling"		{
+		// Talents 10
+        "Ability16"	"special_bonus_unique_morphling_3"	// Adaptive Multishot
+        "Ability15"	"special_bonus_unique_morphling_1"	// Waveform Range
+		// Talents 15
+        "Ability18"	"special_bonus_max_hp_regen_1_2"
+        "Ability17"	"special_bonus_cdr_stackable_25"
+		// Talents 20
+        "Ability20"	"special_bonus_base_attack_rate_0_25"
+        "Ability19"	"special_bonus_unique_morphling_adaptive_strike_damage_stun"
+		// Talents 25
+        "Ability22"	"special_bonus_base_agility_200"
+        "Ability21"	"special_bonus_unique_morphling_waveform_cooldown"
+    }
+    "npc_dota_hero_naga_siren"		{
+		"Ability10"		"special_bonus_movement_speed_60"
+		"Ability11"		"special_bonus_agility_40"
+		"Ability12"		"special_bonus_unique_naga_siren_4"
+		"Ability13"		"special_bonus_strength_52"
+		"Ability14"		"special_bonus_unique_naga_siren_5"
+		"Ability15"		"special_bonus_unique_naga_siren"
+		"Ability16"		"special_bonus_unique_naga_siren_6"
+		"Ability17"		"special_bonus_unique_naga_siren_3"
+    }
+    "npc_dota_hero_necrolyte"		{
+        //Talents 10
+        "Ability10"	"special_bonus_unique_necrophos_6"	//Reapers Scythe Cast Range
+        "Ability11"	"special_bonus_unique_necrophos_3"	// Slow Ghost Shroud
+        //Talents 15
+        "Ability12"	"special_bonus_unique_necrophos_heartstopper_regen_duration"
+        "Ability13"	"special_bonus_unique_necrophos_sadist_heal_bonus"
+        //Talents 20
+        "Ability14" "special_bonus_unique_necrophos_2"	// Heartstopper Aura Percent
+        "Ability15"	"special_bonus_unique_necrophos"	// Death Pulse Cooldown
+        //Talents 25
+        "Ability16"	"special_bonus_unique_necrophos_5"	// Heartstopper Aura Heal Reduction
+        "Ability17"	"special_bonus_unique_necrophos_4"	// Death Pulse Heal
+    }
+    "npc_dota_hero_nevermore"		{
+        "Ability11"	"special_bonus_unique_nevermore_6" // Requiem Fear
+        "Ability10"	"special_bonus_unique_nevermore_raze_procsattacks"
+
+        "Ability13"	"special_bonus_unique_nevermore_shadowraze_cooldown"
+        "Ability12"	"special_bonus_attack_range_300"
+
+        "Ability15"	"special_bonus_unique_nevermore_7"	// Raze Stack Damage
+        "Ability14"	"special_bonus_unique_nevermore_1" // Soul Damage
+
+        "Ability17"	"special_bonus_unique_nevermore_2" // Raze Damage
+        "Ability16"	"special_bonus_unique_nevermore_5" // Aura Armor
+    }
+    "npc_dota_hero_night_stalker"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_night_stalker_hunter_status_resist"
+        "Ability10"	"special_bonus_unique_night_stalker_crippling_fear_disarm"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_night_stalker_2"	// Hunter Attack Speed
+        "Ability12"	"special_bonus_unique_night_stalker_void_cooldown"
+        //Talents 20
+        "Ability15"	"special_bonus_strength_180"
+        "Ability14"	"special_bonus_unique_night_stalker"	// Darkness Cooldown
+        //Talents 25
+        "Ability17"	"special_bonus_unique_night_stalker_3"	// Darkness Damage
+        "Ability16"	"special_bonus_unique_night_stalker_4"	// Void Damage
+    }
+    "npc_dota_hero_nyx_assassin"		{
+        "Ability11"	"special_bonus_unique_nyx_4"	// Impale Stun
+        "Ability10"	"special_bonus_movement_speed_50"
+
+        "Ability13"	"special_bonus_unique_nyx_carapace_reflect_duration"
+        "Ability12"	"special_bonus_unique_nyx_3" // Vendetta Pathing
+
+        "Ability15"	"special_bonus_unique_nyx_6" // Carapace Stun
+        "Ability14"	"special_bonus_unique_nyx_vendetta_damage"	// Vendetta Damage
+
+        "Ability17"	"special_bonus_unique_nyx_2" // Impale Damage
+        "Ability16"	"special_bonus_unique_nyx"
+    }
+    "npc_dota_hero_obsidian_destroyer"		{
+        "Ability11"	"special_bonus_attack_speed_50"
+        "Ability10"	"special_bonus_hp_600"
+
+        "Ability13"	"special_bonus_cdr_stackable_20"
+        "Ability12"	"special_bonus_spell_lifesteal_30"
+
+        "Ability15"	"special_bonus_unique_outworld_devourer_4" // R Damage Multiplier
+		"Ability14"	"special_bonus_status_resistance_20"
+
+        "Ability17"	"special_bonus_unique_outworld_devourer" // Q Damage Multiplier
+		"Ability16"	"special_bonus_cast_fly_movement_8"
+    }
+	"npc_dota_hero_ogre_magi"		{
+		// Talents 10
+		"Ability11"	"special_bonus_unique_ogre_magi_fireblast_cooldown"
+		"Ability10"	"special_bonus_armor_20"
+		// Talents 15
+		"Ability13"	"special_bonus_unique_ogre_magi_multicast_chances"
+		"Ability12"	"special_bonus_unique_ogre_magi"	// Bloodlust Attack Speed
+		// Talents 20
+		"Ability15"	"special_bonus_unique_ogre_magi_4"	// Ignite Damage
+		"Ability14"	"special_bonus_unique_ogre_magi_fireblast_on_attack"
+		// Talents 254
+		"Ability17"	"special_bonus_unique_ogre_magi_fireblast_damage"
+		"Ability16"	"special_bonus_unique_ogre_magi_bloodlust_immune"
+	}
+	"npc_dota_hero_omniknight"		{
+		// Talents 10
+		"Ability11"	"special_bonus_unique_omniknight_martyr_cooldown"
+		"Ability10"	"special_bonus_unique_omniknight_4"	// Hammer Damage
+		// Talents 15
+		"Ability13"	"special_bonus_unique_omniknight_3"	// Hammer CD
+		"Ability12"	"special_bonus_movement_speed_60"
+		// Talents 20
+		"Ability15"	"special_bonus_strength_200"
+		"Ability14"	"special_bonus_unique_omniknight_6"	// Heal CD
+		// Talents 25
+		"Ability17"	"special_bonus_attack_base_damage_750"
+		"Ability16"	"special_bonus_unique_omniknight_1"	// Heal Value
+	}
+    "npc_dota_hero_oracle"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_oracle_8"	// Flames Damage
+        "Ability10"	"special_bonus_unique_oracle_2"	// Root Duration
+		// Talents 15
+		"Ability13"	"special_bonus_unique_oracle_7"	// Instant Root
+        "Ability12"	"special_bonus_cast_range_350"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_oracle_5"	// Flames Cooldown
+        "Ability14"	"special_bonus_unique_oracle_6"	// Prmise Cooldown
+		// Talents 25
+        "Ability17"	"special_bonus_unique_oracle_fortunes_end_damage"
+        "Ability16"	"special_bonus_unique_oracle_9"	// Promise Armor
+    }
+    "npc_dota_hero_pangolier"		{
+        // Talents 10
+        "Ability11"	"special_bonus_unique_pangolier_2"	// Shield Crash in Ball Cooldown
+        "Ability10"	"special_bonus_unique_pangolier"	// Swashbuckle Hit Range
+        // Talents 15
+        "Ability13"	"special_bonus_unique_pangolier_6"	// Ball Duration
+        "Ability12"	"special_bonus_unique_pangolier_4"	// Swashbuckle Cooldown
+        // Talents 20
+        "Ability15"	"special_bonus_mag_attack_15"
+        "Ability14"	"special_bonus_unique_pangolier_luckyshot_armor"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_pangolier_5"	// Ball Cooldown
+        "Ability16"	"special_bonus_unique_pangolier_3"	// Swashbuckle Damage
+    }
+	"npc_dota_hero_phantom_assassin"		{
+		// Talents 10
+		"Ability11"	"special_bonus_unique_phantom_assassin_7"	// Dagger CD
+		"Ability10"	"special_bonus_unique_phantom_assassin_4"	// Strike Duration
+		// Talents 15
+		"Ability13"	"special_bonus_unique_phantom_assassin_6"	// Strike Range
+		"Ability12"	"special_bonus_unique_phantom_assassin"		// Dagger Multishot
+		// Talents 20
+		"Ability15"	"special_bonus_unique_phantom_assassin_5"	// Dagger Damage
+		"Ability14"	"special_bonus_unique_phantom_assassin_3"	// Blur Evastion
+		// Talents 25
+		"Ability17"	"special_bonus_unique_phantom_assassin_blur_spell_immunity"
+		"Ability16"	"special_bonus_unique_phantom_assassin_2"	// Crit Chance
+	}
+    "npc_dota_hero_phantom_lancer"		{
+		"Ability10"		"special_bonus_hp_500"
+		"Ability11"		"special_bonus_unique_phantom_lancer_2"
+		"Ability12"		"special_bonus_strength_52"
+		"Ability13"		"special_bonus_unique_phantom_lancer_5"
+		"Ability14"		"special_bonus_unique_phantom_lancer"
+		"Ability15"		"special_bonus_unique_phantom_lancer_6"
+		"Ability16"		"special_bonus_unique_phantom_lancer_4"
+        "Ability17"	"special_bonus_42_crit_6"
+    }
+    "npc_dota_hero_phoenix"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_phoenix_5" // Ray Damage
+        "Ability10"	"special_bonus_unique_phoenix_6" // Dive Slow
+		// Talents 15
+        "Ability13"	"special_bonus_spell_amplify_25"
+        "Ability12"	"special_bonus_unique_phoenix_4" // Dive Range
+		// Talents 20
+        "Ability15"	"special_bonus_cdr_stackable_30"
+		"Ability14"	"special_bonus_max_hp_regen_2"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_phoenix_3" // Spirits DPS
+		"Ability16"	"special_bonus_unique_phoenix_2" // Nova Stun
+    }
+    "npc_dota_hero_puck"		{
+        // Talents 10
+        "Ability11"	"special_bonus_unique_puck_5"	// Coil pierce magic immune
+        "Ability10"	"special_bonus_unique_puck_2"	// Rift Cooldown
+        // Talents 15
+        "Ability13"	"special_bonus_unique_puck"		// Coli CD
+        "Ability12"	"special_bonus_unique_puck_orb_damage"
+        // Talents 20
+        "Ability15"	"special_bonus_unique_puck_coil_damage"
+        "Ability14"	"special_bonus_unique_puck_illusory_orb_distance"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_puck_rift_radius" // 
+        "Ability16"	"special_bonus_unique_puck_6" // Waning rift Damage
+    }
+    "npc_dota_hero_pudge"		{
+        "Ability1"	"pudge_meat_hook_kbw"
+		"Ability2"	"pudge_rot"
+
+        "Ability10"	"special_bonus_armor_12"
+        "Ability11"	"special_bonus_unique_pudge_4"
+        "Ability12"	"special_bonus_spell_lifesteal_20"
+        "Ability13"	"special_bonus_unique_pudge_meat_hook_range"
+        "Ability14"	"special_bonus_unique_pudge_6"
+        "Ability15"	"special_bonus_unique_pudge_meat_hook_cooldown"
+        "Ability16"	"special_bonus_unique_pudge_3"
+        "Ability17"	"special_bonus_unique_pudge_1"
+    }
+    "npc_dota_hero_pugna"		{
+		"Ability2"	"pugna_decrepify_kbw"
+
+        "Ability11"	"special_bonus_unique_pugna_3" // Ward Damage Multiplier
+        "Ability10"	"special_bonus_unique_pugna_blast_radius"
+
+        "Ability13"	"special_bonus_unique_pugna_6" // Ward Health
+        "Ability12"	"special_bonus_unique_pugna_blast_delay"
+
+		"Ability15"	"special_bonus_unique_pugna_1" // Life Drain Heal
+        "Ability14"	"special_bonus_unique_pugna_2" // Blast Damage
+
+        "Ability17"	"special_bonus_unique_pugna_decrepify_spell_damage"
+		"Ability16"	"special_bonus_unique_pugna_4" // Blast Cooldown
+    }
+	"npc_dota_hero_queenofpain"		{
+		//Talents 10
+		"Ability11"	"special_bonus_unique_queen_of_pain_4"	// Strike Interval
+		"Ability10"	"special_bonus_unique_queen_of_pain_5"	// Sonic Fear
+		//Talents 15
+		"Ability13"	"special_bonus_unique_queen_of_pain_3"	// Sonic Cooldown
+		"Ability12"	"special_bonus_spell_block_15"
+		//Talents 20
+		"Ability15"	"special_bonus_unique_queen_of_pain_7"	// Sonic Damage
+		"Ability14"	"special_bonus_spell_lifesteal_30"
+		//Talents 25
+		"Ability17"	"special_bonus_unique_queen_of_pain_2"	// Scream Damage
+		"Ability16"	"special_bonus_unique_queen_of_pain_6"	//Blink cooldown
+    }
+    "npc_dota_hero_rattletrap"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_clockwerk_4"	// Rocket True Sight
+        "Ability10"	"special_bonus_unique_clockwerk_2"	// Cogs Lesh
+        //Talents 15
+        "Ability13"	"special_bonus_unique_clockwerk"	// Assault Interval
+        "Ability12"	"special_bonus_unique_clockwerk_5"	// Cogs Health
+        //Talents 20
+        "Ability15"	"special_bonus_unique_clockwerk_3"	// Assault Damage
+        "Ability14"	"special_bonus_unique_clockwerk_8"	// Cogs Manaburn
+        //Talents 25
+        "Ability17"	"special_bonus_unique_rattletrap_rocket_flare_damage"
+        "Ability16"	"special_bonus_unique_clockwerk_6"	// Cogs Spell Immunity
+    }
+    "npc_dota_hero_razor"		{
+        //Talents 10
+        "Ability11"	"special_bonus_unique_razor_6"	// Link Charges
+        "Ability10"	"special_bonus_strength_25"
+        //Talents 15
+        "Ability13"	"special_bonus_unique_razor_2"	// Strom Inteval
+        "Ability12"	"special_bonus_magic_resistance_30"
+        //Talents 20
+        "Ability15"	"special_bonus_25_crit_250"
+        "Ability14"	"special_bonus_unique_razor_plasmafield_second_ring"
+        //Talents 25
+        "Ability17"	"special_bonus_unique_razor"	// Link Damage Steal
+        "Ability16"	"special_bonus_unique_razor_4"	// Plasma Damage
+    }
+    "npc_dota_hero_riki"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_riki_2"	// Strike Slow
+        "Ability10"	"special_bonus_unique_riki_5"	// Tricks Dispel
+		// Talents 15
+        "Ability13"	"special_bonus_unique_riki_9"	// Blink Strike Cooldown
+        "Ability12"	"special_bonus_unique_riki_7"	// Smoke Radius
+		// Talents 20
+        "Ability15"	"special_bonus_unique_riki_3"	// Smoke CD
+        "Ability14"	"special_bonus_unique_riki_1"	// Backstab Damage
+		// Talents 25
+        "Ability17"	"special_bonus_unique_riki_6"	// Tricks CD
+        "Ability16"	"special_bonus_unique_riki_8"	// Backstab Movespeed
+    }
+    "npc_dota_hero_rubick"		{
+		// Talents 10
+        "Ability13"	"special_bonus_unique_rubick_3"	// Bolt Cooldown
+		"Ability12"	"special_bonus_unique_rubick"	// Telek Distance
+		// Talents 15
+        "Ability15"	"special_bonus_unique_rubick_2"	// Bolt Damage Reduction
+        "Ability14"	"special_bonus_unique_rubick_6"	// Stolen Cooldowns
+		// Talents 20
+        "Ability17"	"special_bonus_unique_rubick_spell_steal_cooldown"
+        "Ability16"	"special_bonus_unique_rubick_8"	// Telek Damage
+		// Talents 25
+        "Ability19"	"special_bonus_unique_rubick_5"	// Stolen Damage
+        "Ability18"	"special_bonus_unique_rubick_telekinesis_cooldown"
+    }
+    "npc_dota_hero_sand_king"		{
+		"Ability1"		"sand_king_burrowstrike_kbw"
+		"Ability2"		"sandking_sand_storm"
+		"Ability3"		"sand_king_explosive_poison"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"sand_king_epicenter_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_sand_king_3" // Storm Radius
+        "Ability10"	"special_bonus_unique_sand_king_explosive_poison_slow"
+		// Talents 15
+        "Ability13"	"special_bonus_kbw_spell_lifesteal_25"
+        "Ability12"	"special_bonus_crit_250_cd_3"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_sand_king_epicenter_damage"
+        "Ability14"	"special_bonus_unique_sand_king_burrowstrike_kbw_cooldown"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_sand_king_2" // Storm DPS
+        "Ability16"	"special_bonus_attack_base_damage_1000"
+    }
+    "npc_dota_hero_shadow_demon"		{
+        "Ability11"	"special_bonus_unique_shadow_demon_4"	// Poison Damage
+        "Ability10"	"special_bonus_unique_shadow_demon_disseminate_damage"
+
+        "Ability13"	"special_bonus_unique_shadow_demon_7"	// Disruption Charges
+        "Ability12"	"special_bonus_cast_range_300"
+
+        "Ability15"	"special_bonus_unique_shadow_demon_9"	// Purge Cooldown
+		"Ability14"	"special_bonus_unique_shadow_demon_5"	// Disruption Duration
+
+        "Ability17"	"special_bonus_unique_shadow_demon_3"	// Poison Cooldown
+		"Ability16"	"special_bonus_unique_shadow_demon_1"	// Purge Damage
+    }
+    "npc_dota_hero_shadow_shaman"		{
+        "Ability11"	"special_bonus_unique_shadow_shaman_5" // W Cooldown
+        "Ability10"	"special_bonus_unique_shadow_shaman_8" // R Attack Range
+
+        "Ability13"	"special_bonus_unique_shadow_shaman_7" // W Break
+		"Ability12"	"special_bonus_cast_range_300"
+
+		"Ability15"	"special_bonus_unique_shadow_shaman_1" // R Health
+        "Ability14"	"special_bonus_unique_shadow_shaman_6" // E Damage
+
+        "Ability17"	"special_bonus_unique_shadow_shaman_4" // R Damage
+        "Ability16"	"special_bonus_unique_shadow_shaman_3" // Q Damage
+    }
+    "npc_dota_hero_shredder"		{
+        // Talents 10
+        "Ability11"	"special_bonus_unique_timbersaw_3"	// Chain Range
+        "Ability10"	"special_bonus_unique_timbersaw_4"	// Chakram Slow
+        // Talents 15
+        "Ability13"	"special_bonus_magic_resistance_30"
+        "Ability12"	"special_bonus_spell_amplify_16"
+        // Talents 20
+        "Ability15"	"special_bonus_cdr_stackable_30"
+        "Ability14"	"special_bonus_strength_200"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_timbersaw_2"	// Armor Stacks
+        "Ability16"	"special_bonus_unique_timbersaw"	// Whirling Stats
+    }
+    "npc_dota_hero_silencer"		{
+        // Talents 10
+        "Ability11"	"special_bonus_unique_silencer_4"	// Word Damage
+        "Ability10"	"special_bonus_unique_silencer_curse_cooldown"
+        // Talents 15
+        "Ability13"	"special_bonus_unique_silencer_last_word_delay"
+        "Ability12"	"special_bonus_unique_silencer_7"	// Global CD
+        // Talents 20
+        "Ability15"	"special_bonus_unique_silencer_arcane_curse_undispellable"
+        "Ability14"	"special_bonus_unique_silencer_glaives_bounces"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_silencer"		// Curse Damage
+        "Ability16"	"special_bonus_unique_silencer_3"	// Glaive Damage
+    }
+    "npc_dota_hero_skeleton_king"		{
+        // Talents 10
+        "Ability11"	"special_bonus_movement_speed_50"
+        "Ability10"	"special_bonus_unique_wraith_king_5"	// Skelet Count
+        // Talents 15
+        "Ability13"	"special_bonus_unique_wraith_king_10"	// Strike Cooldown
+        "Ability12"	"special_bonus_unique_wraith_king_4"	// Reincarnation Blast
+        // Talents 20
+        "Ability15"	"special_bonus_unique_wraith_king_strike_damage"
+        "Ability14"	"special_bonus_unique_wraith_king_skeleton_damage"
+        // Talents 25
+        "Ability17"	"special_bonus_corruption_25"
+        "Ability16"	"special_bonus_unique_wraith_king_blast_damage"
+    }
+    "npc_dota_hero_skywrath_mage"		{
+        "Ability11"	"special_bonus_unique_skywrath_3"
+        "Ability10"	"special_bonus_movement_speed_50"
+
+        "Ability13"	"special_bonus_unique_skywrath_2"
+        "Ability12"	"special_bonus_unique_skywrath"
+
+		"Ability15"	"special_bonus_intelligence_228"
+        "Ability14"	"special_bonus_unique_skywrath_4"
+
+		"Ability17"	"special_bonus_unique_skywrath_5"
+        "Ability16"	"special_bonus_unique_skywrath_6"
+    }
+
+	"npc_dota_hero_slardar"		{
+		"Ability3"		"slardar_bash_kbw"
+		"Ability6"		"slardar_corrosive_haze_kbw"
+
+		// Talents 10
+		"Ability11"	"special_bonus_unique_slardar_sprint_mag_resist"
+		"Ability10"	"special_bonus_unique_slardar_slithereen_crush_damage"
+		// Talents 15
+		"Ability13"	"special_bonus_unique_slardar_amplify_damage_armor"
+		"Ability12"	"special_bonus_unique_slardar_slithereen_crush_stun"
+		// Talents 20
+		"Ability15"	"special_bonus_unique_slardar_corrosive_haze_aoe"
+		"Ability14"	"special_bonus_unique_slardar_sprint_pathing"
+		// Talents 25
+		"Ability17"	"special_bonus_unique_slardar_bash_damage"
+		"Ability16"	"special_bonus_unique_slardar_4"	// Crush Cooldown
+	}
+
+    "npc_dota_hero_slark"		{
+		"Ability1"		"slark_dark_pact"
+		"Ability2"		"slark_pounce"
+		"Ability3"		"slark_nimble_blade"
+		"Ability4"		"slark_depth_shroud"
+		"Ability6"		"slark_shadow_dance"
+
+		// Talents 10
+        "Ability11"	"special_bonus_agility_pct_10"
+        "Ability10"	"special_bonus_unique_slark" // Pounce Leash
+		// Talents 15
+        "Ability13"	"special_bonus_lifesteal_20"
+		"Ability12"	"special_bonus_unique_slark_3" // Dance Duration
+		// Talents 20
+        "Ability15"	"special_bonus_base_attack_rate_0_35"
+		"Ability14"	"special_bonus_unique_slark_6" // Pact Cooldown
+		// Talents 25
+        "Ability17"	"special_bonus_unique_slark_nimble_blade_duration"
+		"Ability16"	"special_bonus_unique_slark_2" // Pact Damage
+    }
+    "npc_dota_hero_snapfire"		{
+        "Ability11"	"special_bonus_unique_snapfire_2" // Q Duration
+        "Ability10"	"special_bonus_unique_snapfire_3"
+
+        "Ability13"	"special_bonus_unique_snapfire_4" // R Slow
+        "Ability12"	"special_bonus_unique_snapfire_6" // E Attack Damage
+
+        "Ability15"	"special_bonus_unique_snapfire_1" // R Count
+		"Ability14"	"special_bonus_unique_snapfire_8" // E Mulishot
+
+        "Ability17"	"special_bonus_unique_snapfire_5" // W Heal
+		"Ability16"	"special_bonus_unique_snapfire_7" // Q Damage
+    }
+    "npc_dota_hero_sniper"		{
+		"Ability1"	"sniper_shrapnel_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_cdr_stackable_20"
+        "Ability10"	"special_bonus_unique_sniper_headshot_damage"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_sniper_shrapnel_kbw_slow"
+        "Ability12"	"special_bonus_attack_speed_120"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_sniper_shrapnel_kbw_damage"
+        "Ability14"	"special_bonus_unique_sniper_shrapnel_kbw_armor"
+		// Talents 25
+        "Ability16"	"special_bonus_attack_range_300"
+        "Ability17"	"special_bonus_unique_sniper_assassinate_damage"
+    }
+    "npc_dota_hero_spectre"		{
+		"Ability10"		"special_bonus_unique_spectre"
+		"Ability11"		"special_bonus_all_stats_15"
+		"Ability12"		"special_bonus_unique_spectre_2"
+		"Ability13"		"special_bonus_unique_spectre_6"
+		"Ability14"		"special_bonus_hp_4275"
+		"Ability15"		"special_bonus_unique_spectre_3"
+		"Ability16"		"special_bonus_unique_spectre_4"
+		"Ability17"		"special_bonus_unique_spectre_5"
+    }
+    "npc_dota_hero_spirit_breaker"		{
+		"Ability1"		"spirit_breaker_charge_of_darkness"
+		"Ability2"		"spirit_breaker_bulldoze"
+		"Ability3"		"spirit_breaker_greater_bash"
+		"Ability4"		"generic_hidden"	// Shard Remove
+		"Ability5"		"generic_hidden"
+		"Ability6"		"spirit_breaker_nether_strike"
+
+		// Talents 10
+        "Ability11"	"special_bonus_armor_12"
+        "Ability10"	"special_bonus_night_vision_1000"
+		// Talents 15
+        "Ability13"	"special_bonus_movement_speed_50"
+        "Ability12"	"special_bonus_unique_spirit_breaker_2"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_spirit_breaker_4"
+        "Ability14"	"special_bonus_unique_spirit_breaker_greater_bash_cooldown"
+		// Talents 25
+        "Ability17"	"special_bonus_hp_5850"
+		"Ability16"	"special_bonus_unique_spirit_breaker_3"
+    }
+    "npc_dota_hero_storm_spirit"		{
+		"Ability2"	"storm_spirit_vortex_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_max_mp_regen_1"
+        "Ability10"	"special_bonus_cast_attack_range_250"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_storm_spirit"	// Vortex Duration
+        "Ability12"	"special_bonus_unique_storm_spirit_overload_damage"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_storm_spirit_4"	// Auto Remnant
+        "Ability14"	"special_bonus_unique_storm_spirit_7"	// Overload Bounce
+		// Talents 25
+        "Ability17"	"special_bonus_unique_storm_spirit_5"	// Remnant Damage
+        "Ability16"	"special_bonus_unique_storm_spirit_overload_cast_attacks"
+    }
+    "npc_dota_hero_sven"		{
+
+
+		"MagicalResistance"			"25"
+
+        "Ability10"	"special_bonus_unique_sven_5"
+        "Ability11"	"special_bonus_attack_speed_45"
+        "Ability12"	"special_bonus_unique_sven_4"
+        "Ability13"	"special_bonus_lifesteal_30"
+        "Ability14"	"special_bonus_status_resistance_25"
+        "Ability15"	"special_bonus_strength_120"
+        "Ability16"	"special_bonus_unique_sven_7"
+        "Ability17"	"special_bonus_base_attack_rate_0_35"
+    }
+    "npc_dota_hero_techies"		{
+		// Talents 10
+		"Ability10"	"special_bonus_unique_techies_suicide_aoe"
+        "Ability11"	"special_bonus_unique_techies_3"
+		// Talents 15
+		"Ability12"	"special_bonus_unique_techies_5"	//Blast Off Cooldown
+		"Ability13"	"special_bonus_unique_techies_minefield_sign_aoe"
+		// Talents 20
+        "Ability14"	"special_bonus_cast_range_600"
+		"Ability15"	"special_bonus_unique_techies_4"	//Mines Explosive Delay
+		// Talents 25
+		"Ability16"	"special_bonus_unique_techies"		//Blast Off Damage
+		"Ability17"	"special_bonus_unique_techies_2"	//Sticky Bomb radius
+    }
+	"npc_dota_hero_templar_assassin"		{
+	"Ability11"	"special_bonus_unique_templar_assassin"		// Refraction Instances
+	"Ability10"	"special_bonus_unique_templar_assassin_7"	// Meld Bash
+
+	"Ability13"	"special_bonus_unique_templar_assassin_4"	// Meld Dispel
+	"Ability12"	"special_bonus_unique_templar_assassin_refraction_disable_cast"
+
+	"Ability15"	"special_bonus_unique_templar_assassin_8"	// Pse Range
+	"Ability14"	"special_bonus_unique_templar_assassin_refraction_damage"
+
+	"Ability17"	"special_bonus_unique_templar_assassin_3"	// Trap Damage
+	"Ability16"	"special_bonus_unique_templar_assassin_2"	// Meld Corruption
+	}
+    "npc_dota_hero_terrorblade"		{
+		"Ability10"		"special_bonus_unique_terrorblade_2"
+		"Ability11"		"special_bonus_unique_terrorblade_4"
+		"Ability12"		"special_bonus_hp_300"
+		"Ability13"		"special_bonus_unique_terrorblade_6"
+		"Ability14"		"special_bonus_all_stats_48"
+		"Ability15"		"special_bonus_unique_terrorblade_5"
+		"Ability16"		"special_bonus_unique_terrorblade"
+		"Ability17"		"special_bonus_unique_terrorblade_3"
+    }
+    "npc_dota_hero_tidehunter"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_tidehunter_3"	// Anchor Damage Reduction
+        "Ability10"	"special_bonus_unique_tidehunter_7"	// Ravage Stun
+		// Talents 15
+        "Ability13"	"special_bonus_unique_tidehunter"	// Gush Armor
+        "Ability12"	"special_bonus_cdr_stackable_20"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_tidehunter_8"	// Anchor Attack
+        "Ability14"	"special_bonus_unique_tidehunter_4"	// Shell Block
+		// Talents 25
+        "Ability17"	"special_bonus_unique_tidehunter_9"	// Anchor Damage
+        "Ability16"	"special_bonus_unique_tidehunter_2"	// Gush Damage
+    }
+    "npc_dota_hero_tinker"		{
+		"Ability1"		"tinker_laser_kbw"
+		"Ability2"		"tinker_heat_seeking_missile"
+		"Ability3"		"tinker_defense_matrix"
+		"Ability4"		"tinker_warp_grenade"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"tinker_rearm_kbw"
+
+        "Ability11"	"special_bonus_effect_duration_25"
+        "Ability10"	"special_bonus_unique_tinker_laser_aoe"
+
+        "Ability13"	"special_bonus_mana_reduction_25"
+        "Ability12"	"special_bonus_unique_tinker_6" // Missile Count
+
+        "Ability15"	"special_bonus_cast_range_400"
+		"Ability14"	"special_bonus_unique_tinker_defense_matrix_cdr"
+
+        "Ability17"	"special_bonus_spell_amplify_30"
+		"Ability16"	"special_bonus_unique_tinker_3" // Missile Stun
+    }
+    "npc_dota_hero_tiny"		{
+        //Tallents 10
+        "Ability10"	"special_bonus_attack_damage_75"
+        "Ability11"	"special_bonus_unique_tiny_5"
+        //Tallents 15
+        "Ability12"	"special_bonus_strength_50"
+        "Ability13"	"special_bonus_unique_tiny"
+        //Tallents 20
+        "Ability14"	"special_bonus_unique_tiny_7"
+        "Ability15"	"special_bonus_unique_tiny_3"
+        //Tallents 25
+        "Ability16"	"special_bonus_status_resistance_25"
+        "Ability17"	"special_bonus_unique_tiny_2"
+    }
+    "npc_dota_hero_treant"		{
+		"Ability1"		"treant_natures_grasp"
+		"Ability2"		"treant_leech_seed"
+		"Ability3"		"treant_living_armor"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"treant_natures_guise"
+		"Ability6"		"treant_overgrowth"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_treant_3"		// Semen Slow
+        "Ability10"	"special_bonus_unique_treant_7"		// AOE Armor
+		// Talents 15
+        "Ability13"	"special_bonus_unique_treant_12"	// Grasp CD
+        "Ability12"	"special_bonus_unique_treant_11"	// Grow Undispel
+		// Talents 20
+        "Ability15"	"special_bonus_unique_treant_2"		// Semen Damage
+        "Ability14"	"special_bonus_unique_treant_13"	// Armor Armor
+		// Talents 25
+        "Ability17"	"special_bonus_unique_treant_9"		// Grasp Damage
+        "Ability16"	"special_bonus_unique_treant_8"		// Armor Heal
+    }
+    "npc_dota_hero_troll_warlord"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_troll_warlord_4"		// Trance Dispel
+        "Ability10"	"special_bonus_unique_troll_warlord_whirling_axes_debuff_duration"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_troll_warlord"		// Rage Armor
+        "Ability12"	"special_bonus_unique_troll_warlord_2"		// Rage Movespeed
+		// Talents 20
+        "Ability15"	"special_bonus_unique_troll_warlord_battle_trance_movespeed"
+        "Ability14"	"special_bonus_unique_troll_warlord_6"		// Axe Pierce
+		// Talents 25
+        "Ability17"	"special_bonus_10_bash_02"
+        "Ability16"	"special_bonus_unique_troll_warlord_3"		// Axe Damage
+    }
+    "npc_dota_hero_tusk"		{
+		"Ability5"		"generic_hidden" // remove sigil
+
+        // Talents 10
+		"Ability11"	"special_bonus_unique_tusk_snowball_items"
+        "Ability10"	"special_bonus_unique_tusk_5"	// Shard Cooldown
+        // Talents 15
+        "Ability13"	"special_bonus_attack_range_melee_150"
+        "Ability12"	"special_bonus_unique_tusk_snowball_regen"
+        // Talents 20
+        "Ability15"	"special_bonus_unique_tusk_walrus_punch_cooldown"
+        "Ability14"	"special_bonus_cast_range_450"
+        // Talents 25
+        "Ability17"	"special_bonus_unique_tusk_3"	// Tag Damage
+        "Ability16"	"special_bonus_unique_tusk_2"	// Snowball Damage
+    }
+    "npc_dota_hero_undying"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_undying_tombstone_on_death"
+        "Ability10"	"special_bonus_max_hp_regen_1"
+		// Talents 15
+        "Ability13"	"special_bonus_reincarnation_80"
+        "Ability12"	"special_bonus_unique_undying_4"	// Decay Duration
+		// Talents 20
+        "Ability15"	"special_bonus_unique_undying_5"	// Tombstone Health
+        "Ability14"	"special_bonus_respawn_reduction_pct75"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_undying"		// Zombie Damage
+        "Ability16"	"special_bonus_unique_undying_2"	// Decay Cooldown
+    }
+    "npc_dota_hero_ursa"		{
+		"Ability1"		"ursa_earthshock"
+		"Ability2"		"ursa_overpower"
+		"Ability3"		"ursa_fury_swipes"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"ursa_enrage"
+
+        // Talents 10
+        "Ability11"	"special_bonus_unique_ursa_earthshock_stun"
+        "Ability10"	"special_bonus_unique_ursa_8" // Enrage Resist
+        // Talents 15
+        "Ability13"	"special_bonus_ursa_earthshock_charge_cooldown"
+        "Ability12"	"special_bonus_base_attack_rate_0_35"
+        // Talents 20
+		"Ability15"	"special_bonus_unique_ursa_5" // Earthshock Radius
+        "Ability14"	"special_bonus_unique_ursa_earthshock_furyswipes"
+        // Talents 25
+		"Ability17"	"special_bonus_unique_ursa_enrage_heal"
+        "Ability16"	"special_bonus_corruption_40"
+    }
+    "npc_dota_hero_vengefulspirit"		{
+		// Talents 10
+        "Ability11"	"special_bonus_agility_30"
+        "Ability10"	"special_bonus_unique_vengeful_spirit_5"
+		// Talents 15
+        "Ability13"	"special_bonus_unique_vengeful_spirit_swap_damage"	// Swap Damage
+        "Ability12"	"special_bonus_attack_range_200"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_vengeful_spirit_4"
+        "Ability14"	"special_bonus_unique_vengeful_spirit_1"
+		// Talents 25
+        "Ability17"	"special_bonus_unique_vengeful_spirit_2"
+        "Ability16"	"special_bonus_unique_vengeful_spirit_9"
+    }
+    "npc_dota_hero_venomancer"		{
+		// Talents 10
+        "Ability11"	"special_bonus_cast_range_300"
+        "Ability10"	"special_bonus_unique_venomancer_8" // Ward Cooldown 
+		// Talents 15
+        "Ability13"	"special_bonus_spell_lifesteal_30"
+        "Ability12"	"special_bonus_unique_venomancer_3"	// Gale Cooldown
+		// Talents 20
+        "Ability15"	"special_bonus_unique_venomancer_5"	// Nox Attack Slow
+        "Ability14"	"special_bonus_unique_venomancer_gale_plagueward"
+		// Talents 25
+        "Ability17"	"special_bonus_spell_amplify_42"
+        "Ability16"	"special_bonus_unique_venomancer_ward_stats"
+    }
+    "npc_dota_hero_viper"		{
+		// Talents 10
+        "Ability11"	"special_bonus_spell_lifesteal_25"
+        "Ability10"	"special_bonus_unique_viper_4"		// Poison Resist
+		// Talents 15
+        "Ability13"	"special_bonus_unique_viper_3"		// Nethertoxin Damage
+        "Ability12"	"special_bonus_attack_speed_150"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_viper_7"		// Poison Multiplier
+        "Ability14"	"special_bonus_unique_viper_2"		// Viper Strike Damage
+		// Talents 25
+        "Ability17"	"special_bonus_cdr_stackable_abilities_30"
+        "Ability16"	"special_bonus_unique_viper_6"		// Skin Resist
+    }
+    "npc_dota_hero_visage"		{
+        "Ability11"	"special_bonus_attack_damage_75"
+        "Ability10"	"special_bonus_unique_visage_3" // W Multishot
+
+        "Ability13"	"special_bonus_unique_visage_4" // W Damage
+        "Ability12"	"special_bonus_unique_visage_2" // R Speed
+
+        "Ability15"	"special_bonus_corruption_25"
+        "Ability14"	"special_bonus_hp_regen_200"
+
+        "Ability17"	"special_bonus_unique_visage_6"
+        "Ability16"	"special_bonus_unique_visage_5"
+    }
+    "npc_dota_hero_void_spirit"		{
+		// Talent: 10
+        "Ability11"	"special_bonus_unique_void_spirit_3"	// Dissimilate Root
+        "Ability10"	"special_bonus_cast_range_200"
+		// Talent: 15
+        "Ability13"	"special_bonus_unique_void_spirit_dissimilate_outerring"
+        "Ability12"	"special_bonus_unique_void_spirit_7"	// Remnant True Sight
+		// Talent: 20
+        "Ability15"	"special_bonus_unique_void_spirit_1"	// Step Cooldown
+        "Ability14"	"special_bonus_unique_void_spirit_2"	// Remnant Damage
+		// Talent: 25
+        "Ability17"	"special_bonus_unique_void_spirit_4"	// Pulse Damage
+        "Ability16"	"special_bonus_unique_void_spirit_8"	// Step Crit
+    }
+    "npc_dota_hero_warlock"		{
+        "Ability3"	"warlock_upheaval_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_warlock_4" // Golem on Death
+        "Ability10"	"special_bonus_unique_warlock_5" // Bounds Damage
+		// Talents 15
+        "Ability13"	"special_bonus_unique_warlock_upheaval_kbw_attack_speed"
+        "Ability12"	"special_bonus_cast_range_400"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_warlock_1" // Golem Mag Resist
+        "Ability14"	"special_bonus_unique_warlock_3" // Word Cooldown
+		// Talents 25
+        "Ability17"	"special_bonus_unique_warlock_2" // Golem Armor
+        "Ability16"	"special_bonus_unique_warlock_7" // Word Damage
+    }
+    "npc_dota_hero_weaver"		{
+
+        "StatusManaRegen"	"1.0"
+
+		"Ability1"		"weaver_the_swarm"
+		"Ability2"		"weaver_shukuchi_kbw"
+		"Ability3"		"weaver_geminate_attack_kbw"
+		"Ability6"		"weaver_time_lapse"
+
+		// Talents 10
+		"Ability11"	"special_bonus_unique_weaver_3"	// Swarm Disarmor
+		"Ability10"	"special_bonus_mana_break_50"
+		// Talents 15
+		"Ability13"	"special_bonus_unique_weaver_4"	// Swarm Hits to Destroy
+		"Ability12"	"special_bonus_unique_weaver_the_swarm_mag"
+		// Talents 20
+		"Ability15"	"special_bonus_unique_weaver_weaver_geminate_attack_kbw_count"
+		"Ability14"	"special_bonus_unique_weaver_shukuchi_kbw_cooldown"
+		// Talents 25
+		"Ability17"	"special_bonus_unique_weaver_weaver_geminate_attack_kbw_damage"
+		"Ability16"	"special_bonus_unique_weaver_shukuchi_kbw_damage"
+	}
+    "npc_dota_hero_windrunner"		{
+        "Ability11"	"special_bonus_unique_windranger_3" // Powershot No Damage Reduction
+        "Ability10"	"special_bonus_unique_windranger_8" // Focusfire No Damage Reduction
+
+        "Ability13"	"special_bonus_unique_windranger_6" // Shackle Duration
+        "Ability12"	"special_bonus_unique_windrunner_powershot_attack"
+
+        "Ability15"	"special_bonus_multishot_1"
+        "Ability14"	"special_bonus_unique_windranger_windrun_tree_path"
+
+        "Ability17"	"special_bonus_mag_attack_raw_400"
+        "Ability16"	"special_bonus_movement_speed_200"
+    }
+    "npc_dota_hero_winter_wyvern"		{
+		// Talents 10
+        "Ability11"	"special_bonus_unique_winter_wyvern_1"	// Arctic Slow
+        "Ability10"	"special_bonus_unique_winter_wyvern_2"	// Blast Radius
+		// Talents 15
+        "Ability13"	"special_bonus_unique_winter_wyvern_winters_curse_cooldown"
+        "Ability12"	"special_bonus_unique_winter_wyvern_4"	// Blast Stun
+		// Talents 20
+        "Ability15"	"special_bonus_unique_winter_wyvern_arctic_burn_damage"
+        "Ability14"	"special_bonus_unique_winter_wyvern_5"	// Heal
+		// Talents 25
+        "Ability17"	"special_bonus_mag_attack_raw_400"
+        "Ability16"	"special_bonus_unique_winter_wyvern_7"	// Blast Damage
+    }
+	"npc_dota_hero_wisp"		{
+		"Ability11"	"special_bonus_unique_wisp_11"	// Tehter Slow
+		"Ability10"	"special_bonus_unique_wisp_10"	// Overcharge Heal
+
+		"Ability13"	"special_bonus_unique_wisp_6"	// R Cooldown
+		"Ability12"	"special_bonus_unique_wisp_4"	// Tehter Attack
+
+		"Ability15"	"special_bonus_kbw_spell_lifesteal_30"
+		"Ability14"	"special_bonus_unique_wisp_8"	// Tehter Attack Damage
+
+		"Ability17"	"special_bonus_unique_wisp"		// W Damage
+		"Ability16"	"special_bonus_unique_wisp_9"	//Tehter Heal
+	}
+    "npc_dota_hero_witch_doctor"		{
+        "Ability10"	"special_bonus_attack_damage_180"
+        "Ability11"	"special_bonus_armor_15"
+        "Ability12"	"special_bonus_unique_witch_doctor_3"
+        "Ability13"	"special_bonus_unique_witch_doctor_6"
+        "Ability14"	"special_bonus_unique_witch_doctor_1"
+        "Ability15"	"special_bonus_unique_witch_doctor_7"
+        "Ability16"	"special_bonus_unique_witch_doctor_2"
+        "Ability17"	"special_bonus_unique_witch_doctor_5"
+    }
+    "npc_dota_hero_zuus"		{
+		"Ability6"		"zuus_thunder_kbw"
+
+		// Talents 10
+        "Ability11"	"special_bonus_unique_zuus_thundergods_wrath_damage"
+        "Ability10"	"special_bonus_unique_zeus_5"	// Bolt AOE
+		// Talents 15
+        "Ability13"	"special_bonus_unique_zeus_3"	// Bolt Stun
+        "Ability12"	"special_bonus_unique_zeus_jump_postjump_movespeed"
+		// Talents 20
+        "Ability15"	"special_bonus_unique_zuus_lightning_bolt_cooldown"
+        "Ability14"	"special_bonus_unique_zeus"		// Bolt Targets
+		// Talents 25
+        "Ability17"	"special_bonus_unique_zeus_2"	// Arc Damage
+        "Ability16"	"special_bonus_unique_zeus_jump_cooldown"
+    }
+
+    "npc_dota_hero_hoodwink"	{
+		"AttackRate"		"1.7"
+
+		"Ability1"					"hoodwink_acorn_shot"
+		"Ability2"					"hoodwink_bushwhack"
+		"Ability3"					"hoodwink_scurry"
+		"Ability4"					"hoodwink_hunters_boomerang"
+		"Ability5"					"hoodwink_decoy"
+		"Ability6"					"hoodwink_sharpshooter"
+		"Ability7"					"hoodwink_sharpshooter_release"
+
+		// Talents 10
+        "Ability11"	                "special_bonus_unique_hoodwink_scurry_evasion"
+        "Ability10"	               	"special_bonus_unique_hoodwink_acorn_shot_charges"
+		// Talents 15
+        "Ability13"	                "special_bonus_unique_hoodwink_bushwhack_radius"
+        "Ability12"                 "special_bonus_mag_attack_12"
+        // Talents 20
+        "Ability15"	               "special_bonus_unique_hoodwink_bushwhack_cooldown"
+		"Ability14"	               "special_bonus_agility_170"
+		// Talents 25
+        "Ability17"	                "special_bonus_unique_hoodwink_sharpshooter_speed"
+		"Ability16"	                "special_bonus_unique_hoodwink_acorn_shot_bounces"
+    }
+
+    "npc_dota_hero_dawnbreaker"{
+		"Ability1"		"dawnbreaker_fire_wreath"
+		"Ability2"		"dawnbreaker_celestial_hammer"
+		"Ability3"		"dawnbreaker_luminosity"
+		"Ability4"		"dawnbreaker_converge"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"dawnbreaker_solar_guardian"
+
+		// Talents 10
+		"Ability11"		"special_bonus_unique_dawnbreaker_solar_guardian_radius"
+		"Ability10"		"special_bonus_unique_dawnbreaker_luminosity_attack_count"
+		// Talents 15
+		"Ability13"		"special_bonus_unique_dawnbreaker_celestial_hammer_real_range"
+		"Ability12"		"special_bonus_unique_dawnbreaker_luminosity_crit"
+		// Talents 20
+		"Ability15"		"special_bonus_unique_dawnbreaker_solar_guardian_cooldown"
+		"Ability14"		"special_bonus_unique_dawnbreaker_fire_wreath_charges"
+		// Talents 25
+		"Ability17"		"special_bonus_bash_cd_1_4_4_0"
+		"Ability16"		"special_bonus_unique_dawnbreaker_fire_wreath_swipe"
+    }
+
+	"npc_dota_hero_marci"	{
+		"Ability1"		"marci_grapple"
+		"Ability2"		"marci_companion_run"
+		"Ability3"		"marci_guardian"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"marci_unleash"
+
+		// Talents 10
+		"Ability11"		"special_bonus_unique_marci_grapple_stun_duration"
+		"Ability10"		"special_bonus_unique_marci_dispose_range"
+		// Talents 15
+		"Ability13"		"special_bonus_unique_marci_lunge_cooldown"
+		"Ability12"		"special_bonus_unique_marci_unleash_speed"
+		// Talents 20
+		"Ability15"		"special_bonus_unique_marci_guardian_lifesteal"
+		"Ability14"		"special_bonus_unique_marci_guardian_magic_immune"
+		// Talents 25
+		"Ability17"		"special_bonus_unique_marci_grapple_damage"
+		"Ability16"		"special_bonus_unique_marci_lunge_range"
+	}
+
+	"npc_dota_hero_primal_beast"	{
+		"Ability1"				"primal_beast_onslaught"
+		"Ability2"				"primal_beast_trample"
+		"Ability3"				"primal_beast_uproar"
+		"Ability4"				"primal_beast_rock_throw"
+		"Ability5"				"primal_beast_onslaught_release"
+		"Ability6"				"primal_beast_pulverize"
+
+		// Talents 10
+		"Ability11"				"special_bonus_unique_primal_beast_roar_dispells"
+		"Ability10"				"special_bonus_unique_primal_beast_trample_attack_damage"
+		// Talents 15
+		"Ability13"				"special_bonus_unique_primal_beast_pulverize_pierces_magic_immunity"
+		"Ability12"				"special_bonus_unique_primal_beast_trample_cooldown"
+		// Talents 20
+		"Ability15"				"special_bonus_unique_primal_beast_pulverize_duration"
+		"Ability14"				"special_bonus_unique_primal_beast_trample_magic_resist"
+		// Talents 25
+		"Ability17"				"special_bonus_unique_primal_beast_onslaught_damage"
+		"Ability16"				"special_bonus_unique_primal_beast_uproar_armor"
+	}
+
+	"npc_dota_hero_muerta"{
+		"Ability1"		"muerta_dead_shot"
+		"Ability2"		"muerta_the_calling"
+		"Ability3"		"muerta_gunslinger"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"muerta_pierce_the_veil_kbw"
+		"Ability7"		"generic_hidden"
+		"Ability8"		"generic_hidden"
+		"Ability9"		"generic_hidden"
+
+		// Talents 10
+		"Ability11"		"special_bonus_magic_resistance_25"
+		"Ability10"		"special_bonus_unique_muerta_pierce_the_veil_kbw_damage"
+		// Talents 15
+		"Ability13"		"special_bonus_attack_speed_150"
+		"Ability12"		"special_bonus_unique_muerta_dead_shot_range"
+		// Talents 20
+		"Ability15"		"special_bonus_unique_muerta_gunslinger_double_shot_chance"
+		"Ability14"		"special_bonus_unique_muerta_dead_shot_charges"
+		// Talents 25
+		"Ability17"		"special_bonus_unique_muerta_dead_shot_damage"
+		"Ability16"		"special_bonus_unique_muerta_the_calling_num_revenants"
+	}
+	"npc_dota_hero_brewmaster"{
+		// Talents 10
+		"Ability11"		"special_bonus_unique_brewmaster_4"	// Brew Fear	
+		"Ability10"		"special_bonus_unique_brewmaster_6"	// Brewlings Passives
+		// Talents 15
+		"Ability13"		"special_bonus_unique_brewmaster_8"	// Brawler Multiplier
+		"Ability12"		"special_bonus_unique_brewmaster_damage"	// Brewlings Damage
+		// Talents 20
+		"Ability15"		"special_bonus_unique_brewmaster_7" // Clap Radius
+		"Ability14"		"special_bonus_unique_brewmaster"	// Brewlings Health
+		// Talents 25
+		"Ability17"		"special_bonus_unique_brewmaster_cinder_brew_damage"
+		"Ability16"		"special_bonus_all_stats_228"
+	}
+}

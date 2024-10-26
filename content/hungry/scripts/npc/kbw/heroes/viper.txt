@@ -1,0 +1,157 @@
+"DOTAAbilities"{
+	"viper_poison_attack"       {
+		"AbilityCastRange"              "600 640 680 720 760 800 840"
+		"AbilityCastPoint"              "0"
+		"AbilityCooldown"               "0.0"
+		"AbilityDamage"                 "0"
+		"AbilityManaCost"               "24 31 38 46 53 60 67"
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+		"AbilityValues"         {
+				"duration"                      "4"
+				"damage"	{
+					"value"					"7 10 15 22 32 45 62"
+					"special_bonus_unique_viper_7"	"+25%"
+				}	
+				"movement_speed"	{
+					"value"					"6 8 10 12 14 16 18"
+					"special_bonus_unique_viper_7"	"+25%"
+				}        
+				"magic_resistance"  {
+					"value"                     "4 6 8 10 12 14 16"
+					"special_bonus_unique_viper_4"  "+5"
+				}
+				"max_stacks"            "5"
+				"bonus_range"           "25 65 105 145 185 225 275"
+				"shard_armor_reduction"         {
+					"value"             "3"
+					"RequiresShard"     "1"
+				}
+				"shard_building_dmg_pct"        {
+					"value"             "200"
+					"RequiresShard"     "1"
+				}
+				"shard_bonus_max_stacks"        {
+					"value"             "3"
+					"RequiresShard"     "1"
+				}
+		}
+		"AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+	}
+
+
+	"viper_nethertoxin"     {
+		"AbilityCastPoint"  "0.2"
+		"AbilityCastRange"  "900"
+		"AbilityCooldown"   "14 13 12 11 10 9 8"
+		"AbilityManaCost"   "70 91 112 133 154 175 196"
+		"AbilityValues" {
+			"min_damage" {
+				"value"	 "10 15 28 44 68 105 160"
+				"LinkedSpecialBonus"    "special_bonus_unique_viper_3"
+			}  
+			"max_damage" {
+				"value"	 "60 100 160 255 405 630 970"
+				"LinkedSpecialBonus"    "special_bonus_unique_viper_3"
+			}  
+			"max_duration"  "4"
+			"radius"    "400"
+			"duration"  "8"
+			"projectile_speed"  "2000"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Nethertoxin Damage
+	"special_bonus_unique_viper_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"230"
+				"ad_linked_abilities"	"viper_nethertoxin"
+			}
+		}
+	}
+	// Talent: Nethertoxin Cooldown
+	"special_bonus_unique_viper_5"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"12"
+				"ad_linked_abilities"			"viper_nethertoxin"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"viper_corrosive_skin"	{
+		"AbilityValues" {
+			"duration"					"4.0"
+			"bonus_attack_speed"		"20 30 46 70 110 165 250"
+			"bonus_magic_resistance"	{
+				"value"			"10 15 20 25 30 35 40"
+				"special_bonus_unique_viper_6"		"+27"
+			}
+			"damage"{
+				"value"					"20 35 55 85 135 210 325"
+				"special_bonus_unique_viper_1"	"+13"
+			}
+			"max_range_tooltip"					"1400"
+			"effect_multiplier_distance"{
+				"value"						"500"
+				"RequiresScepter"		"1"
+			}
+			"effect_multiplier"{
+				"value"						"2"
+				"RequiresScepter"		"1"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"viper_viper_strike"        {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "600"
+		"AbilityManaCost"   "100 175 250 325"
+		"AbilityValues"{
+			"duration"				"5"
+			"damage" {
+				"value"			 "110 240 530 1170"
+				"special_bonus_unique_viper_2"	"+260"
+			}
+			"bonus_movement_speed"	"-40 -60 -80 -100"
+			"bonus_attack_speed"	"-60 -100 -160 -250"
+			"AbilityCooldown"	{
+				"value"				"35 30 25 20"
+				"special_bonus_unique_viper_8"		"-50%"
+			}
+			"AbilityManaCost"
+			{
+				"value"				"100 150 200"
+				"special_bonus_unique_viper_8"		"-50%"
+			}
+			"projectile_speed"	"1200"
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+
+
+	"viper_nose_dive"{
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"1000"
+		"AbilityCooldown"				"8"
+		"AbilityManaCost"				"75"
+		"AbilityValues"		{
+			"radius"							"500"
+			"corrosive_radius"					"1200"
+			"duration"							"0.1"
+			"effect_duration"						"4"
+			"dive_speed"						"1400"
+			"start_height"						"100"
+			"movespeed_slow"					"0"
+		}
+	}
+}

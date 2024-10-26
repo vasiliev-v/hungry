@@ -1,0 +1,178 @@
+"DOTAAbilities"{
+	"hoodwink_acorn_shot"       {
+		"AbilityCastPoint"  "0.2"
+		"AbilityCastRange"  "0"
+		"AbilityCooldown"   "12 10.5 9 7.5 6 4.5 3"
+		"AbilityManaCost"   "75 98 120 143 165 188 210"
+		"AbilityValues"{
+			"bonus_range"   "350"
+			"acorn_shot_damage" "75 124 204 335 553 910 1500"
+			"base_damage_pct"       "100"
+			"bounce_count"  {
+				"value""3 4 5 6 7 8 9"
+				"LinkedSpecialBonus"        "special_bonus_unique_hoodwink_acorn_shot_bounces"
+			}
+			"bounce_range"  "525"
+			"debuff_duration"   "0.25"
+			"slow"  "200"
+			"bounce_delay"  "0.1"
+			"projectile_speed"			"2400"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"special_bonus_unique_hoodwink_acorn_shot_charges"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"2"
+				"ad_linked_abilities"			"hoodwink_acorn_shot"
+			}
+		}
+	}
+	"special_bonus_unique_hoodwink_acorn_shot_bounces"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"16"
+				"ad_linked_abilities"			"hoodwink_acorn_shot"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"hoodwink_bushwhack"        {
+		"AbilityCastPoint"  "0.2"
+		"AbilityCastRange"  "1000"
+		"AbilityCooldown"   "15 14 13 12 11 10 9"
+		"AbilityManaCost"   "90 117 144 171 198 225 252"
+		"AbilityValues"{
+			"trap_radius"   {
+				"value"     "275"
+				"special_bonus_unique_hoodwink_bushwhack_radius"    "+225"
+			}
+			"debuff_duration"       "1.5 1.7 1.9 2.1 2.3 2.5 2.7"
+			"projectile_speed"  "1300"
+			"total_damage"      "135 208 320 493 759 1169 1800"
+			"animation_rate"    "0.3"
+			"visual_height"     "50"
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"special_bonus_unique_hoodwink_bushwhack_cooldown"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"3"
+				"ad_linked_abilities"			"hoodwink_bushwhack"
+			}
+		}
+	}
+
+
+	"hoodwink_scurry"       {
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "275"
+		"AbilityChargeRestoreTime"  "19.0 17.5 16.0 14.5 13.0 11.5 10.0"
+		"AbilityCharges"    "2"
+		"AbilityCooldown"   "0"
+		"AbilityManaCost"   "35 46 56 67 77 88 98"
+		"AbilityValues"{
+			"radius"						"275"
+			"movement_speed_pct"			"30 35 40 45 50 55 60"
+			"duration"						"5"
+			"evasion"						"25 32 39 46 53 60 67"
+			"bonus_active_evasion"{
+				"value"			"0"
+				"special_bonus_unique_hoodwink_scurry_evasion"			"+100"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"hoodwink_sharpshooter"     {
+		"LinkedAbility"	"hoodwink_hunters_boomerang"
+		"AbilityCastPoint"  "0"
+		"AbilityCastRange"  "3000"
+		"AbilityCooldown"   "15"
+		"AbilityManaCost"   "125 219 313 406"
+		"AbilityValues" {
+			"arrow_speed"   "2200"
+			"arrow_width"	"125"
+			"arrow_range"   "3000"
+			"arrow_vision"  "350"
+			"max_charge_time"   {
+				"value"		"3"
+				"LinkedSpecialBonus"		"special_bonus_unique_hoodwink_sharpshooter_speed"
+			}
+			"max_damage"    "825 1570 2980 5660"
+			"recoil_distance"   "350"
+			"recoil_height" "75"
+			"recoil_duration"   "0.4"
+			"max_slow_debuff_duration"  "6"
+			"misfire_time"  "5"
+			"slow_move_pct" "50 100 150"
+			"turn_rate" "60"
+			"base_power"                "0.2"
+		}
+		"MaxLevel"  "4"
+		"LevelsBetweenUpgrades" "6"
+	}
+	"special_bonus_unique_hoodwink_sharpshooter_speed"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"-3"
+				"ad_linked_abilities"			"hoodwink_sharpshooter"		
+			}
+			"02"		{
+				"var_type"	"FIELD_FLOAT"
+				"pct_change"	"100"
+			}
+		}
+	}
+
+
+	"hoodwink_hunters_boomerang"{
+		"LinkedAbility"	"hoodwink_sharpshooter"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"			"4"
+		"LevelsBetweenUpgrades"		"6"
+		"RequiredLevel"		"6"
+		"AbilityCastRange"              "1000"
+		"AbilityCastPoint"              "0.2"
+		"AbilityCooldown"               "6"
+		"AbilityManaCost"               "125 200 300 425"
+		"AbilityValues"{
+			"speed"                 "900"
+			"radius"                "150"
+			"damage"                "200 400 700 1100"
+			"mark_duration"         "7.0"
+			"slow_pct"              "40"
+			"spell_amp"             "30"
+			"status_resistance"     "0"
+			"spread"                "400"
+			"min_throw_duration"            "0.3"
+			"max_throw_duration"            "0.5"
+		}
+	}
+
+
+	"hoodwink_decoy"    {
+		"AbilityChargeRestoreTime"  "20"
+		"AbilityCharges"    			"2"
+		"AbilityCooldown"               "0"
+		"AbilityCastPoint"              "0"
+		"AbilityManaCost"               "60"
+		"AbilityCastRange"              "0"
+		"AbilityValues"	{
+			"duration"					"6.0"
+			"decoy_detonate_radius"		"250"
+			"decoy_stun_duration"				"3.0"
+			"sharpshooter_damage_pct"			"100"
+		}
+	}
+}

@@ -1,0 +1,204 @@
+"DOTAAbilities"{
+	"shadow_demon_disruption"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"20 19 18 17 16 15 14"
+		"AbilityDuration"	"2.75"
+		"AbilityManaCost"	"120 156 192 228 264 300 336"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"disruption_duration"	{
+				"value"	"2.75"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_5"
+			}
+			"illusion_duration"	"10 11 12 13 14 15 16"
+			"illusion_outgoing_damage"	"-70 -55 -40 -25 -10 5 20"
+			"illusion_outgoing_tooltip"	"30 45 60 75 90 105 120"
+			"illusion_incoming_damage"	"200"
+			"tooltip_total_illusion_incoming_damage"	"300"
+			"AbilityCharges"	{
+				"value"	""
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_7"
+			}
+			"illusion_bounty_base"	"0"
+			"illusion_bounty_growth"	"2"
+		}
+	}
+	// Talent: Disruption Duration
+	"special_bonus_unique_shadow_demon_5"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"2.25"
+				"ad_linked_abilities"			"shadow_demon_disruption"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	// Talent: Disruption Charges
+	"special_bonus_unique_shadow_demon_7"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"2"
+				"ad_linked_abilities"	"shadow_demon_disruption"
+			}
+		}
+	}
+
+
+	"shadow_demon_disseminate"	{
+		"AbilityCharges"			"2"
+		"AbilityChargeRestoreTime"	"20 19 18 17 16 15 14"
+		"AbilityCooldown"			"0"
+		"AbilityCastRange"				"700 800 900 1000 1100 1200 1300"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"100 130 160 190 220 250 280"
+	
+		"MaxLevel"	"7"
+		"LevelsBetweenUpgrades"	"3"
+
+		"AbilityValues"		{
+			"duration"						"7"
+			"damage_reflection_pct"	{
+				"value"						"20 25 30 35 40 45 50"
+				"special_bonus_unique_shadow_demon_disseminate_damage"		"+10"
+			}
+			"radius"					"600"
+		}
+	}
+
+
+	"shadow_demon_shadow_poison"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1500"
+		"AbilityCooldown"	"2.5"
+		"AbilityDuration"	"10"
+		"AbilityManaCost"	"45 59 72 86 99 113 126"
+		"AbilityModifierSupportValue"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"stack_damage"	{
+				"value"	"50"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_4"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
+			}
+			"max_multiply_stacks"	"4 5 6 7 8 9 10"
+			"bonus_stack_damage"	{
+				"value"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_4"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
+			}
+			"radius"	"200"
+			"speed"	"1000"
+			"hit_damage"	{
+				"value"	"50 75 110 160 230 340 500"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_4"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
+			}
+		}
+	}
+	// Talent: Poison Cooldown
+	"special_bonus_unique_shadow_demon_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"1.8"
+				"ad_linked_abilities"	"shadow_demon_shadow_poison"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Poison Damage
+	"special_bonus_unique_shadow_demon_4"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"25"
+				"ad_linked_abilities"	"shadow_demon_shadow_poison"
+			}
+		}
+	}
+
+
+	"shadow_demon_demonic_cleanse"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"45 40 35 30"
+		"AbilityDuration"	"7"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"charge_restore_time"{
+				"value"	"45 40 35 30"
+				"RequiresScepter"	"1"
+			}
+			"charge_restore_time_tooltip_scepter"{
+				"value"	"45 40 35 30"
+				"RequiresScepter"	"1"
+			}
+			"max_charges"{
+				"value"	"3"
+				"RequiresScepter"	"1"
+			}
+			"purge_damage"{
+				"value"	"600 965 1554 2500"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_1"
+			}
+		}
+	}
+	"shadow_demon_demonic_purge"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"45 40 35 30"
+		"AbilityDuration"	"7"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"purge_damage"	{
+				"value"	"600 965 1554 2500"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_demon_1"
+			}
+			"max_charges"	{
+				"value"	"3"
+				"RequiresScepter"	"1"
+			}
+			"charge_restore_time"	{
+				"value"	"45 40 35 30"
+				"RequiresScepter"	"1"
+			}
+			"charge_restore_time_tooltip_scepter"	{
+				"value"	"45 40 35 30"
+				"RequiresScepter"	"1"
+			}
+			"max_slow"	"100 150 200 250"
+			"min_slow"	"20"
+		}
+	}
+	
+	// Talent: Purge Damage
+	"special_bonus_unique_shadow_demon_1"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"3600"
+				"ad_linked_abilities"	"shadow_demon_demonic_purge"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Purge CD
+	"special_bonus_unique_shadow_demon_9"	{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"15"
+				"ad_linked_abilities"			"shadow_demon_demonic_purge"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

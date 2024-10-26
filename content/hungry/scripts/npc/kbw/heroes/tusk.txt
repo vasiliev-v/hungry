@@ -1,0 +1,191 @@
+"DOTAAbilities"{
+	"tusk_ice_shards"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"2000"
+		"AbilityCooldown"	"10 9 8 7 6 5 4"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"aghs_shard_damage"{
+				"value"	"200"
+				"RequiresShard"	"1"
+			}
+			"aghs_shard_depth"{
+				"value"	"450"
+				"RequiresShard"	"1"
+			}
+			"aghs_shard_move_slow"{
+				"value"	"40"
+				"RequiresShard"	"1"
+			}
+			"shard_angle_step"	"40"
+			"shard_count"	"7"
+			"shard_damage"	"135 205 300 430 615 865 1200"
+			"shard_distance"	"200"
+			"shard_duration"	"4 5 6 7 8 9 10"
+			"shard_speed"	"1600"
+			"shard_width"	"200"
+			"turn_rate_slow"	"0"
+		}
+	}
+	"special_bonus_unique_tusk_5"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"3"
+				"ad_linked_abilities"	"tusk_ice_shards"
+			}
+		}
+	}
+
+
+	"tusk_launch_snowball"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+	}
+	"tusk_snowball"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"1250"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"snowball_damage"	{
+				"value"		"120 180 265 380 545 770 1070"
+				"LinkedSpecialBonus"	"special_bonus_unique_tusk_2"
+			}
+			"snowball_speed"	"1200"
+			"snowball_damage_bonus"	"30 46 71 110 169 260 400"
+			"stun_duration"	"1.5"
+			"snowball_windup_radius"	"100"
+			"snowball_duration"	"5"
+			"snowball_radius"	"200"
+			"snowball_grow_rate"	"40"
+			"snowball_windup"	"3"
+			"snowball_grab_radius"	"550"
+			"snowball_speed_bonus"	"50"
+		}
+	}
+	// Talent: Snowball Damage	
+	"special_bonus_unique_tusk_2"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"1930"
+				"ad_linked_abilities"	"tusk_snowball"
+			}
+		}
+	}
+	// Talent: Snowball Regen
+	"special_bonus_unique_tusk_snowball_regen"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues" {
+			"regen_pct"		"2"
+		}
+	}
+	// Talent: Snowball Items
+	"special_bonus_unique_tusk_snowball_items"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"tusk_tag_team"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"14 13 12 11 10 9 8"
+		"AbilityManaCost"	"70 91 112 133 154 175 196"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"	{
+				"value"	"38 58 89 137 211 325 500"
+				"special_bonus_unique_tusk_3"	"+700"
+			}
+			"movement_slow"	"75 85 95 105 115 125 135"
+			"slow_duration"	"0.4"
+			"debuff_duration"	"5"
+			"radius"	"500"
+		}
+	}
+
+
+	"tusk_walrus_punch"{
+		"LinkedAbility"		"tusk_walrus_kick"
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"150"
+		"AbilityManaCost"	"75 131 188 244"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"crit_multiplier"	{
+				"value"		"360 540 720 900"
+				"LinkedSpecialBonus"	"special_bonus_unique_tusk"
+			}
+			"air_time"	{
+				"value"	"1"
+				"LinkedSpecialBonus"	"special_bonus_unique_tusk_7"
+			}
+			"slow_duration"	"2.0 3.0 4.0 5.0"
+			"move_slow"	"40 50 60 70"
+			"push_length"	"1000"
+			"AbilityCooldown"	{
+				"value"	"12 10 8 6"
+				"special_bonus_unique_tusk_walrus_punch_cooldown"	"-2"
+			}
+		}
+	}
+	// // Talent: Punch Damage
+	// "special_bonus_unique_tusk"		{
+	//     "AbilitySpecial"		{
+	//         "01"		{
+	//             "var_type"	"FIELD_INTEGER"
+	//             "value"	"250"
+	//             "ad_linked_abilities"	"tusk_walrus_punch"
+	//         }
+	//     }
+	// }
+	// // Talent: Punch Stun
+	// "special_bonus_unique_tusk_7"		{
+	//     "AbilitySpecial"		{
+	//         "01"		{
+	//             "var_type"	"FIELD_FLOAT"
+	//             "value"	"0.5"
+	//             "ad_linked_abilities"	"tusk_walrus_punch"
+	//         }
+	//     }
+	// }
+	"special_bonus_unique_tusk_walrus_punch_cooldown"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+	"tusk_walrus_kick"{
+		"LinkedAbility"		"tusk_walrus_punch"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"MaxLevel"		"4"
+		"RequiredLevel"		"6"
+		"LevelsBetweenUpgrades"		"6"
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"350"
+		"AbilityCooldown"	"12 10 8 6"
+		"AbilityManaCost"	"200"
+		"AbilityValues"{
+			"air_time"	"1"
+			"damage"	"600 1000 1600 2400"
+			"move_slow"	"80"
+			"push_length"	"1800"
+			"search_radius"	"250"
+			"slow_duration"	"4"
+			"creep_cooldown_reduction_pct"	"20"
+			// custom
+			"max_creep_damage"	"20"
+		}
+	}
+}

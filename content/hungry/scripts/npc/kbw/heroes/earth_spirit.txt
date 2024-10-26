@@ -1,0 +1,183 @@
+"DOTAAbilities"{
+	"earth_spirit_stone_caller"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1100"
+		"AbilityChargeRestoreTime"	"10"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityValues"{
+			"duration"	"120"
+			"polarization_distance"{
+				"value"	"0"
+			}
+			"shard_tooltip"	"4"
+			"vision_radius"{
+				"value"	"0"
+				"special_bonus_shard"	"+600"
+			}
+			"AbilityCharges"{
+				"value"	"7"
+				"special_bonus_shard"	"+4"
+			}
+		}
+	}
+
+
+	"earth_spirit_boulder_smash"{
+		"AbilityCastPoint"	"0.01"
+		"AbilityCastRange"	"150"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"180"
+			"rock_search_aoe"	"200"
+			"rock_damage"	"158 229 334 486 708 1030 1500"
+			"move_slow"	"60"
+			"duration"	"1.25 1.8 2.35 2.9 3.45 4 4.55"
+			"speed"	"1500"
+			"unit_distance"	{
+				"value"	"500.0 600.0 700.0 800.0 900.0 1000.0 1100.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_7"
+			}
+			"rock_distance"	{
+				"value"	"2000"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_7"
+			}
+			"remnant_smash_radius_tooltip"	"200"
+			"AbilityCooldown"	{
+				"value"	"7.5"
+				"special_bonus_unique_earth_spirit_boulder_smash_cooldown"	"-4.5"
+			}
+		}
+	}
+	"special_bonus_unique_earth_spirit_boulder_smash_cooldown"{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"							"special_bonus_base"
+	}
+
+
+	"earth_spirit_rolling_boulder"{
+		"AbilityCastPoint"	"0.01"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"12 10.5 9 7.5 6 4.5 3"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"180"
+			"speed"	"1000"
+			"rock_speed"	"2000"
+			"distance"	{
+				"value"	"1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_4"
+			}
+			"rock_distance_multiplier"		"2"
+			"delay"	"0"
+			"damage"	{
+				"value"	"120 171 243 346 493 702 1000"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit"
+			}
+			"stun_duration"	{
+				"value"	"1"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_3"
+			}
+			"rock_bonus_duration"	"0.7"
+			"damage_str"			"150"
+		}
+	}
+	// Talent: Roll Damage
+    "special_bonus_unique_earth_spirit"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"1000"
+                "ad_linked_abilities"	"earth_spirit_rolling_boulder"
+            }
+        }
+    }
+	// Talent: Roll Distance
+    "special_bonus_unique_earth_spirit_4"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"500"
+                "ad_linked_abilities"	"earth_spirit_rolling_boulder"
+            }
+        }
+    }
+
+
+	"earth_spirit_geomagnetic_grip"{
+		"AbilityCastPoint"	"0.01"
+		"AbilityCastRange"	"1100"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"75 98 120 143 165 188 210"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"radius"	"180"
+			"rock_damage"	"158 229 334 486 708 1030 1500"
+			"duration"	{
+				"value"	"2 2.3 2.6 2.9 3.2 3.5 3.8"
+				"LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_5"
+			}
+			"pull_units_per_second_heroes"	"1500"
+			"pull_units_per_second"	"1500"
+			"speed"	"1500"
+			"total_pull_distance"		"99999"
+		}
+	}
+	// Talent: Grip Silence
+    "special_bonus_unique_earth_spirit_5"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_FLOAT"
+                "value"	"3"
+                "ad_linked_abilities"           "earth_spirit_geomagnetic_grip"
+            }
+        }
+    }
+
+	"earth_spirit_magnetize"{
+		"AbilityCastPoint"	"0.01"
+		"AbilityCastRange"	"350"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"cast_radius"	"350"
+			"damage_duration"{
+				"value"	"6"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+				"special_bonus_unique_earth_spirit_6"	"+3"
+			}
+			"damage_interval"	"1"
+			"damage_per_second"{
+				"value"	"100 200 400 800"
+				"special_bonus_unique_earth_spirit_8"	"+500"
+			}
+			"rock_explosion_delay"	"8"
+			"rock_explosion_radius"	"600"
+			"rock_search_radius"	"400"
+			"silence_duration"	"5"
+			"slow_duration"	"2"
+		}
+	}
+
+
+	"earth_spirit_petrify"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"1100"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"150"
+		"AbilityValues"{
+			"ally_cast_range"	"1100"
+			"aoe"	"450"
+			"damage"	"1500"
+			"duration"	"3"
+		}
+	}
+}

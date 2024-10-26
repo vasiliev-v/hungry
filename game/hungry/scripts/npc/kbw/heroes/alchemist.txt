@@ -1,0 +1,230 @@
+"DOTAAbilities"{
+
+	"alchemist_acid_spray"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"130 169 208 247 286 325 364"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"armor_allies"{
+				"value"	"0"
+				"special_bonus_unique_alchemist_3"	"+1"
+			}
+			"armor_reduction"{
+				"value"	"4 5 7 10 14 19 25"
+				"special_bonus_unique_alchemist_5"	"+10"
+			}
+			"damage"	"25 45 70 120 200 325 520"
+			"duration"	"10"
+			"radius"	"475 525 575 625 675 725 775"
+			"tick_rate"	"1"
+		}
+	}
+	"alchemist_unstable_concoction"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"775"
+		"AbilityCooldown"	"12"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"brew_explosion"	"5.5"
+			"brew_time"	"2"
+			"max_damage"{
+				"value"	"225 385 650 1090 1800 2920 4700"
+				"special_bonus_unique_alchemist_2"	"+5300"
+			}
+			"max_stun"	"2.0 2.5 3.0 3.5 4.0 4.5 5.0"
+			"min_damage"	"0"
+			"min_stun"	"0.25"
+			"move_speed"	"10 15 20 25 30 35 40"
+			"radius"{
+				"value"	"250"
+				"special_bonus_unique_alchemist"	"+125"
+			}
+		}
+	}
+	"alchemist_unstable_concoction_throw"{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"775"
+		"AbilityModifierSupportBonus"	"120"
+		"AbilityUnitTargetFlags"	""
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"brew_explosion"	"7"
+			"brew_time"	"2"
+			"max_damage"{
+				"value"	"225 385 650 1090 1800 2920 4700"
+				"special_bonus_unique_alchemist_2"	"+5300"
+			}
+			"max_stun"	"2.0 2.5 3.0 3.5 4.0 4.5 5.0"
+			"min_damage"	"0"
+			"min_stun"	"0.25"
+			"projectile_speed"	"900"
+			"radius"{
+				"value"	"250"
+				"special_bonus_unique_alchemist"	"+125"
+			}
+		}
+	}
+	"alchemist_goblins_greed"	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_SELF"
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityValues"		{
+			"duration"				"45"
+			"bonus_gold"			"6"
+			"bonus_bonus_gold"		"6"
+			"bonus_gold_cap"		"66"
+			"bounty_multiplier"		"4.0"
+			"damage"		{
+				"value"		"0"
+				"special_bonus_unique_alchemist_7"	"+10"
+			}
+		}
+	}
+		"alchemist_corrosive_weaponry"
+	{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySound"					"Hero_Meepo.Geostrike"
+		"AbilityValues"
+		{		
+				"max_stacks"	"5 6 7 8 9 10 12"
+				"debuff_duration"		"3.5 4 4.5 5 5.5 6 6.9"
+				"slow_per_stack"		"3 4 5 6 7 8 9"
+				"status_resist_per_stack"		"3 3 3 4 4 4 5"
+
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	"alchemist_berserk_potion"{
+		"LinkedAbility"		"alchemist_chemical_rage"
+		"RequiredLevel"	"6"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+	
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"800"
+		"AbilityCooldown"	"17"
+		"AbilityManaCost"	"100"
+		
+		"AbilityValues"{
+			"attack_speed"	"150 250 350 450"
+			"duration"	"10"
+			"hp_regen"	"75 135 250 450"
+			"move_speed"	"100"
+			"projectile_speed"	"1800"
+		}
+	}
+	
+	"alchemist_chemical_rage"{
+		"LinkedAbility"		"alchemist_berserk_potion"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"HasScepterUpgrade"	"0"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"50 88 125 163"
+		
+		"AbilityValues"{
+			"base_attack_time"{
+				"value"	"1.2 1.05 0.9 0.75"
+				"special_bonus_unique_alchemist_8"	"-0.15"
+			}
+			"bonus_health"	"0"
+			"bonus_health_regen"{
+				"value"	"75 135 250 450"
+				"special_bonus_unique_alchemist_4"	"+550"
+			}
+			"bonus_mana_regen"	"0"
+			"bonus_movespeed"{
+				"value"	"80 120 160 200"
+				"special_bonus_unique_alchemist_6"	"+50"
+			}
+			"duration"	"30"
+			"scepter_bonus_damage"{
+				"value"	"20"
+				"RequiresScepter"	"1"
+			}
+			"scepter_gold_damage"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+			"scepter_spell_amp"{
+				"value"	"5"
+				"RequiresScepter"	"1"
+			}
+			"transformation_time"	"0.35"
+		}
+	}
+
+
+
+    "alchemist_casino"{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "kbw/abilities/heroes/alchemist/casino"
+        "AbilityTextureName"            "alchemist_casino"
+
+		"MaxLevel"				"1"
+		"IsGrantedByScepter"	"1"
+
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityCooldown"		"3"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"min_bet"					"1000"
+			}
+			"02"{
+				"var_type"					"FIELD_FLOAT"
+				"mult_min"					"0"
+			}
+			"03"{
+				"var_type"					"FIELD_FLOAT"
+				"mult_max"					"2"
+			}
+			"04"{
+				"var_type"					"FIELD_FLOAT"
+				"bet_size_pct"				"70"
+			}
+			"05"{
+				"var_type"					"FIELD_FLOAT"
+				"small_bet_pct"				"25"
+			}
+		}
+	}
+
+    "alchemist_melting"{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "kbw/abilities/heroes/alchemist/melting"
+        "AbilityTextureName"            "alchemist_melting"
+
+		"MaxLevel"				"1"
+		"IsGrantedByScepter"	"1"
+
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityCooldown"		"1"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"				"FIELD_INTEGER"
+				"cost"					"7000"
+			}
+		}
+	}
+}

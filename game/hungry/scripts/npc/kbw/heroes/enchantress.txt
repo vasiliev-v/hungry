@@ -1,0 +1,121 @@
+"DOTAAbilities"{
+	
+	"enchantress_impetus"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"575"
+		"AbilityCooldown"	"3 2 1 0 0 0 0"
+		"AbilityDuration"	"1.5"
+		"AbilityManaCost"	"60 60 60 60 72 84 96"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"creep_multiplier"	"4"
+			"distance_cap"	"2000"
+			"distance_damage_pct"{
+				"value"	"20 20 20 20 24 28 32"
+				"special_bonus_unique_enchantress_4"	"+23"
+			}
+		}
+	}
+	
+	
+	"enchantress_enchant"{
+		"AbilityCastPoint"	"0.3 0.25 0.2 0.15 0.1 0.05"
+		"AbilityCastRange"	"700 750 800 850 900 950 1000"
+		"AbilityCooldown"	"20"
+		"AbilityDuration"	"3.75 4.3 4.85 5.4 5.95 6.5 7.05"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"dominate_duration"	"30 60 90 120 150 180 210"
+			"enchant_armor"	"5 10 18 28 41 57 75"
+			"enchant_damage"	"40 80 160 320 640 1280 2560"
+			"enchant_health"	"300 600 1200 2400 4800 9600 19200"
+			"level_req"	"5"
+			"slow_duration"	"3.75 4.3 4.85 5.4 5.95 6.5 7.05"
+			"slow_movement_speed"	"-55 -65 -75 -85 -95 -105 -115"
+                        "max_creeps"
+			{
+				"value"					"2"
+				"special_bonus_shard"	"+4"
+			}
+		}
+	}
+	"enchantress_natures_attendants"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"34 32 30 28 26 24 22"
+		"AbilityDuration"	"11"
+		"AbilityManaCost"	"140 182 224 266 308 350 392"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"heal"{
+				"value"	"12 20 30 42 56 72 90"
+				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_5"
+			}
+			"heal_interval"	"0.5"
+			"radius"	"275"
+			"wisp_count"{
+				"value"	"8"
+				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_2"
+			}
+			"movespeed"{
+				"value"			"0"
+				"special_bonus_unique_enchantress_6"	"+60"
+			}
+		}
+	}
+	"enchantress_bunny_hop"{
+		"AbilityCooldown"	"2"
+		"AbilityManaCost"	"50"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"hop_distance"	"600"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"hop_duration"	"0.2"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"hop_height"	"150"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"attack_targets"	"9"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attack_range"	"600"
+			}
+		}
+	}
+	"enchantress_little_friends"	{
+		"AbilityCooldown"				"12"
+		"AbilityCastRange"				"600"
+		"AbilityManaCost"				"75"
+		"AbilityValues"		{
+			"duration"					"6"
+			"bonus_attack_speed"		"300"
+			"bonus_move_speed"			"100"
+			"radius"					"1200"
+		}
+	}
+	"enchantress_untouchable"{
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"slow_attack_speed"	"-100 -200 -370 -610"
+				"LinkedSpecialBonus"	"special_bonus_unique_enchantress_3"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"slow_duration"	"4"
+			}
+		}
+	}
+}

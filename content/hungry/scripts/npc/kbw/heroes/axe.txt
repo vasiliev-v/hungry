@@ -1,0 +1,105 @@
+"DOTAAbilities" {	
+	"axe_berserkers_call"       {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCooldown"   "12"
+		"AbilityManaCost"   "80 104 128 152 176 200 224"
+		"AbilityValues"         {
+			"radius"        {
+				"value"                         "300"
+				"special_bonus_unique_axe_2"    "+100"
+			}
+			"bonus_armor"				{
+				"value"							"30 37 46 56 69 85 105"
+				"special_bonus_unique_axe_7"	"+125"
+			}
+			"duration"              "2 2.3 2.6 2.9 3.2 3.5 3.8"
+			"scepter_cooldown_reduction"        {
+				"special_bonus_scepter" "+3.0"
+			}
+			"applies_battle_hunger"         {
+				"special_bonus_scepter" "+1"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"axe_battle_hunger"     {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "750"
+		"AbilityCooldown"   "10 9 8 7 6 5 4"
+		"AbilityManaCost"   "50 65 80 95 110 125 140"
+		"AbilityValues"     {
+			"duration"                  "8.0"
+			"slow"              {
+				"value"         "-15 -20 -25 -30 -35 -40 -45"
+				"special_bonus_unique_axe_6"    "-10"
+			}
+			"damage_per_second"  {
+				"value" "45 75 135 235 425 815 1570"
+				"CalculateSpellDamageTooltip"	"1"
+			}       
+			"armor_multiplier"          {
+				"value"         "1.0 1.5 2.0 2.5 3.0 3.5 4.0"
+				"special_bonus_unique_axe"  "x2"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"scepter_armor_change"      {
+				"special_bonus_scepter"             "+15"
+			}
+			"speed_bonus"	{
+				"value"			"0"
+				"special_bonus_unique_axe_8"	"+20" // HARDCODED in m_kbw_hero
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"axe_counter_helix"         {
+		"HasShardUpgrade"               "1"
+		"AbilityCooldown"               "0.8 0.7 0.6 0.5 0.4 0.3 0.2"
+		"AbilityValues"         {
+			"damage"            {
+				"value"             "90 125 170 225 290 365 450"
+				"special_bonus_unique_axe_4" "+300"
+			}
+			"radius"                    "275"
+                        "trigger_attacks"			"7 7 6 6 5 5 4"
+			"cooldown"                  "0"
+			"shard_debuff_duration"{
+				"special_bonus_shard"		"+6.0"
+			}
+			"shard_damage_reduction"{
+				"special_bonus_shard"		"+10"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"shard_max_stacks"	{
+				"special_bonus_shard"		"+6"	
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	"axe_culling_blade"     {
+		"AbilityCastPoint"  "0.15"
+		"AbilityCastRange"  "150"
+		"AbilityCooldown"   "30"
+		"AbilityManaCost"   "100 175 250 325"
+		"AbilityValues"     {
+			"damage"                {   
+				"value"         "350 665 1265 2400"
+				"special_bonus_unique_axe_5"    "+1250"
+			}
+			"speed_bonus"               "30 35 40 45"
+			"atk_speed_bonus"               "100 200 400 700"
+			"speed_duration"            "6"
+			"speed_aoe"                 "2000"
+			"charge_speed"              "1200"
+			"armor_per_stack"       {
+				"value"                 "1 1.5 2 2.5"
+				"special_bonus_unique_axe_3"    "+1"
+			}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+}

@@ -1,0 +1,150 @@
+"DOTAAbilities"{
+	"silencer_curse_of_the_silent"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1000"
+		"AbilityManaCost"	"130 169 208 247 286 325 364"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"AbilityCooldown"	{
+				"value"				"14 13 12 11 10 9 8"
+				"special_bonus_unique_silencer_curse_cooldown"	"-3"
+			}
+			"damage"{
+				"value"				"30 50 75 115 175 260 385"
+				"special_bonus_unique_silencer"	"+365"
+			}
+			"duration"	"6"
+			"movespeed"{
+				"value"				"-12 -16 -20 -24 -28 -32 -36"
+				"LinkedSpecialBonus"			"special_bonus_unique_silencer_6"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
+			"application_damage"	"30 50 75 115 175 260 385"
+			"penalty_duration"		"3"
+			"penalty_multiplier"	"1.5"
+			"radius"				"425"
+			"undispellable"{
+				"value"	"0"
+				"special_bonus_unique_silencer_arcane_curse_undispellable"	"+1"
+			}
+		}
+	}
+	"special_bonus_unique_silencer_curse_cooldown"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"silencer_glaives_of_wisdom"{
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"0"
+		"AbilityDuration"	"0"
+		"AbilityManaCost"	"15 20 24 29 33 38 42"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bounce_count"{
+				"value"	"0"
+				"special_bonus_unique_silencer_glaives_bounces"	"+2"
+			}
+			"bounce_range"{
+				"value"	"0"
+				"special_bonus_unique_silencer_glaives_bounces"	"+600"
+			}
+			"int_steal"{
+				"value"	"1 1.5 2 2.5 3 3.5 4"
+				"special_bonus_shard"	"+2"
+			}
+			"int_steal_duration"	"20 25 30 35 40 45 50"
+			"intellect_damage_pct"{
+				"value"	"30"
+				"special_bonus_unique_silencer_3"	"+15"
+			}
+			"permanent_int_steal_amount"{
+				"value"	"2"
+				"special_bonus_shard"	"+2"
+			}
+			"permanent_int_steal_range"	"925"
+			"silence_duration"{
+				"value"	"0"
+				"special_bonus_shard"	"+1.75"
+			}
+			"stacks_for_silence"{
+				"value"	"0"
+				"special_bonus_shard"	"+10"
+			}
+		}
+	}
+
+
+	"silencer_last_word"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"	"180 270 395 570 820 1155 1600"
+			"int_multiplier"	{
+				"value"	"3"
+				"LinkedSpecialBonus"	"special_bonus_unique_silencer_4"
+			}
+			"debuff_duration"	{
+				"value" "4"
+				"special_bonus_unique_silencer_last_word_delay"		"-3.3"
+			}
+			"duration"	"3 3.65 4.3 4.95 5.6 6.25 6.9"
+			"scepter_radius"	{
+				"value"	"600"
+				"RequiresScepter"	"1"
+			}
+			"scepter_bonus_damage"	{
+				"value"	"0"
+				"RequiresScepter"	"1"
+			}
+			// custom
+			"vision_duration"	"4"
+		}
+	}
+	"special_bonus_unique_silencer_last_word_delay"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Last Word Multiplier
+	"special_bonus_unique_silencer_4"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"1.5"
+				"ad_linked_abilities"			"silencer_last_word"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"silencer_global_silence"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"105 95 85 75"
+		"AbilityDuration"	"4.5 5.25 6 6.75"
+		"AbilityManaCost"	"300 525 750 975"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+		}
+	}
+	// Talent: Global CD
+	"special_bonus_unique_silencer_7"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"25"
+				"ad_linked_abilities"			"silencer_global_silence"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

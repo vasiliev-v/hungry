@@ -1,0 +1,134 @@
+"DOTAAbilities"{
+
+	"mirana_starfall"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCooldown"	"9 8 7 6 5 4 3"
+		"AbilityDuration"	"10"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"{
+				"value"	"150 225 330 475 680 960 1335"
+				"special_bonus_unique_mirana_7"	"+1000"
+			}
+			"secondary_starfall_damage_percent"	"75"
+			"starfall_radius"	"650"
+			"starfall_secondary_radius"	"425"
+		}
+	}
+
+
+	"mirana_arrow"{
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastRange"	"3000"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityDamage"	"100"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"arrow_speed"	"1200"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_width"	"115"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_range"	"3000"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_max_stunrange"	"1500"
+			}
+			"05"{
+				"var_type"	"FIELD_FLOAT"
+				"arrow_min_stun"	"0.01"
+			}
+			"06"{
+				"var_type"	"FIELD_FLOAT"
+				"arrow_max_stun"	"3.2 3.6 4 4.4 4.8 5.2 5.6"
+			}
+			"07"{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_bonus_damage"	"180 270 395 570 820 1155 1600"
+			}
+			"08"{
+				"var_type"	"FIELD_INTEGER"
+				"arrow_vision"	"500"
+			}
+		}
+	}
+
+
+	"mirana_leap"{
+		"AbilityChargeRestoreTime"	"11 10 9 8 7 6 5"
+		"AbilityCharges"	"3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"40 52 64 76 88 100 112"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"leap_acceleration"	"6000"
+			"leap_bonus_duration"	"2.5"
+			"leap_distance"{
+				"value"	"575"
+				"special_bonus_unique_mirana_6"	"+350"
+			}
+			"leap_speed"	"1300"
+			"leap_speedbonus"	"8 16 24 32 40 48 56"
+			"leap_speedbonus_as"{
+				"value"	"38 58 89 137 211 325 500"
+				"special_bonus_unique_mirana_1"	"+300"
+			}
+			"shard_bonus_charges"{
+				"value"	"2"
+				"RequiresShard"	"1"
+			}
+			"shard_damage"{
+				"value"	"160 225 320 445 600 785 1000"
+				"RequiresShard"	"1"
+			}
+			"shard_slow_duration"{
+				"value"	"2.5"
+				"RequiresShard"	"1"
+			}
+			"shard_slow_pct"{
+				"value"	"50"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+
+
+	"mirana_invis"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"75 70 65 60"
+		"AbilityManaCost"	"300"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"fade_delay"	"2.5 2.0 1.5 1.0"
+			"bonus_movement_speed"	"15 20 25 30"
+			"duration"{
+				"value"	"20"
+				"LinkedSpecialBonus"	"special_bonus_unique_mirana_5"
+			}
+		}
+	}
+	// Talent: Moonlight Cooldown
+	"special_bonus_unique_mirana_4"		{
+		"AbilityValues"		{
+			"value"	{
+				"value"	"15"
+				"ad_linked_abilities"	"mirana_invis"
+			}
+		}
+	}
+}

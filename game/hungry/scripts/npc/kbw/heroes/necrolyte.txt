@@ -1,0 +1,105 @@
+"DOTAAbilities"{
+	
+
+	"necrolyte_death_pulse"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"8 7.3 6.6 5.9 5.2 4.5"
+		"AbilityDamage"		"170 255 370 540 770 1100 1500"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"area_of_effect"	"500"
+			}
+			"02"{
+				"var_type"	"FIELD_INTEGER"
+				"heal"	"120 180 265 380 545 770 1070"
+				"LinkedSpecialBonus"	"special_bonus_unique_necrophos_4"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"projectile_speed"	"800"
+			}
+		}
+	}
+	"necrolyte_death_seeker"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"6"
+		"AbilityManaCost"	"150"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"projectile_multiplier"	"125"
+			}
+		}
+	}
+	"necrolyte_sadist"{
+		"AbilityCastPoint"	"0"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_damage"	"-25"
+			"duration"	"3 3.5 4 4.5 5 5.5 6"
+			"heal_bonus"{
+				"value"	"75"
+				"special_bonus_unique_necrophos_sadist_heal_bonus"	"+25"
+			}
+			"movement_speed"{
+				"value"	"12 16 20 24 28 32 36"
+				"special_bonus_unique_necrophos_3"	"+24"
+			}
+			"slow_aoe"	"750"
+			"AbilityCooldown"{
+				"value"	"14"
+				"special_bonus_scepter"	"-4"
+			}
+		}
+	}
+	"necrolyte_heartstopper_aura"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"aura_damage"{
+				"value"	"0.6 0.9 1.2 1.5 1.8 2.1 2.4"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+				"special_bonus_unique_necrophos_2"	"+0.5"
+			}
+			"aura_radius"	"800"
+			"heal_reduction_pct"{
+				"value"	"0"
+				"special_bonus_unique_necrophos_5"	"+32"
+			}
+			"health_regen"	"5 7 10 14 19 25 32"
+			"mana_regen"	"5 7 10 14 19 25 32"
+			"hero_multiplier"	"6"
+			"regen_duration"{
+				"value"	"8"
+				"special_bonus_unique_necrophos_heartstopper_regen_duration"	"+3"
+			}
+			"scepter_multiplier"{
+				"value"	"2"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"necrolyte_reapers_scythe"{
+		"AbilityCastPoint"	"0.55"
+		"AbilityCastRange"	"700"
+		"AbilityCooldown"	"50"
+		"AbilityManaCost"	"250 438 625 813"
+		"AbilityModifierSupportValue"	"0.1"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"damage_per_health"	"0.7 0.8 0.9 1"
+			"hp_per_kill"	"5 10 20 40"
+			"mana_per_kill"	"3 6 12 24"
+			"stun_duration"	"1.5"
+		}
+	}
+}

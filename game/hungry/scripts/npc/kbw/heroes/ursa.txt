@@ -1,0 +1,155 @@
+"DOTAAbilities"{
+	"ursa_earthshock"		{
+		"AbilityCooldown"			"0"
+		"AbilityCharges"			"3"
+		"AbilityManaCost"		"95 124 152 181 209 238 266"
+
+		"AbilityDamage"		"120 180 265 390 575 850 1250"
+		"AbilityDuration"	"4"
+
+		"AbilityValues"{
+			"shock_radius"				"400"
+			"movement_slow"				"-22 -30 -38 -46 -54 -62 -70"
+			"hop_distance"				"400"
+			"hop_duration"				"0.25"
+			"hop_height"				"250"
+			"AbilityCooldown"		"0"
+			"AbilityChargeRestoreTime"	"6"
+			"fury_swipe_stacks_on_hit"		{
+				"value"				"0"
+				"special_bonus_unique_ursa_earthshock_furyswipes"			"+4"
+			}
+			"shard_enrage_duration"			{
+				"value"				"0"
+				"RequiresShard"		"1"
+			}
+		}
+
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"HasShardUpgrade"	"0"
+	}
+	"special_bonus_unique_ursa_earthshock_stun"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"{
+			"value"    "0.7"
+		}
+	}
+	"special_bonus_ursa_earthshock_charge_cooldown"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityValues"{
+			"value"    "-2"
+		}
+		"ModifyValues"{
+			"ursa_earthshock"{
+				"AbilityChargeRestoreTime"{
+					"1"{
+						"Operation"	"OPERATION_ADD"
+						"Value"	"value"
+					}
+				}
+			}
+		}
+	}
+	// Talent: Earthshock Radius
+    "special_bonus_unique_ursa_5"		{
+        "AbilityValues"		{
+			"value"	"500"
+        }
+    }
+
+
+	"ursa_overpower"{
+		"AbilityCastPoint"	"0.3 0.25 0.2 0.15 0.1 0.05 0"
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"15 13 11 9 7 5 3"
+		"AbilityDuration"	"20"
+		"AbilityManaCost"	"30 39 48 57 66 75 84"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"max_attacks"	{
+				"value"	"5 6 8 12 16 22 30"
+				"LinkedSpecialBonus"	"special_bonus_unique_ursa_7"
+			}
+			"attack_speed_bonus_pct"	"400 500 600 700 800 900 1000"
+		}
+	}
+
+
+	"ursa_fury_swipes"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_reset_time"{
+				"value"	"6"
+				"special_bonus_unique_ursa_4"	"+20"
+			}
+			"bonus_reset_time_roshan"	"6"
+			"damage_per_stack"{
+				"value"	"15 25 38 54 73 95 120"
+				"LinkedSpecialBonus"	"special_bonus_unique_ursa"
+			}
+		}
+	}
+
+
+	"ursa_enrage"{
+		"AbilityCastRange"	"0"
+		"AbilityCooldown"	"35 32 29 26"
+		"AbilityManaCost"	"0 0 0"
+
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"HasScepterUpgrade"		"1"
+		"HasShardUpgrade"		"1"
+
+		"AbilityValues"{
+			"aoe_radius"{
+				"value"	"0"
+				"special_bonus_unique_ursa_enrage_radius"	"+700"
+			}
+			"cooldown_scepter"{
+				"value"	"25 23 21 19"
+				"RequiresScepter"	"1"
+			}
+			"damage_reduction"	"66"
+			"duration"{
+				"value"	"5"
+				"special_bonus_unique_ursa_3"	"+0"
+			}
+			"status_resistance"{
+				"value"	"25 30 35 40"
+				"special_bonus_unique_ursa_8"	"+25"
+			}
+			// custom
+			"spell_amp" {
+				"value"		"0"
+				"special_bonus_shard"	"+42"
+			}
+			"base_damage"{
+				"value"		"0"
+				"special_bonus_shard"	"+150"
+			}
+			"heal_pct"{
+				"value"		"0"
+				"special_bonus_unique_ursa_enrage_heal"		"+25"
+			}
+		}
+	}
+	"special_bonus_unique_ursa_enrage_heal"{
+		"BaseClass"		    "special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	// Talent: Enrage Status Resist
+	"special_bonus_unique_ursa_8"	{
+		"AbilityValues"		{
+			"value"				"25"	// TOOLTIP ONLY
+		}
+	}
+}

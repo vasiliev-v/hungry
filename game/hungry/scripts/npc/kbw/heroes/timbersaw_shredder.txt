@@ -1,0 +1,229 @@
+
+"DOTAAbilities"{
+	"shredder_whirling_death"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"375"
+		"AbilityCooldown"	"6"
+		"AbilityManaCost"	"80 104 128 152 176 200 224"
+		
+		"AbilityValues"{
+			"whirling_radius"	"375"
+			"whirling_damage"	"120 225 350 495 660 845 1050"
+			"tree_damage_scale"	"30 50 80 120 170 230 300"
+			"whirling_tick"	"0.3"
+			"duration"	"12"
+			"stat_loss_pct"	"14"
+			"stat_loss_univ"			"7"
+		}
+	}
+	// Talent: Wirling Death Stat Loss
+	"special_bonus_unique_timbersaw"		{
+		"AbilityValues"		{
+			"value"	"10"
+		}
+	}
+	
+	
+	"shredder_timber_chain"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"850 1192 1533 1875 2217 2558 2900"
+		"AbilityCooldown"	"4"
+		"AbilityManaCost"	"60 78 96 114 132 150 168"
+		
+		"AbilityValues"{
+			"chain_radius"	"140"
+			"range"	{
+				"value"	"850 1050 1250 1450 1650 1850 2050"
+				"LinkedSpecialBonus"	"special_bonus_unique_timbersaw_3"
+			}
+			"radius"	"275"
+			"speed"	"3700"
+			"damage"	"120 225 350 495 660 845 1050"
+		}
+	}
+	// Talent: Chain Range
+    "special_bonus_unique_timbersaw_3"		{
+        "AbilityValues"		{
+			"value"	"750"
+        }
+    }
+	
+	
+	"shredder_reactive_armor"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityValues"		{
+			"bonus_armor"	"1.2 1.6 2 2.4 2.8 3.2 3.6"
+			"bonus_hp_regen"	"2 4 6 8 10 12 14"
+			"stack_limit"	{
+				"value"	"6 8 10 12 14 16 18"
+				"LinkedSpecialBonus"	"special_bonus_unique_timbersaw_2"
+			}
+			"stack_duration"	{
+				"value"	"20 24 28 32 36 40 44"
+				"LinkedSpecialBonus"	"special_bonus_unique_timbersaw_2"
+			}
+			// scepter
+			"AbilityManaCost"	{
+				"value"						"0"
+				"special_bonus_scepter"				"+200"
+			}
+			"AbilityCooldown"	{
+				"value"  		"25"
+				"RequiresScepter"				"1"
+			}
+			"initial_shield"{
+				"value"  		"110 200 380 650 1010 1460 2000"
+				"RequiresScepter"				"1"
+			}
+			"shield_per_sec"{
+				"value"  		"50 90 144 212 294 390 500"
+				"RequiresScepter"				"1"
+			}
+			"shield_per_sec_per_enemy"{
+				"value"  		"25 50 80 115 155 200 250"
+				"RequiresScepter"				"1"
+			}
+			"max_shield"{
+				"value"		"110 200 380 650 1010 1460 2000"
+				"RequiresScepter"				"1"
+			}
+			"duration"{
+				"value"	"8"
+				"RequiresScepter"				"1"
+			}
+			"radius"{
+				"value"	"600"
+				"RequiresScepter"				"1"
+			}
+			"explosion_radius"{
+				"value"	"600"
+				"RequiresScepter"				"1"
+			}
+			"base_explosion"{
+				"value"	"100 150 240 370 540 750 1000"
+				"RequiresScepter"				"1"
+			}
+		}
+	}
+	// Talent: Armor Stacks
+    "special_bonus_unique_timbersaw_2"		{
+        "AbilityValues"		{
+			"value"	"12"
+        }
+    }
+
+
+	"shredder_chakram"{
+		"LinkedAbility"		"shredder_flamethrower"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		
+		"AbilityManaCost"	"75 131 188 244"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"8"
+		
+		"AbilityValues"{
+			"speed"	"1200"
+			"radius"	"200"
+			"pass_damage"	"200 375 625 950"
+			"damage_per_second"	"100 200 400 700"
+			"slow"	{
+				"value"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_timbersaw_4"
+			}
+			"damage_interval"	"0.5"
+			"break_distance"	"2000"
+			"mana_per_second"	"14 25 35 46"
+			"pass_slow_duration"	"0.5"
+			"slow_health_percentage"	"5"
+			"castpoint_scepter"	{
+				"value"	"0.1"
+				"RequiresScepter"	"1"
+			}
+			"scepter_bonus_damage"	{
+				"value"	"150"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"shredder_return_chakram"{
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+	}
+	// Talent: Chakram Slow
+    "special_bonus_unique_timbersaw_4"{
+		"AbilityValues"{
+			"value"				"6"
+		}
+	}
+
+
+	"shredder_chakram_2"{
+		"MaxLevel"						"4"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"8"
+		"AbilityManaCost"	"75 131 188 244"
+		"AbilityValues"{
+			"speed"	"1200"
+			"radius"	"200"
+			"pass_damage"	"200 375 625 950"
+			"damage_per_second"	"100 200 400 700"
+			"slow"	{
+				"value"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_timbersaw_4"
+			}
+			"damage_interval"	"0.5"
+			"break_distance"	"2000"
+			"mana_per_second"	"14 25 35 46"
+			"pass_slow_duration"	"0.5"
+			"slow_health_percentage"	"5"
+			"castpoint_scepter"	{
+				"value"	"0.1"
+				"RequiresScepter"	"1"
+			}
+			"scepter_bonus_damage"	{
+				"value"	"150"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"shredder_return_chakram_2"{
+		"MaxLevel"						"4"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+	}
+
+
+	"shredder_flamethrower"{
+		"LinkedAbility"		"shredder_chakram"
+		"MaxLevel"	"4"
+		"LevelsBetweenUpgrades"	"6"
+		"RequiredLevel"		"6"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"100"
+		
+		"AbilityValues"{
+			"damage_per_second"	"200 400 700 1100"
+			"duration"	"7"
+			"width"	"275"
+			"length"	"400"
+			"move_slow_pct"	"30 40 50 60"
+			"building_dmg_pct"	"500"
+			"debuff_linger_duration"	"2.0"
+		}
+	}
+}

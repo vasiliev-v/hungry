@@ -1,0 +1,219 @@
+"addon"
+{
+
+	"LiaRoundNumber"								"Волна №{d:round_number}"
+	"LiaRoundName"									"{s:round_name}"
+
+	"LiaRound"										"Волна"
+
+	"addon_game_name"								"Hungry Dota"
+
+	"round_name_1"									"Кобольды"
+	"round_name_2"									"Кентавры"
+	"round_name_3"									"Огромные Волки"
+	"round_name_4"									"Темные Тролли"
+	"round_name_5"									"Мегабосс"
+	"round_name_6"									"Головорезы"
+	"round_name_7"									"Чумные Энты"
+	"round_name_8"									"Властители"
+	"round_name_9"									"Духи Воды"
+	"round_name_10"									"Мегабосс"
+	"round_name_11"									"Опустошители"
+	"round_name_12"									"Адские Медведи"
+	"round_name_13"									"Каменные Големы"
+	"round_name_14"									"Громовые Ящерицы"
+	"round_name_15"									"Мегабосс"
+	"round_name_16"									"Призраки"
+	"round_name_17"									"Хвататели"
+	"round_name_18"									"Хранители Пустоты"
+	"round_name_19"									"Адские Сатиры"
+	"round_name_20"									"Финальный Босс"
+
+	"LiaDuelNumber"									"{s:duel_num}"
+	"LiaDuelText"									"vs"
+
+	"Duel1"											"Первая дуэль"
+	"Duel2"											"Вторая дуэль"
+	"Duel3"											"Третья дуэль"
+	"Duel4"											"Четвертая дуэль"
+
+	"ScoreCol_TeamScore"						"Убийств:"
+	"ScoreCol_KillsBosses"							"Боссов"
+	"ScoreCol_KillsCreeps"							"Крипов"
+	"ScoreCol_Level"								"Уровень"
+	"ScoreCol_Upd"								"Улучшения %"
+	"ScoreCol_Deaths"								"Смертей"
+
+	
+	"end_screen_victory"		"ВЫ ВЫИГРАЛИ !"
+	"end_screen_lose"		"ВЫ ПРОИГРАЛИ !"
+
+	"end_screen_extreme_difficulty"	"Сложность: Экстрим"
+	"end_screen_light_difficulty"	"Сложность: Легко"
+	"end_screen_normal_difficulty"	"Сложность: Нормально"
+	
+	"end_screen_legend_items"	"Предметы"
+	
+	"welcome"	"Добро пожаловать в Жизнь на Арене 2!"
+	"target"	"Цель:"
+	"targetInfo"	"Пройти 20 раундов монстров, боссов и мегабоссов, чтобы остаться в живых."
+	"targetInfo1"	" * Если во время раунда погибнут все герои, то ваша команда проиграет;"
+	"Sovets"		"Советы:"
+	"SovInfo1"		" * В критических ситуациях взрывайте бочонки со взрывчаткой, чтобы убить всех монстров в области воздействия;"
+	"SovInfo2"   	"   * Пишите \"+\" в чат, если хотите начать раунд раньше;"
+	
+	"SovInfo3" 		"   * Обязательно ищите укрепленное (узкое) место, чтобы монстры не могли вас окружить, например вставайте в бочках, предварительно пробив себе там проход;"
+	"SovInfo4" 		"   * Старайтесь помогать друг другу, так вам будет легче выжить."
+	"SovInfo5"		"   * Правильно используйте руны, если хотите оставаться в живых как можно дольше."
+	
+	"DueInfo" 		"Дуэли:"
+	"DueInfo1"		"   * Не воспринимайте их всерьез командная игра, дуэли здесь это бонусные раунды, чтобы заработать еще немного монет;"
+	"DueInfo2"		"   * Пользуйтесь на дуэлях отварами, зельями и всем другим, но только не тратьте больше, чем вы можете получить за победу на них."
+	
+	"ReInfo"		"Таблица рейтинга:"
+	"ReInfo1"		"Используйте кнопки"
+	"ReInfo2"		"	чтобы свернуть/развернуть таблицу."
+	
+	"RunInfo"		"Руны (еще не реализовано):"
+	"RunInfo1"		"   * Скоро ждите."
+	
+	"UluInfo"		"Улучшения (еще не реализовано):" 
+	"UluInfo1"		"   * Скоро ждите."
+	
+	"LiaUluNoName"									"Не хватает дерева, требуется "
+	"LiaUluUpd"									"Улучшение произведено!"
+	"LiaUluPrice"									"Стоимость улучшения "
+	"LiaUluPrice2"					" дерева"
+	"LiaUluInLum"					"Количество дерева "
+	"LiaUluInProc"					"Процент улучшений "
+	"LiaUluFinish"					"Полностью завершено"
+	
+	"LiaAllScore"			"Общезачетный командный рейтинг: "
+	
+	"LiaScoreBoardHint"			"Не забывайте о возможности просмотреть статистику игры"
+	
+	"LiaTime"			"Время игры: "
+
+	"LiaKillBoss"			" получает <font color=\"#228B22\">3 древесины</font> за убийство босса!"
+	
+	
+	"error_no_usable_corpses" "Поблизости нет трупов"
+	"lia_hud_error_butcher_zombie" "Некого призывать"
+	"lia_cant_pick_this_rune_preduel" "Нельзя подобрать эту руну перед дуэлью"
+	"#cant_target_allied_creeps"	"Нельзя применять на союзных крипов"
+	"#lia_hud_error_keeper_of_the_grove_natures_curse_no_targets" "В выбранной области нет противников"
+
+	"DOTA_Item_Build_Late_Game"	"Поздняя игра"
+
+	"upgrade"	"Улучшения"
+	"accept"	"Принять"
+	"decline"	"Отмена"
+	"trade"		"Обмен"
+
+	"Glyph_Tooltip_Title"	"Начать раунд"
+	"Glyph_tooltip_description"	"Вы можете проголосовать за начало следующего раунда без ожидания. Если проголосуют все игроки, то раунд начнется мгновенно. <br>Каждый голос уменьшает ожидание на {d:seconds} секунд.<br><br>Проголосовало {d:readyPlayers} из {d:numPlayers} игроков."
+	"Glyph_tooltip_description_1_player"	"Вы можете начать раунд без ожидания."
+	
+	"lia_tip1"	"Смертельная зона наносит урон герою с 30 минуты. После 45 минуты зона моментально убивает героя. "
+	"lia_tip2"	"Каждую минуту в центре карты появляются нейтральные предметы. На 2 минуте появится Divine Rapier. "
+	"lia_tip3"	"В игре есть 4 опасные зоны. Вам необходимо убить босса, чтобы пройти в эту зону. Для каждой зоны есть свой босс. "
+	"lia_tip4"	"С убийства босса можно получить нейтральный предмет или уникальный предмет, а также улучшить характеристики героя."
+	"lia_tip5"	"При убийстве врага вы получаете дополнительные характеристики, которые увеличиваются каждую минуту. "
+	"lia_tip6"	"Ваш герой имеет 4 Aegis. Вы теряете один Aegis, если умерли от Героя, Босса или Опасной зоны. Вы проиграете, если потеряете все Aegis."
+	"lia_tip7"	"На карте расположено 5 магазинов. 4 магазина по краям карты и один в центре. "
+	"lia_tip8"	"Вы можете захватить Фортпост, который приносит золото и опыт. "
+	"lia_tip9"	"Вы можете сделать бесплатный телепорт на союзника и на Фортпост. "
+	"lia_tip10"	"Вы можете продать лишние предметы и купить книгу Силы, Ловкости или Интеллекта."
+
+
+	"TradeHeader"	"Передача ресурсов"
+
+	"TradeLegeng_PlayerName"	"Игрок"
+	"TradeLegeng_SharedHero"	"Герой"
+	"TradeLegeng_SharedUnits"	"Юниты"
+	"TradeLegeng_DisableHelp"	"Без помощи"
+	"TradeLegeng_Gold"			"Золото"
+	"TradeLegeng_Lumber"		"Дерево"
+
+	"TradeTooltip"	"Для передачи ресурсов союзнику установите нужное количество золота или дерева, щелкнув на соответствующее значение. <br>Щелчок правой кнопкой мыши уменьшает количестов передаваемых ресурсов. <br>Зажав клавишу Shift, Вы увеличите количество ресурсов, передаваемых при нажатии, в 10 раз."
+	
+	"Upgrade_level0"	"Уровень: 0"
+	"Upgrade_level1"	"Уровень: 1"
+	"Upgrade_level2"	"Уровень: 2"
+	"Upgrade_level3"	"Уровень: 3"
+	"Upgrade_level4"	"Уровень: 4"
+	"Upgrade_level5"	"Уровень: 5"
+	"Upgrade_level6"	"Уровень: 6"
+	"Upgrade_level7"	"Уровень: 7"
+	"Upgrade_level8"	"Уровень: 8"
+	"Upgrade_level9"	"Уровень: 9"
+	"Upgrade_level10"	"Уровень: 10"
+	"Upgrade_level11"	"Уровень: 11"
+	"Upgrade_level12"	"Уровень: 12"
+
+	"Upgrade_attack_damage"	"Оружие"
+	"Upgrade_armor"  "Броня"
+	"Upgrade_attack_speed"  "Cтpeмитeльнocть"
+	"Upgrade_mana_regen"  "Paзyм"
+	"Upgrade_health_regen"  "Вoля"
+	"Upgrade_mana"  "Мaгичecкoe oжepeльe"
+	"Upgrade_health"  "Нeпpoбивaeмaя шкypa"
+
+
+	"Upgrade_attack_damage_description"	"Увeличeниe ypoнa, нaнocимoгo вaшим гepoeм на {s:perLevelBonus} ед. за уровень."
+	"Upgrade_attack_speed_description"	"Увeличeниe cкopocти атаки героя на {s:perLevelBonus} ед. за уровень."
+	"Upgrade_armor_description"			"Улучшение брони вашего героя. Он получает {s:perLevelBonus} ед. защиты за уровень."
+	"Upgrade_health_description"		"Увеличение запаса здоровья вашего героя на  {s:perLevelBonus} ед. за уровень."
+	"Upgrade_health_regen_description"	"Увеличение скорости восстановления здоровья на {s:perLevelBonus} ед. за уровень."
+	"Upgrade_mana_description"			"Увеличение запаса маны на {s:perLevelBonus} ед. за уровень."
+	"Upgrade_mana_regen_description"	"Увеличение скорости восстановления маны на {s:perLevelBonus} за уровень."
+
+	"Upgrade_attack_damage_bonus" "<b>УРОН</b>: {s:Bonus} ед."
+	"Upgrade_attack_speed_bonus" "<b>СКОРОСТЬ АТАКИ</b>: {s:Bonus} ед."
+	"Upgrade_armor_bonus" "<b>ЗАЩИТА</b>: {s:Bonus} ед."
+	"Upgrade_health_bonus" "<b>ЗДОРОВЬЕ</b>: {s:Bonus} ед."
+	"Upgrade_health_regen_bonus" "<b>РЕГЕНЕРАЦИЯ ЗДОРОВЬЯ</b>: {s:Bonus} ед."
+	"Upgrade_mana_bonus" "<b>МАНА</b>: {s:Bonus} ед."
+	"Upgrade_mana_regen_bonus" "<b>РЕГЕНЕРАЦИЯ МАНЫ</b>: {s:Bonus} "
+
+	"DOTA_Hud_AttributeTooltip_Damage"		"- Каждое очко увеличивает урон на 1,5"
+	"DOTA_Hud_StrTooltip_HP"				"- Каждое очко увеличиваетздоровье на 8"
+	"DOTA_Hud_StrTooltip_HPRegen"			"- Каждое очко увеличивает восстановление здоровья на 0,05"
+	"DOTA_Hud_AgiTooltip_Armor"				"- Каждые 6 очков увеличивают броню на 1"
+	"DOTA_Hud_AgiTooltip_AttackSpeed"		"- Каждое очко увеличивает скорость атаки на 1"
+	"DOTA_Hud_IntTooltip_Mana"				"- Каждое очко увеличивает ману на 12"
+	"DOTA_Hud_IntTooltip_ManaRegen"			"- Каждое очко увеличивает восстановление маны на 0,05"
+
+
+	"timer_wave"	"ДО СЛЕДУЮЩЕЙ ВОЛНЫ"
+	"timer_preduel"	"ДО НАЧАЛА ДУЭЛЕЙ"
+	"timer_duel"	"ДО КОНЦА ДУЭЛИ"
+
+	"dota_hud_error_tutorial_shop_not_in_range" "Лавку нельзя использовать во время дуэли"
+	"lia_hud_error_cant_have_two_items_retdmg" "Нельзя носить более одного артефакта, возвращающего урон"
+	"lia_hud_error_cant_force_round"	"Вы не можете начать новый раунд прямо сейчас"
+	"lia_hud_error_item_lia_staff_of_illusions_megaboss"	"Нельзя использовать способность на мегабоссах"
+	"error_cant_target_allied_creeps" "Нельзя применять союзных юнитов, не являющихся героями"
+	"lia_hud_error_heal_potion_full_hp"	"Герой абсолютно здоров"
+	"lia_hud_error_mana_potion_full_mana"	"Запас маны полон"
+	"lia_hud_error_cant_have_two_divine_armor" "Нельзя носить более одного экземпляра Доспехов Бога"
+	"error_must_target_mana_unit" "Нельзя применять на воинах без маны"
+	"lia_hud_error_target_at_full_health"	"Цель абсолютно здорова"
+
+	"Monsters"	"Монстры"
+	"Boss"		"Босса"
+	
+	"DOTA_HeroRole_Carry"		""
+	"DOTA_HeroRole_Support"		""
+	"DOTA_HeroRole_Nuker"		"Быстр. урон"
+	"DOTA_HeroRole_Disabler"	"Контроль"
+	"DOTA_HeroRole_Durable"		"Стойкость"
+	"DOTA_HeroRole_Jungler"		"Призыватель"
+	"DOTA_HeroRole_Escape"		"Поддержка"
+	"DOTA_HeroRole_Pusher"		"DPS"
+	"DOTA_HeroRole_Initiator"	""
+
+	
+   
+}
+

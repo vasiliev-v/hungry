@@ -1,0 +1,114 @@
+"DOTAAbilities"{
+	"abaddon_death_coil"{
+		"AbilityCastPoint"	"0.15"
+		"AbilityCastRange"	"1500"
+		"AbilityCooldown"	"5.0 4.5 4.0 3.5 3.0 2.5 2.0"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"effect_radius"{
+				"value"	"0"
+				"special_bonus_unique_abaddon_4"	"+600"
+			}
+			"heal_amount"{
+				"value"	"120 180 270 390 560 780 1100"
+				"special_bonus_unique_abaddon_2"	"+900"
+			}
+			"missile_speed"	"1500"
+			"self_damage"	"50"
+			"target_damage"{
+				"value"	"120 180 270 390 560 780 1100"
+				"special_bonus_unique_abaddon_2"	"+900"
+			}
+		}
+	}
+
+	
+	"abaddon_aphotic_shield"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"500"
+		"AbilityCooldown"	"10 9 8 7 6 5 4"
+		"AbilityManaCost"	"85 111 136 162 187 213 238"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_absorb"{
+				"value"	"160 245 375 560 830 1215 1750"
+				"DamageTypeTooltip"	"DAMAGE_TYPE_NONE"
+				"special_bonus_unique_abaddon"	"+1750"
+			}
+			"duration"	"15"
+			"radius"	"675"
+		}
+	}
+
+
+	"abaddon_frostmourne"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"curse_attack_speed"	"75 113 163 228 308 404 510"
+			"curse_duration"	"4.5"
+			"curse_slow"	"25 30 35 40 45 50 55"
+			"hit_count"{
+				"value"	"4"
+				"special_bonus_unique_abaddon_3"	"-1"
+			}
+			"movement_speed"	{
+				"value"		"15 19 23 27 31 35 39"
+				"special_bonus_shard" 		"+21"
+			}
+			"slow_duration"	"5"
+		}
+	}
+
+
+	"abaddon_borrowed_time_2"		{
+		"BaseClass"		"abaddon_borrowed_time"
+		"AbilityTextureName"		"abaddon_borrowed_time"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastGestureSlot"		"ABSOLUTE"
+
+		"MaxLevel"					"4"
+		"LevelsBetweenUpgrades"		"6"
+		"RequiredLevel"				"6"
+		"HasScepterUpgrade"			"1"
+
+		"AbilityValues" {
+			"AbilityCooldown"	{
+				"value"								"60 55 50 45"
+				"special_bonus_unique_abaddon_5"	"-10"
+			}
+			"duration"	{
+				"value"		"4.5 5.0 5.5 6.0"
+				"special_bonus_scepter"		"+1"
+			}
+			"duration_scepter"{
+				"value"		"4.5 5.0 5.5 6.0"
+				"special_bonus_scepter"		"+1"
+			}
+			"immolate_damage"
+			{
+				"value"								"0"
+				"special_bonus_unique_abaddon_immolation"	"+500"
+			}
+			"immolate_aoe"
+			{
+				"value"								"0"
+				"special_bonus_unique_abaddon_immolation"	"+450"
+			}
+			"immolate_tick"							".25"
+			"hp_threshold"	"0"
+			"redirect_range_scepter"	"1600"
+			"ally_duration"	"2.5"
+			"ally_threshold_scepter"{
+				"value"	"999999999"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+}

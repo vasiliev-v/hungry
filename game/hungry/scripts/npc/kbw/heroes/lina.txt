@@ -1,0 +1,151 @@
+"DOTAAbilities"{
+	"lina_dragon_slave"{
+		"AbilityCastPoint"	"0.25"
+		"AbilityCastRange"	"1075"
+		"AbilityDuration"	"0.69"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"dragon_slave_damage"				"210 325 480 675 910 1185 1500"
+			"dragon_slave_distance"				"1075"
+			"dragon_slave_speed"				"1200"
+			"dragon_slave_width_end"			"200"
+			"dragon_slave_width_initial"		"275"
+			"AbilityCooldown"{
+				"value"							"8 7 6 5 4 3 2"
+				"special_bonus_unique_lina_1"	"-0"
+			}
+		}
+	}
+
+	
+	"lina_light_strike_array"{
+		"AbilityCastPoint"	"0.45"
+		"AbilityCastRange"	"625"
+		"AbilityCooldown"	"8"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"light_strike_array_aoe"			{
+				"value"	"225"
+				"special_bonus_unique_lina_light_strike_array_radius"	"+125"
+			}
+			"light_strike_array_delay_time"		"0.5"
+			"light_strike_array_stun_duration"	"1.7 1.85 2.0 2.15 2.3 2.45 2.6"
+			"light_strike_array_damage"		{
+				"value"	"120 225 400 645 960 1345 1800"
+				"LinkedSpecialBonus"	"special_bonus_unique_lina_3"
+			}
+		}
+	}
+	// Talent: Strike Damage
+	"special_bonus_unique_lina_3"		{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"1500"
+				"ad_linked_abilities"	"lina_light_strike_array"
+			}
+		}
+		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+	"special_bonus_unique_lina_light_strike_array_radius" {
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+
+	"lina_fiery_soul"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"HasShardUpgrade"	"0"
+		"AbilityValues"{
+			"bonus_spell_damage"{
+				"value"	"0"
+				"special_bonus_shard"	"+0"
+			}
+			"fiery_soul_attack_speed_bonus"{
+				"value"	"20 30 40 50 60 70 80"
+				"special_bonus_unique_lina_2"	"+31"
+			}
+			"fiery_soul_max_stacks"	"7"
+			"fiery_soul_move_speed_bonus"{
+				"value"	"4.0 4.5 5.0 5.5 6.0 6.5 7.0"
+				"special_bonus_unique_lina_2"	"+3"
+			}
+			"fiery_soul_stack_duration"	"20"
+		}
+	}
+
+
+	"lina_laguna_blade_kbw"{
+		"BaseClass"                     "ability_lua"
+		"ScriptFile"                    "kbw/abilities/heroes/lina/laguna_blade"
+		"AbilityTextureName"            "lina_laguna_blade"
+
+		"MaxLevel"                      "4"
+		"RequiredLevel"                 "6"
+		"LevelsBetweenUpgrades"         "6"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"FightRecapLevel"				"2"
+		
+		"AbilityCastPoint"		"0.45"
+		"AbilityCastRange"		"1000"
+		"AbilityManaCost"		"150 263 375 488"
+
+		"AbilityValues"{
+			"damage"	"600 1000 1800 3000"
+			"damage_delay"	"0.25"
+			"shard_width"	"125"
+			"shard_range"	"700"
+			"AbilityCooldown"	{
+				"value"	"50 40 30 20"
+				"special_bonus_unique_lina_laguna_blade_kbw_cooldown"	"-10"
+			}	
+		}
+
+		"HasShardUpgrade"               "1"
+		"ShardModifiers"{
+			"AbilityCastRange"{
+				"1"{
+					"Operation" "OPERATION_ADD"
+					"Value"		"shard_range"
+				}
+			}
+		}
+	}
+	"special_bonus_unique_lina_laguna_blade_kbw_cooldown" {
+		"BaseClass"				"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+
+	"lina_flame_cloak"{
+		"AbilityCooldown"				"25"
+		"AbilityCastPoint"				"0.0"
+		"AbilityManaCost"				"50"
+		"AbilityValues"{
+			"flame_cloak_duration"				"7"
+			"magic_resistance"					"35"
+			"spell_amp"							"30"
+			"visualzdelta"							"100"
+			"zchangespeed"							"350"
+			// custom
+			"proc_attacks"		"6"
+		}
+	}
+}

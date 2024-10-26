@@ -1,0 +1,38 @@
+"AddonInfo"
+{
+	"maps"  "1x10 2x20 3x21"
+	"IsPlayable" "1"
+	
+	"1x10"
+ 	{
+  		"MaxPlayers" "10"
+ 	}
+
+	"2x20"
+ 	{
+  		"MaxPlayers" "20"
+ 	}
+
+	"3x21"
+ 	{
+  		"MaxPlayers" "21"
+ 	}
+
+	"Default_Keys"
+	{
+		"01"
+		{
+			"Key"       "L"
+			"Command"   "+WheelButton"
+			"Name"      "CustomCommand"
+		}
+		"02"
+		{
+			"Key"       "K"
+			"Command"   "+WheelTest"
+			"Name"      "CustomCommandTest"
+		}
+	}
+	"EnablePickRules" "1"
+ 	
+}

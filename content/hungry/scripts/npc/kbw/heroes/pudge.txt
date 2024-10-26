@@ -1,0 +1,291 @@
+"DOTAAbilities"{
+	"pudge_meat_hook_kbw"		{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"kbw/abilities/heroes/pudge/meat_hook"
+		"AbilityTextureName"	"pudge_meat_hook"
+
+        "MaxLevel"	"7"
+        "LevelsBetweenUpgrades"	"3"
+
+        "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+        "AbilityUnitDamageType"		"DAMAGE_TYPE_PURE"
+        "SpellImmunityType"			"SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+
+        "AbilityCastPoint"	"0.3"
+        "AbilityCooldown"	"12"
+        "AbilityManaCost"	"110 143 176 209 242 275 308"
+
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "damage"	"180 260 365 505 690 935 1240"
+            }
+            "02"		{
+                "var_type"	"FIELD_INTEGER"
+                "range"		"1300"
+            }
+            "03"		{
+                "var_type"	"FIELD_INTEGER"
+                "speed"	"1650"
+            }
+            "04"		{
+                "var_type"	"FIELD_INTEGER"
+                "width"		"100"
+            }
+            "05"		{
+                "var_type"			"FIELD_INTEGER"
+                "vision_radius"		"500"
+            }
+            "05"	{
+                "var_type"		"FIELD_FLOAT"
+                "backswing"		"0.6"
+            }
+            "06"	{
+                "var_type"			"FIELD_INTEGER"
+                "grab_range"		"2000"
+            }
+        }
+    }
+
+	"special_bonus_unique_pudge_meat_hook_range"{
+		"BaseClass"			"special_bonus_undefined"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_INTEGER"
+                "value"     "500"
+            }
+		}
+
+		"ModifyValues"{
+			"pudge_meat_hook_kbw"{
+				"range"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+					}
+				}
+				"grab_range"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+
+	"special_bonus_unique_pudge_meat_hook_cooldown"{
+		"BaseClass"			"special_bonus_undefined"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_FLOAT"
+                "value"     "-4"
+            }
+		}
+
+		"ModifyValues"{
+			"pudge_meat_hook_kbw"{
+				"AbilityCooldown"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+	
+	// "pudge_rot_kbw"
+	// {		
+	// 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	// 	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	// 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	// 	"FightRecapLevel"				"1"
+	// 	"BaseClass"						"ability_lua"
+	// 	"AbilityTextureName"					"pudge_rot"
+	// 	"ScriptFile"						"kbw/abilities/heroes/pudge/pudge_rot.lua"
+
+    //     "MaxLevel"	"7"
+    //     "LevelsBetweenUpgrades"	"3"
+		
+	// 	"HasScepterUpgrade"				"1"
+			
+	// 	"AbilityCastPoint"				"0 0 0 0"
+
+	// 	"AbilitySpecial"
+	// 	{
+    //         "01"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "rot_radius"	"250"
+    //         }
+    //         "02"		{
+    //             "var_type"	"FIELD_FLOAT"
+    //             "rot_tick"	"0.2"
+    //         }
+    //         "03"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "rot_slow"	"-14 -20 -26 -32 -38 -44 -50"
+    //         }
+    //         "04"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "rot_damage"	"45 69 107 164 253 390 600"
+    //         }
+    //         "05"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "rot_damage"	"45 69 107 164 253 390 600"
+    //         }			
+    //         "06"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "scepter_rot_damage_bonus"	"700"
+    //         }
+    //         "07"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "scepter_rot_radius_bonus"	"400"
+    //         }		
+	// 		"08"		{
+    //             "var_type"	"FIELD_INTEGER"
+    //             "scepter_aura_enemy_regen"	"-25"
+    //         }					
+	// 	}
+	// }	
+	
+	// "special_bonus_unique_pudge_root_move_speed"{
+	// 	"BaseClass"			"special_bonus_undefined"
+    //     "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    //     "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	// 	"AbilitySpecial"{
+    //         "01"{
+    //             "var_type"	"FIELD_FLOAT"
+    //             "value"     "-20"
+    //         }
+	// 	}
+
+	// 	"ModifyValues"{
+	// 		"pudge_rot_kbw"{
+	// 			"rot_slow"{
+	// 				"1"{
+	// 					"Operation"     "OPERATION_ADD"
+	// 					"Value"         "value"
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	
+	"pudge_rot"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"rot_radius"	"250"
+			}
+			"02"{
+				"var_type"	"FIELD_FLOAT"
+				"rot_tick"	"0.2"
+			}
+			"03"{
+				"var_type"	"FIELD_INTEGER"
+				"rot_slow"	"-14 -20 -26 -32 -38 -44 -50"
+				"LinkedSpecialBonus"	"special_bonus_unique_pudge_4"
+			}
+			"04"{
+				"var_type"	"FIELD_INTEGER"
+				"rot_damage"	"45 69 107 164 253 390 600"
+				"LinkedSpecialBonus"	"special_bonus_unique_pudge_2"
+			}
+			"05"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_rot_damage_bonus"	"400"
+				"RequiresScepter"	"1"
+			}
+			"06"{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_rot_radius_bonus"	"250"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+	"pudge_flesh_heap"{
+		"AbilityCooldown"	"20 18.5 17 15.5 14 12.5 11"
+		"AbilityManaCost"	"35 46 56 67 77 88 98"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage_block"	{
+				"value"			"13 20 32 49 71 98 130"
+				"special_bonus_unique_pudge_1"	"x1.5"
+			}
+			"duration"	"7"
+			"flesh_heap_range"	"450"
+			"flesh_heap_strength_buff_amount"{
+				"value"	"1.6 2.0 2.4 2.8 3.2 3.6 4.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_pudge_1"
+			}
+		}
+	}
+	"pudge_dismember"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"160"
+		"AbilityChannelTime"	"3"
+		"AbilityCooldown"	"29 26 23 20"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"animation_rate"	"1.5"
+			"creep_dismember_duration_tooltip"{
+				"value"	"6"
+				"special_bonus_unique_pudge_6"	"+1"
+			}
+			"dismember_damage"{
+				"value"	"120 205 350 600"
+				"special_bonus_unique_pudge_3"	"x1.8"
+			}
+			"order_lock_duration"{
+				"value"	"3"
+				"RequiresShard"	"1"
+			}
+			"pull_distance_limit"	"125"
+			"pull_units_per_second"	"75"
+			"shard_cast_range"{
+				"value"	"300"
+				"RequiresShard"	"1"
+			}
+			"shard_cooldown_reduction"{
+				"value"	"5"
+				"RequiresShard"	"1"
+			}
+			"shard_regen_pct"{
+				"value"	"5"
+				"RequiresShard"	"1"
+			}
+			"strength_damage"{
+				"value"	"1"
+				"CalculateSpellDamageTooltip"	"0"
+				"special_bonus_unique_pudge_3"	"x1.8"
+			}
+			"ticks"{
+				"value"	"6"
+				"special_bonus_unique_pudge_6"	"+2"
+			}
+			"AbilityChannelTime"{
+				"value"	"3.0 3.0 3.0"
+				"special_bonus_unique_pudge_6"	"+1"
+			}
+		}
+	}
+}

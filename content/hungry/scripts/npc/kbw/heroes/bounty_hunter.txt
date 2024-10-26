@@ -1,0 +1,198 @@
+"DOTAAbilities"{
+      "bounty_hunter_shuriken_toss"
+	{
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"50 65 80 95 110 125 140"
+		"AbilityModifierSupportValue"	"0.1"	// just a mini stun
+		"HasScepterUpgrade"				"1"
+		"AbilityValues"
+		{
+			"bonus_damage"			
+			{
+				"value"					"150 215 300 425 600 850 1200"
+				"special_bonus_unique_bounty_hunter_2"	"+1100"
+			}
+			"speed"					"1000 1000 1000 1000"
+			"bounce_aoe"			"1200"
+			"slow_duration"			
+			{
+				"value"				"0.5"
+				"special_bonus_unique_bounty_hunter_5"		"+0.65"
+			}
+			"scepter_cast_range"
+			{
+
+				"value"				"1200"
+				"RequiresScepter"	"1"
+			}
+			"scepter_cooldown"
+			{
+				"value"				"4"
+				"RequiresScepter"	"1"
+			}
+			"cast_range"			"800"
+			"slow"					"100"		
+			"attack_slow"			"100"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	// Talent: Toss Charges
+	"special_bonus_unique_bounty_hunter_7"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_INTEGER"
+				"value"				"2"
+				"ad_linked_abilities"			"bounty_hunter_shuriken_toss"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+
+
+	"bounty_hunter_jinada"      {
+		"AbilityCooldown"   "7 6 5 4 3 2 1"
+		"AbilityValues"
+		{
+			"bonus_damage"
+			{
+				"value"			"200 270 365 490 660 890 1200"
+				"special_bonus_unique_bounty_hunter_4"	"+1000"
+			}
+			"gold_steal"
+			{
+				"value"			"18 26 39 57 84 123 180"
+				"special_bonus_unique_bounty_hunter"		"+50"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+	// Talent: Jinada Cooldown
+	"special_bonus_unique_bounty_hunter_jinada_cooldown"{
+		"BaseClass"		    "special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"value"     "-0.7"
+			}
+		}
+
+		"ModifyValues"{
+			"bounty_hunter_jinada"{
+				"AbilityCooldown"{
+					"1"{
+						"Operation"     "OPERATION_ADD"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+
+
+	"bounty_hunter_wind_walk"       {
+		"AbilityCastPoint"  "0"
+		"AbilityManaCost"   "65 85 104 124 143 163 182"
+		"AbilityValues"     {
+			"duration"                  "20.0 25.0 30.0 35.0 40.0 45.0 50.0"
+			"fade_time"                 "1 0.85 0.7 0.55 0.4 0.25 0.1"
+			"stun_duration"				
+			{
+				"value"		"1.0 1.2 1.4 1.6 1.9 2.2 2.5"
+			}
+			"AbilityCharges"	{
+				"value"			"0"
+				"special_bonus_shard"	"+4"
+			}
+			"AbilityCooldown"	{
+				"value"		"15 14 13 12 11 10 9"
+				"special_bonus_shard" "-14.7 -13.7 -12.7 -11.7 -10.7 -9.7 -8.7"
+			}
+			"AbilityChargeRestoreTime" {
+				"value"	"15 14 13 12 11 10 9"
+				"RequiresShard"		"1"
+			}
+			"ally_fade_time"	{
+				"value"			"1 0.85 0.7 0.55 0.4 0.25 0.1"
+				"RequiresShard"		"1"
+			}			
+                        "damage_reduction_pct"
+			{
+				"value"						"0"
+				"special_bonus_unique_bounty_hunter_9"		"+31.4"
+			}
+		}
+		"LevelsBetweenUpgrades" "3"
+		"MaxLevel"  "7"
+	}
+
+
+	"bounty_hunter_track"       {
+		"AbilityCastPoint"  "0.3"
+		"AbilityCastRange"  "1000"
+		"AbilityCooldown"   "4"
+		"AbilityManaCost"   "60 105 150 195"
+		"AbilitySpecial"        {
+			"01"        {
+				"var_type"  "FIELD_INTEGER"
+				"target_crit_multiplier"    "140 170 200 230"
+			}
+			"02"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_gold_radius" "1200"
+			}
+			"03"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_gold_self"   "260 476 873 1600"
+				"LinkedSpecialBonus"    "special_bonus_unique_bounty_hunter_3"
+			}
+			"04"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_gold"    "80 157 307 600"
+				"LinkedSpecialBonus"    "special_bonus_unique_bounty_hunter_3"
+			}
+			"05"        {
+				"var_type"  "FIELD_FLOAT"
+				"duration"  "30"
+			}
+			"06"        {
+				"var_type"  "FIELD_FLOAT"
+				"gold_steal"    "0.6 0.965 1.554 2.5"
+			}
+			"07"        {
+				"var_type"  "FIELD_INTEGER"
+				"bonus_move_speed_pct"  "16 24 32 40"
+			}
+			"08"            {
+				"var_type"              "FIELD_INTEGER"
+				"toss_crit_multiplier"  "140 170 200 230"
+			}
+		}
+		"LevelsBetweenUpgrades" "6"
+		"MaxLevel"  "4"
+	}
+	// Talent: Track Gold
+	"special_bonus_unique_bounty_hunter_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"500"
+				"ad_linked_abilities"	"bounty_hunter_track"
+			}
+		}
+	}
+	// Talent: Track Ground Vision
+	"special_bonus_unique_bounty_hunter_8"{
+		"AbilitySpecial"		{
+			"01"			{
+				"var_type"					"FIELD_FLOAT"
+				"value"				"600"
+				"ad_linked_abilities"			"bounty_hunter_track"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+}

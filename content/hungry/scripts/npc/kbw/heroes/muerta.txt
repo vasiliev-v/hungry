@@ -1,0 +1,139 @@
+"DOTAAbilities"{
+	// Q: Dead Shot
+	"muerta_dead_shot"{
+		"MaxLevel"		"7"
+		"LevelsBetweenUpgrades"		"3"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"12 11 10 9 8 7 6"
+		"AbilityManaCost"				"100 120 150 190 240 300 370"
+
+		"AbilityValues"{
+			"AbilityCastRange"		{
+				"value"						"1000"
+				"special_bonus_unique_muerta_dead_shot_range"	"+400"
+			}
+			"damage"{
+				"value"						"135 225 370 570 825 1135 1500"
+				"special_bonus_unique_muerta_dead_shot_damage"	"+1500"
+			}
+			"speed"							"2000"
+			"radius"						"100"
+			"ricochet_radius_start"			"115"
+			"ricochet_radius_end"			"115"
+			"ricochet_distance_multiplier"	"1.5"
+			"ricochet_fear_duration"		"1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.0"
+			"impact_slow_percent"			"-100"
+			"impact_slow_duration"			{
+				"value"	"0.5"
+				"special_bonus_unique_muerta_dead_shot_slow"	"+0"
+			}
+		}
+	}
+	// Talent: Dead Shot Charges
+	"special_bonus_unique_muerta_dead_shot_charges"	{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"2"
+				"ad_linked_abilities"			"muerta_dead_shot"				// this is the ability this bonus affects.  This line is required for Ability Draft to correctly choose talents.
+			}
+		}
+	}
+	"special_bonus_unique_muerta_dead_shot_slow"{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	// W: The Calling
+	"muerta_the_calling"{
+		"MaxLevel"		"7"
+		"LevelsBetweenUpgrades"		"3"
+		"HasScepterUpgrade"		"1"
+
+		"AbilityCastRange"				"580"
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"150 175 210 255 310 375 450"
+		"AbilityCastPoint"				"0.1"
+		
+		"AbilityValues"		{
+			"damage"						"75 125 210 330 485 675 900"
+			"duration"						"10"
+			"hit_radius"					"120"
+			"dead_zone_distance"			"340"
+			"num_revenants"			{
+				"value"						"4"
+				"special_bonus_unique_muerta_the_calling_num_revenants"	"+4"
+			}
+			"speed_initial"					"0.3"
+			"speed_max"						"1.5"
+			"acceleration"					"1.0"
+			"rotation_initial"		"0"
+			"debug_draw"					"0"
+			"aura_movespeed_slow"			"-30"
+			"aura_attackspeed_slow"			"-50 -100 -150 -200 -250 -300 -350"
+			"silence_duration"				"2 2.5 3 3.5 4.0 4.5 5.0"
+			"rotation_direction"			"-1"
+			"show_warning"					"1"
+		}
+	}
+	
+	// E: Gunslinger
+	"muerta_gunslinger"	{
+		"MaxLevel"		"7"
+		"LevelsBetweenUpgrades"		"3"
+
+		"AbilityValues"{
+			"double_shot_chance"{
+				"value"					"20 30 40 50 60 70 80"
+				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+20"
+			}
+			"target_search_bonus_range"	"150"
+		}
+	}
+
+	// R: Pierce the Veil
+	"muerta_pierce_the_veil_kbw"	{
+		"BaseClass"			"ability_lua"
+		"ScriptFile"		"kbw/abilities/heroes/muerta/pierce_the_veil"
+
+		"AbilityTextureName"		"muerta_pierce_the_veil"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+
+		"MaxLevel"		"4"
+		"LevelsBetweenUpgrades"		"6"
+		"HasShardUpgrade"		"1"
+
+		"AbilityCooldown"				"45 40 35 30"
+		"AbilityManaCost"				"300"
+		"AbilityCastPoint"				"0"
+
+		"AbilityValues"{
+			"duration"					"8"
+			"model_scale"				"15"
+			"bonus_damage"				{
+				"value"	"100 200 400 700"
+				"special_bonus_unique_muerta_pierce_the_veil_kbw_damage"	"+100%"
+			}
+			"armor_value"		"30"
+			"bonus_speed" {
+				"value"		"36"
+				"RequiresShard"		"1"
+			}
+			"lifesteal"{
+				"value"				"50"
+				"RequiresShard"		"1"
+			}
+			"scepter_fade_delay"		"0.5"
+		}
+	}
+	"special_bonus_unique_muerta_pierce_the_veil_kbw_damage"{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+}

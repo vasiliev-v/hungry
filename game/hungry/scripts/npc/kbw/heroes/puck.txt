@@ -1,0 +1,188 @@
+"DOTAAbilities"{	
+	"puck_ethereal_jaunt"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+	}
+	"puck_illusory_orb"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"2000"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"max_distance"	"2000"
+			"orb_speed"	"650"
+			"orb_vision"	"450"
+			"radius"	"225"
+			"vision_duration"	"3.34"
+			"damage"	{		
+				"value"										"135 205 300 430 615 865 1200"
+				"special_bonus_unique_puck_orb_damage"		"+80%"
+			}
+			"AbilityCooldown"	{
+				"value"							"12 11 10 9 8 7 6"
+				"special_bonus_unique_puck_8"		"-0"
+			}
+		}
+	}
+	"special_bonus_unique_puck_illusory_orb_distance"{
+		"BaseClass"		    "special_bonus_undefined"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+            "01"{
+                "var_type"	"FIELD_INTEGER"
+                "value"     "100"
+            }
+        }
+
+		"ModifyValues"{
+			"puck_illusory_orb"{
+				"AbilityCastRange"{
+					"1"{
+						"Operation"     "3"
+						"Value"         "value"
+					}
+				}
+				"orb_speed"{
+					"1"{
+						"Operation"     "3"
+						"Value"         "value"
+					}
+				}
+			}
+		}
+	}
+
+
+	"puck_waning_rift"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"damage"{
+				"value"	"135 205 300 430 615 865 1200"
+				"special_bonus_unique_puck_6"	"+1300"
+			}
+			"max_distance"	"400"
+			"radius"				
+			{
+				"value"					"400"
+				"special_bonus_unique_puck_rift_radius"		"+550"
+			}
+			"max_distance"			
+			{
+				"value"					"400"
+				"special_bonus_unique_puck_rift_radius"		"+550"
+			}
+			"scepter_pushback"{
+				"value"	"600"
+				"RequiresScepter"	"1"
+			}
+			"scepter_radius"{
+				"value"	"600"
+				"RequiresScepter"	"1"
+			}
+			"silence_duration"{
+				"value"	"2 2.35 2.7 3.05 3.4 3.75 4.1"
+				"LinkedSpecialBonus"	"special_bonus_unique_puck_7"
+			}
+		}
+	}
+	// Talent: Rift CD
+    "special_bonus_unique_puck_2"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"5"
+                "ad_linked_abilities"	"puck_waning_rift"
+            }
+        }
+    }
+
+
+	"puck_phase_shift"{
+		"AbilityCastPoint"	"0"
+		"AbilityChannelTime"	"0.9 1.3 1.7 2.1 2.5 2.9 3.3"
+		"AbilityCooldown"	"8 7.5 7 6.5 6 5.5 5"
+		"AbilityManaCost"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration"	"0.9 1.3 1.7 2.1 2.5 2.9 3.3"
+			"shard_attack_range_bonus"{
+				"value"	"500"
+				"RequiresShard"	"1"
+			}
+			"shard_bonus_damage"
+			{
+				"RequiresShard"				"1"
+				"value"						"20 60 100 140 180 220 260"
+			}
+			// custom 
+			"attack_interval"{
+				"value"		"0"
+				"special_bonus_shard"		"+0.5"
+			}
+			"min_cd"	"1.5"
+		}
+	}
+
+
+	"puck_dream_coil"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"750"
+		"AbilityCooldown"	"40"
+		"AbilityManaCost"	"100 175 250 325"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"coil_break_damage"{
+				"value"	"400 760 1444 2750"
+				"special_bonus_unique_puck_coil_damage"			"+750"
+			}
+			"coil_initial_damage"{
+				"value"	"250 475 900 1715"
+				"special_bonus_unique_puck_coil_damage"			"+750"
+			}	
+			"coil_break_radius"	"600"
+			"coil_duration"	"6"
+			"coil_radius"	"375"
+			"coil_stun_duration"{
+				"value"	"1.8 2.4 3 3.6"
+				"special_bonus_unique_puck_4"	"+1"
+			}
+			"stun_duration"	"0.5"
+			"coil_rapid_fire_rate"
+			{
+				"value"							"0"
+				"special_bonus_scepter"			"+0.2"
+			}
+			"coil_rapid_fire_z_offset"
+			{
+				"value"							"0"
+				"special_bonus_scepter"			"+150"
+			}
+		}
+	}
+	// Talent: Coil Attacks
+	"special_bonus_unique_puck_3"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_FLOAT"
+				"value"	"0.20"
+				"ad_linked_abilities"	"puck_dream_coil"
+			}
+		}
+	}
+	// Talent: Coil Cooldown
+	"special_bonus_unique_puck"{
+		"AbilityValues"		{
+			"value"				"20"
+		}
+	}
+}

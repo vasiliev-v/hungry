@@ -1,0 +1,225 @@
+"DOTAAbilities"{
+	"jakiro_dual_breath"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"HasScepterUpgrade"	"1"
+		
+		"AbilityCastPoint"	"0.55"
+		"AbilityCooldown"	"10 9 8 7 6 5 4"
+		"AbilityDuration"	"5"
+		"AbilityManaCost"	"140 182 224 266 308 350 392"
+		
+		"AbilityValues"{
+			"burn_damage"{
+				"value"	"40 61 93 141 215 328 500"
+				"special_bonus_unique_jakiro_2"	"+100%"
+			}
+			"start_radius"	"225"
+			"end_radius"	"275"
+			"fire_delay"	"0.3"
+			"slow_attack_speed_pct"{
+				"value"	"-50 -85 -130 -185 -250 -325 -410"
+				"special_bonus_unique_jakiro_dualbreath_slow"	"-10"
+			}
+			"slow_movement_speed_pct"{
+				"value"	"-30 -36 -42 -48 -54 -60 -66"
+				"special_bonus_unique_jakiro_dualbreath_slow"	"-10"
+			}
+			"speed"	"1050"
+			"speed_fire"	"1050"
+			"AbilityCastRange"{
+				"value"	"750 750 750 750"
+				"special_bonus_unique_jakiro_2"	"+100%"
+			}
+			//custom
+			"scepter_angle"		"45"	// special_fixes.lua
+		}
+	}
+	"special_bonus_unique_jakiro_dual_breath_range_damage"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_FLOAT"
+				"value"     "2"
+			}
+		}
+
+		"ModifyValues"{
+			"jakiro_dual_breath"{
+				"AbilityCastRange"{
+					"1"{
+						"Operation"     "OPERATION_MULT"
+						"Value"         "value"
+					}
+				}
+				"burn_damage"{
+					"1"{
+						"Operation"     "OPERATION_MULT"
+						"Value"         "value"
+					}
+				}
+				"end_radius"{
+					"1"{
+						"Operation"     "OPERATION_SET"
+						"Value"         "500"
+					}
+				}
+			}
+		}
+	}
+
+
+	"jakiro_ice_path"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"HasScepterUpgrade"	"1"
+		
+		"AbilityCastPoint"	"0.65"
+		"AbilityCastRange"	"1400"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		
+		"AbilityValues"{
+			"damage"	"140 204 298 435 634 925 1350"
+			"path_delay"	"0.5"
+			"path_duration"{
+				"value"	"3.7"
+				"special_bonus_unique_jakiro"	"+0.8"
+			}
+			"path_radius"	"150"
+			"stun_duration"{
+				"value"	"1.5 1.7 1.9 2.1 2.3 2.5 2.7"
+				"special_bonus_unique_jakiro"	"+0.8"
+			}
+			"AbilityCooldown"{
+				"value"	"15 14 13 12 11 10 9"
+				"special_bonus_unique_jakiro_6"	"-2.5"
+			}
+			//custom
+			"scepter_angle"		"45"	// special_fixes.lua
+		}
+	}
+
+
+	"jakiro_liquid_fire"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"10 8.5 7 5.5 4 2.5 1"
+		"AbilityDuration"	"5"
+		"AbilityModifierSupportBonus"	"35"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"LinkedAbility"					"jakiro_liquid_ice"
+		"AbilityValues"{
+			"slow_attack_speed_pct"	{
+				"value"	"-50 -80 -115 -154 -198 -247 -300"
+				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_4"
+			}
+			"radius"	"300"
+			"damage"	{
+				"value"	"35 55 85 135 200 305 450"
+				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_8"
+			}
+		}
+	}
+	// Talent: Liquid Fire Attack Slow
+	"special_bonus_unique_jakiro_4"		{
+		"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"-400"
+				"ad_linked_abilities"	"jakiro_liquid_fire"
+			}
+		}
+	}
+	// Talent: Liquid Fire Damage
+	"special_bonus_unique_jakiro_liquid_fire_damage"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"	"FIELD_INTEGER"
+				"value"		"50"
+			}
+		}
+		"ModifyValues"{
+			"jakiro_liquid_fire"{
+				"damage"{
+					"1"{
+						"Operation"		"OPERATION_PCT"
+						"Value"			"value"
+					}
+				}
+			}
+		}
+	}
+
+
+	"jakiro_liquid_ice"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"600"
+		"AbilityCooldown"	"8"
+		"AbilityModifierSupportBonus"	"35"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"LinkedAbility"					"jakiro_liquid_fire"
+		"AbilityValues"{
+			"movement_slow"	"25 30 35 40 45 50 55"
+			"base_damage"	"35 55 85 135 200 305 450"
+			"pct_health_damage"	"4"
+			"duration"	"4"
+			"radius"	"300"
+			"stun_duration"	"0.8"
+			"tick_rate"				"1"
+		}
+	}
+
+
+	"jakiro_macropyre_kbw"{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"kbw/abilities/heroes/jakiro/macropyre"
+		
+		"AbilityTextureName"	"jakiro_macropyre"
+		
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		
+		"MaxLevel"			"4"
+		"RequiredLevel"			"6"
+		"LevelsBetweenUpgrades"	"6"
+		"HasScepterUpgrade"	"1"
+
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"1400"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"220 385 550 715"
+		
+		"AbilityValues"{
+			"damage"	"190 350 620 1000"
+			"radius"	"260"
+			"duration"	{
+				"value"	"10"
+				"special_bonus_unique_jakiro_macropyre_duration"	"+10"
+			}
+			"interval"	"0.5"
+			"linger_duration"	"2"
+			"scepter_angle"		"45"	// special_fixes.lua
+		}
+	}
+	"special_bonus_unique_jakiro_macropyre_duration"{
+		"BaseClass"			"special_bonus_base"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+}

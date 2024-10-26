@@ -1,0 +1,113 @@
+"DOTAAbilities"{
+
+	"vengefulspirit_magic_missile"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"15 14 13 12 11 10 9"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"magic_missile_damage"{
+				"value"	"135 208 320 493 759 1169 1800"
+				"special_bonus_unique_vengeful_spirit_1"	"+1200"
+			}
+			"magic_missile_speed"	"1250"
+			"magic_missile_stun"	"1.4 1.5 1.6 1.7 1.8 1.9 2"
+			"AbilityCastRange"{
+				"value"	"650"
+				"special_bonus_unique_vengeful_spirit_missile_castrange"	"+125"
+			}
+		}
+	}
+	"vengefulspirit_wave_of_terror"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"1400"
+		"AbilityCooldown"	"15.0 13.5 12.0 10.5 9.0 7.5 6.0"
+		"AbilityDamage"	"90 139 213 329 506 779 1200"
+		"AbilityDuration"	"8"
+		"AbilityManaCost"	"25 33 40 48 55 63 70"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"wave_speed"	"2000"
+			"wave_width"	"300"
+			"armor_reduction"	{
+				"value"					"-4 -5 -7 -10 -14 -19 -25"
+				"LinkedSpecialBonus"	"special_bonus_unique_vengeful_spirit_4"
+			}
+			"vision_aoe"	"350"
+			"vision_duration"	"4"
+		}
+	}
+	//Talent: Wave Armor Reduction
+	"special_bonus_unique_vengeful_spirit_4"		{
+	"AbilitySpecial"		{
+			"01"		{
+				"var_type"	"FIELD_INTEGER"
+				"value"	"-10"
+				"ad_linked_abilities"	"vengefulspirit_wave_of_terror"
+			}
+		}
+	}
+
+
+	"vengefulspirit_command_aura"{
+		"AbilityCastRange"	"1200"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_base_damage"	{
+				"value"		"28 35 42 49 56 63 70"
+				"LinkedSpecialBonus"	"special_bonus_unique_vengeful_spirit_2"
+			}
+			"aura_radius"	"1200"
+			"scepter_illusion_damage_out_pct"{
+				"value"	"100"
+				"RequiresScepter"	"1"
+			}
+			"scepter_illusion_damage_in_pct"{
+				"value"	"100"
+				"RequiresScepter"	"1"
+			}
+			"scepter_illusion_ms_bonus_pct"{
+				"value"	"0"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+
+
+	//Talent: Aura Bonus Damage
+	"special_bonus_unique_vengeful_spirit_2"{
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"50"
+				"ad_linked_abilities"			"vengefulspirit_command_aura"
+			}
+		}
+	}
+	"vengefulspirit_nether_swap"{
+		"AbilityCastPoint"	"0.4"
+		"AbilityCastRange"	"800 1200 1600 2000"
+		"AbilityCooldown"	"25 20 15 10"
+		"AbilityManaCost"	"100 175 250 325"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"damage"{
+				"value"	"200 365 660 1200"
+				"special_bonus_unique_vengeful_spirit_swap_damage"	"+60%"
+			}
+			"damage_reduction"{
+				"value"					"40 50 60 70"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_NONE"
+				"special_bonus_unique_vengeful_spirit_swap_damage_reduction"		"+40"
+			}
+			"damage_reduction_duration"	{
+				"value"					"3"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_NONE"
+			}
+		}
+	}
+}

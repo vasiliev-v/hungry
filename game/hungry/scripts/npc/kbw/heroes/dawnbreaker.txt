@@ -1,0 +1,174 @@
+"DOTAAbilities"{
+
+
+	"dawnbreaker_fire_wreath"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityManaCost"	"100 130 160 190 220 250 280"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+                "AbilityValues"
+		{
+			
+			"AbilityCooldown"				
+			{
+				"value"					"11 10.5 10 9.5 9 8.5 8"
+				"special_bonus_unique_dawnbreaker_fire_wreath_cooldown"			"-6"
+			}
+			"duration"					"1.1"
+			"swipe_radius"				"300"					
+			"swipe_damage"
+			{
+				"value"											"40 65 108 169 248 345 460"
+				"special_bonus_unique_dawnbreaker_fire_wreath_swipe"		"+690"
+
+			}
+			"smash_radius"				"300"
+			"smash_damage"
+			{
+				"value"				"40 65 108 169 248 345 4600"
+				"special_bonus_unique_dawnbreaker_fire_wreath_swipe"			"+690"
+			}
+			"movement_speed"				"215"
+			"total_attacks"				"3 4 5 6 7 8 9"
+			"smash_stun_duration"			"1 1.1 1.2 1.3 1.4 1.5 1.6"
+			"sweep_stun_duration"			"0.12"
+			"self_stun_duration"			"0.2"
+			"swipe_slow"			"-100"
+			"smash_distance_from_hero"				"120"
+			"animation_rate"				"0"
+			"turn_rate"					"90"
+			"shard_cast_point"
+			{
+				"value"			"0.2"
+				"special_bonus_shard"				"-0.1"
+			}
+			"shard_movement_penalty"
+			{
+				"value"							"0"
+				"special_bonus_shard"				"+25"
+			}			
+			
+		}	
+	}
+
+
+	"dawnbreaker_celestial_hammer"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCooldown"	"11 10 9 8 7 6 5"
+		"AbilityManaCost"	"110 143 176 209 242 275 308"
+		"AbilityCastRange"	"0"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"hammer_damage"{
+				"value"	"110 155 218 306 430 605 850"
+				"LinkedSpecialBonus"	"special_bonus_unique_dawnbreaker_celestial_blade"
+			}
+			"projectile_radius"	"150"
+			"projectile_speed"	"2500"
+			"flare_debuff_duration"	"2.5"
+			"flare_radius"	"150"
+			"move_slow"{
+				"value"	"35 42 50 57 65 72 80"
+				"LinkedSpecialBonus"	"special_bonus_unique_dawnbreaker_celestial_hammer_slow"
+			}
+			"burn_damage"	"35 53 79 118 178 267 400"
+			"burn_interval"	"0.3"
+			"pause_duration"	"5.2"
+			"hammer_aoe_radius"	"250"
+			"travel_speed_pct"	"200"
+			"return_anim_distance_threshold"	"300"
+			"range"{
+				"value"						"1200 1400 1600 1800 2000 2200 2400"
+				"special_bonus_unique_dawnbreaker_celestial_hammer_real_range"	"+1200"
+			}
+			// custom for boost travel distance by cast range bonuses (filters + m_kbw_hero)
+			"real_range"{
+				"value"						"1200 1400 1600 1800 2000 2200 2400"
+				"special_bonus_unique_dawnbreaker_celestial_hammer_real_range"	"+1200"
+			}
+		}
+	}
+	"special_bonus_unique_dawnbreaker_celestial_hammer_real_range"{
+		"BaseClass"			"special_bonus_undefined"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"dawnbreaker_luminosity"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilitySpecial"{
+			"01"{
+				"var_type"					"FIELD_INTEGER"
+				"attack_count"				"3"
+				"LinkedSpecialBonus"		"special_bonus_unique_dawnbreaker_luminosity_attack_count"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
+			"02"{
+				"var_type"					"FIELD_INTEGER"
+				"heal_radius"				"650"
+			}
+			"03"{
+				"var_type"					"FIELD_INTEGER"
+				"heal_pct"					"30 40 50 60 70 80 90"
+			}
+			"04"{
+				"var_type"					"FIELD_INTEGER"
+				"heal_from_creeps"			"50"
+			}
+			"05"{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"180 205 230 255 280 305 330"
+				"LinkedSpecialBonus"		"special_bonus_unique_dawnbreaker_luminosity_crit"
+			}
+			"06"{
+				"var_type"					"FIELD_FLOAT"
+				"proc_cooldown"				"0.00"
+			}
+			"07"{
+				"var_type"					"FIELD_INTEGER"
+				"allied_healing_pct"		"50"
+			}
+		}
+	}
+	"dawnbreaker_solar_guardian"{
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastRange"	"0"
+		"AbilityChannelTime"	"1.7"
+		"AbilityCooldown"	"75 70 65 60"
+		"AbilityManaCost"	"150 263 375 488"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"airtime_duration"	"0.8"
+			"airtime_scepter_bonus"{
+				"value"	"5.3"
+				"RequiresScepter"	"1"
+			}
+			"base_damage"	"70 135 260 500"
+			"base_heal"{
+				"value"	"85 172 347 700"
+				"special_bonus_scepter"	"+170 350 700 1400"
+			}
+			"land_damage"	"200 383 732 1400"
+			"land_stun_duration"	"1.5 1.75 2 2.25"
+			"max_offset_distance"	"350"
+			"miss_rate"{
+				"value"	"100"
+				"RequiresScepter"	"1"
+			}
+			"pulse_interval"	"0.5"
+			"radius"{
+				"value"	"500"
+				"LinkedSpecialBonus"	"special_bonus_unique_dawnbreaker_solar_guardian_radius"
+			}
+			"scepter_channel_time"{
+				"value"	"1"
+				"RequiresScepter"	"1"
+			}
+			"airtime_scepter_movement_speed"				"700"
+		}
+	}
+}

@@ -1,0 +1,220 @@
+"DOTAAbilities"{
+
+	"clinkz_strafe"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	
+		"LinkedAbility" "clinkz_burning_barrage"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+				
+		"AbilityCastPoint"	"0.0"
+		"AbilityManaCost"	"75 90 105 120 135 150"
+		
+		"AbilityValues"{
+			"attack_speed_bonus"	{
+				"value"									"100 140 190 250 320 400 490"
+				"special_bonus_unique_clinkz_7"			"+0"
+			}
+			"duration"						"3.5"
+			"attack_range_bonus"			{
+				"value"		"300"
+				"special_bonus_unique_clinkz_strafe_attack_range"	"+400"
+			}
+			"AbilityCooldown"	{
+				"value"								"12"
+				"special_bonus_unique_clinkz_cd"	"-5"
+			}
+			"strafe_skeleton_radius"					"9999"
+			"archer_attack_speed_pct"					"75"
+		}
+	}
+	"special_bonus_unique_clinkz_strafe_attack_range"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	
+	"clinkz_tar_bomb"	{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.2 0.2 0.2 0.2"
+		"AbilityCooldown"				"7 6 5 4 3 2 1"
+		"AbilityManaCost"				"40 50 60 70 80 90 100"
+
+		"AbilityValues"{
+			"radius"		"275"
+			"projectile_speed"					"1500"
+			"damage_bonus"	{
+				"value"					"30 60 120 210 330 480 660"
+				"special_bonus_unique_clinkz_1"			"+540"
+			}
+			"ground_duration"				"5"				
+			"slow_movement_speed"			"-16 -20 -24 -28 -32 -36 -40"
+			"slow_duration"					"2.5"
+			"has_multishot"	{
+				"value"						"0"
+				"special_bonus_unique_clinkz_3"		"+1"
+			}
+			"impact_damage"		{
+				"value"				"60 100 160 240 340 460 600"
+				"DamageTypeTooltip"				"DAMAGE_TYPE_MAGICAL"
+			}
+		}
+	}
+	
+	"clinkz_death_pact"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCooldown"				"0.0"
+		"AbilityChargeRestoreTime"		"15 14 13 12 11 10 9"
+		"AbilityManaCost"				"120"
+		
+		"AbilityValues" {
+			"duration"				"45"
+			"AbilityCharges"	{
+				"value"				"1 2 3 4 5 6 7"
+				"special_bonus_unique_clinkz_9"		"+0"
+			}
+			"health_gain"	{
+				"value"				"200 300 480 740 1080 1500 2000"
+				"special_bonus_unique_clinkz_8"		"+4000"
+			}
+			"skeleton_duration"					"15"
+			"skeleton_health" {
+				"value"					"12"
+			}
+			"skeleton_health_tooltip"{
+				"value"					"3"
+			}
+			"skeleton_building_damage_reduction"			"0"
+			"attack_rate"			{
+				"value"		"1.6"
+				"special_bonus_unique_clinkz_burning_army_attack_rate"	"-0.5"
+			}
+			"damage_percent"		"28 40 52 64 76 88 100"
+			"creep_level"			"99999"
+		}
+	}
+	"special_bonus_unique_clinkz_burning_army_attack_rate"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    }
+	
+
+	"clinkz_wind_walk"{
+		"MaxLevel"                      "4"
+		"RequiredLevel"                 "6"
+		"LevelsBetweenUpgrades"         "6"
+		
+		"AbilityCastPoint"	"0"
+		"AbilityManaCost"	"100 120 140 160"
+		
+		"AbilityValues"{
+			"duration"					"30 40 50 60"
+			"fade_time"					"0.6 0.5 0.4 0.3"
+			"move_speed_bonus_pct"		"30 45 60 70"
+			"skeleton_count" {
+				"value"								"1 2 3 4"
+			}
+			"AbilityCooldown"{
+				"value"									"18 15 12 9"
+				"special_bonus_unique_clinkz_10"		"-0"
+			}
+			"skeleton_offset"				"250"
+			"skeleton_offset_min"				"150"
+		}
+	}
+
+	"clinkz_burning_army"{
+		"AbilityCastPoint"	"0"
+		"AbilityCastRange"	"1200"
+		"AbilityCooldown"	"25"
+		"AbilityManaCost"	"250"
+		
+		"AbilityValues"{
+			"range"			"1300"
+			"count"			"5"
+			"spawn_interval"			"0.2"
+		}
+	}
+
+	"clinkz_burning_barrage"{
+		"LinkedAbility"  "clinkz_strafe"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		
+		"AbilityCastPoint"				"0.2"
+		"AbilityChannelTime"			"2.0"
+		"AbilityManaCost"				"45 60 75 90 105 120 140"
+
+		"AbilityValues"		{
+			"wave_count"		"4 5 6 7 8 9 10"
+			"range"	"600"
+			"damage_pct"			"100"
+			"AbilityCooldown"			{
+				"value"	"10"
+				"special_bonus_unique_clinkz_cd"	"-5"
+			}
+		}
+	}
+
+	"special_bonus_unique_clinkz_cd"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"	
+	}
+	// unused
+    // "clinkz_ashes_eater_kbw"{
+    //     "BaseClass"                     "ability_lua"
+    //     "ScriptFile"                    "kbw/abilities/heroes/clinkz/ashes_eater"
+    //     "AbilityTextureName"            "clinkz_death_pact"
+
+	// 	"LevelsBetweenUpgrades"	"3"
+	// 	"MaxLevel"	"7"
+
+	// 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	// 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	// 	"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+	// 	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    //     "AbilityCooldown"				"50"
+	// 	"AbilityManaCost"				"50 75 100 125 150 175 200"
+	// 	"AbilityCastPoint"				"0.2"
+        
+	// 	"AbilityValues"{
+	// 		"duration"				"25"
+	// 		"max_stacks"{
+	// 			"value"		"10 10 20 20 30 30 40"
+	// 			"special_bonus_unique_clinkz_ashes_eater_stacks"	"+50%"
+	// 		}
+	// 		"hero_kill_stacks"		"20"
+	// 		"stack_damage"			"4 7 7 12 12 18 25"
+	// 		"stack_health"			"20 40 40 60 60 80 100"
+	// 		"boss_range"			"1500"
+	// 	}
+    // }
+	// "special_bonus_unique_clinkz_ashes_eater_stacks"{
+    //     "BaseClass"		    "special_bonus_base"
+    //     "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    //     "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    // }
+	// "special_bonus_unique_clinkz_ashes_eater_passive"{
+    //     "BaseClass"		    "special_bonus_undefined"
+    //     "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    //     "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+    //     "AbilitySpecial"{
+    //         "01"{
+    //             "var_type"	"FIELD_FLOAT"
+    //             "duration"   "20"
+    //         }
+    //     }
+	// }
+}

@@ -1,0 +1,133 @@
+"DOTAAbilities"{
+	"night_stalker_void"{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastRange"	"525"
+		"AbilityManaCost"	"90 117 144 171 198 225 252"
+		"AbilityModifierSupportValue"	"0.5"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"attackspeed_slow"	"-80"
+			"damage"{
+				"value"	"200 300 440 635 910 1280 1780"
+				"special_bonus_unique_night_stalker_4"	"+1220"
+			}
+			"duration_day"	"2"
+			"duration_night"	"2.5 2.85 3.2 3.55 3.9 4.25 4.6"
+			"movespeed_slow"	"-60"
+			"radius_scepter"{
+				"value"	"1200"
+				"RequiresScepter"	"1"
+			}
+			"scepter_ministun"{
+				"value"	"1.0"
+				"RequiresScepter"	"1"
+			}
+			"AbilityCooldown"	{
+				"value"	"10 9.5 9 8.5 8 7.5 7"
+				"special_bonus_unique_night_stalker_void_cooldown"	"-3"
+			}
+		}
+	}
+	"special_bonus_unique_night_stalker_void_cooldown"{		
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+	}
+
+
+	"night_stalker_crippling_fear"{
+		"AbilityCastPoint"	"0.2"
+		"AbilityCastRange"	"375"
+		"AbilityCooldown"	"16 15 14 13 12 11 10"
+		"AbilityManaCost"	"50 65 80 95 110 125 140"
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"duration_day"	"3"
+			"duration_night"	"4.0 4.5 5.0 5.5 6.0 6.5 7.0"
+			"radius"	"375 400 425 450 475 500 525"
+		}
+	}
+	"special_bonus_unique_night_stalker_crippling_fear_disarm"{
+        "BaseClass"		    "special_bonus_base"
+        "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"	    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+
+		"AbilityValues"{
+			"duration"		"3"
+		}
+
+		"AddModifiers"{
+			"m_special_bonus_unique_night_stalker_crippling_fear_disarm"	{
+				"Path"	"kbw/abilities/heroes/night_stalker/m_special_bonus_unique_night_stalker_crippling_fear_disarm"
+			}
+		}
+	}
+
+
+	"night_stalker_hunter_in_the_night"{
+		"LevelsBetweenUpgrades"	"3"
+		"MaxLevel"	"7"
+		"AbilityValues"{
+			"bonus_attack_speed_night"{
+				"value"	"30 50 87 140 210 297 400"
+				"special_bonus_unique_night_stalker_2"	"+300"
+			}
+			"bonus_movement_speed_pct_night"{
+				"value"	"20 25 30 35 40 45 50"
+				"special_bonus_unique_night_stalker_5"	"+10"
+			}
+			"bonus_status_resist_night"	{
+				"value"			"0"
+				"special_bonus_unique_night_stalker_hunter_status_resist"	"+25"
+			}
+			"shard_cast_range"{
+				"value"	"125"
+				"RequiresShard"	"1"
+			}
+			"shard_cooldown"{
+				"value"	"6"
+				"RequiresShard"	"1"
+			}
+			"shard_hp_restore_pct"{
+				"value"	"40"
+				"RequiresShard"	"1"
+			}
+			"shard_mana_restore_pct"{
+				"value"	"40"
+				"RequiresShard"	"1"
+			}
+		}
+	}
+
+
+	"night_stalker_darkness"{
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"115 105 95 85"
+		"AbilityManaCost"	"125 219 313 406"
+		"LevelsBetweenUpgrades"	"6"
+		"MaxLevel"	"4"
+		"AbilityValues"{
+			"bonus_damage"{
+				"value"	"100 196 383 750"
+				"special_bonus_unique_night_stalker_3"	"+1000"
+			}
+			"duration"{
+				"value"	"30"
+				"special_bonus_unique_night_stalker_7"	"+8"
+			}
+		}
+	}
+	// Talent: Darkness Cooldown
+    "special_bonus_unique_night_stalker"		{
+        "AbilitySpecial"		{
+            "01"		{
+                "var_type"	"FIELD_INTEGER"
+                "value"	"30"
+                "ad_linked_abilities"	"night_stalker_darkness"
+            }
+        }
+    }
+}
